@@ -187,21 +187,27 @@
             "type": "race",
             "fastestLap": "RUS",
             "positions": [ "VER", "HAM", "LEC", "PER", "RUS", "NOR", "ALO", "VET", "MAG", "TSU", "OCO", "ZHO", "ALB", "GAS", "MSC", "RIC", "LAT" ]
-        }
-    ],
-    "remainingRaces": [
-        {
+        }, {
             "code": "MXC",
-            "type": "race"
+            "type": "race",
+            "fastestLap": "RUS",
+            "positions": [ "VER", "HAM", "PER", "RUS", "SAI", "LEC", "RIC", "OCO", "NOR", "BOT", "GAS", "ALB", "ZHO", "VET", "STR", "MSC", "MAG", "LAT", "ALO" ]
         }, {
             "code": "SAP",
-            "type": "sprint"
+            "type": "sprint",
+            "fastestLap": "RUS",
+            "positions": [ "RUS", "SAI", "HAM", "VER", "PER", "LEC", "NOR", "MAG", "VET", "GAS", "RIC", "MSC", "ZHO", "BOT", "TSU", "STR", "OCO", "ALO", "LAT" ]
         }, {
             "code": "SAP",
-            "type": "race"
+            "type": "race",
+            "fastestLap": "RUS",
+            "positions": [ "RUS", "HAM", "SAI", "LEC", "ALO", "VER", "PER", "OCO", "BOT", "STR", "VET", "ZHO", "MSC", "GAS", "ALB", "LAT", "TSU" ]
         }, {
             "code": "ABU",
-            "type": "race"
+            "type": "race",
+            "fastestLap": "NOR",
+            "positions": [ "VER", "LEC", "PER", "SAI", "RUS", "NOR", "OCO", "STR", "RIC", "VET", "TSU", "ZHO", "ALB", "GAS", "BOT", "MSC", "MAG", "HAM", "LAT" ]
         }
-    ]
+    ],
+    "remainingRaces": []
 }
