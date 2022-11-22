@@ -1,13 +1,12 @@
 <script setup>
 import data from './data/sim/2022.data'
 import SimulationPager from '@/components/SimulationPager.vue';
+import SimulationView from '@/components/SimulationView.vue';
 </script>
 
 <template>
   <main>
-      <simulation-pager :page="page" :max-pages="data.length"
-                        @previous="page--" @next="page++"
-                        @first="page = 0" @last="page = data.length - 1"/>
+      <simulation-view/>
       <table>
           <thead>
             <tr>
