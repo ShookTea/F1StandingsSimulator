@@ -15,19 +15,17 @@ export default {
 };
 
 function convert(input, year) {
-    const { races, pointSchema, remainingRaces } = input;
-    const drivers = Object.keys(input.drivers)
+    const { races, pointSchemas, remainingRaces } = input;
 
     const result = [];
 
     for (let i = 0; i <= races.length; i++) {
         const racesPart = races.slice(0, i);
         const remainingRacesInSeason = races.slice(i).concat(remainingRaces)
-        const maxPoints = calculateMaxAvailablePoints(remainingRacesInSeason, pointSchema)
+        const maxPoints = calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas)
         result.push(calculateResults(
             year,
-            drivers,
-            pointSchema,
+            input,
             racesPart === undefined ? [] : racesPart,
             remainingRacesInSeason.length,
             maxPoints,
@@ -50,14 +48,16 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
     return maxPoints;
 }
 
-function calculateResults(year, drivers, pointSchemas, races, remainingWins, maxRemainingPoints) {
-    const dataResult = calculateResultAfterRaces(year, drivers, pointSchemas, races);
+function calculateResults(year, input, races, remainingWins, maxRemainingPoints) {
+    const dataResult = calculateResultAfterRaces(year, input, races);
 
     let result = [];
 
     Object.keys(dataResult).forEach((driver) => {
         result.push({
             driver,
+            uuid: dataResult[driver].uuid,
+            temporary: dataResult[driver].temporary,
             points: dataResult[driver].points,
             maxPoints: dataResult[driver].points + maxRemainingPoints,
             racePositions: dataResult[driver].positionsCount,
@@ -83,7 +83,7 @@ function calculateResults(year, drivers, pointSchemas, races, remainingWins, max
         }
     );
 
-    return result;
+    return result.sort((a, b) => a.position - b.position);
 }
 
 function sortByPositions(results, pointsSupplier) {
@@ -112,11 +112,11 @@ function buildComparator(pointsSupplier) {
     }
 }
 
-function calculateResultAfterRaces(year, drivers, pointSchemas, races) {
-    const result = prepareEmptyResults(drivers);
+function calculateResultAfterRaces(year, input, races) {
+    const result = prepareEmptyResults(input);
 
     for (const { type, fastestLap, positions, code } of races) {
-        const pointSchema = pointSchemas[type];
+        const pointSchema = input.pointSchemas[type];
 
         for (let i = 0; i < positions.length; i++) {
             const driver = positions[i];
@@ -144,12 +144,15 @@ function calculateResultAfterRaces(year, drivers, pointSchemas, races) {
     return result;
 }
 
-function prepareEmptyResults(drivers) {
+function prepareEmptyResults(input) {
+    const drivers = Object.keys(input.drivers)
     const result = {};
     for (const driver of drivers) {
         result[driver] = {
             points: 0,
-            positionsCount: {}
+            positionsCount: {},
+            uuid: input.drivers[driver].uuid,
+            temporary: input.drivers[driver].temporary ?? false,
         }
     }
 
