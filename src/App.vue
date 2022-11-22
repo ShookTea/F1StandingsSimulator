@@ -1,10 +1,13 @@
 <script setup>
 import data from './data/sim/2022.data'
-
+import SimulationPager from '@/components/SimulationPager.vue';
 </script>
 
 <template>
   <main>
+      <simulation-pager :page="page" :max-pages="data.length"
+                        @previous="page--" @next="page++"
+                        @first="page = 0" @last="page = data.length - 1"/>
       <table>
           <thead>
             <tr>
@@ -23,6 +26,17 @@ import data from './data/sim/2022.data'
       </table>
   </main>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            data,
+            page: 0,
+        }
+    }
+}
+</script>
 
 <style scoped>
 table, td, th {
