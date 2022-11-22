@@ -1,9 +1,10 @@
 <script setup>
 import SimulationPager from '@/components/SimulationPager.vue';
+import SimulationTable from '@/components/SimulationTable.vue';
 
 defineProps({
     seasonData: {
-        type: Object,
+        type: Array,
         required: true,
     }
 })
@@ -13,7 +14,8 @@ defineProps({
     <div class="simulation-season-view">
         <simulation-pager :page="page" :max-pages="seasonData.length"
                           @previous="page--" @next="page++"
-                          @first="page = 0" @last="page = data.length - 1"/>
+                          @first="page = 0" @last="page = seasonData.length - 1"/>
+        <simulation-table :data="seasonData[page]"/>
     </div>
 </template>
 
