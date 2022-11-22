@@ -1,0 +1,207 @@
+{
+    "drivers": {
+        "VER": {
+            "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876"
+        },
+        "LEC": {
+            "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9"
+        },
+        "PER": {
+            "uuid": "b6683cdd-6246-402f-8d63-673941252343"
+        },
+        "RUS": {
+            "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868"
+        },
+        "SAI": {
+            "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c"
+        },
+        "HAM": {
+            "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299"
+        },
+        "NOR": {
+            "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466"
+        },
+        "OCO": {
+            "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9"
+        },
+        "ALO": {
+            "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74"
+        },
+        "BOT": {
+            "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7"
+        },
+        "RIC": {
+            "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767"
+        },
+        "VET": {
+            "uuid": "245444c2-533b-4ab2-8d7c-518c09f4b479"
+        },
+        "MAG": {
+            "uuid": "1b2846f5-0613-4725-bb40-cbcf6283fadd"
+        },
+        "GAS": {
+            "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b"
+        },
+        "STR": {
+            "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b"
+        },
+        "MSC": {
+            "uuid": "e6263917-bd03-401c-85dc-5310b1923412"
+        },
+        "TSU": {
+            "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f"
+        },
+        "ZHO": {
+            "uuid": "6ceac234-f995-4328-b1bb-289f5f4ad142"
+        },
+        "ALB": {
+            "uuid": "94f92728-556c-405c-b18a-eed2f9138c78"
+        },
+        "LAT": {
+            "uuid": "ef19af25-7750-4311-8049-2994c9edad0b"
+        },
+        "DEV": {
+            "uuid": "41e6b7c4-b0a8-4a61-9b24-16bea1b84404",
+            "temporary": true
+        },
+        "HUL": {
+            "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746",
+            "temporary": true
+        }
+    },
+    "pointSchema": {
+        "race": {
+            "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
+            "fastestLap": { "value": 1, "maxPosition": 10 },
+            "positionsCount": true
+        },
+        "sprint": {
+            "points": [ 8, 7, 6, 5, 4, 3, 2, 1 ],
+            "fastestLap": { "value":  0, "maxPosition": -1 },
+            "positionsCount": false
+        }
+    },
+    "races": [
+        {
+            "code": "BHR",
+            "type": "race",
+            "fastestLap": "LEC",
+            "positions": [ "LEC", "SAI", "HAM", "RUS", "MAG", "BOT", "OCO", "TSU", "ALO", "ZHO", "MSC", "STR", "ALB", "RIC", "NOR", "LAT", "HUL", "PER", "VER" ]
+        }, {
+			"code": "SAU",
+			"type": "race",
+			"fastestLap": "LEC",
+			"positions": [ "VER", "LEC", "SAI", "PER", "RUS", "OCO", "NOR", "GAS", "MAG", "HAM", "ZHO", "HUL", "STR", "ALB" ]
+		}, {
+            "code": "AUS",
+            "type": "race",
+            "fastestLap": "LEC",
+            "positions": [ "LEC", "PER", "RUS", "HAM", "NOR", "RIC", "OCO", "BOT", "GAS", "ALB", "ZHO", "STR", "MSC", "MAG", "TSU", "LAT", "ALO" ]
+        }, {
+            "code": "EMI",
+            "type": "sprint",
+            "fastestLap": "PER",
+            "positions": [ "VER", "LEC", "PER", "SAI", "NOR", "RIC", "BOT", "MAG", "ALO", "MSC", "RUS", "TSU", "VET", "HAM", "STR", "OCO", "GAS", "ALB", "LAT" ]
+        }, {
+            "code": "EMI",
+            "type": "race",
+            "fastestLap": "VER",
+            "positions": [ "VER", "PER", "NOR", "RUS", "BOT", "LEC", "TSU", "VET", "MAG", "STR", "ALB", "GAS", "HAM", "OCO", "ZHO", "LAT", "MSC", "RIC" ]
+        }, {
+            "code": "MIA",
+            "type": "race",
+            "fastestLap": "VER",
+            "positions": [ "VER", "LEC", "SAI", "PER", "RUS", "HAM", "BOT", "OCO", "ALB", "STR", "ALO", "TSU", "RIC", "LAT", "MSC", "MAG", "VET" ]
+        }, {
+            "code": "ESP",
+            "type": "race",
+            "fastestLap": "PER",
+            "positions": [ "VER", "PER", "RUS", "SAI", "HAM", "BOT", "OCO", "NOR", "ALO", "TSU", "VET", "RIC", "GAS", "MSC", "STR", "LAT", "MAG", "ALB" ]
+        }, {
+            "code": "MON",
+            "type": "race",
+            "fastestLap": "NOR",
+            "positions": [ "PER", "SAI", "VER", "LEC", "RUS", "NOR", "ALO", "HAM", "BOT", "VET", "GAS", "OCO", "RIC", "STR", "LAT", "ZHO", "TSU" ]
+        }, {
+            "code": "AZE",
+            "type": "race",
+            "fastestLap": "PER",
+            "positions": [ "VER", "PER", "RUS", "HAM", "GAS", "VET", "ALO", "RIC", "NOR", "OCO", "BOT", "ALB", "TSU", "MSC", "LAT", "STR" ]
+        }, {
+            "code": "CAN",
+            "type": "race",
+            "fastestLap": "SAI",
+            "positions": [ "VER", "SAI", "HAM", "RUS", "LEC", "OCO", "BOT", "ZHO", "ALO", "STR", "RIC", "VET", "ALB", "GAS", "NOR", "LAT", "MAG" ]
+        }, {
+            "code": "GBR",
+            "type": "race",
+            "fastestLap": "HAM",
+            "positions": [ "SAI", "PER", "HAM", "LEC", "ALO", "NOR", "VER", "MSC", "VET", "MAG", "STR", "LAT", "RIC", "TSU" ]
+        }, {
+            "code": "AUT",
+            "type": "sprint",
+            "fastestLap": "LEC",
+            "positions": [ "VER", "LEC", "SAI", "RUS", "PER", "OCO", "MAG", "HAM", "MSC", "BOT", "NOR", "RIC", "STR", "ZHO", "GAS", "ALB", "TSU", "LAT", "VET" ]
+        }, {
+            "code": "AUT",
+            "type": "race",
+            "fastestLap": "VER",
+            "positions": [ "LEC", "VER", "HAM", "RUS", "OCO", "MSC", "NOR", "MAG", "RIC", "ALO", "BOT", "ALB", "STR", "ZHO", "GAS", "TSU", "VET" ]
+        }, {
+            "code": "FRA",
+            "type": "race",
+            "fastestLap": "SAI",
+            "positions": [ "VER", "HAM", "RUS", "PER", "SAI", "ALO", "NOR", "OCO", "RIC", "STR", "VET", "GAS", "ALB", "BOT", "MSC", "ZHO" ]
+        }, {
+            "code": "HUN",
+            "type": "race",
+            "fastestLap": "HAM",
+            "positions": [ "VER", "HAM", "RUS", "SAI", "PER", "LEC", "NOR", "ALO", "OCO", "VET", "STR", "GAS", "ZHO", "MSC", "RIC", "MAG", "ALB", "LAT", "TSU", "BOT" ]
+        }, {
+            "code": "BEL",
+            "type": "race",
+            "fastestLap": "VER",
+            "positions": [ "VER", "PER", "SAI", "RUS", "ALO", "LEC", "OCO", "VET", "GAS", "ALB", "STR", "NOR", "TSU", "ZHO", "RIC", "MAG", "MSC", "LAT" ]
+        }, {
+            "code": "NED",
+            "type": "race",
+            "fastestLap": "VER",
+            "positions": [ "VER", "RUS", "LEC", "HAM", "PER", "ALO", "NOR", "SAI", "OCO", "STR", "GAS", "ALB", "MSC", "VET", "MAG", "ZHO", "RIC", "LAT" ]
+        }, {
+            "code": "ITA",
+            "type": "race",
+            "fastestLap": "PER",
+            "positions": [ "VER", "LEC", "RUS", "SAI", "HAM", "PER", "NOR", "GAS", "DEV", "ZHO", "OCO", "MSC", "BOT", "TSU", "LAT", "MAG" ]
+        }, {
+            "code": "SIN",
+            "type": "race",
+            "fastestLap": "RUS",
+            "positions": [ "PER", "LEC", "SAI", "NOR", "RIC", "STR", "VER", "VET", "HAM", "GAS", "BOT", "MAG", "MSC", "RUS" ]
+        }, {
+            "code": "JPN",
+            "type": "race",
+            "fastestLap": "ZHO",
+            "positions": [ "VER", "PER", "LEC", "OCO", "HAM", "VET", "ALO", "RUS", "LAT", "NOR", "RIC", "STR", "TSU", "MAG", "BOT", "ZHO", "MSC", "GAS", "SAI" ]
+        }, {
+            "code": "USA",
+            "type": "race",
+            "fastestLap": "RUS",
+            "positions": [ "VER", "HAM", "LEC", "PER", "RUS", "NOR", "ALO", "VET", "MAG", "TSU", "OCO", "ZHO", "ALB", "GAS", "MSC", "RIC", "LAT" ]
+        }
+    ],
+    "remainingRaces": [
+        {
+            "code": "MXC",
+            "type": "race"
+        }, {
+            "code": "SAP",
+            "type": "sprint"
+        }, {
+            "code": "SAP",
+            "type": "race"
+        }, {
+            "code": "ABU",
+            "type": "race"
+        }
+    ]
+}

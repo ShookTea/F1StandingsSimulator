@@ -1,0 +1,92 @@
+{
+    "c41f3434-ef94-4d31-9eed-4fdc3f6cb876": {
+        "givenName": "Max",
+        "familyName": "Verstappen"
+    },
+    "8f4909bf-8859-44af-9b8d-f254cc5fa1b9": {
+        "givenName": "Charles",
+        "familyName": "Leclerc"
+    },
+    "b6683cdd-6246-402f-8d63-673941252343": {
+        "givenName": "Sergio",
+        "familyName": "Pérez"
+    },
+    "0e1212d1-6b6c-4f47-8608-3012407b9868": {
+        "givenName": "George",
+        "familyName": "Russell"
+    },
+    "865a73e7-b8dc-4e10-916a-9764770a135c": {
+        "givenName": "Carlos",
+        "familyName": "Sainz"
+    },
+    "ea131eb5-ec03-4279-83fc-956ad94bd299": {
+        "givenName": "Lewis",
+        "familyName": "Hamilton"
+    },
+    "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466": {
+        "givenName": "Lando",
+        "familyName": "Norris"
+    },
+    "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9": {
+        "givenName": "Esteban",
+        "familyName": "Ocon"
+    },
+    "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74": {
+        "givenName": "Fernando",
+        "familyName": "Alonso"
+    },
+    "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7": {
+        "givenName": "Valtteri",
+        "familyName": "Bottas"
+    },
+    "219f59ac-c0c8-4886-92ef-9bf806a94767": {
+        "givenName": "Daniel",
+        "familyName": "Ricciardo"
+    },
+    "245444c2-533b-4ab2-8d7c-518c09f4b479": {
+        "givenName": "Sebastian",
+        "familyName": "Vettel"
+    },
+    "1b2846f5-0613-4725-bb40-cbcf6283fadd": {
+        "givenName": "Kevin",
+        "familyName": "Magnussen"
+    },
+    "f3d27a10-c446-4c44-a0a7-dbf8f937058b": {
+        "givenName": "Pierre",
+        "familyName": "Gasly"
+    },
+    "a0e93a44-0b90-4f18-a37b-edec16f1d21b": {
+        "givenName": "Lance",
+        "familyName": "Stroll"
+    },
+    "e6263917-bd03-401c-85dc-5310b1923412": {
+        "givenName": "Mick",
+        "familyName": "Schumacher"
+    },
+    "8de49864-f75f-4cd6-abb4-0771d2c72a1f": {
+        "givenName": "Yūki",
+        "familyName": "Tsunoda",
+        "familyNameFirst": true
+    },
+    "6ceac234-f995-4328-b1bb-289f5f4ad142": {
+        "givenName": "Guànyǔ",
+        "familyName": "Zhōu",
+        "familyNameFirst": true
+    },
+    "94f92728-556c-405c-b18a-eed2f9138c78": {
+        "givenName": "Alexander",
+        "familyName": "Albon"
+    },
+    "ef19af25-7750-4311-8049-2994c9edad0b": {
+        "givenName": "Nicholas",
+        "familyName": "Latifi"
+    },
+    "41e6b7c4-b0a8-4a61-9b24-16bea1b84404": {
+        "givenName": "Nyck",
+        "familyName": "de Vries"
+    },
+    "fce0b388-3a0d-4d46-af1d-0a744b73f746": {
+        "givenName": "Nico",
+        "familyName": "Hülkenberg"
+    }
+}
