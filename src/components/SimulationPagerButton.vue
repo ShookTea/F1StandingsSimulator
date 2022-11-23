@@ -36,3 +36,10 @@ defineEmits(['step', 'max'])
         </div>
     </div>
 </template>
+
+<style scoped>
+    .pager-control {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
