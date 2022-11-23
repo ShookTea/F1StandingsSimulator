@@ -29,6 +29,7 @@ function convert(input, year) {
             racesPart === undefined ? [] : racesPart,
             remainingRacesInSeason.length,
             maxPoints,
+            remainingRacesInSeason.length > 0 ? remainingRacesInSeason[0] : null,
         ));
     }
 
@@ -48,7 +49,7 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
     return maxPoints;
 }
 
-function calculateResults(year, input, races, remainingWins, maxRemainingPoints) {
+function calculateResults(year, input, races, remainingWins, maxRemainingPoints, nextRound) {
     const dataResult = calculateResultAfterRaces(year, input, races);
 
     let result = [];
@@ -83,7 +84,14 @@ function calculateResults(year, input, races, remainingWins, maxRemainingPoints)
         }
     );
 
-    return result.sort((a, b) => a.position - b.position);
+    const sorted = result.sort((a, b) => a.position - b.position);
+
+    const roundName = nextRound === null ? 'End of season' : 'Before ' + nextRound.label;
+
+    return {
+        result: sorted,
+        roundName,
+    }
 }
 
 function sortByPositions(results, pointsSupplier) {

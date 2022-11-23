@@ -14,7 +14,8 @@ defineProps({
     <div class="simulation-season-view">
         <simulation-pager :page="page" :max-pages="seasonData.length"
                           @previous="page--" @next="page++"
-                          @first="page = 0" @last="page = seasonData.length - 1"/>
+                          @first="page = 0" @last="page = seasonData.length - 1"
+                          :label="seasonData[page].roundName"/>
         <simulation-table :data="seasonData[page]"/>
     </div>
 </template>

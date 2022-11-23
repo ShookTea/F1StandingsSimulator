@@ -3,6 +3,10 @@ import SimulationPagerButton from '@/components/SimulationPagerButton.vue';
 import SimulationPagerStepView from '@/components/SimulationPagerStepView.vue';
 
 defineProps({
+    label: {
+        type: String,
+        required: true,
+    },
     page: {
         type: Number,
         required: true,
@@ -27,9 +31,7 @@ defineEmits(['previous', 'next', 'first', 'last'])
                                      @step="$emit('next')" @max="$emit('last')"
                                      step-label="&gt;" max-label="»"/>
         </div>
-        <div id="current-page-description">
-            Some description of current page
-        </div>
+        <div id="current-page-description">{{ label }}</div>
     </div>
 </template>
 

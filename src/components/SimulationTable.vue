@@ -18,7 +18,7 @@ defineProps({
 export default {
     computed: {
         filteredData() {
-            return this.data.filter(entry => !entry.temporary || Object.keys(entry.racePositions).length > 0);
+            return this.data.result.filter(entry => !entry.temporary || Object.keys(entry.racePositions).length > 0);
         }
     }
 }

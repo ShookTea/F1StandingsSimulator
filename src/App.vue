@@ -14,7 +14,7 @@ body {
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
                  Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    background-color: #e0e0e0;
+    background-color: white;
     color: black;
 }
 </style>

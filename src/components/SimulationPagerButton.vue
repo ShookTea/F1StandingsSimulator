@@ -52,7 +52,7 @@ defineEmits(['step', 'max'])
     }
 
     .pager-enabled .button {
-        background-color: white;
+        background-color: #e0e0e0;
     }
 
     .step-change .button {
