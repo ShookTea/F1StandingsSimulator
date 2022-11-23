@@ -1,0 +1,239 @@
+{
+  "drivers": {
+    "VER": {
+      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876"
+    },
+    "LEC": {
+      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9"
+    },
+    "PER": {
+      "uuid": "b6683cdd-6246-402f-8d63-673941252343"
+    },
+    "RUS": {
+      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c"
+    },
+    "HAM": {
+      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299"
+    },
+    "NOR": {
+      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466"
+    },
+    "OCO": {
+      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9"
+    },
+    "ALO": {
+      "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74"
+    },
+    "BOT": {
+      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7"
+    },
+    "RIC": {
+      "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767"
+    },
+    "VET": {
+      "uuid": "245444c2-533b-4ab2-8d7c-518c09f4b479"
+    },
+    "GIO": {
+      "uuid": "71d45ec8-9e0f-46c4-a399-d0905bfae8e4"
+    },
+    "GAS": {
+      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b"
+    },
+    "STR": {
+      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b"
+    },
+    "MSC": {
+      "uuid": "e6263917-bd03-401c-85dc-5310b1923412"
+    },
+    "TSU": {
+      "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f"
+    },
+    "MAZ": {
+      "uuid": "11a834ee-dbc9-41af-a92c-1b7d5b17ec86"
+    },
+    "RAI": {
+      "uuid": "3bc7a1e7-a088-4993-9579-edcd5ada769a"
+    },
+    "LAT": {
+      "uuid": "ef19af25-7750-4311-8049-2994c9edad0b"
+    },
+    "KUB": {
+      "uuid": "c28dac31-eda3-4084-a10a-0ecc5c975678",
+      "temporary": true
+    }
+  },
+  "pointSchemas": {
+    "race": {
+      "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
+      "fastestLap": { "value": 1, "maxPosition": 10 },
+      "positionsCount": true
+    },
+    "sprint": {
+      "points": [ 3, 2, 1 ],
+      "fastestLap": { "value":  0, "maxPosition": -1 },
+      "positionsCount": false
+    },
+    "race-half": {
+      "points": [ 12.5, 9, 7.5, 6, 5, 4, 3, 2, 1, 0.5 ],
+      "fastestLap": { "value":  0, "maxPosition": -1 },
+      "positionsCount": true
+    }
+  },
+  "races": [
+    {
+      "code": "BHR",
+      "type": "race",
+      "label": "Bahrain Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "HAM", "VER", "BOT", "NOR", "PER", "LEC", "RIC", "SAI", "TSU", "STR", "RAI", "GIO", "OCO", "RUS", "VET", "MSC", "GAS", "LAT" ]
+    }, {
+      "code": "EMI",
+      "type": "race",
+      "label": "Emilia Romagna Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "HAM", "NOR", "LEC", "SAI", "RIC", "GAS", "STR", "OCO", "ALO", "PER", "TSU", "RAI", "GIO", "VET", "MSC", "MAZ" ]
+    }, {
+      "code": "POR",
+      "type": "race",
+      "label": "Portuguese Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "HAM", "VER", "BOT", "PER", "NOR", "LEC", "OCO", "ALO", "RIC", "GAS", "SAI", "GIO", "VET", "STR", "TSU", "RUS", "MSC", "LAT", "MAZ" ]
+    }, {
+      "code": "ESP",
+      "type": "race",
+      "label": "Spanish Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "HAM", "VER", "BOT", "LEC", "PER", "RIC", "SAI", "NOR", "OCO", "GAS", "STR", "RAI", "VET", "RUS", "GIO", "LAT", "ALO", "MSC", "MAZ" ]
+    }, {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "SAI", "NOR", "PER", "VET", "GAS", "HAM", "STR", "OCO", "GIO", "RAI", "RIC", "ALO", "RUS", "LAT", "TSU", "MAZ", "MSC" ]
+    }, {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "PER", "VET", "GAS", "LEC", "NOR", "ALO", "TSU", "SAI", "RIC", "RAI", "GIO", "BOT", "MSC", "MAZ", "HAM", "LAT", "RUS", "VER" ]
+    }, {
+      "code": "FRA",
+      "type": "race",
+      "label": "French Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "HAM", "PER", "BOT", "NOR", "RIC", "GAS", "ALO", "VET", "STR", "SAI", "RUS", "TSU", "OCO", "GIO", "LEC", "RAI", "LAT", "MSC", "MAZ" ]
+    }, {
+      "code": "STY",
+      "type": "race",
+      "label": "Styrian Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "HAM", "BOT", "PER", "NOR", "SAI", "LEC", "STR", "ALO", "TSU", "RAI", "VET", "RIC", "OCO", "GIO", "MSC", "LAT", "MAZ" ]
+    }, {
+      "code": "AUT",
+      "type": "race",
+      "label": "Austrian Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "BOT", "NOR", "HAM", "SAI", "PER", "RIC", "LEC", "GAS", "ALO", "RUS", "TSU", "STR", "GIO", "RAI", "LAT", "VET", "MSC", "MAZ" ]
+    }, {
+      "code": "GBR",
+      "type": "sprint",
+      "label": "British Grand Prix (sprint)",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "HAM", "BOT", "LEC", "NOR", "RIC", "ALO", "VET", "RUS", "OCO", "SAI", "GAS", "RAI", "STR", "GIO", "TSU", "LAT", "MSC", "MAZ", "PER" ]
+    }, {
+      "code": "GBR",
+      "type": "race",
+      "label": "British Grand Prix (race)",
+      "fastestLap": "PER",
+      "positions": [ "HAM", "LEC", "BOT", "NOR", "RIC", "SAI", "ALO", "STR", "OCO", "TSU", "GAS", "RUS", "GIO", "LAT", "RAI", "PER", "MAZ", "MSC" ]
+    }, {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix",
+      "fastestLap": "GAS",
+      "positions": [ "OCO", "HAM", "SAI", "ALO", "GAS", "TSU", "LAT", "RUS", "VER", "RAI", "RIC", "MSC", "GIO" ]
+    }, {
+      "code": "BEL",
+      "type": "race-half",
+      "label": "Belgian Grand Prix",
+      "fastestLap": null,
+      "positions": [ "VER", "RUS", "HAM", "RIC", "VET", "GAS", "OCO", "LEC", "LAT", "SAI", "ALO", "BOT", "GIO", "NOR", "TSU", "MSC", "MAZ", "RAI", "PER", "STR" ]
+    }, {
+      "code": "NED",
+      "type": "race",
+      "label": "Dutch Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "HAM", "BOT", "GAS", "LEC", "ALO", "SAI", "PER", "OCO", "NOR", "RIC", "STR", "VET", "GIO", "KUB", "LAT", "RUS", "MSC", "TSU", "MAZ" ]
+    }, {
+      "code": "ITA",
+      "type": "sprint",
+      "label": "Italian Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "BOT", "VER", "RIC", "NOR", "HAM", "LEC", "SAI", "GIO", "PER", "STR", "ALO", "VET", "OCO", "LAT", "RUS", "TSU", "MAZ", "KUB", "MSC" ]
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix (race)",
+      "fastestLap": "RIC",
+      "positions": [ "RIC", "NOR", "BOT", "LEC", "PER", "SAI", "STR", "ALO", "RUS", "OCO", "LAT", "VET", "GIO", "KUB", "MSC" ]
+    }, {
+      "code": "RUS",
+      "type": "race",
+      "label": "Russian Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "HAM", "VER", "SAI", "RIC", "BOT", "ALO", "NOR", "RAI", "PER", "RUS", "STR", "VET", "GAS", "OCO", "LEC", "GIO", "TSU", "MAZ", "LAT" ]
+    }, {
+      "code": "TUR",
+      "type": "race",
+      "label": "Turkish Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "BOT", "VER", "PER", "LEC", "HAM", "GAS", "NOR", "SAI", "STR", "OCO", "GIO", "RAI", "RIC", "TSU", "RUS", "ALO", "LAT", "VET", "MSC", "MAZ" ]
+    }, {
+      "code": "USA",
+      "type": "race",
+      "label": "United States Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "HAM", "PER", "LEC", "RIC", "BOT", "SAI", "NOR", "TSU", "VET", "GIO", "STR", "RAI", "RUS", "LAT", "MSC", "MAZ" ]
+    }, {
+      "code": "MXC",
+      "type": "race",
+      "label": "Mexico City Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "VER", "HAM", "PER", "GAS", "LEC", "SAI", "VET", "RAI", "ALO", "NOR", "GIO", "RIC", "OCO", "STR", "BOT", "RUS", "LAT", "MAZ" ]
+    }, {
+      "code": "SAP",
+      "type": "sprint",
+      "label": "São Paulo Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "BOT", "VER", "SAI", "PER", "HAM", "NOR", "LEC", "GAS", "OCO", "VET", "RIC", "ALO", "GIO", "STR", "TSU", "LAT", "RUS", "RAI", "MSC", "MAZ" ]
+    }, {
+      "code": "SAP",
+      "type": "race",
+      "label": "São Paulo Grand Prix (race)",
+      "fastestLap": "PER",
+      "positions": [ "HAM", "VER", "BOT", "PER", "LEC", "SAI", "GAS", "OCO", "ALO", "NOR", "VET", "RAI", "RUS", "GIO", "TSU", "LAT", "MAZ", "MSC" ]
+    }, {
+      "code": "QAT",
+      "type": "race",
+      "label": "Qatar Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "HAM", "VER", "ALO", "PER", "OCO", "STR", "SAI", "LEC", "NOR", "VET", "GAS", "RIC", "TSU", "RAI", "GIO", "MSC", "RUS", "MAZ" ]
+    }, {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "HAM", "VER", "BOT", "OCO", "RIC", "GAS", "LEC", "SAI", "GIO", "NOR", "STR", "LAT", "ALO", "TSU", "RAI" ]
+    }, {
+      "code": "ABU",
+      "type": "race",
+      "label": " Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "HAM", "SAI", "TSU", "GAS", "BOT", "NOR", "ALO", "OCO", "LEC", "VET", "RIC", "STR", "MSC", "PER" ]
+    }
+  ],
+  "remainingRaces": []
+}
