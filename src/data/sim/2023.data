@@ -1,0 +1,200 @@
+{
+  "drivers": {
+    "VER": {
+      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876"
+    },
+    "PER": {
+      "uuid": "b6683cdd-6246-402f-8d63-673941252343"
+    },
+    "LEC": {
+      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c"
+    },
+    "HAM": {
+      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299"
+    },
+    "RUS": {
+      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868"
+    },
+    "GAS": {
+      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b"
+    },
+    "OCO": {
+      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9"
+    },
+    "NOR": {
+      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466"
+    },
+    "PIA": {
+      "uuid": "85d6383f-2a59-4e66-85d6-80f573ade1fa"
+    },
+    "ZHO": {
+      "uuid": "6ceac234-f995-4328-b1bb-289f5f4ad142"
+    },
+    "BOT": {
+      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7"
+    },
+    "ALO": {
+      "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74"
+    },
+    "STR": {
+      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b"
+    },
+    "MAG": {
+      "uuid": "1b2846f5-0613-4725-bb40-cbcf6283fadd"
+    },
+    "HUL": {
+      "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746"
+    },
+    "TSU": {
+      "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f"
+    },
+    "DEV": {
+      "uuid": "41e6b7c4-b0a8-4a61-9b24-16bea1b84404"
+    },
+    "ALB": {
+      "uuid": "94f92728-556c-405c-b18a-eed2f9138c78"
+    },
+    "SAR": {
+      "uuid": "7bb2c22c-56b2-4be2-85bb-697cb7c7b5da"
+    }
+  },
+  "pointSchemas": {
+    "race": {
+      "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
+      "fastestLap": { "value": 1, "maxPosition": 10 },
+      "positionsCount": true
+    },
+    "sprint": {
+      "points": [ 8, 7, 6, 5, 4, 3, 2, 1 ],
+      "fastestLap": { "value":  0, "maxPosition": -1 },
+      "positionsCount": false
+    }
+  },
+  "races": [],
+  "remainingRaces": [
+    {
+      "code": "BHR",
+      "type": "race",
+      "label": "Bahrain Grand Prix"
+    }, {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix"
+    }, {
+      "code": "AUS",
+      "type": "race",
+      "label": "Australian Grand Prix"
+    }, {
+      "code": "CHN",
+      "type": "race",
+      "label": "Chinese Grand Prix"
+    }, {
+      "code": "AZE",
+      "type": "sprint",
+      "label": "Azerbaijan Grand Prix (sprint)"
+    }, {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix (race)"
+    }, {
+      "code": "MIA",
+      "type": "race",
+      "label": "Miami Grand Prix"
+    }, {
+      "code": "EMI",
+      "type": "race",
+      "label": "Emilia Romagna Grand Prix"
+    }, {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix"
+    }, {
+      "code": "SPA",
+      "type": "race",
+      "label": "Spanish Grand Prix"
+    }, {
+      "code": "CAN",
+      "type": "race",
+      "label": "Canadian Grand Prix"
+    }, {
+      "code": "AUT",
+      "type": "sprint",
+      "label": "Austrian Grand Prix (sprint)"
+    }, {
+      "code": "AUT",
+      "type": "race",
+      "label": "Austrian Grand Prix (race)"
+    }, {
+      "code": "GBR",
+      "type": "race",
+      "label": "British Grand Prix"
+    }, {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix"
+    }, {
+      "code": "BEL",
+      "type": "sprint",
+      "label": "Belgian Grand Prix (sprint)"
+    }, {
+      "code": "BEL",
+      "type": "race",
+      "label": "Belgian Grand Prix (race)"
+    }, {
+      "code": "NED",
+      "type": "race",
+      "label": "Dutch Grand Prix"
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix"
+    }, {
+      "code": "SIN",
+      "type": "race",
+      "label": "Singapore Grand Prix"
+    }, {
+      "code": "JPN",
+      "type": "race",
+      "label": "Japanese Grand Prix"
+    }, {
+      "code": "QAT",
+      "type": "race",
+      "label": "Qatar Grand Prix"
+    }, {
+      "code": "USA",
+      "type": "sprint",
+      "label": "United States Grand Prix (sprint)"
+    }, {
+      "code": "USA",
+      "type": "race",
+      "label": "United States Grand Prix (race)"
+    }, {
+      "code": "MXC",
+      "type": "race",
+      "label": "Mexico City Grand Prix"
+    }, {
+      "code": "SAP",
+      "type": "sprint",
+      "label": "São Paulo Grand Prix (sprint)"
+    }, {
+      "code": "SAP",
+      "type": "race",
+      "label": "São Paulo Grand Prix (race)"
+    }, {
+      "code": "???",
+      "type": "race",
+      "label": "Las Vegas Grand Prix"
+    }, {
+      "code": "ABU",
+      "type": "race",
+      "label": "Abu Dhabi Grand Prix"
+    }, {
+      "code": "???",
+      "type": "sprint",
+      "label": "Sprint event (location not announced)"
+    }
+  ]
+}
