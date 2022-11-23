@@ -1,5 +1,6 @@
 <script setup>
 import SimulationPagerButton from '@/components/SimulationPagerButton.vue';
+import SimulationPagerStepView from '@/components/SimulationPagerStepView.vue';
 
 defineProps({
     page: {
@@ -20,16 +21,11 @@ defineEmits(['previous', 'next', 'first', 'last'])
         <div id="simulation-pager-switcher">
             <simulation-pager-button :enabled="page > 0"
                                      @step="$emit('previous')" @max="$emit('first')"
-                                     step-label="&lt;" max-label="&lt;&lt;"/>
-            <div id="current-page">
-                {{ page + 1 }}
-            </div>
-            <div id="max-pages">
-                / {{ maxPages }}
-            </div>
+                                     step-label="&lt;" max-label="«"/>
+            <simulation-pager-step-view :page="page" :max-pages="maxPages"/>
             <simulation-pager-button :enabled="page < maxPages - 1"
                                      @step="$emit('next')" @max="$emit('last')"
-                                     step-label="&gt;" max-label="&gt;&gt;"/>
+                                     step-label="&gt;" max-label="»"/>
         </div>
         <div id="current-page-description">
             Some description of current page
@@ -42,6 +38,7 @@ defineEmits(['previous', 'next', 'first', 'last'])
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2em;
     }
 
     #simulation-pager-switcher {
@@ -50,14 +47,7 @@ defineEmits(['previous', 'next', 'first', 'last'])
         align-items: end;
         gap: 1em;
     }
-
-    #current-page {
-        font-weight: bold;
-        font-size: 2em;
-    }
-
-    #max-pages {
+    #current-page-description {
         font-weight: lighter;
-        font-size: .9em;
     }
 </style>
