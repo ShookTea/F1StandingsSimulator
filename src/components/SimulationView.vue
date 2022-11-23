@@ -18,7 +18,9 @@ export default {
     components: { SimulationSeasonView },
     data() {
         return {
-            options: Object.keys(allYears).map(year => ({ text: `Season ${year}`, value: year })),
+            options: Object.keys(allYears)
+                .sort().reverse()
+                .map(year => ({ text: `Season ${year}`, value: year })),
             selectedYear: newestYear,
         }
     },

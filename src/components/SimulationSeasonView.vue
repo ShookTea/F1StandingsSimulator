@@ -24,7 +24,12 @@ defineProps({
 export default {
     data() {
         return {
-            page: 0
+            page: 0,
+        }
+    },
+    watch: {
+        seasonData() {
+            this.page = 0;
         }
     }
 }
