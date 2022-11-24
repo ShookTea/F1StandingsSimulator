@@ -1,5 +1,8 @@
+// @ts-ignore
 import data2021 from './2021.data';
+// @ts-ignore
 import data2022 from './2022.data';
+// @ts-ignore
 import data2023 from './2023.data';
 
 const allYears = {
