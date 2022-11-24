@@ -5,7 +5,7 @@ import data2023 from './2023.data';
 const allYears = {
     2021: data2021,
     2022: data2022,
-    2024: data2023,
+    2023: data2023,
 }
 
 export default allYears;

@@ -33,6 +33,9 @@ function convert(input, year) {
         ));
     }
 
+    const finalOrder = result[result.length - 1].standings;
+
+
     return result;
 }
 
@@ -89,7 +92,7 @@ function calculateResults(year, input, races, remainingWins, maxRemainingPoints,
     const roundName = nextRound === null ? 'End of season' : 'Before ' + nextRound.label;
 
     return {
-        result: sorted,
+        standings: sorted,
         roundName,
     }
 }
