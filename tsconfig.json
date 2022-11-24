@@ -4,6 +4,8 @@
     "module": "commonjs",
     "paths": {
       "@/*": [ "./src/*" ]
-    }
+    },
+    "allowJs": true,
+    "skipLibCheck": true
   }
 }
