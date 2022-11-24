@@ -1,3 +1,5 @@
+import DriverStanding from './DriverStanding';
+
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
 export default {
@@ -66,14 +68,14 @@ function calculateResults(year, input, races, remainingWins, maxRemainingPoints,
 
     let result = [];
 
-    Object.keys(dataResult).forEach((driver) => {
+    dataResult.forEach((entry) => {
         result.push({
-            driver,
-            uuid: dataResult[driver].uuid,
-            temporary: dataResult[driver].temporary,
-            points: dataResult[driver].points,
-            maxPoints: dataResult[driver].points + maxRemainingPoints,
-            racePositions: dataResult[driver].positionsCount,
+            driver: entry.driver,
+            uuid: entry.uuid,
+            temporary: entry.temporary,
+            points: entry.points,
+            maxPoints: entry.points + maxRemainingPoints,
+            racePositions: entry.racePositions,
             position: 0,
             maxPosition: 0,
             minPosition: 0,
@@ -132,48 +134,23 @@ function buildComparator(pointsSupplier) {
     }
 }
 
-function calculateResultAfterRaces(year, input, races) {
+function calculateResultAfterRaces(year: number, input: DataInput, races: Race[]): DriverStanding[] {
     const result = prepareEmptyResults(input);
 
-    for (const { type, fastestLap, positions, code } of races) {
-        const pointSchema = input.pointSchemas[type];
-
-        for (let i = 0; i < positions.length; i++) {
-            const driver = positions[i];
-            const position = i + 1;
-
-            if (!result.hasOwnProperty(driver)) {
-                throw new Error(`Non-existing driver ${driver} in race code ${code} [${type}], year ${year}`)
-            }
-
-            result[driver].points += pointSchema.points[position - 1] ?? 0;
-
-            if (pointSchema.positionsCount) {
-                if (!result[driver].positionsCount.hasOwnProperty(position)) {
-                    result[driver].positionsCount[position] = 0;
-                }
-                result[driver].positionsCount[position]++;
-            }
-
-            if (position <= pointSchema.fastestLap.maxPosition && driver === fastestLap) {
-                result[driver].points += pointSchema.fastestLap.value;
-            }
-        }
+    for (const race of races) {
+        result.forEach(entry => entry.addRaceResult(input, race));
     }
 
     return result;
 }
 
-function prepareEmptyResults(input) {
-    const drivers = Object.keys(input.drivers)
-    const result = {};
+function prepareEmptyResults(input): DriverStanding[] {
+    const drivers: Driver[] = Object.keys(input.drivers)
+    const result: DriverStanding[] = [];
     for (const driver of drivers) {
-        result[driver] = {
-            points: 0,
-            positionsCount: {},
-            uuid: input.drivers[driver].uuid,
-            temporary: input.drivers[driver].temporary ?? false,
-        }
+        result.push(
+            new DriverStanding(driver, input.drivers[driver].uuid, input.drivers[driver].temporary ?? false)
+        );
     }
 
     return result;
