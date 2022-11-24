@@ -1,14 +1,14 @@
-const fileRegex = /([0-9]{4})\.data$/
+const fileRegex: RegExp = /([0-9]{4})\.data$/
 
 export default {
     name: 'data-build',
-    transform(src, id) {
+    transform(src: string, id: string): string {
         if (!fileRegex.test(id)) {
             return;
         }
-        const data = JSON.parse(src);
-        const year = fileRegex.exec(id)[1]
-        const converted = convert(data, year)
+        const data: DataInput = JSON.parse(src);
+        const year: number = parseInt(fileRegex.exec(id)[1]);
+        const converted: Season = convert(data, year)
 
         return 'export default ' + JSON.stringify(converted);
     }
