@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import allYears, { newestYear } from '@/data/sim/simData';
 import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
 
