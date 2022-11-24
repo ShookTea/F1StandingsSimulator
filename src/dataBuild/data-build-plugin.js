@@ -33,10 +33,19 @@ function convert(input, year) {
         ));
     }
 
-    const finalOrder = result[result.length - 1].standings;
+    const finalOrder = result[result.length - 1].standings.map(s => s.driver);
 
+    result.map(entry => sortByFinalOrder(entry, finalOrder));
 
     return result;
+}
+
+function sortByFinalOrder(entry, finalOrder) {
+    const standings = entry.standings;
+    standings.sort((a, b) => finalOrder.indexOf(a.driver) - finalOrder.indexOf(b.driver));
+    entry.standings = standings;
+
+    return entry;
 }
 
 function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
