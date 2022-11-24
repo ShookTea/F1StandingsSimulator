@@ -1,10 +1,8 @@
-<script setup>
-defineProps({
-    data: {
-        type: Object,
-        required: true
-    }
-})
+<script setup lang="ts">
+interface Props {
+    data: Round
+}
+defineProps<Props>()
 </script>
 <template>
     <div class="simulation-table">
@@ -32,30 +30,29 @@ defineProps({
     </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     computed: {
-        filteredData() {
+        filteredData(): Standing[] {
             return this.data.standings.filter(entry => !entry.temporary || Object.keys(entry.racePositions).length > 0);
         },
-        positionsCount() {
+        positionsCount(): number {
             return this.filteredData.length;
         },
     },
     methods: {
-        classForPosition(entry, displayPosition) {
-            const { position, minPosition, maxPosition } = entry;
-            const positionSolved = minPosition === maxPosition;
-            const displayInMargin = displayPosition <= minPosition && displayPosition >= maxPosition;
-            const displayCurrent = displayPosition === position;
+        classForPosition(entry: Standing, displayPosition: number): string {
+            const positionSolved: boolean = entry.minPosition === entry.maxPosition;
+            const displayInMargin: boolean = displayPosition <= entry.minPosition && displayPosition >= entry.maxPosition;
+            const displayCurrent: boolean = displayPosition === entry.position;
 
             if (positionSolved && displayCurrent) {
                 return 'solved';
             }
-            if (displayInMargin && displayPosition === minPosition) {
+            if (displayInMargin && displayPosition === entry.minPosition) {
                 return displayCurrent ? 'min-current' : 'min';
             }
-            if (displayInMargin && displayPosition === maxPosition) {
+            if (displayInMargin && displayPosition === entry.maxPosition) {
                 return displayCurrent ? 'max-current' : 'max';
             }
             if (displayInMargin) {
