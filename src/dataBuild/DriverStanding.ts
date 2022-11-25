@@ -1,25 +1,30 @@
+import { DataInput, Race } from './dataInputTypes';
+import PointSchema from './PointSchema';
+
 export default class DriverStanding {
-    driver: Driver;
-    uuid: string;
-    temporary: boolean;
+    readonly driver: string;
+    readonly uuid: string;
+    readonly temporary: boolean;
     points: number = 0;
     racePositions: RacePositionMap = {};
 
-    constructor(driver: string, uuid: string, temporary: boolean) {
+    constructor(driver: string, uuid: string, temporary: boolean)
+    {
         this.driver = driver;
         this.uuid = uuid;
         this.temporary = temporary;
     }
 
-    addRaceResult(input: DataInput, race: Race): void {
+    addRaceResult(input: DataInput, race: Race): void
+    {
         const index: number = race.positions.indexOf(this.driver);
         if (index === -1) {
             return;
         }
-        const pointSchema: PointSchema = input.pointSchemas[race.type];
+        const pointSchema: PointSchema = new PointSchema(input.pointSchemas[race.type]);
         const position: number = index + 1;
 
-        this.points += pointSchema.points[index] ?? 0;
+        this.points += pointSchema.getPointsForPosition(position, this.driver === race.fastestLap);
         if (pointSchema.positionsCount) {
             if (!this.racePositions.hasOwnProperty(position)) {
                 this.racePositions[position] = 0;

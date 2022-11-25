@@ -1,4 +1,5 @@
 import DriverStanding from './DriverStanding';
+import { DataInput, Race } from '@/dataBuild/dataInputTypes';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -145,7 +146,7 @@ function calculateResultAfterRaces(year: number, input: DataInput, races: Race[]
 }
 
 function prepareEmptyResults(input): DriverStanding[] {
-    const drivers: Driver[] = Object.keys(input.drivers)
+    const drivers: string[] = Object.keys(input.drivers)
     const result: DriverStanding[] = [];
     for (const driver of drivers) {
         result.push(

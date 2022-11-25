@@ -1,45 +1,45 @@
 type Driver = string
 type PointSchemaId = string
 
-interface DataInput {
+export interface DataInput {
     drivers: DriverMap
     pointSchemas: PointSchemaMap
     races: Race[]
     remainingRaces: RemainingRace[]
 }
 
-interface AbstractRace {
+export interface AbstractRace {
     code: String
     type: PointSchemaId
     label: String
 }
 
-interface RemainingRace extends AbstractRace {}
+export interface RemainingRace extends AbstractRace {}
 
-interface Race extends AbstractRace {
+export interface Race extends AbstractRace {
     fastestLap: Driver
     positions: Driver[]
 }
 
-interface PointSchemaMap {
+export interface PointSchemaMap {
     [index: PointSchemaId]: PointSchema
 }
 
-interface PointSchema {
+export interface PointSchema {
     points: number[]
     fastestLap: FastestLapPointDetails
     positionsCount: boolean
 }
 
-interface FastestLapPointDetails {
+export interface FastestLapPointDetails {
     value: number
     maxPosition: number
 }
 
-interface DriverMap {
+export interface DriverMap {
     [index: Driver]: DriverEntry
 }
 
-interface DriverEntry {
+export interface DriverEntry {
     uuid: string
 }
