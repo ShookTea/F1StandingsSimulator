@@ -1,9 +1,6 @@
 name: Deploy to Github Pages
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
+on: [ push, workflow_dispatch ]
 
 permissions:
   contents: read
@@ -15,10 +12,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  test-and-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,6 +31,14 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: './dist'
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: test-and-build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
