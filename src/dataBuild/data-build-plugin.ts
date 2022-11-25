@@ -10,14 +10,13 @@ export default {
             return;
         }
         const data: DataInput = JSON.parse(src);
-        const year: number = parseInt(fileRegex.exec(id)[1]);
-        const converted: Season = convert(data, year)
+        const converted: Season = convert(data)
 
         return 'export default ' + JSON.stringify(converted);
     }
 };
 
-function convert(input, year) {
+function convert(input) {
     const { races, pointSchemas, remainingRaces } = input;
 
     const result = [];
@@ -27,12 +26,10 @@ function convert(input, year) {
         const remainingRacesInSeason = races.slice(i).concat(remainingRaces)
         const maxPoints = calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas)
         result.push(calculateResults(
-            year,
             input,
             racesPart === undefined ? [] : racesPart,
             remainingRacesInSeason.length,
             maxPoints,
-            remainingRacesInSeason.length > 0 ? remainingRacesInSeason[0] : null,
         ));
     }
 
@@ -64,7 +61,7 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
     return maxPoints;
 }
 
-function calculateResults(year, input, races, remainingWins, maxRemainingPoints, nextRound) {
+function calculateResults(input, races, remainingWins, maxRemainingPoints) {
     const dataResult = calculateResultAfterRaces(input, races);
 
     let result = [];
