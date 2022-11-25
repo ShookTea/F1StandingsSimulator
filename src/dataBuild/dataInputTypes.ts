@@ -44,3 +44,5 @@ export interface DriverEntry {
     uuid: string
     temporary?: boolean
 }
+
+// export type PointSupplier = ()
