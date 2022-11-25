@@ -36,4 +36,17 @@ export default class DriverStanding {
             this.points += pointSchema.fastestLap.value;
         }
     }
+
+    static createEmptyStandings(input: DataInput): DriverStanding[]
+    {
+        const drivers: string[] = Object.keys(input.drivers)
+        const standings: DriverStanding[] = [];
+        for (const driver of drivers) {
+            standings.push(
+                new DriverStanding(driver, input.drivers[driver].uuid, input.drivers[driver].temporary ?? false)
+            );
+        }
+
+        return standings;
+    }
 }

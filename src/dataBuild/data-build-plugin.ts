@@ -65,7 +65,7 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
 }
 
 function calculateResults(year, input, races, remainingWins, maxRemainingPoints, nextRound) {
-    const dataResult = calculateResultAfterRaces(year, input, races);
+    const dataResult = calculateResultAfterRaces(input, races);
 
     let result = [];
 
@@ -101,7 +101,7 @@ function calculateResults(year, input, races, remainingWins, maxRemainingPoints,
 
     const sorted = result.sort((a, b) => a.position - b.position);
 
-    const roundName = nextRound === null ? 'End of season' : 'Before ' + nextRound.label;
+    const roundName = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
 
     return {
         standings: sorted,
@@ -135,24 +135,12 @@ function buildComparator(pointsSupplier) {
     }
 }
 
-function calculateResultAfterRaces(year: number, input: DataInput, races: Race[]): DriverStanding[] {
-    const result = prepareEmptyResults(input);
+function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStanding[] {
+    const standings = DriverStanding.createEmptyStandings(input)
 
     for (const race of races) {
-        result.forEach(entry => entry.addRaceResult(input, race));
+        standings.forEach(entry => entry.addRaceResult(input, race));
     }
 
-    return result;
-}
-
-function prepareEmptyResults(input): DriverStanding[] {
-    const drivers: string[] = Object.keys(input.drivers)
-    const result: DriverStanding[] = [];
-    for (const driver of drivers) {
-        result.push(
-            new DriverStanding(driver, input.drivers[driver].uuid, input.drivers[driver].temporary ?? false)
-        );
-    }
-
-    return result;
+    return standings;
 }

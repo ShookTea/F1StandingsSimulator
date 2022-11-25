@@ -42,4 +42,5 @@ export interface DriverMap {
 
 export interface DriverEntry {
     uuid: string
+    temporary?: boolean
 }
