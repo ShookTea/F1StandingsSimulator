@@ -1,6 +1,7 @@
 {
   "name": "f1sim",
   "version": "0.0.0",
+  "homepage": "https://shooktea.github.io/F1StandingsSimulator/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
