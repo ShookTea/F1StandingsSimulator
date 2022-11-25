@@ -4,7 +4,7 @@
   "homepage": "https://shooktea.github.io/F1StandingsSimulator/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build--base=./",
+    "build": "vite build --base=\"./\"",
     "preview": "vite preview",
     "test": "npm run test:ts",
     "test:ts": "vue-tsc --noEmit"
