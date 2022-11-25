@@ -73,7 +73,7 @@ function calculateResults(input, races, remainingWins, maxRemainingPoints) {
             temporary: entry.temporary,
             points: entry.points,
             maxPoints: entry.points + maxRemainingPoints,
-            racePositions: entry.racePositions,
+            racePositions: entry.racePositions.racePositions,
             position: 0,
             maxPosition: 0,
             minPosition: 0,
