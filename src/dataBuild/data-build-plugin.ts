@@ -1,6 +1,7 @@
 import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, Race } from './/dataInputTypes';
-import DriverSimulationResult from './/DriverSimulationResult';
+import DriverSimulationResult from './DriverSimulationResult';
+import DriverStandingSorter from './DriverStandingSorter';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -73,8 +74,9 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, maxRemainingPoints, remainingCountingRaces));
 
+    const comparator = DriverStandingSorter.buildSorter();
     driverSimulationResults
-        .sort((a, b) => a.compareWith(b))
+        .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);
 
     driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));

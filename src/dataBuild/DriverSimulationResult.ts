@@ -1,6 +1,5 @@
-import DriverStanding from '@/dataBuild/DriverStanding';
-
-type PointsSupplier = (dsr: DriverSimulationResult) => number;
+import DriverStanding from './DriverStanding';
+import DriverStandingSorter from './DriverStandingSorter';
 
 export default class DriverSimulationResult {
     readonly standing: DriverStanding;
@@ -35,25 +34,14 @@ export default class DriverSimulationResult {
 
     calculatePossiblePositions(allResults: DriverSimulationResult[]): void
     {
-        const maxPositionPointsSupplier: PointsSupplier = dsr => dsr === this ? dsr.maxPoints : dsr.standing.points;
-        const minPositionPointsSupplier: PointsSupplier = dsr => dsr === this ? dsr.standing.points : dsr.maxPoints;
+        const bestCaseSorter = DriverStandingSorter.buildBestResultSorter(this);
+        const worstCaseSorter = DriverStandingSorter.buildWorstResultSorter(this);
 
         this.maxPosition = [...allResults]
-            .sort((a, b) => a.compareWith(b, maxPositionPointsSupplier))
+            .sort((a, b) => bestCaseSorter.compare(a, b))
             .indexOf(this) + 1;
         this.minPosition = [...allResults]
-            .sort((a, b) => a.compareWith(b, minPositionPointsSupplier))
+            .sort((a, b) => worstCaseSorter.compare(a, b))
             .indexOf(this) + 1;
-    }
-
-    compareWith(other: DriverSimulationResult, pointsSupplier: PointsSupplier = dsr => dsr.standing.points): number
-    {
-        const otherPoints: number = pointsSupplier(other);
-        const thisPoints: number = pointsSupplier(this);
-        if (otherPoints !== thisPoints) {
-            return otherPoints - thisPoints;
-        }
-
-        return this.standing.racePositions.compareWith(other.standing.racePositions);
     }
 }
