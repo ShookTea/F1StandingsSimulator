@@ -1,5 +1,5 @@
 import DriverStanding from './DriverStanding';
-import { AbstractRace, DataInput, Race } from './/dataInputTypes';
+import { AbstractRace, DataInput, PointSchema, Race } from './dataInputTypes';
 import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
 
@@ -50,7 +50,8 @@ function sortByFinalOrder(entry, finalOrder) {
     return entry;
 }
 
-function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
+function calculateMaxAvailablePoints(remainingRacesInSeason: AbstractRace[], pointSchemas: PointSchema[]): number
+{
     let maxPoints = 0
     for (const { type } of remainingRacesInSeason) {
         const { points, fastestLap } = pointSchemas[type];
@@ -63,9 +64,10 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
     return maxPoints;
 }
 
-function calculateResults(input: DataInput, races: Race[], remainingRaces: AbstractRace[], maxRemainingPoints: number)
+function calculateResults(input: DataInput, races: Race[], remainingRaces: AbstractRace[], maxRemainingPoints: number): Round
 {
-    const dataResult = calculateResultAfterRaces(input, races);
+    const roundName: string = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
+    const dataResult: DriverStanding[] = calculateResultAfterRaces(input, races);
 
     const remainingCountingRaces: number = remainingRaces
         .filter(race => input.pointSchemas[race.type].positionsCount)
@@ -74,46 +76,17 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, maxRemainingPoints, remainingCountingRaces));
 
-    const comparator = DriverStandingSorter.buildSorter();
+    const comparator: DriverStandingSorter = DriverStandingSorter.buildSorter();
+
     driverSimulationResults
         .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);
 
     driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
 
-    const sorted: Standing[] = driverSimulationResults.map(d => d.convertToResultObject());
-
-    const roundName = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
-
     return {
-        standings: sorted,
+        standings: driverSimulationResults.map(d => d.convertToResultObject()),
         roundName,
-    }
-}
-
-function sortByPositions(results, pointsSupplier) {
-    return [...results]
-        .sort(buildComparator(pointsSupplier))
-        .map(entry => entry.driver)
-}
-
-function buildComparator(pointsSupplier) {
-    return (a, b) => {
-        const aPoints = pointsSupplier(a);
-        const bPoints = pointsSupplier(b);
-        if (aPoints !== bPoints) {
-            return bPoints - aPoints;
-        }
-
-        for (let i = 1; i < 50; i++) {
-            const aPosition = a.racePositions[i] ?? 0;
-            const bPosition = b.racePositions[i] ?? 0;
-            if (aPosition !== bPosition) {
-                return bPosition - aPosition;
-            }
-        }
-
-        return 0;
     }
 }
 

@@ -20,7 +20,7 @@ defineProps<Props>()
             </thead>
             <tbody>
                 <tr v-for="(entry, index) in filteredData">
-                    <td class="pre-cell">{{ index + 1 }}</td>
+                    <td class="pre-cell" @click="console.log({entry})">{{ index + 1 }}</td>
                     <td class="pre-cell">{{ entry.driver }}</td>
                     <td class="pre-cell">{{ entry.points }}</td>
                     <td v-for="index in positionsCount" :key="index" class="cell" :class="classForPosition(entry, index)"><div class="cell-interior"></div></td>

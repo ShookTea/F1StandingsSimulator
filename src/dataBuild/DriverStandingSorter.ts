@@ -55,6 +55,10 @@ export default class DriverStandingSorter {
 
     private getPoints(dsr: DriverSimulationResult): number
     {
+        if (dsr.standing.temporary) {
+            return dsr.standing.points;
+        }
+
         if (this.shouldUseBestValue(dsr)) {
             return dsr.maxPoints;
         }
@@ -64,6 +68,10 @@ export default class DriverStandingSorter {
 
     private getOccurrencesInPosition(dsr: DriverSimulationResult, position: number, worstCasePosition: number): number
     {
+        if (dsr.standing.temporary) {
+            return dsr.standing.racePositions.getOccurrencesInPosition(position);
+        }
+
         if (this.shouldUseBestValue(dsr)) {
             return dsr.standing.racePositions.getOccurrencesInPosition(position) + (position === 1 ? dsr.remainingCountingRaces : 0);
         }

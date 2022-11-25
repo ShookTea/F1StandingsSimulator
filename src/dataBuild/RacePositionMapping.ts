@@ -15,7 +15,7 @@ export default class RacePositionMapping {
 
     getLowestPosition(): number
     {
-        return Object.keys(this.racePositions).map(parseInt).sort().reverse()[0] ?? 0;
+        return Object.keys(this.racePositions).map(i => parseInt(i)).sort().reverse()[0] ?? 0;
     }
 
     getOccurrencesInPosition(position: number): number
