@@ -9,7 +9,7 @@ defineProps<Props>()
         <table>
             <thead>
                 <tr>
-                    <th rowspan="2">Pos</th>
+                    <th rowspan="2">Current Position</th>
                     <th rowspan="2">Driver</th>
                     <th rowspan="2">Points</th>
                     <th :colspan="filteredData.length">Possible positions at the end of season</th>
@@ -19,8 +19,8 @@ defineProps<Props>()
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="entry in filteredData">
-                    <td class="pre-cell">{{ entry.position }}</td>
+                <tr v-for="(entry, index) in filteredData">
+                    <td class="pre-cell">{{ index + 1 }}</td>
                     <td class="pre-cell">{{ entry.driver }}</td>
                     <td class="pre-cell">{{ entry.points }}</td>
                     <td v-for="index in positionsCount" :key="index" class="cell" :class="classForPosition(entry, index)"><div class="cell-interior"></div></td>

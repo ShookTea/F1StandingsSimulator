@@ -33,32 +33,27 @@ export default class DriverSimulationResult {
         };
     }
 
+    calculatePossiblePositions(allResults: DriverSimulationResult[]): void
+    {
+        const maxPositionPointsSupplier: PointsSupplier = dsr => dsr === this ? dsr.maxPoints : dsr.standing.points;
+        const minPositionPointsSupplier: PointsSupplier = dsr => dsr === this ? dsr.standing.points : dsr.maxPoints;
+
+        this.maxPosition = [...allResults]
+            .sort((a, b) => a.compareWith(b, maxPositionPointsSupplier))
+            .indexOf(this) + 1;
+        this.minPosition = [...allResults]
+            .sort((a, b) => a.compareWith(b, minPositionPointsSupplier))
+            .indexOf(this) + 1;
+    }
+
     compareWith(other: DriverSimulationResult, pointsSupplier: PointsSupplier = dsr => dsr.standing.points): number
     {
         const otherPoints: number = pointsSupplier(other);
         const thisPoints: number = pointsSupplier(this);
-        if (other.standing.points !== this.standing.points) {
-            return other.standing.points - this.standing.points;
+        if (otherPoints !== thisPoints) {
+            return otherPoints - thisPoints;
         }
 
         return this.standing.racePositions.compareWith(other.standing.racePositions);
-    }
-
-    compareWithLookingForBestResult(other: DriverSimulationResult): number
-    {
-        if (other.standing.points !== this.maxPoints) {
-            return other.standing.points - this.maxPoints;
-        }
-
-        return this.standing.racePositions.compareWithLookingForBestResult(other.standing.racePositions, this.remainingCountingRaces);
-    }
-
-    compareWithLookingForWorstResult(other: DriverSimulationResult): number
-    {
-        if (other.maxPoints !== this.standing.points) {
-            return other.maxPoints - this.standing.points;
-        }
-
-        return this.standing.racePositions.compareWithLookingForWorstResult(other.standing.racePositions, this.remainingCountingRaces);
     }
 }

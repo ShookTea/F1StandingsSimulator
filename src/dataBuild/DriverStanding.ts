@@ -28,10 +28,6 @@ export default class DriverStanding {
 
         this.points += pointSchema.getPointsForPosition(position, this.driver === race.fastestLap);
         this.racePositions.registerPosition(position, pointSchema);
-
-        if (position <= pointSchema.fastestLap.maxPosition && this.driver === race.fastestLap) {
-            this.points += pointSchema.fastestLap.value;
-        }
     }
 
     static createEmptyStandings(input: DataInput): DriverStanding[]

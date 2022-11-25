@@ -66,22 +66,6 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 {
     const dataResult = calculateResultAfterRaces(input, races);
 
-    let result = [];
-
-    dataResult.forEach((entry) => {
-        result.push({
-            driver: entry.driver,
-            uuid: entry.uuid,
-            temporary: entry.temporary,
-            points: entry.points,
-            maxPoints: entry.points + maxRemainingPoints,
-            racePositions: entry.racePositions.racePositions,
-            position: 0,
-            maxPosition: 0,
-            minPosition: 0,
-        })
-    })
-
     const remainingCountingRaces: number = remainingRaces
         .filter(race => input.pointSchemas[race.type].positionsCount)
         .length;
@@ -93,6 +77,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
         .sort((a, b) => a.compareWith(b))
         .forEach((standing, index) => standing.position = index + 1);
 
+    driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
 
     const sorted: Standing[] = driverSimulationResults.map(d => d.convertToResultObject());
 
