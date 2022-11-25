@@ -1,5 +1,7 @@
 import DriverStanding from '@/dataBuild/DriverStanding';
 
+type PointsSupplier = (dsr: DriverSimulationResult) => number;
+
 export default class DriverSimulationResult {
     readonly standing: DriverStanding;
     readonly maxPoints: number;
@@ -16,8 +18,25 @@ export default class DriverSimulationResult {
         this.remainingCountingRaces = remainingCountingRaces;
     }
 
-    compareWith(other: DriverSimulationResult): number
+    convertToResultObject(): Standing
     {
+        return {
+            driver: this.standing.driver,
+            uuid: this.standing.uuid,
+            temporary: this.standing.temporary,
+            points: this.standing.points,
+            maxPoints: this.maxPoints,
+            position: this.position,
+            maxPosition: this.maxPosition,
+            minPosition: this.minPosition,
+            racePositions: this.standing.racePositions.racePositions,
+        };
+    }
+
+    compareWith(other: DriverSimulationResult, pointsSupplier: PointsSupplier = dsr => dsr.standing.points): number
+    {
+        const otherPoints: number = pointsSupplier(other);
+        const thisPoints: number = pointsSupplier(this);
         if (other.standing.points !== this.standing.points) {
             return other.standing.points - this.standing.points;
         }

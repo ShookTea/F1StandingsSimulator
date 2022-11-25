@@ -93,23 +93,8 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
         .sort((a, b) => a.compareWith(b))
         .forEach((standing, index) => standing.position = index + 1);
 
-    const sortedByPosition = sortByPositions(result, r => r.points);
 
-    result = result.map(
-        (entry) => {
-            const driver = entry.driver;
-            const sortedForBestCase = sortByPositions(result, r => r.driver === driver ? r.maxPoints : r.points);
-            const sortedForWorstCase = sortByPositions(result, r => r.driver === driver ? r.points : r.maxPoints);
-
-            entry.position = sortedByPosition.indexOf(driver) + 1;
-            entry.maxPosition = sortedForBestCase.indexOf(driver) + 1;
-            entry.minPosition = sortedForWorstCase.indexOf(driver) + 1;
-
-            return entry;
-        }
-    );
-
-    const sorted = result.sort((a, b) => a.position - b.position);
+    const sorted: Standing[] = driverSimulationResults.map(d => d.convertToResultObject());
 
     const roundName = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
 
