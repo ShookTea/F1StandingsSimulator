@@ -1,5 +1,6 @@
 import DriverStanding from './DriverStanding';
-import { DataInput, Race } from '@/dataBuild/dataInputTypes';
+import { AbstractRace, DataInput, Race } from './/dataInputTypes';
+import DriverSimulationResult from './/DriverSimulationResult';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -28,7 +29,7 @@ function convert(input) {
         result.push(calculateResults(
             input,
             racesPart === undefined ? [] : racesPart,
-            remainingRacesInSeason.length,
+            remainingRacesInSeason,
             maxPoints,
         ));
     }
@@ -61,7 +62,8 @@ function calculateMaxAvailablePoints(remainingRacesInSeason, pointSchemas) {
     return maxPoints;
 }
 
-function calculateResults(input, races, remainingWins, maxRemainingPoints) {
+function calculateResults(input: DataInput, races: Race[], remainingRaces: AbstractRace[], maxRemainingPoints: number)
+{
     const dataResult = calculateResultAfterRaces(input, races);
 
     let result = [];
@@ -79,6 +81,17 @@ function calculateResults(input, races, remainingWins, maxRemainingPoints) {
             minPosition: 0,
         })
     })
+
+    const remainingCountingRaces: number = remainingRaces
+        .filter(race => input.pointSchemas[race.type].positionsCount)
+        .length;
+
+    const driverSimulationResults: DriverSimulationResult[] = dataResult
+        .map(result => new DriverSimulationResult(result, maxRemainingPoints, remainingCountingRaces));
+
+    driverSimulationResults
+        .sort((a, b) => a.compareWith(b))
+        .forEach((standing, index) => standing.position = index + 1);
 
     const sortedByPosition = sortByPositions(result, r => r.points);
 

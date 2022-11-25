@@ -37,4 +37,30 @@ export default class RacePositionMapping {
 
         return 0;
     }
+
+    compareWithLookingForBestResult(other: RacePositionMapping, remainingCountingRaces: number): number
+    {
+        for (let position = 1; position <= 100; position++) {
+            const currentValue = this.getOccurencesInPosition(position) + (position === 1 ? remainingCountingRaces : 0);
+            const otherValue = other.getOccurencesInPosition(position) + (position === 100 ? remainingCountingRaces : 0);
+            if (currentValue !== otherValue) {
+                return otherValue - currentValue;
+            }
+        }
+
+        return 0;
+    }
+
+    compareWithLookingForWorstResult(other: RacePositionMapping, remainingCountingRaces: number): number
+    {
+        for (let position = 1; position <= 100; position++) {
+            const currentValue = this.getOccurencesInPosition(position) + (position === 100 ? remainingCountingRaces : 0);
+            const otherValue = other.getOccurencesInPosition(position) + (position === 1 ? remainingCountingRaces : 0);
+            if (currentValue !== otherValue) {
+                return otherValue - currentValue;
+            }
+        }
+
+        return 0;
+    }
 }
