@@ -7,7 +7,7 @@ import data2022 from './2022.data';
 // @ts-ignore
 import data2023 from './2023.data';
 import { SportData } from '@/data/sim/data';
-import SimulationView from '@/components/SimulationView.vue';
+import FormulaPageView from '@/components/formula/FormulaPageView.vue';
 
 interface F1SimulationData {
     2021: Season
@@ -37,7 +37,7 @@ export const F1Data: SportData<Season> = {
         key: 'step',
         defaultValue: 1
     }],
-    component: SimulationView,
+    component: FormulaPageView,
 }
 
 export const F2Data: SportData<Season> = {
@@ -52,7 +52,7 @@ export const F2Data: SportData<Season> = {
         key: 'step',
         defaultValue: 1
     }],
-    component: SimulationView,
+    component: FormulaPageView,
 }
 
 export const availableYears = Object.keys(allYears).sort();

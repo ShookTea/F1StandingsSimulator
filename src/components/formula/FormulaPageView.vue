@@ -1,19 +1,18 @@
 <template>
     <div class="simulation-view">
-        <simulation-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.length"/>
-        <simulation-table :data="currentPage"/>
+        <formula-round-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.length"/>
+        <formula-round-table :round="currentPage"/>
     </div>
 </template>
 
 <script lang="ts">
 import allData, { SeasonData } from '@/data/sim/data';
-import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
-import SimulationPager from '@/components/SimulationPager.vue';
 import { Round, Season } from '@/data/sim/f1/simDataTypes';
-import SimulationTable from '@/components/SimulationTable.vue';
+import FormulaRoundPager from '@/components/formula/FormulaRoundPager.vue';
+import FormulaRoundTable from '@/components/formula/FormulaRoundTable.vue';
 
 export default {
-    components: { SimulationTable, SimulationPager, SimulationSeasonView },
+    components: { FormulaRoundTable, FormulaRoundPager },
     computed: {
         seasonData(): SeasonData<Season> {
             const sportData = allData.find(entry => entry.routePart === this.$route.meta.sport);
@@ -32,12 +31,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.simulation-view-selector {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: .2em;
 }
 
 .simulation-view-selector label {

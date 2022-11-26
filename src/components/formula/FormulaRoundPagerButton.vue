@@ -1,18 +1,10 @@
-<script setup>
-defineProps({
-    enabled: {
-        type: Boolean,
-        required: true
-    },
-    stepLabel: {
-        type: String,
-        required: true
-    },
-    maxLabel: {
-        type: String,
-        required: true,
-    }
-})
+<script lang="ts" setup>
+interface Props {
+    enabled: boolean
+    stepLabel: string
+    maxLabel: string
+}
+defineProps<Props>();
 defineEmits(['step', 'max'])
 </script>
 
@@ -38,30 +30,30 @@ defineEmits(['step', 'max'])
 </template>
 
 <style scoped>
-    .pager-control {
-        display: flex;
-        flex-direction: row;
-    }
+.pager-control {
+    display: flex;
+    flex-direction: row;
+}
 
-    .button {
-        display: block;
-        text-decoration: none;
-        border: 0;
-        padding: 0 2em;
-        text-align: center;
-    }
+.button {
+    display: block;
+    text-decoration: none;
+    border: 0;
+    padding: 0 2em;
+    text-align: center;
+}
 
-    .pager-enabled .button {
-        background-color: #e0e0e0;
-        cursor: pointer;
-    }
+.pager-enabled .button {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
 
-    .step-change .button {
-        font-size: 1.5em;
-    }
+.step-change .button {
+    font-size: 1.5em;
+}
 
-    .max-change .button {
-        font-size: .6em;
-        margin-top: .5em;
-    }
+.max-change .button {
+    font-size: .6em;
+    margin-top: .5em;
+}
 </style>

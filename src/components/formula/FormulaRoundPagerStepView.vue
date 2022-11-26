@@ -1,14 +1,11 @@
-<script setup>
-defineProps({
-    page: {
-        type: Number,
-        required: true,
-    },
-    maxPages: {
-        type: Number,
-        required: true,
-    }
-})
+<script lang="ts" setup>
+interface Props {
+    page: number
+    maxPages: number
+}
+
+defineProps<Props>();
+
 </script>
 <template>
     <div class="pager-step-view">
