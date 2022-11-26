@@ -20,10 +20,10 @@ defineEmits(['step', 'max'])
     <div class="pager-control">
         <div v-if="enabled" class="pager-enabled">
             <div class="step-change">
-                <a class="button" href="#" @click="$emit('step')">{{ stepLabel }}</a>
+                <span class="button" @click="$emit('step')">{{ stepLabel }}</span>
             </div>
             <div class="max-change">
-                <a class="button" href="#" @click="$emit('max')">{{ maxLabel }}</a>
+                <span class="button" @click="$emit('max')">{{ maxLabel }}</span>
             </div>
         </div>
         <div v-else class="pager-disabled">
@@ -53,6 +53,7 @@ defineEmits(['step', 'max'])
 
     .pager-enabled .button {
         background-color: #e0e0e0;
+        cursor: pointer;
     }
 
     .step-change .button {

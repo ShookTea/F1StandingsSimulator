@@ -9,18 +9,18 @@ interface Props {
 }
 
 defineProps<Props>();
-defineEmits(['previous', 'next', 'first', 'last']);
 
 </script>
 <template>
     <div id="simulation-pager">
         <div id="simulation-pager-switcher">
+            {{ $route.matched[0].path }}
             <simulation-pager-button :enabled="page > 1"
-                                     @step="$emit('previous')" @max="$emit('first')"
+                                     @step="goTo(page - 1)" @max="goTo(1)"
                                      step-label="&lt;" max-label="«"/>
             <simulation-pager-step-view :page="page" :max-pages="maxPages"/>
-            <simulation-pager-button :enabled="page < maxPages - 1"
-                                     @step="$emit('next')" @max="$emit('last')"
+            <simulation-pager-button :enabled="page < maxPages"
+                                     @step=" goTo(page + 1)" @max="goTo(maxPages)"
                                      step-label="&gt;" max-label="»"/>
         </div>
         <div id="current-page-description">{{ label }}</div>
@@ -30,8 +30,15 @@ defineEmits(['previous', 'next', 'first', 'last']);
 <script lang="ts">
 export default {
     computed: {
-        page(): number {
-            return parseInt(this.$route.params[this.routeKey])
+        page() {
+            return parseInt(this.$route.params[this.routeKey]);
+        }
+    },
+    methods: {
+        async goTo(newPage: number) {
+            const pathTemplate: string = this.$route.matched[0].path;
+            const solvedPath: string = pathTemplate.replace(`:${this.routeKey}`, `${newPage}`);
+            this.$router.push(solvedPath);
         }
     }
 }
