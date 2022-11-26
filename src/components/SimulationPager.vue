@@ -14,7 +14,6 @@ defineProps<Props>();
 <template>
     <div id="simulation-pager">
         <div id="simulation-pager-switcher">
-            {{ $route.matched[0].path }}
             <simulation-pager-button :enabled="page > 1"
                                      @step="goTo(page - 1)" @max="goTo(1)"
                                      step-label="&lt;" max-label="«"/>

@@ -1,6 +1,5 @@
 <template>
     <div class="simulation-view">
-        <h3>{{ { meta: $route.meta, params: $route.params } }}</h3>
         <simulation-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.length"/>
         <simulation-table :data="currentPage"/>
     </div>
