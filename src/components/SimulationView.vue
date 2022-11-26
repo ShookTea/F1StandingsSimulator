@@ -1,31 +1,16 @@
 <template>
     <div class="simulation-view">
         <h3>{{ { meta: $route.meta, params: $route.params } }}</h3>
-        <div class="simulation-view-selector">
-            <label for="season-selector">Choose season:</label>
-            <select id="season-selector" v-model="selectedYear">
-                <option v-for="option in options" :value="option.value">{{ option.text }}</option>
-            </select>
-        </div>
         <simulation-season-view :season-data="seasonData"/>
     </div>
 </template>
 
 <script lang="ts">
-import allYears, { newestYear } from '@/data/sim/f1/simData';
 import allData from '@/data/sim/data';
 import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
 
 export default {
     components: { SimulationSeasonView },
-    data() {
-        return {
-            options: Object.keys(allYears)
-                .sort().reverse()
-                .map(year => ({ text: `Season ${year}`, value: year })),
-            selectedYear: newestYear,
-        }
-    },
     computed: {
         seasonData() {
             const sportData = allData.find(entry => entry.routePart === this.$route.meta.sport);
