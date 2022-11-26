@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-
-import { SportData } from '@/data/sim/data';
-
 interface Props {
     sportData: SportData<any>
     enabled: boolean

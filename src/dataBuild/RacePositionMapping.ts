@@ -1,5 +1,5 @@
 import PointSchema from '@/dataBuild/PointSchema';
-import { RacePositionMap } from '@/data/sim/simDataTypes';
+import { RacePositionMap } from '@/data/sim/f1/simDataTypes';
 
 export default class RacePositionMapping {
     racePositions: RacePositionMap = {};

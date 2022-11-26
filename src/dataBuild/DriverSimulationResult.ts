@@ -1,6 +1,6 @@
 import DriverStanding from './DriverStanding';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Standing } from '@/data/sim/simDataTypes';
+import { Standing } from '@/data/sim/f1/simDataTypes';
 
 export default class DriverSimulationResult {
     readonly standing: DriverStanding;
