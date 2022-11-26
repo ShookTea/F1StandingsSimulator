@@ -4,6 +4,9 @@ import SimulationView from '@/components/SimulationView.vue';
 
 <template>
   <main>
+      <header>
+          <h1>F1 season simulator</h1>
+      </header>
       <simulation-view/>
   </main>
 </template>
