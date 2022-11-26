@@ -2,21 +2,26 @@
     <header>
         <h1>F1 Season Simulator</h1>
         <div class="header-control-block">
-            <div @click="selected = 0" class="header-control-block-entry" :class="selected === 0 ? 'selected' : null">
-                Formula 1
-            </div>
-            <div @click="selected = 1" class="header-control-block-entry" :class="selected === 1 ? 'selected' : null">
-                Formula 2
-            </div>
+            <season-selector :enabled="option === 0" @enable="option = 0" label="Formula 1" :available-values="options"/>
+            <season-selector :enabled="option === 1" @enable="option = 1" label="Formula 2" :available-values="options"/>
         </div>
     </header>
 </template>
 
 <script lang="ts">
+import SeasonSelector from '@/components/header/SeasonSelector.vue';
 export default {
+    components: { SeasonSelector },
     data() {
         return {
-            selected: 0,
+            options: [{
+                text: 'Season 2022',
+                value: 2022,
+            }, {
+                text: 'Season 2021',
+                value: 2021,
+            }],
+            option: 0
         }
     }
 }
@@ -37,11 +42,5 @@ export default {
         padding-bottom: 1em;
         display: flex;
         flex-direction: row;
-    }
-    .header-control-block-entry {
-        margin-right: 1em;
-    }
-    .selected {
-        font-weight: bold;
     }
 </style>
