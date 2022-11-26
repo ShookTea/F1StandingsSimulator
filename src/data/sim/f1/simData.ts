@@ -9,17 +9,6 @@ import data2023 from './2023.data';
 import { SportData } from '@/data/sim/data';
 import FormulaPageView from '@/components/formula/FormulaPageView.vue';
 
-interface F1SimulationData {
-    2021: Season
-    2022: Season
-    2023: Season
-}
-
-const allYears: F1SimulationData = {
-    2021: data2021,
-    2022: data2022,
-    2023: data2023,
-}
 
 export const F1Data: SportData<Season> = {
     data: [{
@@ -54,8 +43,3 @@ export const F2Data: SportData<Season> = {
     }],
     component: FormulaPageView,
 }
-
-export const availableYears = Object.keys(allYears).sort();
-
-export default allYears;
-export const newestYear = availableYears[availableYears.length - 1];
