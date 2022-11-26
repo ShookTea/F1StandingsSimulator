@@ -1,8 +1,8 @@
-interface RacePositionMap {
+export interface RacePositionMap {
     [index: number]: number
 }
 
-interface Standing {
+export interface Standing {
     driver: string
     uuid: string
     temporary: boolean
@@ -14,9 +14,9 @@ interface Standing {
     racePositions: RacePositionMap
 }
 
-interface Round {
+export interface Round {
     roundName: string
     standings: Standing[]
 }
 
-type Season = Round[]
+export type Season = Round[]

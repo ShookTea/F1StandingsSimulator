@@ -2,6 +2,7 @@ import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, PointSchema, Race } from './dataInputTypes';
 import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
+import { Round, Season } from '@/data/sim/simDataTypes';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 

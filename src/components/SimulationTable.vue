@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Round } from '@/data/sim/simDataTypes';
+
 interface Props {
     data: Round
 }
@@ -31,6 +33,8 @@ defineProps<Props>()
 </template>
 
 <script lang="ts">
+import { Standing } from '@/data/sim/simDataTypes';
+
 export default {
     computed: {
         filteredData(): Standing[] {

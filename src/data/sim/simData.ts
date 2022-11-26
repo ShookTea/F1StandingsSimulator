@@ -1,3 +1,5 @@
+import { Season } from '@/data/sim/simDataTypes';
+
 // @ts-ignore
 import data2021 from './2021.data';
 // @ts-ignore
