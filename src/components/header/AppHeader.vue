@@ -2,18 +2,24 @@
     <header>
         <h1>F1 Season Simulator</h1>
         <div class="header-control-block">
-            <season-selector :enabled="option === 0" @enable="option = 0" label="Formula 1" :available-values="options" path-part="f1"/>
-            <season-selector :enabled="option === 1" @enable="option = 1" label="Formula 2" :available-values="options" path-part="f2"/>
+            <season-selector v-for="(sport, index) in allData"
+                             :key="index"
+                             :enabled="option === index"
+                             :sport-data="sport"
+                             @enable="option = index"/>
         </div>
     </header>
 </template>
 
 <script lang="ts">
 import SeasonSelector from '@/components/header/SeasonSelector.vue';
+import allData from '@/data/sim/data';
+
 export default {
     components: { SeasonSelector },
     data() {
         return {
+            allData,
             options: [{
                 text: 'Season 2022',
                 value: 2022,

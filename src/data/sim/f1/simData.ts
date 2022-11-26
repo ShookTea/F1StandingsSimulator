@@ -21,18 +21,25 @@ const allYears: F1SimulationData = {
 }
 
 export const F1Data: SportData<Season> = {
-    data: {
-        'Season 2023': data2023,
-        'Season 2022': data2022,
-    },
+    data: [{
+        data: data2023,
+        label: 'Season 2023',
+        routePart: '2023',
+    }, {
+        data: data2022,
+        label: 'Season 2022',
+        routePart: '2022',
+    }],
     routePart: 'f1',
     label: 'Formula 1'
 }
 
 export const F2Data: SportData<Season> = {
-    data: {
-        'Season 2021': data2021,
-    },
+    data: [{
+        data: data2021,
+        label: 'Season 2021',
+        routePart: '2021',
+    }],
     routePart: 'f2',
     label: 'Formula 2'
 }
