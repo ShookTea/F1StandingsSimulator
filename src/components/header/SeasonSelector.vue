@@ -43,6 +43,15 @@ export default {
         selectedOption(newValue: number) {
             this.goToIndex(newValue);
         },
+        $route() {
+            if (!this.enabled) return;
+            const routeKeys = this.sportData.data.map(entry => entry.routePart);
+            const index = routeKeys.findIndex(k => k === this.$route.meta.season);
+
+            if (index !== -1) {
+                this.selectedOption = index;
+            }
+        }
     },
     methods: {
         switchToMode(): void {
