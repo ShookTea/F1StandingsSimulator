@@ -8,6 +8,7 @@ interface Props {
     label: string
     enabled: boolean
     availableValues: Option[]
+    pathPart: string
 }
 
 defineProps<Props>();
@@ -21,9 +22,25 @@ defineEmits<{
         <div class="season-switch" v-else>
             <span class="mode-label">{{ label }}</span>
             <label for="season-selector">Choose season:</label>
-            <select id="season-selector" @input="event => console.log({event})">
+            <select id="season-selector" v-model="selectedOption">
                 <option v-for="option in availableValues" :value="option.value">{{ option.text }}</option>
             </select>
         </div>
     </div>
 </template>
+
+<script lang="ts">
+export default {
+    data() {
+        return {
+            selectedOption: this.availableValues[0].value,
+        }
+    },
+    watch: {
+        selectedOption(newValue: string) {
+            const path: String = `/${this.pathPart}/${newValue}`;
+            this.$router.push(path);
+        }
+    }
+}
+</script>

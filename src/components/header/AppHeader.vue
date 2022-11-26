@@ -2,8 +2,8 @@
     <header>
         <h1>F1 Season Simulator</h1>
         <div class="header-control-block">
-            <season-selector :enabled="option === 0" @enable="option = 0" label="Formula 1" :available-values="options"/>
-            <season-selector :enabled="option === 1" @enable="option = 1" label="Formula 2" :available-values="options"/>
+            <season-selector :enabled="option === 0" @enable="option = 0" label="Formula 1" :available-values="options" path-part="f1"/>
+            <season-selector :enabled="option === 1" @enable="option = 1" label="Formula 2" :available-values="options" path-part="f2"/>
         </div>
     </header>
 </template>
