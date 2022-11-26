@@ -1,5 +1,6 @@
 <template>
     <div class="simulation-view">
+        <h3>{{ $route.meta }}</h3>
         <div class="simulation-view-selector">
             <label for="season-selector">Choose season:</label>
             <select id="season-selector" v-model="selectedYear">

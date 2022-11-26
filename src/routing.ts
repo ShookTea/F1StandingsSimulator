@@ -1,22 +1,36 @@
-import SimulationView from '@/components/SimulationView.vue';
 import { createRouter, createWebHashHistory, Router, RouteRecordRaw } from 'vue-router';
-import { newestYear } from '@/data/sim/f1/simData';
+
+import allData from '@/data/sim/data';
 
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        redirect: '/f1',
-    }, {
-        path: '/f1',
-        redirect: `/f1/${newestYear}`,
-    }, {
-        path: '/f1/:year(\\d{4})',
-        redirect: to => `/f1/${to.params.year}/1`
-    }, {
-        path: '/f1/:year(\\d{4})/:step(\\d+)',
-        component: SimulationView,
+        redirect: `/${allData[0].routePart}`
     }
 ];
+
+for (const entry of allData) {
+    routes.push({
+        path: `/${entry.routePart}`,
+        redirect: `${entry.routePart}/${entry.data[0].routePart}`,
+    });
+
+    for (const data of entry.data) {
+        routes.push({
+            path: `/${entry.routePart}/${data.routePart}`,
+            component: entry.component,
+            meta: {
+                sport: entry.routePart,
+                season: data.routePart,
+            }
+        })
+    }
+}
+
+routes.push({
+    path: '/:notFoundMatch(.*)',
+    redirect: '/'
+})
 
 const router: Router = createRouter({
     history: createWebHashHistory(),

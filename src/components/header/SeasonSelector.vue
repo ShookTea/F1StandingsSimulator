@@ -53,8 +53,7 @@ export default {
         goToIndex(index: number): void {
             const selectedEntry: SportData<any> = this.sportData.data[index];
             const path: String = `/${this.sportData.routePart}/${selectedEntry.routePart}`;
-            console.log({path});
-            // this.$router.push(path);
+            this.$router.push(path);
         },
     }
 }
