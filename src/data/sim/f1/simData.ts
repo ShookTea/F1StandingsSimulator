@@ -19,24 +19,13 @@ export const F1Data: SportData<Season> = {
         data: data2022,
         label: 'Season 2022',
         routePart: '2022',
-    }],
-    routePart: 'f1',
-    label: 'Formula 1',
-    routeParameters: [{
-        key: 'step',
-        defaultValue: 1
-    }],
-    component: FormulaPageView,
-}
-
-export const F2Data: SportData<Season> = {
-    data: [{
+    }, {
         data: data2021,
         label: 'Season 2021',
         routePart: '2021',
     }],
-    routePart: 'f2',
-    label: 'Formula 2',
+    routePart: 'f1',
+    label: 'Formula 1',
     routeParameters: [{
         key: 'step',
         defaultValue: 1

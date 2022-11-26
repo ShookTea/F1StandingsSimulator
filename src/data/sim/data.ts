@@ -1,4 +1,4 @@
-import { F1Data, F2Data } from '@/data/sim/f1/simData';
+import { F1Data } from '@/data/sim/f1/simData';
 import { Component } from 'vue';
 
 
@@ -21,6 +21,6 @@ export interface SportData<T> {
     component: Component
 }
 
-const allData: SportData<any>[] = [ F1Data, F2Data ];
+const allData: SportData<any>[] = [ F1Data ];
 
 export default allData;
