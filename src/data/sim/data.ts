@@ -8,10 +8,16 @@ export interface SeasonData<T> {
     routePart: string
 }
 
+export interface RouterParameter {
+    key: string
+    defaultValue: number
+}
+
 export interface SportData<T> {
     data: SeasonData<T>[]
     label: string
     routePart: string
+    routeParameters: RouterParameter[]
     component: Component
 }
 

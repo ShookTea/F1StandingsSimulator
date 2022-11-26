@@ -33,6 +33,10 @@ export const F1Data: SportData<Season> = {
     }],
     routePart: 'f1',
     label: 'Formula 1',
+    routeParameters: [{
+        key: 'step',
+        defaultValue: 1
+    }],
     component: SimulationView,
 }
 
@@ -44,6 +48,10 @@ export const F2Data: SportData<Season> = {
     }],
     routePart: 'f2',
     label: 'Formula 2',
+    routeParameters: [{
+        key: 'step',
+        defaultValue: 1
+    }],
     component: SimulationView,
 }
 
