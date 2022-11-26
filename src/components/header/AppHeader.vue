@@ -20,13 +20,6 @@ export default {
     data() {
         return {
             allData,
-            options: [{
-                text: 'Season 2022',
-                value: 2022,
-            }, {
-                text: 'Season 2021',
-                value: 2021,
-            }],
             option: 0
         }
     }
