@@ -19,5 +19,7 @@ const allYears: SimulationData = {
     2023: data2023,
 }
 
+export const availableYears = Object.keys(allYears).sort();
+
 export default allYears;
-export const newestYear = Object.keys(allYears).sort().pop();
+export const newestYear = availableYears[availableYears.length - 1];
