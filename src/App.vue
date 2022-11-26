@@ -7,7 +7,7 @@ import SimulationView from '@/components/SimulationView.vue';
       <header>
           <h1>F1 season simulator</h1>
       </header>
-      <simulation-view/>
+      <router-view/>
   </main>
 </template>
 

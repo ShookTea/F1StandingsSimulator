@@ -3,6 +3,10 @@ import { createRouter, createWebHashHistory, Router, RouteRecordRaw } from 'vue-
 
 const routes: RouteRecordRaw[] = [
     {
+        path: '/',
+        redirect: '/f1',
+    },
+    {
         path: '/f1',
         component: SimulationView,
     }
