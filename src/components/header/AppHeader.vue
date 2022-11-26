@@ -20,9 +20,14 @@ export default {
     data() {
         return {
             allData,
-            option: 0
+            option: 0,
         }
-    }
+    },
+    watch: {
+        $route() {
+            this.option = allData.findIndex(d => d.routePart === this.$route.meta.sport);
+        }
+    },
 }
 </script>
 
