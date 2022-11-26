@@ -1,0 +1,43 @@
+import { Season } from '@/data/sim/f1/simDataTypes';
+
+// @ts-ignore
+import data2021 from './2021.data';
+// @ts-ignore
+import data2022 from './2022.data';
+// @ts-ignore
+import data2023 from './2023.data';
+import { SportData } from '@/data/sim/data';
+
+interface F1SimulationData {
+    2021: Season
+    2022: Season
+    2023: Season
+}
+
+const allYears: F1SimulationData = {
+    2021: data2021,
+    2022: data2022,
+    2023: data2023,
+}
+
+export const F1Data: SportData<Season> = {
+    data: {
+        'Season 2023': data2023,
+        'Season 2022': data2022,
+    },
+    routePart: 'f1',
+    label: 'Formula 1'
+}
+
+export const F2Data: SportData<Season> = {
+    data: {
+        'Season 2021': data2021,
+    },
+    routePart: 'f2',
+    label: 'Formula 2'
+}
+
+export const availableYears = Object.keys(allYears).sort();
+
+export default allYears;
+export const newestYear = availableYears[availableYears.length - 1];

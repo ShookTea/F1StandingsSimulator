@@ -1,6 +1,6 @@
 import SimulationView from '@/components/SimulationView.vue';
 import { createRouter, createWebHashHistory, Router, RouteRecordRaw } from 'vue-router';
-import { newestYear } from '@/data/sim/simData';
+import { newestYear } from '@/data/sim/f1/simData';
 
 const routes: RouteRecordRaw[] = [
     {

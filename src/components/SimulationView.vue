@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import allYears, { newestYear } from '@/data/sim/simData';
+import allYears, { newestYear } from '@/data/sim/f1/simData';
 import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
 
 export default {

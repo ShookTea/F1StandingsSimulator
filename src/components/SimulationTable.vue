@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Round } from '@/data/sim/simDataTypes';
+import { Round } from '@/data/sim/f1/simDataTypes';
 
 interface Props {
     data: Round
@@ -33,7 +33,7 @@ defineProps<Props>()
 </template>
 
 <script lang="ts">
-import { Standing } from '@/data/sim/simDataTypes';
+import { Standing } from '@/data/sim/f1/simDataTypes';
 
 export default {
     computed: {
