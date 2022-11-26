@@ -1,29 +1,21 @@
-<script setup>
+<script lang="ts" setup>
 import SimulationPagerButton from '@/components/SimulationPagerButton.vue';
 import SimulationPagerStepView from '@/components/SimulationPagerStepView.vue';
 
-defineProps({
-    label: {
-        type: String,
-        required: true,
-    },
-    page: {
-        type: Number,
-        required: true,
-    },
-    maxPages: {
-        type: Number,
-        required: true,
-    }
-})
+interface Props {
+    label: string
+    routeKey: string
+    maxPages: number
+}
 
-defineEmits(['previous', 'next', 'first', 'last'])
+defineProps<Props>();
+defineEmits(['previous', 'next', 'first', 'last']);
 
 </script>
 <template>
     <div id="simulation-pager">
         <div id="simulation-pager-switcher">
-            <simulation-pager-button :enabled="page > 0"
+            <simulation-pager-button :enabled="page > 1"
                                      @step="$emit('previous')" @max="$emit('first')"
                                      step-label="&lt;" max-label="«"/>
             <simulation-pager-step-view :page="page" :max-pages="maxPages"/>
@@ -34,6 +26,16 @@ defineEmits(['previous', 'next', 'first', 'last'])
         <div id="current-page-description">{{ label }}</div>
     </div>
 </template>
+
+<script lang="ts">
+export default {
+    computed: {
+        page() {
+            return this.$route.params[this.routeKey]
+        }
+    }
+}
+</script>
 
 <style scoped>
     #simulation-pager {

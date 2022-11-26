@@ -1,6 +1,7 @@
 <template>
     <div class="simulation-view">
         <h3>{{ { meta: $route.meta, params: $route.params } }}</h3>
+        <simulation-pager label="foo" route-key="step" :max-pages="10"/>
         <simulation-season-view :season-data="seasonData"/>
     </div>
 </template>
@@ -8,9 +9,10 @@
 <script lang="ts">
 import allData from '@/data/sim/data';
 import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
+import SimulationPager from '@/components/SimulationPager.vue';
 
 export default {
-    components: { SimulationSeasonView },
+    components: { SimulationPager, SimulationSeasonView },
     computed: {
         seasonData() {
             const sportData = allData.find(entry => entry.routePart === this.$route.meta.sport);

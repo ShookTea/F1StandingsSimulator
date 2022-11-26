@@ -14,7 +14,7 @@ defineProps({
     <div class="pager-step-view">
         <div class="step-label">Step</div>
         <div class="step-content">
-            <span class="current-page">{{ page + 1 }}</span>
+            <span class="current-page">{{ page }}</span>
             <span class="max-page">/ {{ maxPages }}</span>
         </div>
     </div>
