@@ -7,12 +7,13 @@
                 <option v-for="option in options" :value="option.value">{{ option.text }}</option>
             </select>
         </div>
-        <simulation-season-view :season-data="yearData"/>
+        <simulation-season-view :season-data="seasonData"/>
     </div>
 </template>
 
 <script lang="ts">
 import allYears, { newestYear } from '@/data/sim/f1/simData';
+import allData from '@/data/sim/data';
 import SimulationSeasonView from '@/components/SimulationSeasonView.vue';
 
 export default {
@@ -26,8 +27,9 @@ export default {
         }
     },
     computed: {
-        yearData() {
-            return allYears[this.selectedYear];
+        seasonData() {
+            const sportData = allData.find(entry => entry.routePart === this.$route.meta.sport);
+            return sportData.data.find(entry => entry.routePart === this.$route.meta.season);
         }
     }
 }

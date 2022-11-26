@@ -1,36 +1,15 @@
-<script setup>
-import SimulationPager from '@/components/SimulationPager.vue';
-import SimulationTable from '@/components/SimulationTable.vue';
+<script lang="ts" setup>
+import { SeasonData } from '@/data/sim/data';
+import { Season } from '@/data/sim/f1/simDataTypes';
 
-defineProps({
-    seasonData: {
-        type: Array,
-        required: true,
-    }
-})
+interface Props {
+    seasonData: SeasonData<Season>
+}
+defineProps<Props>()
 </script>
 
 <template>
     <div class="simulation-season-view">
-        <simulation-pager :page="page" :max-pages="seasonData.length"
-                          @previous="page--" @next="page++"
-                          @first="page = 0" @last="page = seasonData.length - 1"
-                          :label="seasonData[page].roundName"/>
-        <simulation-table :data="seasonData[page]"/>
+        {{ seasonData }}
     </div>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            page: this.seasonData.length - 1,
-        }
-    },
-    watch: {
-        seasonData() {
-            this.page = this.seasonData.length - 1;
-        }
-    }
-}
-</script>
