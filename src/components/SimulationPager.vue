@@ -30,8 +30,8 @@ defineEmits(['previous', 'next', 'first', 'last']);
 <script lang="ts">
 export default {
     computed: {
-        page() {
-            return this.$route.params[this.routeKey]
+        page(): number {
+            return parseInt(this.$route.params[this.routeKey])
         }
     }
 }
