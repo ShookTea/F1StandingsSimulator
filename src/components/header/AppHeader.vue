@@ -45,7 +45,7 @@ export default {
     }
     .header-control-block {
         color: white;
-        padding-bottom: 1em;
+        padding-bottom: 0.1em;
         display: flex;
         flex-direction: row;
     }

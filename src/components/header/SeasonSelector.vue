@@ -58,3 +58,27 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.season-selector-container {
+    margin-bottom: 0;
+}
+
+.mode-switch {
+    font-weight: lighter;
+    background-color: #0000f0;
+    cursor: pointer;
+    padding: .2em 1em;
+}
+
+.season-switch {
+    font-weight: bold;
+    vertical-align: baseline;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.season-switch label {
+    margin-right: .1em;
+}
+</style>
