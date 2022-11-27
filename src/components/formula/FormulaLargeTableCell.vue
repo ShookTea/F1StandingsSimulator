@@ -43,6 +43,8 @@ export default {
 
 <style scoped>
 td {
+    border: 1px solid #606060;
+    border-collapse: collapse;
     height: 2em;
     width: 3em;
     padding: 0;
