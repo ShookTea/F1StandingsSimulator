@@ -18,12 +18,12 @@ const { windowWidth } = useWindowWidth();
             <th :colspan="windowWidth > 1000 ? standings.length : 3">Possible positions at the end of season</th>
         </tr>
         <tr v-if="windowWidth > 1000">
-            <th v-for="index in standings.length" :key="index">{{ index }}</th>
+            <th class="position-header" v-for="index in standings.length" :key="index">{{ index }}</th>
         </tr>
         <tr v-else>
-            <th class="small-size-header">Best</th>
-            <th class="small-size-header"></th>
-            <th class="small-size-header">Worst</th>
+            <th class="position-header">Best</th>
+            <th class="position-header"></th>
+            <th class="position-header">Worst</th>
         </tr>
     </thead>
 </template>
@@ -34,7 +34,7 @@ th {
     border-collapse: collapse;
     text-align: center;
 }
-th.small-size-header {
+th.position-header {
     border-left: none;
     border-right: none;
 }
