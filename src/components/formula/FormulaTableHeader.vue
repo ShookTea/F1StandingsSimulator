@@ -21,9 +21,9 @@ const { windowWidth } = useWindowWidth();
             <th v-for="index in standings.length" :key="index">{{ index }}</th>
         </tr>
         <tr v-else>
-            <th>Best</th>
-            <th>Current</th>
-            <th>Worst</th>
+            <th class="small-size-header">Best</th>
+            <th class="small-size-header"></th>
+            <th class="small-size-header">Worst</th>
         </tr>
     </thead>
 </template>
@@ -33,5 +33,9 @@ th {
     border: 1px solid #606060;
     border-collapse: collapse;
     text-align: center;
+}
+th.small-size-header {
+    border-left: none;
+    border-right: none;
 }
 </style>

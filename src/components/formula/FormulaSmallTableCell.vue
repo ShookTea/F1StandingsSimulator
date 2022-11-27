@@ -66,7 +66,8 @@ export default {
 
 <style scoped>
 td {
-    border: none;
+    border-bottom: 1px solid #606060;
+    border-collapse: collapse;
     text-align: center;
     height: 2em;
     width: 4em;
