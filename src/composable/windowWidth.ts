@@ -1,4 +1,4 @@
-import { Component, onBeforeUnmount, onMounted, onUnmounted, ref, Ref } from 'vue';
+import { onMounted, onUnmounted, ref, Ref } from 'vue';
 
 type ReturnType = {
     windowWidth: Ref<number>
