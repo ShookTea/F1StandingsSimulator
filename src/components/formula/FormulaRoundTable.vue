@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Round } from '@/data/sim/f1/simDataTypes';
+import FormulaTableHeader from '@/components/formula/FormulaTableHeader.vue';
 
 interface Props {
     round: Round
@@ -9,24 +10,14 @@ defineProps<Props>()
 <template>
     <div class="simulation-table">
         <table>
-            <thead>
-            <tr>
-                <th rowspan="2">Current Position</th>
-                <th rowspan="2">Driver</th>
-                <th rowspan="2">Points</th>
-                <th :colspan="filteredStandings.length">Possible positions at the end of season</th>
-            </tr>
-            <tr>
-                <th v-for="index in positionsCount" :key="index">{{ index }}</th>
-            </tr>
-            </thead>
+            <formula-table-header :standings="filteredStandings"/>
             <tbody>
-            <tr v-for="(entry, index) in filteredStandings">
-                <td class="pre-cell">{{ index + 1 }}</td>
-                <td class="pre-cell">{{ entry.driver }}</td>
-                <td class="pre-cell">{{ entry.points }}</td>
-                <td v-for="index in positionsCount" :key="index" class="cell" :class="classForPosition(entry, index)"><div class="cell-interior"></div></td>
-            </tr>
+<!--                <tr v-for="(entry, index) in filteredStandings">-->
+<!--                    <td class="pre-cell">{{ index + 1 }}</td>-->
+<!--                    <td class="pre-cell">{{ entry.driver }}</td>-->
+<!--                    <td class="pre-cell">{{ entry.points }}</td>-->
+<!--                    <td v-for="index in positionsCount" :key="index" class="cell" :class="classForPosition(entry, index)"><div class="cell-interior"></div></td>-->
+<!--                </tr>-->
             </tbody>
         </table>
     </div>
