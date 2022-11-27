@@ -61,36 +61,4 @@ table, td, th {
     border-collapse: collapse;
     text-align: center;
 }
-
-.pre-cell {
-    width: 3.5em;
-}
-.cell {
-    height: 2em;
-    width: 3em;
-    padding: 0;
-}
-.solved {
-    background-color: goldenrod;
-    border-radius: 25%;
-}
-.min, .min-current {
-    background-color: lightgreen;
-    border-bottom-right-radius: 25%;
-    border-top-right-radius: 25%;
-}
-.max, .max-current {
-    background-color: lightgreen;
-    border-bottom-left-radius: 25%;
-    border-top-left-radius: 25%;
-}
-.in, .in-current {
-    background-color: lightgreen;
-}
-.min-current .cell-interior, .max-current .cell-interior, .in-current .cell-interior {
-    background-color: darkgreen;
-    border-radius: 25%;
-    width: 100%;
-    height: 100%;
-}
 </style>

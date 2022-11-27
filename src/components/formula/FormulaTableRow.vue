@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useWindowWidth } from '@/composable/windowWidth';
 import { Standing } from '@/data/sim/f1/simDataTypes';
+import FormulaLargeTableCell from '@/components/formula/FormulaLargeTableCell.vue';
 
 interface Props {
     index: number
@@ -18,7 +19,7 @@ const { windowWidth } = useWindowWidth();
         <th class="pre-cell">{{ standing.driver }}</th>
         <th class="pre-cell">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">
-            <td v-for="index in standingsCount" :key="index" class="cell"><div class="cell-interior"></div></td>
+            <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
         </template>
         <template v-else>
             <td class="cell">{{ standing.maxPosition }}</td>
@@ -42,28 +43,5 @@ td, th {
     height: 2em;
     width: 3em;
     padding: 0;
-}
-.solved {
-    background-color: goldenrod;
-    border-radius: 25%;
-}
-.min, .min-current {
-    background-color: lightgreen;
-    border-bottom-right-radius: 25%;
-    border-top-right-radius: 25%;
-}
-.max, .max-current {
-    background-color: lightgreen;
-    border-bottom-left-radius: 25%;
-    border-top-left-radius: 25%;
-}
-.in, .in-current {
-    background-color: lightgreen;
-}
-.min-current .cell-interior, .max-current .cell-interior, .in-current .cell-interior {
-    background-color: darkgreen;
-    border-radius: 25%;
-    width: 100%;
-    height: 100%;
 }
 </style>
