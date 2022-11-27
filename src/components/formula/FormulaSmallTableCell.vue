@@ -19,14 +19,18 @@ defineProps<Props>();
 <script lang="ts">
 export default {
     computed: {
+        isSolved(): boolean {
+            return this.standing.position === this.standing.maxPosition && this.standing.position === this.standing.minPosition;
+        },
+        isCurrentPositionOnSide(): boolean {
+            if (this.isSolved) return false;
+            return this.standing.position === this.standing.maxPosition || this.standing.position === this.standing.minPosition;
+        },
         displayPosition(): string {
-            if (this.displayClass === 'out') {
-                return '';
-            }
             switch (this.type) {
-                case 'best': return this.standing.maxPosition;
-                case 'current': return this.standing.position;
-                case 'worst': return this.standing.minPosition;
+                case 'best': return this.isSolved ? '' : this.standing.maxPosition;
+                case 'current': return this.isCurrentPositionOnSide ? '' : this.standing.position;
+                case 'worst': return this.isSolved ? '' : this.standing.minPosition;
             }
         },
         displayClass(): string {
@@ -37,26 +41,29 @@ export default {
             }
         },
         displayClassForBestPosition(): string {
-            if (this.standing.maxPosition === this.standing.position) {
+            if (this.isSolved) {
                 return 'out';
-            }
-            return 'max';
-        },
-        displayClassForCurrentPosition(): string {
-            if (this.standing.maxPosition === this.standing.position && this.standing.minPosition === this.standing.position) {
-                return 'solved';
             }
             if (this.standing.maxPosition === this.standing.position) {
                 return 'max-current';
             }
-            if (this.standing.minPosition === this.standing.position) {
-                return 'min-current';
+            return 'max';
+        },
+        displayClassForCurrentPosition(): string {
+            if (this.isSolved) {
+                return 'solved';
+            }
+            if (this.isCurrentPositionOnSide) {
+                return 'in';
             }
             return 'in-current';
         },
         displayClassForWorstPosition(): string {
-            if (this.standing.minPosition === this.standing.position) {
+            if (this.isSolved) {
                 return 'out';
+            }
+            if (this.standing.minPosition === this.standing.position) {
+                return 'min-current';
             }
             return 'min';
         }
@@ -87,7 +94,7 @@ td {
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
 }
-.in-current {
+.in, .in-current {
     background-color: lightgreen;
 }
 .min-current .cell-interior, .max-current .cell-interior, .in-current .cell-interior {
