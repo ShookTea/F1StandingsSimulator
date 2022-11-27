@@ -2,6 +2,7 @@
 import { useWindowWidth } from '@/composable/windowWidth';
 import { Standing } from '@/data/sim/f1/simDataTypes';
 import FormulaLargeTableCell from '@/components/formula/FormulaLargeTableCell.vue';
+import FormulaSmallTableCell from '@/components/formula/FormulaSmallTableCell.vue';
 
 interface Props {
     index: number
@@ -22,26 +23,18 @@ const { windowWidth } = useWindowWidth();
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
         </template>
         <template v-else>
-            <td class="cell">{{ standing.maxPosition }}</td>
-            <td class="cell">{{ standing.position }}</td>
-            <td class="cell">{{ standing.minPosition }}</td>
+            <formula-small-table-cell :standing="standing" type="best"/>
+            <formula-small-table-cell :standing="standing" type="current"/>
+            <formula-small-table-cell :standing="standing" type="worst"/>
         </template>
     </tr>
 </template>
 
 <style>
-td, th {
+th {
     border: 1px solid #606060;
     border-collapse: collapse;
     text-align: center;
-}
-
-.pre-cell {
     width: 3.5em;
-}
-.cell {
-    height: 2em;
-    width: 3em;
-    padding: 0;
 }
 </style>
