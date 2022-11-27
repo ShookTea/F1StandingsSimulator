@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import AppHeader from '@/components/header/AppHeader.vue';
 </script>
 
@@ -8,6 +8,32 @@ import AppHeader from '@/components/header/AppHeader.vue';
       <router-view/>
   </main>
 </template>
+
+<script lang="ts">
+export default {
+    data() {
+        return {
+            windowWidth: 0,
+        }
+    },
+    methods: {
+        onResize(): void
+        {
+            this.windowWidth = window.innerWidth;
+        }
+    },
+    mounted(): void {
+        this.onResize();
+        this.$nextTick(() => {
+            window.addEventListener('resize', this.onResize);
+        });
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.onResize);
+    }
+
+}
+</script>
 
 <style>
 html, body, main {
