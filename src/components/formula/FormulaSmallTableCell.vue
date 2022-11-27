@@ -66,8 +66,7 @@ export default {
 
 <style scoped>
 td {
-    border: 1px solid #606060;
-    border-collapse: collapse;
+    border: none;
     text-align: center;
     height: 2em;
     width: 4em;
@@ -75,24 +74,24 @@ td {
 }
 .solved {
     background-color: goldenrod;
-    border-radius: 25%;
+    border-radius: 50%;
 }
 .max, .max-current {
     background-color: lightgreen;
-    border-bottom-left-radius: 25%;
-    border-top-left-radius: 25%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
 }
 .min, .min-current {
     background-color: lightgreen;
-    border-bottom-right-radius: 25%;
-    border-top-right-radius: 25%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
 }
 .in-current {
     background-color: lightgreen;
 }
 .min-current .cell-interior, .max-current .cell-interior, .in-current .cell-interior {
     background-color: darkgreen;
-    border-radius: 25%;
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     color: white;
