@@ -1,8 +1,5 @@
 <script lang="ts" setup>
 import AppHeader from '@/components/header/AppHeader.vue';
-import { useWindowWidth } from '@/composable/windowWidth';
-
-const { windowWidth } = useWindowWidth();
 </script>
 
 <template>

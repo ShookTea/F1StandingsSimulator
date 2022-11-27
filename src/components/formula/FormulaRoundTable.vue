@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Round } from '@/data/sim/f1/simDataTypes';
 import FormulaTableHeader from '@/components/formula/FormulaTableHeader.vue';
+import FormulaTableRow from '@/components/formula/FormulaTableRow.vue';
 
 interface Props {
     round: Round
@@ -12,12 +13,7 @@ defineProps<Props>()
         <table>
             <formula-table-header :standings="filteredStandings"/>
             <tbody>
-<!--                <tr v-for="(entry, index) in filteredStandings">-->
-<!--                    <td class="pre-cell">{{ index + 1 }}</td>-->
-<!--                    <td class="pre-cell">{{ entry.driver }}</td>-->
-<!--                    <td class="pre-cell">{{ entry.points }}</td>-->
-<!--                    <td v-for="index in positionsCount" :key="index" class="cell" :class="classForPosition(entry, index)"><div class="cell-interior"></div></td>-->
-<!--                </tr>-->
+                <formula-table-row v-for="(entry, index) in filteredStandings" :key="index" :index="index" :standingsCount="filteredStandings.length" :standing="entry"/>
             </tbody>
         </table>
     </div>
