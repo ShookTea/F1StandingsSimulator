@@ -46,7 +46,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, remainingRaces, input));
 
-    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult);
+    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
 
     const comparator: DriverStandingSorter = DriverStandingSorter.buildSorter();
 
