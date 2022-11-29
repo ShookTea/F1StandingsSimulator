@@ -50,6 +50,13 @@ export default class DriverStandingSorter {
             }
         }
 
+        if (a.isTemporaryAndNotRacedYet()) {
+            return 1;
+        }
+        if (b.isTemporaryAndNotRacedYet()) {
+            return -1;
+        }
+
         return 0;
     }
 
