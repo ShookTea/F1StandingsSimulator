@@ -2,6 +2,7 @@ import { DataInput, DriverEntry, Race } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import RacePositionMapping from './RacePositionMapping';
 import { Driver } from '@/data/sim/f1/simDataTypes';
+import drivers from '../data/racing_drivers.json';
 
 export default class DriverStanding {
     readonly driver: string;
@@ -21,7 +22,8 @@ export default class DriverStanding {
             uuid: entry.uuid,
             temporary: entry.temporary,
             number: entry.number,
-            team: entry.team
+            team: entry.team,
+            details: drivers[driverAbbr],
         };
         this.racePositions = new RacePositionMapping();
     }

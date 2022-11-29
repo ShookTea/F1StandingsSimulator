@@ -1,5 +1,7 @@
-export interface RacePositionMap {
-    [index: number]: number
+export type Season = Round[]
+export interface Round {
+    roundName: string
+    standings: Standing[]
 }
 
 export interface Standing {
@@ -12,17 +14,21 @@ export interface Standing {
     racePositions: RacePositionMap
 }
 
+export interface RacePositionMap {
+    [index: number]: number
+}
+
 export interface Driver {
     abbreviation: string
     uuid: string
     temporary: boolean
     team: string
     number: number
+    details: DriverDetail
 }
 
-export interface Round {
-    roundName: string
-    standings: Standing[]
+export interface DriverDetail {
+    givenName: string
+    familyName: string
+    familyNameFirst?: boolean
 }
-
-export type Season = Round[]
