@@ -16,7 +16,7 @@ const { windowWidth } = useWindowWidth();
 
 <template>
     <tr>
-        <th class="pre-cell">{{ index + 1 }}</th>
+        <th class="pre-cell">{{ standing.driverNumber }}</th>
         <th class="pre-cell">{{ standing.driver }}</th>
         <th class="pre-cell">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">

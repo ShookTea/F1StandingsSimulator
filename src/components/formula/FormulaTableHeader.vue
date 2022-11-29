@@ -12,7 +12,7 @@ const { windowWidth } = useWindowWidth();
 <template>
     <thead>
         <tr>
-            <th rowspan="2">Current Position</th>
+            <th rowspan="2">No</th>
             <th rowspan="2">Driver</th>
             <th rowspan="2">Points</th>
             <th :colspan="windowWidth > 1000 ? standings.length : 3">Possible positions at the end of season</th>

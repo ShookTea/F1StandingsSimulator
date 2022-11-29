@@ -1,19 +1,28 @@
-import { DataInput, Race } from './dataInputTypes';
+import { DataInput, DriverEntry, Race } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import RacePositionMapping from './RacePositionMapping';
+import { Driver } from '@/data/sim/f1/simDataTypes';
 
 export default class DriverStanding {
     readonly driver: string;
+    readonly driver2: Driver
     readonly uuid: string;
     readonly temporary: boolean;
     points: number = 0;
     racePositions: RacePositionMapping;
 
-    constructor(driver: string, uuid: string, temporary: boolean)
+    constructor(driverAbbr: string, entry: DriverEntry)
     {
-        this.driver = driver;
-        this.uuid = uuid;
-        this.temporary = temporary;
+        this.driver = driverAbbr;
+        this.uuid = entry.uuid;
+        this.temporary = entry.temporary;
+        this.driver2 = {
+            abbreviation: driverAbbr,
+            uuid: entry.uuid,
+            temporary: entry.temporary,
+            number: entry.number,
+            team: entry.team
+        };
         this.racePositions = new RacePositionMapping();
     }
 
@@ -36,7 +45,7 @@ export default class DriverStanding {
         const standings: DriverStanding[] = [];
         for (const driver of drivers) {
             standings.push(
-                new DriverStanding(driver, input.drivers[driver].uuid, input.drivers[driver].temporary ?? false)
+                new DriverStanding(driver, input.drivers[driver])
             );
         }
 

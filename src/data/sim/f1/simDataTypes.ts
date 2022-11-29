@@ -1,3 +1,5 @@
+import { DriverEntry } from '@/dataBuild/dataInputTypes';
+
 export interface RacePositionMap {
     [index: number]: number
 }
@@ -12,6 +14,14 @@ export interface Standing {
     maxPosition: number
     minPosition: number
     racePositions: RacePositionMap
+}
+
+export interface Driver {
+    abbreviation: string
+    uuid: string
+    temporary: boolean
+    team: string
+    number: number
 }
 
 export interface Round {
