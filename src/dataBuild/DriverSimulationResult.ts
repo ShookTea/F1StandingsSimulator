@@ -18,6 +18,15 @@ export default class DriverSimulationResult {
         this.remainingCountingRaces = remainingCountingRaces;
     }
 
+    isTemporaryAndNotRacedYet(): boolean
+    {
+        if (!this.standing.temporary) {
+            return false;
+        }
+
+        return !this.standing.racePositions.hasRaced();
+    }
+
     convertToResultObject(): Standing
     {
         return {
