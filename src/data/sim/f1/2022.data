@@ -5,70 +5,80 @@
             "chassis": "C42",
             "chassisConstructor": "Alfa Romeo",
             "powerUnit": "Ferrari 066/7",
-            "powerUnitConstructor": "Ferrari"
+            "powerUnitConstructor": "Ferrari",
+            "color": "#C92D4B"
         },
         "Scuderia AlphaTauri": {
             "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
             "chassis": "AT03",
             "chassisConstructor": "AlphaTauri",
             "powerUnit": "Red Bull RBPTH001",
-            "powerUnitConstructor": "RBPT"
+            "powerUnitConstructor": "RBPT",
+            "color": "#5E8FAA"
         },
         "BWT Alpine F1 Team": {
             "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
             "chassis": "A522",
             "chassisConstructor": "Alpine",
             "powerUnit": "Renault E-Tech RE22",
-            "powerUnitConstructor": "Renault"
+            "powerUnitConstructor": "Renault",
+            "color": "#2293D1"
         },
         "Aston Martin Aramco Cognizant F1 Team": {
             "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
             "chassis": "AMR22",
             "chassisConstructor": "Aston Martin Aramco",
             "powerUnit": "Mercedes-AMG F1 M13",
-            "powerUnitConstructor": "Mercedes"
+            "powerUnitConstructor": "Mercedes",
+            "color": "#358C75"
         },
         "Scuderia Ferrari": {
             "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
             "chassis": "F1-75",
             "chassisConstructor": "Ferrari",
             "powerUnit": "Ferrari 066/7",
-            "powerUnitConstructor": "Ferrari"
+            "powerUnitConstructor": "Ferrari",
+            "color": "#F91536"
         },
         "Haas F1 Team": {
             "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
             "chassis": "VF-22",
             "chassisConstructor": "Haas",
             "powerUnit": "Ferrari 066/7",
-            "powerUnitConstructor": "Ferrari"
+            "powerUnitConstructor": "Ferrari",
+            "color": "#B6BABD"
         },
         "McLaren F1 Team": {
             "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
             "chassis": "MCL36",
             "chassisConstructor": "McLaren",
             "powerUnit": "Mercedes-AMG F1 M13",
-            "powerUnitConstructor": "Mercedes"
+            "powerUnitConstructor": "Mercedes",
+            "color": "#F58020"
         },
         "Mercedes-AMG Petronas F1 Team": {
             "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
             "chassis": "F1 W13",
             "chassisConstructor": "Mercedes",
             "powerUnit": "Mercedes-AMG F1 M13",
-            "powerUnitConstructor": "Mercedes"
+            "powerUnitConstructor": "Mercedes",
+            "color": "#6CD3BF"
         },
         "Oracle Red Bull Racing": {
             "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
             "chassis": "RB18",
             "chassisConstructor": "Red Bull Racing",
             "powerUnit": "Red Bull RBPTH001",
-            "powerUnitConstructor": "RBPT"
+            "powerUnitConstructor": "RBPT",
+            "color": "#3671C6"
         },
         "Williams Racing": {
             "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
             "chassis": "FW44",
             "chassisConstructor": "Williams",
             "powerUnit": "Mercedes-AMG F1 M13",
-            "powerUnitConstructor": "Mercedes"
+            "powerUnitConstructor": "Mercedes",
+            "color": "#37BEDD"
         }
     },
     "drivers": {

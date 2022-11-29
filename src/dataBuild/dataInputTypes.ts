@@ -59,6 +59,5 @@ export interface TeamEntry {
     chassisConstructor: string
     powerUnit: string
     powerUnitConstructor: string
+    color: string
 }
-
-// export type PointSupplier = ()

@@ -1,7 +1,7 @@
-import { DataInput, DriverEntry, Race } from './dataInputTypes';
+import { DataInput, DriverEntry, Race, TeamEntry } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import RacePositionMapping from './RacePositionMapping';
-import { Driver } from '@/data/sim/f1/simDataTypes';
+import { Driver, Team } from '@/data/sim/f1/simDataTypes';
 import drivers from '../data/racing_drivers.json';
 
 export default class DriverStanding {
@@ -11,8 +11,16 @@ export default class DriverStanding {
     points: number = 0;
     racePositions: RacePositionMapping;
 
-    constructor(driverAbbr: string, entry: DriverEntry)
+    constructor(driverAbbr: string, input: DataInput)
     {
+        const entry: DriverEntry = input.drivers[driverAbbr];
+        const teamName: string = entry.team;
+        const teamEntry: TeamEntry = input.teams[entry.team];
+        const team: Team = {
+            entry: teamName,
+            ...teamEntry,
+        };
+
         this.uuid = entry.uuid;
         this.temporary = entry.temporary;
         this.driver = {
@@ -20,7 +28,7 @@ export default class DriverStanding {
             uuid: entry.uuid,
             temporary: entry.temporary,
             number: entry.number,
-            team: entry.team,
+            team: team,
             details: drivers[entry.uuid],
         };
         this.racePositions = new RacePositionMapping();
@@ -45,7 +53,7 @@ export default class DriverStanding {
         const standings: DriverStanding[] = [];
         for (const driver of drivers) {
             standings.push(
-                new DriverStanding(driver, input.drivers[driver])
+                new DriverStanding(driver, input),
             );
         }
 

@@ -22,7 +22,7 @@ export interface Driver {
     abbreviation: string
     uuid: string
     temporary: boolean
-    team: string
+    team: Team
     number: number
     details: DriverDetail
 }
@@ -31,4 +31,14 @@ export interface DriverDetail {
     givenName: string
     familyName: string
     familyNameFirst?: boolean
+}
+
+export interface Team {
+    entry: string
+    uuid: string
+    chassis: string
+    chassisConstructor: string
+    powerUnit: string
+    powerUnitConstructor: string
+    color: string
 }
