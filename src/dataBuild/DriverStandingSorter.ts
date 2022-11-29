@@ -50,14 +50,7 @@ export default class DriverStandingSorter {
             }
         }
 
-        if (a.isTemporaryAndNotRacedYet()) {
-            return 1;
-        }
-        if (b.isTemporaryAndNotRacedYet()) {
-            return -1;
-        }
-
-        return 0;
+        return (a.isTemporaryAndNotRacedYet() ? 1 : 0) - (b.isTemporaryAndNotRacedYet() ? 1 : 0);
     }
 
     private getPoints(dsr: DriverSimulationResult): number
