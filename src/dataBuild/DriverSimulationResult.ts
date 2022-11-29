@@ -1,6 +1,7 @@
 import DriverStanding from './DriverStanding';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
+import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 
 export default class DriverSimulationResult {
     readonly standing: DriverStanding;
@@ -12,12 +13,23 @@ export default class DriverSimulationResult {
     maxPosition: number = 0;
     minPosition: number = 0;
 
-    constructor(standing: DriverStanding, maxRemainingPoints: number, remainingCountingRaces: number)
-    {
+    constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput) {
+        const maxRemainingPoints = remainingRaces.map(r => {
+            const pointSchema = input.pointSchemas[r.type];
+            let points = pointSchema.points[0];
+            if (pointSchema.fastestLap !== undefined) {
+                points += pointSchema.fastestLap.value;
+            }
+            return points;
+        }).reduce((a, b) => a + b, 0);
+
         this.standing = standing;
         this.driver = standing.driver;
         this.maxPoints = standing.points + maxRemainingPoints;
-        this.remainingCountingRaces = remainingCountingRaces;
+
+        this.remainingCountingRaces = remainingRaces
+            .filter(r => input.pointSchemas[r.type].positionsCount)
+            .length;
     }
 
     isTemporaryAndNotRacedYet(): boolean
