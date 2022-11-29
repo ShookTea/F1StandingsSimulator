@@ -1,9 +1,10 @@
 import DriverStanding from './DriverStanding';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Standing } from '@/data/sim/f1/simDataTypes';
+import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
 
 export default class DriverSimulationResult {
     readonly standing: DriverStanding;
+    readonly driver: Driver;
     readonly maxPoints: number;
     readonly remainingCountingRaces: number;
 
@@ -14,13 +15,14 @@ export default class DriverSimulationResult {
     constructor(standing: DriverStanding, maxRemainingPoints: number, remainingCountingRaces: number)
     {
         this.standing = standing;
+        this.driver = standing.driver2;
         this.maxPoints = standing.points + maxRemainingPoints;
         this.remainingCountingRaces = remainingCountingRaces;
     }
 
     isTemporaryAndNotRacedYet(): boolean
     {
-        if (!this.standing.temporary) {
+        if (!this.driver.temporary) {
             return false;
         }
 
@@ -30,9 +32,9 @@ export default class DriverSimulationResult {
     convertToResultObject(): Standing
     {
         return {
-            driver: this.standing.driver,
-            uuid: this.standing.uuid,
-            temporary: this.standing.temporary,
+            driver: this.driver.abbreviation,
+            uuid: this.driver.uuid,
+            temporary: this.driver.temporary,
             points: this.standing.points,
             maxPoints: this.maxPoints,
             position: this.position,
