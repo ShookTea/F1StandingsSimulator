@@ -2,8 +2,9 @@ import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, Race } from './dataInputTypes';
 import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Round, Season } from '@/data/sim/f1/simDataTypes';
+import { Driver, Round, Season, Standing, Team } from '@/data/sim/f1/simDataTypes';
 import TeamStanding from '../dataBuild/TeamStanding';
+import data from '@/data/sim/data';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -43,10 +44,24 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const roundName: string = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
     const dataResult: DriverStanding[] = calculateResultAfterRaces(input, races);
 
+    return {
+        driverStandings: calculateDriverResults(dataResult, remainingRaces, input),
+        teamStandings: calculateTeamResults(dataResult, remainingRaces, input),
+        roundName,
+    }
+}
+
+function calculateTeamResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Team>[]
+{
+    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
+
+    return teamStandings.map(t => t.convertToResultObject());
+}
+
+function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Driver>[]
+{
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, remainingRaces, input));
-
-    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
 
     const comparator: DriverStandingSorter = DriverStandingSorter.buildSorter();
 
@@ -56,11 +71,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 
     driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
 
-    return {
-        driverStandings: driverSimulationResults.map(d => d.convertToResultObject()),
-        teamStandings: teamStandings.map(t => t.convertToResultObject()),
-        roundName,
-    }
+    return driverSimulationResults.map(d => d.convertToResultObject());
 }
 
 function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStanding[] {
