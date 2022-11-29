@@ -15,12 +15,12 @@ const { windowWidth } = useWindowWidth();
 </script>
 
 <template>
-    <tr>
-        <th class="pre-cell" :style="{ backgroundColor: standing.driver.team.color }">{{ standing.driver.number }}</th>
-        <th class="pre-cell driver-abbr" :style="{ backgroundColor: standing.driver.team.color }">
+    <tr :style="background">
+        <th class="pre-cell" :style="background">{{ standing.driver.number }}</th>
+        <th class="pre-cell driver-abbr" :style="background">
             <abbr :title="fullName">{{ standing.driver.abbreviation }}</abbr>
         </th>
-        <th class="pre-cell" :style="{ backgroundColor: standing.driver.team.color }">{{ standing.points }}</th>
+        <th class="pre-cell" :style="background">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
         </template>
@@ -36,6 +36,11 @@ const { windowWidth } = useWindowWidth();
 
 export default {
     computed: {
+        background() {
+            return {
+                backgroundColor: this.standing.driver.team.color
+            };
+        },
         fullName(): string {
             const { givenName, familyName, familyNameFirst = false } = this.standing.driver.details;
 
