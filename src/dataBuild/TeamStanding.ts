@@ -1,14 +1,17 @@
 import { Standing, Team } from '@/data/sim/f1/simDataTypes';
 import DriverStanding from '@/dataBuild/DriverStanding';
+import RacePositionMapping from './RacePositionMapping';
 
 export default class TeamStanding {
     readonly team: Team;
     readonly points: number;
+    readonly racePositions: RacePositionMapping;
 
     constructor(drivers: DriverStanding[])
     {
         this.team = drivers[0].driver.team;
         this.points = drivers.map(d => d.points).reduce((a, b) => a + b, 0);
+        this.racePositions = drivers.map(d => d.racePositions).reduce((a, b) => a.add(b), new RacePositionMapping());
     }
 
     convertToResultObject(): Standing<Team>
@@ -20,7 +23,7 @@ export default class TeamStanding {
             position: 0,
             minPosition: 0,
             maxPosition: 0,
-            racePositions: {},
+            racePositions: this.racePositions.racePositions,
         };
     }
 

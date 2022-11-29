@@ -32,7 +32,6 @@ export default class DriverSimulationResult {
     convertToResultObject(): Standing<Driver>
     {
         return {
-            driver: this.driver,
             owner: this.driver,
             points: this.standing.points,
             maxPoints: this.maxPoints,

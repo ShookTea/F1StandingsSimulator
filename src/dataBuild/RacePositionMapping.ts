@@ -16,6 +16,18 @@ export default class RacePositionMapping {
         }
     }
 
+    add(other: RacePositionMapping): RacePositionMapping
+    {
+        const result = new RacePositionMapping();
+        result.entriesCount = this.entriesCount + other.entriesCount;
+
+        for (let p = 1; p <= Math.max(this.getLowestPosition(), other.getLowestPosition()) + 1; p++) {
+            result.racePositions[p] = this.getOccurrencesInPosition(p) + other.getOccurrencesInPosition(p);
+        }
+
+        return result;
+    }
+
     getLowestPosition(): number
     {
         return Object.keys(this.racePositions).map(i => parseInt(i)).sort().reverse()[0] ?? 0;

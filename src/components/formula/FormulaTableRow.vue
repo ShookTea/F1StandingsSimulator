@@ -44,11 +44,11 @@ export default {
     computed: {
         backgroundColor() {
             return {
-                backgroundColor: this.standing.driver.team.color
+                backgroundColor: this.standing.owner.team.color
             };
         },
         fullName(): string {
-            const { givenName, familyName, familyNameFirst = false } = this.standing.driver.details;
+            const { givenName, familyName, familyNameFirst = false } = this.standing.owner.details;
 
             if (familyNameFirst) {
                 return `${familyName} ${givenName}`;
