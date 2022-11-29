@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { useWindowWidth } from '@/composable/windowWidth';
-import { Standing } from '@/data/sim/f1/simDataTypes';
+import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
 import FormulaLargeTableCell from '@/components/formula/FormulaLargeTableCell.vue';
 import FormulaSmallTableCell from '@/components/formula/FormulaSmallTableCell.vue';
 
 interface Props {
     index: number
     standingsCount: number
-    standing: Standing
+    standing: Standing<Driver>
 }
 
 defineProps<Props>();

@@ -1,11 +1,13 @@
 export type Season = Round[]
 export interface Round {
     roundName: string
-    standings: Standing[]
+    driverStandings: Standing<Driver>[]
+    teamStandings: Standing<Team>[]
 }
 
-export interface Standing {
+export interface Standing<T extends StandingOwner> {
     driver: Driver
+    owner: T
     points: number
     maxPoints: number
     position: number
@@ -14,11 +16,13 @@ export interface Standing {
     racePositions: RacePositionMap
 }
 
+export interface StandingOwner {}
+
 export interface RacePositionMap {
     [index: number]: number
 }
 
-export interface Driver {
+export interface Driver extends StandingOwner {
     abbreviation: string
     uuid: string
     temporary: boolean
@@ -33,7 +37,7 @@ export interface DriverDetail {
     familyNameFirst?: boolean
 }
 
-export interface Team {
+export interface Team extends StandingOwner {
     entry: string
     uuid: string
     chassis: string

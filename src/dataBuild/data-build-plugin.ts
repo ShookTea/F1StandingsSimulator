@@ -74,7 +74,8 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
 
     return {
-        standings: driverSimulationResults.map(d => d.convertToResultObject()),
+        driverStandings: driverSimulationResults.map(d => d.convertToResultObject()),
+        teamStandings: [],
         roundName,
     }
 }

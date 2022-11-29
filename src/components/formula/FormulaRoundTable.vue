@@ -11,44 +11,24 @@ defineProps<Props>()
 <template>
     <div class="simulation-table">
         <table>
-            <formula-table-header :standings="filteredStandings"/>
+            <formula-table-header :standings="driverStandings"/>
             <tbody>
-                <formula-table-row v-for="(entry, index) in filteredStandings" :key="index" :index="index" :standingsCount="filteredStandings.length" :standing="entry"/>
+                <formula-table-row v-for="(entry, index) in driverStandings" :key="index" :index="index" :standingsCount="driverStandings.length" :standing="entry"/>
             </tbody>
         </table>
+        {{ round.teamStandings }}
     </div>
 </template>
 
 <script lang="ts">
-import { Standing } from '@/data/sim/f1/simDataTypes';
+import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
 
 export default {
     computed: {
-        filteredStandings(): Standing[] {
-            return this.round.standings
+        driverStandings(): Standing<Driver>[] {
+            return this.round.driverStandings
                 .filter(entry => !entry.driver.temporary || Object.keys(entry.racePositions).length > 0)
                 .sort((a, b) => a.position - b.position);
-        }
-    },
-    methods: {
-        classForPosition(entry: Standing, displayPosition: number): string {
-            const positionSolved: boolean = entry.minPosition === entry.maxPosition;
-            const displayInMargin: boolean = displayPosition <= entry.minPosition && displayPosition >= entry.maxPosition;
-            const displayCurrent: boolean = displayPosition === entry.position;
-
-            if (positionSolved && displayCurrent) {
-                return 'solved';
-            }
-            if (displayInMargin && displayPosition === entry.minPosition) {
-                return displayCurrent ? 'min-current' : 'min';
-            }
-            if (displayInMargin && displayPosition === entry.maxPosition) {
-                return displayCurrent ? 'max-current' : 'max';
-            }
-            if (displayInMargin) {
-                return displayCurrent ? 'in-current' : 'in';
-            }
-            return 'out';
         }
     }
 }
