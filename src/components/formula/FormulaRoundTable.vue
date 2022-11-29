@@ -26,12 +26,9 @@ export default {
     computed: {
         filteredStandings(): Standing[] {
             return this.round.standings
-                .filter(entry => !entry.temporary || Object.keys(entry.racePositions).length > 0)
+                .filter(entry => !entry.driver.temporary || Object.keys(entry.racePositions).length > 0)
                 .sort((a, b) => a.position - b.position);
-        },
-        positionsCount(): number {
-            return this.filteredStandings.length;
-        },
+        }
     },
     methods: {
         classForPosition(entry: Standing, displayPosition: number): string {

@@ -16,8 +16,8 @@ const { windowWidth } = useWindowWidth();
 
 <template>
     <tr>
-        <th class="pre-cell">{{ standing.driverNumber }}</th>
-        <th class="pre-cell">{{ standing.driver }}</th>
+        <th class="pre-cell">{{ standing.driver.number }}</th>
+        <th class="pre-cell">{{ standing.driver.abbreviation }}</th>
         <th class="pre-cell">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>

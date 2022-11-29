@@ -1,11 +1,10 @@
-import { DriverEntry } from '@/dataBuild/dataInputTypes';
-
 export interface RacePositionMap {
     [index: number]: number
 }
 
 export interface Standing {
-    driver: string
+    driver: Driver
+    abbreviation: string
     uuid: string
     temporary: boolean
     points: number

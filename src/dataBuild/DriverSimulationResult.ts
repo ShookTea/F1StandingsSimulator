@@ -32,7 +32,8 @@ export default class DriverSimulationResult {
     convertToResultObject(): Standing
     {
         return {
-            driver: this.driver.abbreviation,
+            driver: this.driver,
+            abbreviation: this.driver.abbreviation,
             uuid: this.driver.uuid,
             temporary: this.driver.temporary,
             points: this.standing.points,
