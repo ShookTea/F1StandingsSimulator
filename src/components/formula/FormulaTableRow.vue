@@ -17,7 +17,7 @@ const { windowWidth } = useWindowWidth();
 <template>
     <tr>
         <th class="pre-cell">{{ standing.driver.number }}</th>
-        <th class="pre-cell">{{ standing.driver.abbreviation }}</th>
+        <th class="pre-cell"><abbr class="driver-abbr" :title="fullName">{{ standing.driver.abbreviation }}</abbr></th>
         <th class="pre-cell">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
@@ -30,11 +30,32 @@ const { windowWidth } = useWindowWidth();
     </tr>
 </template>
 
+<script lang="ts">
+
+export default {
+    computed: {
+        fullName(): string {
+            const { givenName, familyName, familyNameFirst = false } = this.standing.driver.details;
+
+            if (familyNameFirst) {
+                return `${familyName} ${givenName}`;
+            }
+            return `${givenName} ${familyName}`;
+        }
+    }
+}
+</script>
+
 <style>
 th {
     border: 1px solid #606060;
     border-collapse: collapse;
     text-align: center;
     width: 3.5em;
+}
+.driver-abbr {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
 }
 </style>

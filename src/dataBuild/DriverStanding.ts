@@ -21,7 +21,7 @@ export default class DriverStanding {
             temporary: entry.temporary,
             number: entry.number,
             team: entry.team,
-            details: drivers[driverAbbr],
+            details: drivers[entry.uuid],
         };
         this.racePositions = new RacePositionMapping();
     }
