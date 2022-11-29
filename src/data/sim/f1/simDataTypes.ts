@@ -4,9 +4,6 @@ export interface RacePositionMap {
 
 export interface Standing {
     driver: Driver
-    abbreviation: string
-    uuid: string
-    temporary: boolean
     points: number
     maxPoints: number
     position: number
