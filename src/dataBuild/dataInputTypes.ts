@@ -1,7 +1,9 @@
 type Driver = string
+type Team = string
 type PointSchemaId = string
 
 export interface DataInput {
+    teams: TeamMap
     drivers: DriverMap
     pointSchemas: PointSchemaMap
     races: Race[]
@@ -43,6 +45,20 @@ export interface DriverMap {
 export interface DriverEntry {
     uuid: string
     temporary?: boolean
+    team: Team
+    number: number
+}
+
+export interface TeamMap {
+    [index: Team]: TeamEntry
+}
+
+export interface TeamEntry {
+    uuid: string
+    chassis: string
+    chassisConstructor: string
+    powerUnit: string
+    powerUnitConstructor: string
 }
 
 // export type PointSupplier = ()

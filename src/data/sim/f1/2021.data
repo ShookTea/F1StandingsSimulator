@@ -1,68 +1,182 @@
 {
+  "teams": {
+    "Alfa Romeo Racing Orlen": {
+      "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
+      "chassis": "C41",
+      "chassisConstructor": "Alfa Romeo Racing",
+      "powerUnit": "Ferrari 065/6",
+      "powerUnitConstructor": "Ferrari"
+    },
+    "Scuderia AlphaTauri Honda": {
+      "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+      "chassis": "AT02",
+      "chassisConstructor": "AlphaTauri",
+      "powerUnit": "Honda RA621H",
+      "powerUnitConstructor": "Honda"
+    },
+    "Alpine F1 Team": {
+      "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+      "chassis": "A521",
+      "chassisConstructor": "Alpine",
+      "powerUnit": "Renault E-Tech 20B",
+      "powerUnitConstructor": "Renault"
+    },
+    "Aston Martin Cognizant F1 Team": {
+      "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+      "chassis": "AMR21",
+      "chassisConstructor": "Aston Martin",
+      "powerUnit": "Mercedes-AMG F1 M12",
+      "powerUnitConstructor": "Mercedes"
+    },
+    "Scuderia Ferrari Mission Winnow": {
+      "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+      "chassis": "SF21",
+      "chassisConstructor": "Ferrari",
+      "powerUnit": "Ferrari 065/6",
+      "powerUnitConstructor": "Ferrari"
+    },
+    "Uralkali Haas F1 Team": {
+      "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+      "chassis": "VF-21",
+      "chassisConstructor": "Haas",
+      "powerUnit": "Ferrari 065/6",
+      "powerUnitConstructor": "Ferrari"
+    },
+    "McLaren F1 Team": {
+      "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+      "chassis": "MCL35M",
+      "chassisConstructor": "McLaren",
+      "powerUnit": "Mercedes-AMG F1 M12",
+      "powerUnitConstructor": "Mercedes"
+    },
+    "Mercedes-AMG Petronas F1 Team": {
+      "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+      "chassis": "F1 W12",
+      "chassisConstructor": "Mercedes",
+      "powerUnit": "Mercedes-AMG F1 M12",
+      "powerUnitConstructor": "Mercedes"
+    },
+    "Red Bull Racing Honda": {
+      "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+      "chassis": "RB16B",
+      "chassisConstructor": "Red Bull Racing",
+      "powerUnit": "Honda RA621H",
+      "powerUnitConstructor": "Honda"
+    },
+    "Williams Racing": {
+      "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+      "chassis": "FW43B",
+      "chassisConstructor": "Williams",
+      "powerUnit": "Mercedes-AMG F1 M12",
+      "powerUnitConstructor": "Mercedes"
+    }
+  },
   "drivers": {
-    "VER": {
-      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876"
-    },
-    "LEC": {
-      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9"
-    },
-    "PER": {
-      "uuid": "b6683cdd-6246-402f-8d63-673941252343"
-    },
-    "RUS": {
-      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868"
-    },
-    "SAI": {
-      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c"
-    },
-    "HAM": {
-      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299"
-    },
-    "NOR": {
-      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466"
-    },
-    "OCO": {
-      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9"
-    },
-    "ALO": {
-      "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74"
-    },
-    "BOT": {
-      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7"
-    },
-    "RIC": {
-      "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767"
-    },
-    "VET": {
-      "uuid": "245444c2-533b-4ab2-8d7c-518c09f4b479"
-    },
-    "GIO": {
-      "uuid": "71d45ec8-9e0f-46c4-a399-d0905bfae8e4"
-    },
-    "GAS": {
-      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b"
-    },
-    "STR": {
-      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b"
-    },
-    "MSC": {
-      "uuid": "e6263917-bd03-401c-85dc-5310b1923412"
-    },
-    "TSU": {
-      "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f"
-    },
-    "MAZ": {
-      "uuid": "11a834ee-dbc9-41af-a92c-1b7d5b17ec86"
-    },
     "RAI": {
-      "uuid": "3bc7a1e7-a088-4993-9579-edcd5ada769a"
-    },
-    "LAT": {
-      "uuid": "ef19af25-7750-4311-8049-2994c9edad0b"
+      "uuid": "3bc7a1e7-a088-4993-9579-edcd5ada769a",
+      "number": 7,
+      "team": "Alfa Romeo Racing Orlen"
     },
     "KUB": {
       "uuid": "c28dac31-eda3-4084-a10a-0ecc5c975678",
-      "temporary": true
+      "temporary": true,
+      "number": 88,
+      "team": "Alfa Romeo Racing Orlen"
+    },
+    "GIO": {
+      "uuid": "71d45ec8-9e0f-46c4-a399-d0905bfae8e4",
+      "number": 99,
+      "team": "Alfa Romeo Racing Orlen"
+    },
+    "GAS": {
+      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+      "number": 10,
+      "team": "Scuderia AlphaTauri Honda"
+    },
+    "TSU": {
+      "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
+      "number": 22,
+      "team": "Scuderia AlphaTauri Honda"
+    },
+    "ALO": {
+      "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
+      "number": 14,
+      "team": "Alpine F1 Team"
+    },
+    "OCO": {
+      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9",
+      "number": 31,
+      "team": "Alpine F1 Team"
+    },
+    "VET": {
+      "uuid": "245444c2-533b-4ab2-8d7c-518c09f4b479",
+      "number": 5,
+      "team": "Aston Martin Cognizant F1 Team"
+    },
+    "STR": {
+      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b",
+      "number": 18,
+      "team": "Aston Martin Cognizant F1 Team"
+    },
+    "LEC": {
+      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
+      "number": 16,
+      "team": "Scuderia Ferrari Mission Winnow"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c",
+      "number": 55,
+      "team": "Scuderia Ferrari Mission Winnow"
+    },
+    "MAZ": {
+      "uuid": "11a834ee-dbc9-41af-a92c-1b7d5b17ec86",
+      "number": 9,
+      "team": "Uralkali Haas F1 Team"
+    },
+    "MSC": {
+      "uuid": "e6263917-bd03-401c-85dc-5310b1923412",
+      "number": 47,
+      "team": "Uralkali Haas F1 Team"
+    },
+    "RIC": {
+      "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767",
+      "number": 3,
+      "team": "McLaren F1 Team"
+    },
+    "NOR": {
+      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466",
+      "number": 4,
+      "team": "McLaren F1 Team"
+    },
+    "HAM": {
+      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299",
+      "number": 44,
+      "team": "Mercedes-AMG Petronas F1 Team"
+    },
+    "BOT": {
+      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7",
+      "number": 77,
+      "team": "Mercedes-AMG Petronas F1 Team"
+    },
+    "PER": {
+      "uuid": "b6683cdd-6246-402f-8d63-673941252343",
+      "number": 11,
+      "team": "Red Bull Racing Honda"
+    },
+    "VER": {
+      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
+      "number": 33,
+      "team": "Red Bull Racing Honda"
+    },
+    "LAT": {
+      "uuid": "ef19af25-7750-4311-8049-2994c9edad0b",
+      "number": 6,
+      "team": "Williams Racing"
+    },
+    "RUS": {
+      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
+      "number": 63,
+      "team": "Williams Racing"
     }
   },
   "pointSchemas": {
