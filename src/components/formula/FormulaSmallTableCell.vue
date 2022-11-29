@@ -11,7 +11,9 @@ defineProps<Props>();
 <template>
     <td :class="displayClass">
         <div class="cell-interior">
-            {{ displayPosition }}
+            <div class="cell-interior-2">
+                {{ displayPosition }}
+            </div>
         </div>
     </td>
 </template>
@@ -80,28 +82,31 @@ td {
     width: 4em;
     padding: 0;
 }
-.solved {
+.solved .cell-interior {
     background-color: goldenrod;
     border-radius: 50%;
+    border: 1px solid darkgray;
 }
-.max, .max-current {
+.max .cell-interior, .max-current .cell-interior {
     background-color: lightgreen;
     border-bottom-left-radius: 50%;
     border-top-left-radius: 50%;
 }
-.min, .min-current {
+.min .cell-interior, .min-current .cell-interior {
     background-color: lightgreen;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
 }
-.in, .in-current {
+.in .cell-interior, .in-current .cell-interior {
     background-color: lightgreen;
+    height: 80%;
 }
-.min-current .cell-interior, .max-current .cell-interior, .in-current .cell-interior {
+.min-current .cell-interior-2, .max-current .cell-interior-2, .in-current .cell-interior-2 {
     background-color: darkgreen;
     border-radius: 50%;
     width: 100%;
     height: 100%;
     color: white;
+    border: 1px solid darkgray;
 }
 </style>
