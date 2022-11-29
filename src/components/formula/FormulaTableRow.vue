@@ -15,12 +15,18 @@ const { windowWidth } = useWindowWidth();
 </script>
 
 <template>
-    <tr :style="background">
-        <th class="pre-cell" :style="background">{{ standing.driver.number }}</th>
-        <th class="pre-cell driver-abbr" :style="background">
-            <abbr :title="fullName">{{ standing.driver.abbreviation }}</abbr>
+    <tr>
+        <th class="pre-cell">{{ standing.driver.number }}</th>
+        <th class="pre-cell">
+            <div class="driver-abbr">
+                <div class="team-color" :style="backgroundColor"></div>
+                <div>
+                    <abbr :title="fullName">{{ standing.driver.abbreviation }}</abbr>
+                </div>
+                <div/>
+            </div>
         </th>
-        <th class="pre-cell" :style="background">{{ standing.points }}</th>
+        <th class="pre-cell">{{ standing.points }}</th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
         </template>
@@ -34,9 +40,11 @@ const { windowWidth } = useWindowWidth();
 
 <script lang="ts">
 
+type RGB = { r: number, g: number, b: number }
+
 export default {
     computed: {
-        background() {
+        backgroundColor() {
             return {
                 backgroundColor: this.standing.driver.team.color
             };
@@ -59,6 +67,15 @@ th {
     border-collapse: collapse;
     text-align: center;
     width: 3.5em;
+}
+.driver-abbr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.driver-abbr .team-color {
+    min-width: 5px;
+    margin-left: 2px;
 }
 .driver-abbr abbr {
     text-decoration: underline;
