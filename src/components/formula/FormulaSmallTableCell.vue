@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { Standing } from '@/data/sim/f1/simDataTypes';
+import { Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 
 interface Props {
-    standing: Standing
+    standing: Standing<StandingOwner>
     type: string
 }
 

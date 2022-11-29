@@ -16,12 +16,12 @@ const { windowWidth } = useWindowWidth();
 
 <template>
     <tr>
-        <th class="pre-cell">{{ standing.driver.number }}</th>
+        <th class="pre-cell">{{ standing.owner.number }}</th>
         <th class="pre-cell">
             <div class="driver-abbr">
                 <div class="team-color" :style="backgroundColor"></div>
                 <div>
-                    <abbr :title="fullName">{{ standing.driver.abbreviation }}</abbr>
+                    <abbr :title="fullName">{{ standing.owner.abbreviation }}</abbr>
                 </div>
                 <div/>
             </div>

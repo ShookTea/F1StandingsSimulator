@@ -6,7 +6,6 @@ export interface Round {
 }
 
 export interface Standing<T extends StandingOwner> {
-    driver: Driver
     owner: T
     points: number
     maxPoints: number

@@ -3,6 +3,7 @@ import { AbstractRace, DataInput, PointSchema, Race } from './dataInputTypes';
 import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Round, Season } from '@/data/sim/f1/simDataTypes';
+import TeamStanding from '../dataBuild/TeamStanding';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -65,6 +66,8 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, maxRemainingPoints, remainingCountingRaces));
 
+    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult);
+
     const comparator: DriverStandingSorter = DriverStandingSorter.buildSorter();
 
     driverSimulationResults
@@ -75,7 +78,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 
     return {
         driverStandings: driverSimulationResults.map(d => d.convertToResultObject()),
-        teamStandings: [],
+        teamStandings: teamStandings.map(t => t.convertToResultObject()),
         roundName,
     }
 }

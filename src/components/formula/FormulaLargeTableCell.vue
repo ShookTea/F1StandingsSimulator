@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { Standing } from '@/data/sim/f1/simDataTypes';
+import { Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 
 interface Props {
     position: number
-    standing: Standing
+    standing: Standing<StandingOwner>
 }
 
 defineProps<Props>();

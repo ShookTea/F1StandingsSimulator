@@ -27,7 +27,7 @@ export default {
     computed: {
         driverStandings(): Standing<Driver>[] {
             return this.round.driverStandings
-                .filter(entry => !entry.driver.temporary || Object.keys(entry.racePositions).length > 0)
+                .filter(entry => !entry.owner.temporary || Object.keys(entry.racePositions).length > 0)
                 .sort((a, b) => a.position - b.position);
         }
     }
