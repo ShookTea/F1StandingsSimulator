@@ -15,7 +15,7 @@ export default class DriverSimulationResult {
     constructor(standing: DriverStanding, maxRemainingPoints: number, remainingCountingRaces: number)
     {
         this.standing = standing;
-        this.driver = standing.driver2;
+        this.driver = standing.driver;
         this.maxPoints = standing.points + maxRemainingPoints;
         this.remainingCountingRaces = remainingCountingRaces;
     }

@@ -5,8 +5,7 @@ import { Driver } from '@/data/sim/f1/simDataTypes';
 import drivers from '../data/racing_drivers.json';
 
 export default class DriverStanding {
-    readonly driver: string;
-    readonly driver2: Driver
+    readonly driver: Driver
     readonly uuid: string;
     readonly temporary: boolean;
     points: number = 0;
@@ -14,10 +13,9 @@ export default class DriverStanding {
 
     constructor(driverAbbr: string, entry: DriverEntry)
     {
-        this.driver = driverAbbr;
         this.uuid = entry.uuid;
         this.temporary = entry.temporary;
-        this.driver2 = {
+        this.driver = {
             abbreviation: driverAbbr,
             uuid: entry.uuid,
             temporary: entry.temporary,
@@ -30,14 +28,14 @@ export default class DriverStanding {
 
     addRaceResult(input: DataInput, race: Race): void
     {
-        const index: number = race.positions.indexOf(this.driver);
+        const index: number = race.positions.indexOf(this.driver.abbreviation);
         if (index === -1) {
             return;
         }
         const pointSchema: PointSchema = new PointSchema(input.pointSchemas[race.type]);
         const position: number = index + 1;
 
-        this.points += pointSchema.getPointsForPosition(position, this.driver === race.fastestLap);
+        this.points += pointSchema.getPointsForPosition(position, this.driver.abbreviation === race.fastestLap);
         this.racePositions.registerPosition(position, pointSchema);
     }
 
