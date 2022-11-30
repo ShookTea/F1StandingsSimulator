@@ -2,10 +2,11 @@ import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, Race } from './dataInputTypes';
 import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Driver, Round, Season, Standing, Team } from '@/data/sim/f1/simDataTypes';
+import { Driver, Round, Season, Standing, StandingOwner, Team } from '@/data/sim/f1/simDataTypes';
 import TeamStanding from '../dataBuild/TeamStanding';
-import AbstractStandingSorter from './AbstractStandingSorter';
+import AbstractStandingSorter, { SorterBuilder } from './AbstractStandingSorter';
 import TeamStandingSorter from './TeamStandingSorter';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -78,6 +79,15 @@ function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: Ab
     driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
 
     return driverSimulationResults.map(d => d.convertToResultObject());
+}
+
+function calculateResultsForStandings<S extends StandingOwner, T extends AbstractStandingResultStore<S>>(
+    dataResult: T[],
+    remainingRaces: AbstractRace[],
+    input: DataInput,
+    sorterBuilder: SorterBuilder<T>
+): Standing<S>[] {
+    return [];
 }
 
 function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStanding[] {

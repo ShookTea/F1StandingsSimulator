@@ -1,5 +1,11 @@
 import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
 
+export interface SorterBuilder<T extends AbstractStandingResultStore<any>> {
+    buildSorter(): AbstractStandingSorter<T>,
+    buildBestResultSorter(t: T): AbstractStandingSorter<T>,
+    buildWorstResultSorter(t: T): AbstractStandingSorter<T>,
+}
+
 export default abstract class AbstractStandingSorter<T extends AbstractStandingResultStore<any>> {
     private readonly bestResultTestSubject: T;
     private readonly worstResultTestSubject: T;
