@@ -19,25 +19,9 @@ export default class DriverStandingSorter extends AbstractStandingSorter<DriverS
 
     compare(a: DriverSimulationResult, b: DriverSimulationResult): number
     {
-        const aPoints: number = this.getPoints(a);
-        const bPoints: number = this.getPoints(b);
-
-        if (aPoints !== bPoints) {
-            return bPoints - aPoints;
-        }
-
-        const searchTo: number = Math.max(
-            this.getWorstCasePosition(a),
-            this.getWorstCasePosition(b),
-        ) + 2; // leave two places for worst case checking
-
-        for (let position = 1; position <= searchTo; position++) {
-            const aOccurrences: number = this.getOccurrencesInPosition(a, position, searchTo);
-            const bOccurrences: number = this.getOccurrencesInPosition(b, position, searchTo);
-
-            if (bOccurrences !== aOccurrences) {
-                return bOccurrences - aOccurrences;
-            }
+        const result = super.compare(a, b);
+        if (result !== 0) {
+            return result;
         }
 
         return (a.isTemporaryAndNotRacedYet() ? 1 : 0) - (b.isTemporaryAndNotRacedYet() ? 1 : 0);

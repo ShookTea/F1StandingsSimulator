@@ -10,6 +10,32 @@ export default abstract class AbstractStandingSorter<T> {
         this.worstResultTestSubject = worstResultTestSubject;
     }
 
+    compare(a: T, b: T): number
+    {
+        const aPoints: number = this.getPoints(a);
+        const bPoints: number = this.getPoints(b);
+
+        if (aPoints !== bPoints) {
+            return bPoints - aPoints;
+        }
+
+        const searchTo: number = Math.max(
+            this.getWorstCasePosition(a),
+            this.getWorstCasePosition(b),
+        ) + 2; // leave two places for worst case checking
+
+        for (let position = 1; position <= searchTo; position++) {
+            const aOccurrences: number = this.getOccurrencesInPosition(a, position, searchTo);
+            const bOccurrences: number = this.getOccurrencesInPosition(b, position, searchTo);
+
+            if (bOccurrences !== aOccurrences) {
+                return bOccurrences - aOccurrences;
+            }
+        }
+
+        return 0;
+    }
+
     protected shouldUseBestValue(t: T): boolean
     {
         if (t === this.bestResultTestSubject) {
