@@ -3,17 +3,21 @@ import { Standing } from '@/data/sim/f1/simDataTypes';
 import { useWindowWidth } from '@/composable/windowWidth';
 
 interface Props {
-    standings: Standing[]
+    standings: Standing<any>[]
+    showNumberColumn: boolean
+    nameLabel: string
 }
 
-defineProps<Props>();
+withDefaults(defineProps<Props>(), {
+    showNumberColumn: false,
+});
 const { windowWidth } = useWindowWidth();
 </script>
 <template>
     <thead>
         <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Driver</th>
+            <th v-if="showNumberColumn" rowspan="2">No</th>
+            <th rowspan="2">{{ nameLabel }}</th>
             <th rowspan="2">Points</th>
             <th :colspan="windowWidth > 1000 ? standings.length : 3">Possible positions at the end of season</th>
         </tr>
