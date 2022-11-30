@@ -1,17 +1,7 @@
 import DriverSimulationResult from './DriverSimulationResult';
+import AbstractStandingSorter from './AbstractStandingSorter';
 
-export default class DriverStandingSorter {
-    private readonly bestResultTestSubject: DriverSimulationResult;
-    private readonly worstResultTestSubject: DriverSimulationResult;
-
-    private constructor(
-        bestResultTestSubject: DriverSimulationResult = null,
-        worstResultTestSubject: DriverSimulationResult = null,
-    ) {
-        this.bestResultTestSubject = bestResultTestSubject;
-        this.worstResultTestSubject = worstResultTestSubject;
-    }
-
+export default class DriverStandingSorter extends AbstractStandingSorter<DriverSimulationResult> {
     static buildSorter(): DriverStandingSorter
     {
         return new DriverStandingSorter(null, null);
@@ -37,9 +27,9 @@ export default class DriverStandingSorter {
         }
 
         const searchTo: number = Math.max(
-            a.standing.racePositions.getLowestPosition(),
-            b.standing.racePositions.getLowestPosition(),
-        ) + 1; // leave one place for worst case checking
+            this.getWorstCasePosition(a),
+            this.getWorstCasePosition(b),
+        ) + 2; // leave two places for worst case checking
 
         for (let position = 1; position <= searchTo; position++) {
             const aOccurrences: number = this.getOccurrencesInPosition(a, position, searchTo);
@@ -53,7 +43,7 @@ export default class DriverStandingSorter {
         return (a.isTemporaryAndNotRacedYet() ? 1 : 0) - (b.isTemporaryAndNotRacedYet() ? 1 : 0);
     }
 
-    private getPoints(dsr: DriverSimulationResult): number
+    protected getPoints(dsr: DriverSimulationResult): number
     {
         if (dsr.isTemporaryAndNotRacedYet()) {
             return dsr.standing.points;
@@ -66,7 +56,12 @@ export default class DriverStandingSorter {
         return dsr.standing.points;
     }
 
-    private getOccurrencesInPosition(dsr: DriverSimulationResult, position: number, worstCasePosition: number): number
+    protected getWorstCasePosition(t: DriverSimulationResult): number
+    {
+        return t.standing.racePositions.getLowestPosition();
+    }
+
+    protected getOccurrencesInPosition(dsr: DriverSimulationResult, position: number, worstCasePosition: number): number
     {
         if (dsr.isTemporaryAndNotRacedYet()) {
             return dsr.standing.racePositions.getOccurrencesInPosition(position);
@@ -81,23 +76,5 @@ export default class DriverStandingSorter {
         }
 
         return dsr.standing.racePositions.getOccurrencesInPosition(position);
-    }
-
-    private shouldUseBestValue(dsr: DriverSimulationResult): boolean
-    {
-        if (dsr === this.bestResultTestSubject) {
-            return true;
-        }
-
-        return dsr !== this.worstResultTestSubject && this.worstResultTestSubject !== null;
-    }
-
-    private shouldUseWorstValue(dsr: DriverSimulationResult): boolean
-    {
-        if (dsr === this.worstResultTestSubject) {
-            return true;
-        }
-
-        return dsr !== this.bestResultTestSubject && this.bestResultTestSubject !== null;
     }
 }
