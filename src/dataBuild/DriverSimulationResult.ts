@@ -1,17 +1,15 @@
 import DriverStanding from './DriverStanding';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
+import { Driver } from '@/data/sim/f1/simDataTypes';
 import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 
-export default class DriverSimulationResult extends AbstractStandingResultStore {
+export default class DriverSimulationResult extends AbstractStandingResultStore<Driver> {
     readonly standing: DriverStanding;
     readonly driver: Driver;
-    readonly maxPoints: number;
-    readonly remainingCountingRaces: number;
 
     constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput) {
-        super();
+        super(standing.driver);
         const maxRemainingPoints = remainingRaces.map(r => {
             const pointSchema = input.pointSchemas[r.type];
             let points = pointSchema.points[0];
@@ -23,7 +21,9 @@ export default class DriverSimulationResult extends AbstractStandingResultStore 
 
         this.standing = standing;
         this.driver = standing.driver;
+        this.points = standing.points;
         this.maxPoints = standing.points + maxRemainingPoints;
+        this.racePositions = this.standing.racePositions;
 
         this.remainingCountingRaces = remainingRaces
             .filter(r => input.pointSchemas[r.type].positionsCount)
@@ -37,19 +37,6 @@ export default class DriverSimulationResult extends AbstractStandingResultStore 
         }
 
         return !this.standing.racePositions.hasRaced();
-    }
-
-    convertToResultObject(): Standing<Driver>
-    {
-        return {
-            owner: this.driver,
-            points: this.standing.points,
-            maxPoints: this.maxPoints,
-            position: this.position,
-            maxPosition: this.maxPosition,
-            minPosition: this.minPosition,
-            racePositions: this.standing.racePositions.racePositions,
-        };
     }
 
     calculatePossiblePositions(allResults: DriverSimulationResult[]): void

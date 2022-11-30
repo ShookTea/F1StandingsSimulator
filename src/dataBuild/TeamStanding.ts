@@ -1,19 +1,15 @@
-import { Standing, Team } from '@/data/sim/f1/simDataTypes';
+import { Team } from '@/data/sim/f1/simDataTypes';
 import DriverStanding from '@/dataBuild/DriverStanding';
 import RacePositionMapping from './RacePositionMapping';
 import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 
-export default class TeamStanding extends AbstractStandingResultStore {
+export default class TeamStanding extends AbstractStandingResultStore<Team> {
     readonly team: Team;
-    readonly points: number;
-    readonly racePositions: RacePositionMapping;
-    readonly maxPoints: number;
-    readonly remainingCountingRaces: number;
 
     constructor(drivers: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput)
     {
-        super();
+        super(drivers[0].driver.team);
         const maxRemainingPoints = remainingRaces.map(r => {
             const pointSchema = input.pointSchemas[r.type];
             let points = (pointSchema.points[0] ?? 0) + (pointSchema.points[1] ?? 0);
@@ -30,19 +26,6 @@ export default class TeamStanding extends AbstractStandingResultStore {
         this.points = drivers.map(d => d.points).reduce((a, b) => a + b, 0);
         this.maxPoints = this.points + maxRemainingPoints;
         this.racePositions = drivers.map(d => d.racePositions).reduce((a, b) => a.add(b), new RacePositionMapping());
-    }
-
-    convertToResultObject(): Standing<Team>
-    {
-        return {
-            owner: this.team,
-            points: this.points,
-            maxPoints: this.maxPoints,
-            position: this.position,
-            minPosition: this.minPosition,
-            maxPosition: this.maxPosition,
-            racePositions: this.racePositions.racePositions,
-        };
     }
 
     static buildFromDrivers(drivers: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): TeamStanding[]
