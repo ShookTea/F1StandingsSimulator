@@ -71,8 +71,8 @@ th {
 .team-name {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    min-width: 100px;
+    justify-content: left;
+    min-width: 20em;
 }
 .team-name .team-color {
     min-width: 5px;
@@ -82,5 +82,6 @@ th {
     text-decoration: underline;
     text-decoration-style: dotted;
     cursor: pointer;
+    padding-left: 1em;
 }
 </style>
