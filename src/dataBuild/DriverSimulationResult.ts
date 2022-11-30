@@ -7,17 +7,8 @@ export default class DriverSimulationResult extends AbstractStandingResultStore<
     constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput) {
         super(standing.driver);
 
-        const maxRemainingPoints = remainingRaces.map(r => {
-            const pointSchema = input.pointSchemas[r.type];
-            let points = pointSchema.points[0];
-            if (pointSchema.fastestLap !== undefined) {
-                points += pointSchema.fastestLap.value;
-            }
-            return points;
-        }).reduce((a, b) => a + b, 0);
-
         this.points = standing.points;
-        this.maxPoints = standing.points + maxRemainingPoints;
+        this.maxPoints = standing.points + calculateMaxRemainingPoints(remainingRaces, input);
         this.racePositions = standing.racePositions;
 
         this.remainingCountingRaces = remainingRaces
@@ -33,4 +24,16 @@ export default class DriverSimulationResult extends AbstractStandingResultStore<
 
         return !this.racePositions.hasRaced();
     }
+}
+
+export function calculateMaxRemainingPoints(remainingRaces: AbstractRace[], input: DataInput): number
+{
+    return remainingRaces.map(r => {
+        const pointSchema = input.pointSchemas[r.type];
+        let points = pointSchema.points[0];
+        if (pointSchema.fastestLap !== undefined) {
+            points += pointSchema.fastestLap.value;
+        }
+        return points;
+    }).reduce((a, b) => a + b, 0);
 }

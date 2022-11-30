@@ -1,6 +1,9 @@
 export type Season = Round[]
+
 export interface Round {
     roundName: string
+    maxRemainingDriverPoints: number
+    maxRemainingTeamPoints: number
     driverStandings: Standing<Driver>[]
     teamStandings: Standing<Team>[]
 }

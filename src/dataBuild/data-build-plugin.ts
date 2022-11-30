@@ -1,9 +1,9 @@
 import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, Race } from './dataInputTypes';
-import DriverSimulationResult from './DriverSimulationResult';
+import DriverSimulationResult, { calculateMaxRemainingPoints as calculateMaxRemainingDriverPoints } from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Driver, Round, Season, Standing, StandingOwner, Team } from '@/data/sim/f1/simDataTypes';
-import TeamStanding from '../dataBuild/TeamStanding';
+import TeamStanding, { calculateMaxRemainingPoints as calculateMaxRemainingTeamPoints } from '../dataBuild/TeamStanding';
 import { SorterBuilder } from './AbstractStandingSorter';
 import TeamStandingSorter from './TeamStandingSorter';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
@@ -47,9 +47,11 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     const dataResult: DriverStanding[] = calculateResultAfterRaces(input, races);
 
     return {
+        roundName,
         driverStandings: calculateDriverResults(dataResult, remainingRaces, input),
         teamStandings: calculateTeamResults(dataResult, remainingRaces, input),
-        roundName,
+        maxRemainingDriverPoints: calculateMaxRemainingDriverPoints(remainingRaces, input),
+        maxRemainingTeamPoints: calculateMaxRemainingTeamPoints(remainingRaces, input),
     }
 }
 

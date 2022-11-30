@@ -12,14 +12,14 @@ defineProps<Props>()
 <template>
     <div class="simulation-table">
         <table>
-            <caption>Driver standings</caption>
+            <caption>Driver standings (Maximum of {{ round.maxRemainingDriverPoints }} more points to collect)</caption>
             <formula-table-header :standings="driverStandings" name-label="Driver" show-number-column/>
             <tbody>
                 <formula-table-driver-row v-for="(entry, index) in driverStandings" :key="index" :index="index" :standings-count="driverStandings.length" :standing="entry"/>
             </tbody>
         </table>
         <table>
-            <caption>Team standings</caption>
+            <caption>Team standings (Maximum of {{ round.maxRemainingTeamPoints }} more points to collect)</caption>
             <formula-table-header :standings="teamStandings" name-label="Team"/>
             <tbody>
                 <formula-table-team-row v-for="(entry, index) in teamStandings" :key="index" :index="index" :standings-count="teamStandings.length" :standing="entry"/>
