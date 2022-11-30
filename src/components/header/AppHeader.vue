@@ -3,14 +3,8 @@
         <div class="header-main">
             <h1>F1 Season Simulator</h1>
             <div class="button-panel">
-                <div class="button sponsor-button" @click="sponsorButton">
-                    <v-icon class="icon" name="bi-heart-fill"/>
-                    <span>Donate</span>
-                </div>
-                <div class="button github-button" @click="githubButton">
-                    <v-icon class="icon" name="bi-github"/>
-                    <span>GitHub</span>
-                </div>
+                <outside-link-button label="Donate" link="https://github.com/sponsors/ShookTea" icon="bi-heart-fill" background-color="lightblue" text-color="black" icon-color="deeppink"/>
+                <outside-link-button label="GitHub" link="https://github.com/ShookTea/F1StandingsSimulator" icon="bi-github" background-color="#303030" text-color="white" icon-color="white"/>
             </div>
         </div>
         <div class="header-control-block">
@@ -26,9 +20,10 @@
 <script lang="ts">
 import SeasonSelector from '@/components/header/SeasonSelector.vue';
 import allData from '@/data/sim/data';
+import OutsideLinkButton from '@/components/header/OutsideLinkButton.vue';
 
 export default {
-    components: { SeasonSelector },
+    components: { OutsideLinkButton, SeasonSelector },
     data() {
         return {
             allData,
