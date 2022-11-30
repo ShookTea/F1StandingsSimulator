@@ -4,7 +4,7 @@ import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Driver, Round, Season, Standing, StandingOwner, Team } from '@/data/sim/f1/simDataTypes';
 import TeamStanding from '../dataBuild/TeamStanding';
-import AbstractStandingSorter, { SorterBuilder } from './AbstractStandingSorter';
+import { SorterBuilder } from './AbstractStandingSorter';
 import TeamStandingSorter from './TeamStandingSorter';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 
@@ -69,15 +69,12 @@ function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: Ab
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, remainingRaces, input));
 
-    const comparator: AbstractStandingSorter<DriverSimulationResult> = DriverStandingSorter.buildSorter();
-
-    driverSimulationResults
-        .sort((a, b) => comparator.compare(a, b))
-        .forEach((standing, index) => standing.position = index + 1);
-
-    driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults, DriverStandingSorter.getBuilder()));
-
-    return driverSimulationResults.map(d => d.convertToResultObject());
+    return calculateResultsForStandings(
+        driverSimulationResults,
+        remainingRaces,
+        input,
+        DriverStandingSorter.getBuilder(),
+    );
 }
 
 function calculateResultsForStandings<S extends StandingOwner, T extends AbstractStandingResultStore<S>>(
@@ -90,6 +87,8 @@ function calculateResultsForStandings<S extends StandingOwner, T extends Abstrac
     dataResult
         .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);
+
+    dataResult.forEach(d => d.calculatePossiblePositions(dataResult, sorterBuilder));
 
     return dataResult.map(s => s.convertToResultObject());
 }
