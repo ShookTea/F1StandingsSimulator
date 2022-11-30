@@ -2,17 +2,18 @@ import { Standing, Team } from '@/data/sim/f1/simDataTypes';
 import DriverStanding from '@/dataBuild/DriverStanding';
 import RacePositionMapping from './RacePositionMapping';
 import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
-export default class TeamStanding {
+export default class TeamStanding extends AbstractStandingResultStore {
     readonly team: Team;
     readonly points: number;
     readonly racePositions: RacePositionMapping;
     readonly maxPoints: number;
     readonly remainingCountingRaces: number;
-    position: number = 0;
 
     constructor(drivers: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput)
     {
+        super();
         const maxRemainingPoints = remainingRaces.map(r => {
             const pointSchema = input.pointSchemas[r.type];
             let points = (pointSchema.points[0] ?? 0) + (pointSchema.points[1] ?? 0);
@@ -38,8 +39,8 @@ export default class TeamStanding {
             points: this.points,
             maxPoints: this.maxPoints,
             position: this.position,
-            minPosition: 0,
-            maxPosition: 0,
+            minPosition: this.minPosition,
+            maxPosition: this.maxPosition,
             racePositions: this.racePositions.racePositions,
         };
     }

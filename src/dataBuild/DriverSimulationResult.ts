@@ -2,18 +2,16 @@ import DriverStanding from './DriverStanding';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
 import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
-export default class DriverSimulationResult {
+export default class DriverSimulationResult extends AbstractStandingResultStore {
     readonly standing: DriverStanding;
     readonly driver: Driver;
     readonly maxPoints: number;
     readonly remainingCountingRaces: number;
 
-    position: number = 0;
-    maxPosition: number = 0;
-    minPosition: number = 0;
-
     constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput) {
+        super();
         const maxRemainingPoints = remainingRaces.map(r => {
             const pointSchema = input.pointSchemas[r.type];
             let points = pointSchema.points[0];
