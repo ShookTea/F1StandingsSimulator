@@ -1,5 +1,6 @@
 import { Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 import RacePositionMapping from '@/dataBuild/RacePositionMapping';
+import { SorterBuilder } from '@/dataBuild/AbstractStandingSorter';
 
 export default abstract class AbstractStandingResultStore<T extends StandingOwner> {
     owner: T;
@@ -27,5 +28,20 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
             minPosition: this.minPosition,
             racePositions: this.racePositions.racePositions,
         };
+    }
+
+    calculatePossiblePositions(
+        allResults: AbstractStandingResultStore<T>[],
+        sorterBuilder: SorterBuilder<AbstractStandingResultStore<T>>,
+    ): void {
+        const bestCaseSorter = sorterBuilder.buildBestResultSorter(this);
+        const worstCaseSorter = sorterBuilder.buildWorstResultSorter(this);
+
+        this.maxPosition = [...allResults]
+            .sort((a, b) => bestCaseSorter.compare(a, b))
+            .indexOf(this) + 1;
+        this.minPosition = [...allResults]
+            .sort((a, b) => worstCaseSorter.compare(a, b))
+            .indexOf(this) + 1;
     }
 }

@@ -75,7 +75,7 @@ function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: Ab
         .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);
 
-    driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults));
+    driverSimulationResults.forEach(d => d.calculatePossiblePositions(driverSimulationResults, DriverStandingSorter.getBuilder()));
 
     return driverSimulationResults.map(d => d.convertToResultObject());
 }

@@ -1,5 +1,4 @@
 import DriverStanding from './DriverStanding';
-import DriverStandingSorter from './DriverStandingSorter';
 import { Driver } from '@/data/sim/f1/simDataTypes';
 import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
@@ -33,18 +32,5 @@ export default class DriverSimulationResult extends AbstractStandingResultStore<
         }
 
         return !this.racePositions.hasRaced();
-    }
-
-    calculatePossiblePositions(allResults: DriverSimulationResult[]): void
-    {
-        const bestCaseSorter = DriverStandingSorter.buildBestResultSorter(this);
-        const worstCaseSorter = DriverStandingSorter.buildWorstResultSorter(this);
-
-        this.maxPosition = [...allResults]
-            .sort((a, b) => bestCaseSorter.compare(a, b))
-            .indexOf(this) + 1;
-        this.minPosition = [...allResults]
-            .sort((a, b) => worstCaseSorter.compare(a, b))
-            .indexOf(this) + 1;
     }
 }
