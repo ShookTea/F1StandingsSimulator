@@ -5,11 +5,10 @@ import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 export default class TeamStanding extends AbstractStandingResultStore<Team> {
-    readonly team: Team;
-
     constructor(drivers: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput)
     {
         super(drivers[0].driver.team);
+
         const maxRemainingPoints = remainingRaces.map(r => {
             const pointSchema = input.pointSchemas[r.type];
             let points = (pointSchema.points[0] ?? 0) + (pointSchema.points[1] ?? 0);
@@ -22,7 +21,6 @@ export default class TeamStanding extends AbstractStandingResultStore<Team> {
         this.remainingCountingRaces = remainingRaces
             .filter(r => input.pointSchemas[r.type].positionsCount)
             .length;
-        this.team = drivers[0].driver.team;
         this.points = drivers.map(d => d.points).reduce((a, b) => a + b, 0);
         this.maxPoints = this.points + maxRemainingPoints;
         this.racePositions = drivers.map(d => d.racePositions).reduce((a, b) => a.add(b), new RacePositionMapping());
