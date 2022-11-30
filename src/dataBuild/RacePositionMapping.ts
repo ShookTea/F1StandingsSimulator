@@ -21,7 +21,7 @@ export default class RacePositionMapping {
         const result = new RacePositionMapping();
         result.entriesCount = this.entriesCount + other.entriesCount;
 
-        for (let p = 1; p <= Math.max(this.getLowestPosition(), other.getLowestPosition()) + 1; p++) {
+        for (let p = 1; p <= Math.max(this.getLowestPosition(), other.getLowestPosition()); p++) {
             result.racePositions[p] = this.getOccurrencesInPosition(p) + other.getOccurrencesInPosition(p);
         }
 
@@ -30,7 +30,9 @@ export default class RacePositionMapping {
 
     getLowestPosition(): number
     {
-        return Object.keys(this.racePositions).map(i => parseInt(i)).sort().reverse()[0] ?? 0;
+        return Object.keys(this.racePositions)
+            .map(i => parseInt(i))
+            .sort((a, b) => b - a)[0] ?? 0;
     }
 
     getOccurrencesInPosition(position: number): number
