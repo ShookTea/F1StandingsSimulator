@@ -13,6 +13,7 @@ export interface DataInput {
 export interface AbstractRace {
     code: String
     type: PointSchemaId
+    typeBeforeRace?: PointSchemaId
     label: String
 }
 

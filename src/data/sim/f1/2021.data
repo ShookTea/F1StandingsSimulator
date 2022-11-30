@@ -282,6 +282,7 @@
     }, {
       "code": "BEL",
       "type": "race-half",
+      "typeBeforeRace": "race",
       "label": "Belgian Grand Prix",
       "fastestLap": null,
       "positions": [ "VER", "RUS", "HAM", "RIC", "VET", "GAS", "OCO", "LEC", "LAT", "SAI", "ALO", "BOT", "GIO", "NOR", "TSU", "MSC", "MAZ", "RAI", "PER", "STR" ]

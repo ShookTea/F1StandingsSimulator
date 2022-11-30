@@ -29,7 +29,7 @@ export default class DriverSimulationResult extends AbstractStandingResultStore<
 export function calculateMaxRemainingPoints(remainingRaces: AbstractRace[], input: DataInput): number
 {
     return remainingRaces.map(r => {
-        const pointSchema = input.pointSchemas[r.type];
+        const pointSchema = input.pointSchemas[r.typeBeforeRace ?? r.type];
         let points = pointSchema.points[0];
         if (pointSchema.fastestLap !== undefined) {
             points += pointSchema.fastestLap.value;
