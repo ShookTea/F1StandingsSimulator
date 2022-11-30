@@ -10,6 +10,7 @@
     "test:ts": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
   },
