@@ -1,4 +1,6 @@
-export default abstract class AbstractStandingSorter<T> {
+import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
+
+export default abstract class AbstractStandingSorter<T extends AbstractStandingResultStore<any>> {
     private readonly bestResultTestSubject: T;
     private readonly worstResultTestSubject: T;
 
@@ -54,7 +56,31 @@ export default abstract class AbstractStandingSorter<T> {
         return t !== this.bestResultTestSubject && this.bestResultTestSubject !== null;
     }
 
-    protected abstract getPoints(t: T): number;
-    protected abstract getWorstCasePosition(t: T): number;
-    protected abstract getOccurrencesInPosition(t: T, position: number, worstCasePosition: number): number;
+    protected getPoints(t: T): number
+    {
+        if (this.shouldUseBestValue(t)) {
+            return t.maxPoints;
+        }
+
+        return t.points;
+    }
+
+    protected getWorstCasePosition(t: T): number
+    {
+        return t.racePositions.getLowestPosition();
+    }
+
+    protected getOccurrencesInPosition(t: T, position: number, worstCasePosition: number): number
+    {
+        let result = t.racePositions.getOccurrencesInPosition(position);
+
+        if (this.shouldUseBestValue(t)) {
+            result += ((position === 1 || position === 2) ? t.remainingCountingRaces : 0);
+        }
+        if (this.shouldUseWorstValue(t)) {
+            result += ((position === worstCasePosition || position === worstCasePosition - 1) ? t.remainingCountingRaces : 0);
+        }
+
+        return result;
+    }
 }

@@ -27,38 +27,21 @@ export default class DriverStandingSorter extends AbstractStandingSorter<DriverS
         return (a.isTemporaryAndNotRacedYet() ? 1 : 0) - (b.isTemporaryAndNotRacedYet() ? 1 : 0);
     }
 
-    protected getPoints(dsr: DriverSimulationResult): number
+    protected getPoints(t: DriverSimulationResult): number
     {
-        if (dsr.isTemporaryAndNotRacedYet()) {
-            return dsr.points;
+        if (t.isTemporaryAndNotRacedYet()) {
+            return t.points;
         }
 
-        if (this.shouldUseBestValue(dsr)) {
-            return dsr.maxPoints;
-        }
-
-        return dsr.points;
+        return super.getPoints(t);
     }
 
-    protected getWorstCasePosition(t: DriverSimulationResult): number
+    protected getOccurrencesInPosition(t: DriverSimulationResult, position: number, worstCasePosition: number): number
     {
-        return t.racePositions.getLowestPosition();
-    }
-
-    protected getOccurrencesInPosition(dsr: DriverSimulationResult, position: number, worstCasePosition: number): number
-    {
-        if (dsr.isTemporaryAndNotRacedYet()) {
-            return dsr.racePositions.getOccurrencesInPosition(position);
+        if (t.isTemporaryAndNotRacedYet()) {
+            return t.racePositions.getOccurrencesInPosition(position);
         }
 
-        if (this.shouldUseBestValue(dsr)) {
-            return dsr.racePositions.getOccurrencesInPosition(position) + (position === 1 ? dsr.remainingCountingRaces : 0);
-        }
-
-        if (this.shouldUseWorstValue(dsr)) {
-            return dsr.racePositions.getOccurrencesInPosition(position) + (position === worstCasePosition ? dsr.remainingCountingRaces : 0);
-        }
-
-        return dsr.racePositions.getOccurrencesInPosition(position);
+        return super.getOccurrencesInPosition(t, position, worstCasePosition);
     }
 }
