@@ -38,9 +38,6 @@ const { windowWidth } = useWindowWidth();
 </template>
 
 <script lang="ts">
-
-import { Team } from '@/data/sim/f1/simDataTypes';
-
 export default {
     computed: {
         backgroundColor() {
