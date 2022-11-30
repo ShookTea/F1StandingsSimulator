@@ -4,7 +4,8 @@ import DriverSimulationResult from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
 import { Driver, Round, Season, Standing, Team } from '@/data/sim/f1/simDataTypes';
 import TeamStanding from '../dataBuild/TeamStanding';
-import data from '@/data/sim/data';
+import AbstractStandingSorter from './AbstractStandingSorter';
+import TeamStandingSorter from './TeamStandingSorter';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -54,6 +55,11 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 function calculateTeamResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Team>[]
 {
     const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
+    const comparator: AbstractStandingSorter<TeamStanding> = TeamStandingSorter.buildSorter();
+
+    teamStandings
+        .sort((a, b) => comparator.compare(a, b))
+        .forEach((standing, index) => standing.position = index + 1);
 
     return teamStandings.map(t => t.convertToResultObject());
 }
@@ -63,7 +69,7 @@ function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: Ab
     const driverSimulationResults: DriverSimulationResult[] = dataResult
         .map(result => new DriverSimulationResult(result, remainingRaces, input));
 
-    const comparator: DriverStandingSorter = DriverStandingSorter.buildSorter();
+    const comparator: AbstractStandingSorter<DriverSimulationResult> = DriverStandingSorter.buildSorter();
 
     driverSimulationResults
         .sort((a, b) => comparator.compare(a, b))

@@ -9,6 +9,7 @@ export default class TeamStanding {
     readonly racePositions: RacePositionMapping;
     readonly maxPoints: number;
     readonly remainingCountingRaces: number;
+    position: number = 0;
 
     constructor(drivers: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput)
     {
@@ -36,7 +37,7 @@ export default class TeamStanding {
             owner: this.team,
             points: this.points,
             maxPoints: this.maxPoints,
-            position: 0,
+            position: this.position,
             minPosition: 0,
             maxPosition: 0,
             racePositions: this.racePositions.racePositions,
