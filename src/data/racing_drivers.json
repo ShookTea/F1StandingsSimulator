@@ -112,5 +112,21 @@
     "7bb2c22c-56b2-4be2-85bb-697cb7c7b5da": {
         "givenName": "Logan",
         "familyName": "Sargeant"
+    },
+    "0807b2fd-9090-45c9-af7c-daec36b2e283": {
+        "givenName": "Daniil",
+        "familyName": "Kvyat"
+    },
+    "6b04dfbe-f6c6-4ebd-9a63-557e3bb587bb": {
+        "givenName": "Romain",
+        "familyName": "Grosjean"
+    },
+    "1cc90a6a-55a0-4403-8f6b-8ece5a4a4800": {
+        "givenName": "Pietro",
+        "familyName": "Fittipaldi"
+    },
+    "af0027d6-56e3-46d4-9f31-924940fa3a1c": {
+        "givenName": "Jack",
+        "familyName": "Aitken"
     }
 }

@@ -1,6 +1,8 @@
 import { Season } from '@/data/sim/f1/simDataTypes';
 
 // @ts-ignore
+import data2020 from './2020.data';
+// @ts-ignore
 import data2021 from './2021.data';
 // @ts-ignore
 import data2022 from './2022.data';
@@ -23,6 +25,10 @@ export const F1Data: SportData<Season> = {
         data: data2021,
         label: 'Season 2021',
         routePart: '2021',
+    }, {
+        data: data2020,
+        label: 'Season 2020',
+        routePart: '2020',
     }],
     routePart: 'f1',
     label: 'Formula 1',
