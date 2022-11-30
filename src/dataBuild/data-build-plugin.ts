@@ -56,13 +56,12 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 function calculateTeamResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Team>[]
 {
     const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
-    const comparator: AbstractStandingSorter<TeamStanding> = TeamStandingSorter.buildSorter();
-
-    teamStandings
-        .sort((a, b) => comparator.compare(a, b))
-        .forEach((standing, index) => standing.position = index + 1);
-
-    return teamStandings.map(t => t.convertToResultObject());
+    return calculateResultsForStandings(
+        teamStandings,
+        remainingRaces,
+        input,
+        TeamStandingSorter.getBuilder(),
+    );
 }
 
 function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Driver>[]
@@ -87,7 +86,12 @@ function calculateResultsForStandings<S extends StandingOwner, T extends Abstrac
     input: DataInput,
     sorterBuilder: SorterBuilder<T>
 ): Standing<S>[] {
-    return [];
+    const comparator = sorterBuilder.buildSorter();
+    dataResult
+        .sort((a, b) => comparator.compare(a, b))
+        .forEach((standing, index) => standing.position = index + 1);
+
+    return dataResult.map(s => s.convertToResultObject());
 }
 
 function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStanding[] {
