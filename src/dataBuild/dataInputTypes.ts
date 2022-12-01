@@ -22,6 +22,26 @@ export interface RemainingRace extends AbstractRace {}
 export interface Race extends AbstractRace {
     fastestLap: Driver
     positions: Driver[]
+    teamSwitch?: TeamSwitchMap
+    teamPointChanges?: TeamPointChangeMap
+}
+
+export interface TeamPointChangeMap {
+    [index: Team]: TeamPointChange
+}
+
+export interface TeamPointChange {
+    points: number
+    description: string
+}
+
+export interface TeamSwitchMap {
+    [index: Driver]: TeamSwitch
+}
+
+export interface TeamSwitch {
+    team: Team
+    description: string
 }
 
 export interface PointSchemaMap {

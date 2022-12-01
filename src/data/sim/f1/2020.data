@@ -238,7 +238,13 @@
       "type": "race",
       "label": "70th Anniversary Grand Prix",
       "fastestLap": "HAM",
-      "positions": [ "VER", "HAM", "BOT", "LEC", "ALB", "STR", "HUL", "OCO", "NOR", "KVY", "GAS", "VET", "SAI", "RIC", "RAI", "GRO", "GIO", "RUS", "LAT" ]
+      "positions": [ "VER", "HAM", "BOT", "LEC", "ALB", "STR", "HUL", "OCO", "NOR", "KVY", "GAS", "VET", "SAI", "RIC", "RAI", "GRO", "GIO", "RUS", "LAT" ],
+      "teamPointChanges": {
+        "BWT Racing Point F1 Team": {
+          "points": -15,
+          "description": "The stewards concluded that Racing Point had illegally copied the brake ducts of the Mercedes F1 W10 and Racing Point were subsequently penalised by 15 Constructors' Championship points and fined €400,000."
+        }
+      }
     }, {
       "code": "ESP",
       "type": "race",
@@ -306,7 +312,10 @@
       "fastestLap": "RUS",
       "positions": [ "PER", "OCO", "STR", "SAI", "RIC", "ALB", "KVY", "BOT", "RUS", "NOR", "GAS", "VET", "GIO", "RAI", "MAG", "AIT", "FIT" ],
       "teamSwitch": {
-        "RUS": "Mercedes-AMG Petronas F1 Team"
+        "RUS": {
+          "team": "Mercedes-AMG Petronas F1 Team",
+          "description": "Lewis Hamilton was ruled out of the Sakhir Grand Prix after testing positive for the coronavirus and was replaced by Williams' George Russell."
+        }
       }
     }, {
       "code": "ABU",

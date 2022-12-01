@@ -16,6 +16,7 @@ export interface Standing<T extends StandingOwner> {
     maxPosition: number
     minPosition: number
     racePositions: RacePositionMap
+    note: string
 }
 
 export interface StandingOwner {}

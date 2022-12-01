@@ -22,7 +22,7 @@ const { windowWidth } = useWindowWidth();
                 <div>
                     <abbr :title="standing.owner.entry">{{ constructorName }}</abbr>
                 </div>
-                <div/>
+                <div v-if="standing.note !== ''" class="icon-container" :title="standing.note"><v-icon class="icon" name="bi-info-circle-fill"/></div>
             </div>
         </th>
         <th class="pre-cell">{{ standing.points }}</th>
@@ -80,5 +80,8 @@ th {
     text-decoration-style: dotted;
     cursor: pointer;
     padding-left: 1em;
+}
+.icon-container {
+    margin-left: 1em;
 }
 </style>

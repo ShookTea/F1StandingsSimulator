@@ -1,6 +1,8 @@
 import { Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 import RacePositionMapping from '@/dataBuild/RacePositionMapping';
 import { SorterBuilder } from '@/dataBuild/AbstractStandingSorter';
+import AbstractStanding from './AbstractStanding';
+import { AbstractRace, DataInput } from './dataInputTypes';
 
 export default abstract class AbstractStandingResultStore<T extends StandingOwner> {
     owner: T;
@@ -12,9 +14,22 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
     racePositions: RacePositionMapping;
     maxPoints: number;
     remainingCountingRaces: number;
+    notes: string[] = [];
 
-    protected constructor(owner: T) {
-        this.owner = owner;
+    protected constructor(
+        standing: AbstractStanding<T>,
+        remainingRaces: AbstractRace[],
+        input: DataInput,
+        maxRemainingPoints: number,
+    ) {
+        this.owner = standing.owner;
+        this.remainingCountingRaces = remainingRaces
+            .filter(r => input.pointSchemas[r.type].positionsCount)
+            .length;
+        this.points = standing.points;
+        this.maxPoints = this.points + maxRemainingPoints;
+        this.racePositions = standing.racePositions;
+        this.notes = standing.notes;
     }
 
     convertToResultObject(): Standing<T>
@@ -27,6 +42,7 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
             maxPosition: this.maxPosition,
             minPosition: this.minPosition,
             racePositions: this.racePositions.racePositions,
+            note: this.notes.join(' '),
         };
     }
 

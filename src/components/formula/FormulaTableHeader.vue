@@ -4,7 +4,7 @@ import { useWindowWidth } from '@/composable/windowWidth';
 
 interface Props {
     standings: Standing<any>[]
-    showNumberColumn: boolean
+    showNumberColumn?: boolean
     nameLabel: string
 }
 

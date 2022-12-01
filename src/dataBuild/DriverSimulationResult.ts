@@ -4,16 +4,9 @@ import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 export default class DriverSimulationResult extends AbstractStandingResultStore<Driver> {
-    constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput) {
-        super(standing.driver);
-
-        this.points = standing.points;
-        this.maxPoints = standing.points + calculateMaxRemainingPoints(remainingRaces, input);
-        this.racePositions = standing.racePositions;
-
-        this.remainingCountingRaces = remainingRaces
-            .filter(r => input.pointSchemas[r.type].positionsCount)
-            .length;
+    constructor(standing: DriverStanding, remainingRaces: AbstractRace[], input: DataInput)
+    {
+        super(standing, remainingRaces, input, calculateMaxRemainingPoints(remainingRaces, input));
     }
 
     isTemporaryAndNotRacedYet(): boolean

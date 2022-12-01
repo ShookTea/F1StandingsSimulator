@@ -1,12 +1,14 @@
 import DriverStanding from './DriverStanding';
 import { AbstractRace, DataInput, Race } from './dataInputTypes';
-import DriverSimulationResult, { calculateMaxRemainingPoints as calculateMaxRemainingDriverPoints } from './DriverSimulationResult';
+import { calculateMaxRemainingPoints as calculateMaxRemainingDriverPoints } from './DriverSimulationResult';
 import DriverStandingSorter from './DriverStandingSorter';
-import { Driver, Round, Season, Standing, StandingOwner, Team } from '@/data/sim/f1/simDataTypes';
-import TeamStanding, { calculateMaxRemainingPoints as calculateMaxRemainingTeamPoints } from '../dataBuild/TeamStanding';
+import { Round, Season, Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
+import { calculateMaxRemainingPoints as calculateMaxRemainingTeamPoints } from './TeamSimulationResult';
 import { SorterBuilder } from './AbstractStandingSorter';
 import TeamStandingSorter from './TeamStandingSorter';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
+import AbstractStanding from './AbstractStanding';
+import TeamStanding from './TeamStanding';
 
 const fileRegex: RegExp = /([0-9]{4})\.data$/
 
@@ -44,48 +46,31 @@ function convert(input) {
 function calculateResults(input: DataInput, races: Race[], remainingRaces: AbstractRace[]): Round
 {
     const roundName: string = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
-    const dataResult: DriverStanding[] = calculateResultAfterRaces(input, races);
+    const driverStandings: DriverStanding[] = calculateStandingsAfterRace(
+        input, races, i => DriverStanding.createEmptyStandings(i),
+    );
+    const teamStandings: TeamStanding[] = calculateStandingsAfterRace(
+        input, races, i => TeamStanding.createEmptyStandings(i),
+    );
 
     return {
         roundName,
-        driverStandings: calculateDriverResults(dataResult, remainingRaces, input),
-        teamStandings: calculateTeamResults(dataResult, remainingRaces, input),
+        driverStandings: calculateResultsForStandings(driverStandings, remainingRaces, input, DriverStandingSorter.getBuilder()),
+        teamStandings: calculateResultsForStandings(teamStandings, remainingRaces, input, TeamStandingSorter.getBuilder()),
         maxRemainingDriverPoints: calculateMaxRemainingDriverPoints(remainingRaces, input),
         maxRemainingTeamPoints: calculateMaxRemainingTeamPoints(remainingRaces, input),
     }
 }
 
-function calculateTeamResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Team>[]
-{
-    const teamStandings: TeamStanding[] = TeamStanding.buildFromDrivers(dataResult, remainingRaces, input);
-    return calculateResultsForStandings(
-        teamStandings,
-        remainingRaces,
-        input,
-        TeamStandingSorter.getBuilder(),
-    );
-}
-
-function calculateDriverResults(dataResult: DriverStanding[], remainingRaces: AbstractRace[], input: DataInput): Standing<Driver>[]
-{
-    const driverSimulationResults: DriverSimulationResult[] = dataResult
-        .map(result => new DriverSimulationResult(result, remainingRaces, input));
-
-    return calculateResultsForStandings(
-        driverSimulationResults,
-        remainingRaces,
-        input,
-        DriverStandingSorter.getBuilder(),
-    );
-}
-
-function calculateResultsForStandings<S extends StandingOwner, T extends AbstractStandingResultStore<S>>(
-    dataResult: T[],
+function calculateResultsForStandings<S extends StandingOwner>(
+    standingResult: AbstractStanding<S>[],
     remainingRaces: AbstractRace[],
     input: DataInput,
-    sorterBuilder: SorterBuilder<T>
+    sorterBuilder: SorterBuilder<AbstractStandingResultStore<S>>
 ): Standing<S>[] {
+    const dataResult = standingResult.map(s => s.toStandingResult(remainingRaces, input));
     const comparator = sorterBuilder.buildSorter();
+
     dataResult
         .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);
@@ -95,8 +80,12 @@ function calculateResultsForStandings<S extends StandingOwner, T extends Abstrac
     return dataResult.map(s => s.convertToResultObject());
 }
 
-function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStanding[] {
-    const standings = DriverStanding.createEmptyStandings(input)
+function calculateStandingsAfterRace<T extends AbstractStanding<any>>(
+    input: DataInput,
+    races: Race[],
+    emptyStandingsBuilder: (input: DataInput) => T[],
+): T[] {
+    const standings: T[] = emptyStandingsBuilder(input);
 
     for (const race of races) {
         standings.forEach(entry => entry.addRaceResult(input, race));
@@ -104,3 +93,4 @@ function calculateResultAfterRaces(input: DataInput, races: Race[]): DriverStand
 
     return standings;
 }
+

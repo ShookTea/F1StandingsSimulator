@@ -1,18 +1,18 @@
-import TeamStanding from './TeamStanding';
+import TeamSimulationResult from './TeamSimulationResult';
 import AbstractStandingSorter, { SorterBuilder } from './AbstractStandingSorter';
 
-export default class TeamStandingSorter extends AbstractStandingSorter<TeamStanding> {
+export default class TeamStandingSorter extends AbstractStandingSorter<TeamSimulationResult> {
 
-    static getBuilder(): SorterBuilder<TeamStanding>
+    static getBuilder(): SorterBuilder<TeamSimulationResult>
     {
         return {
-            buildSorter(): AbstractStandingSorter<TeamStanding> {
+            buildSorter(): AbstractStandingSorter<TeamSimulationResult> {
                 return new TeamStandingSorter(null, null);
             },
-            buildBestResultSorter(t: TeamStanding): AbstractStandingSorter<TeamStanding> {
+            buildBestResultSorter(t: TeamSimulationResult): AbstractStandingSorter<TeamSimulationResult> {
                 return new TeamStandingSorter(t, null);
             },
-            buildWorstResultSorter(t: TeamStanding): AbstractStandingSorter<TeamStanding> {
+            buildWorstResultSorter(t: TeamSimulationResult): AbstractStandingSorter<TeamSimulationResult> {
                 return new TeamStandingSorter(null, t);
             },
         }
@@ -22,12 +22,12 @@ export default class TeamStandingSorter extends AbstractStandingSorter<TeamStand
         return new TeamStandingSorter(null, null);
     }
 
-    static buildBestResultSorter(bestFor: TeamStanding): TeamStandingSorter
+    static buildBestResultSorter(bestFor: TeamSimulationResult): TeamStandingSorter
     {
         return new TeamStandingSorter(bestFor, null);
     }
 
-    static buildWorstResultSorter(worstFor: TeamStanding): TeamStandingSorter
+    static buildWorstResultSorter(worstFor: TeamSimulationResult): TeamStandingSorter
     {
         return new TeamStandingSorter(null, worstFor);
     }
