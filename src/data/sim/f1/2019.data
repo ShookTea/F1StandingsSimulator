@@ -145,7 +145,10 @@
     "ALB": {
       "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
       "number": 23,
-      "team": "Aston Martin Red Bull Racing"
+      "team": {
+        "AUS": "Red Bull Toro Rosso Honda",
+        "BEL": "Aston Martin Red Bull Racing"
+      }
     },
     "VER": {
       "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
@@ -165,14 +168,16 @@
     "GAS": {
       "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
       "number": 10,
-      "team": "Red Bull Toro Rosso Honda"
+      "team": {
+        "AUS": "Aston Martin Red Bull Racing",
+        "BEL": "Red Bull Toro Rosso Honda"
+      }
     },
     "KVY": {
       "uuid": "0807b2fd-9090-45c9-af7c-daec36b2e283",
       "number": 26,
       "team": "Red Bull Toro Rosso Honda"
     },
-
     "RUS": {
       "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
       "number": 63,

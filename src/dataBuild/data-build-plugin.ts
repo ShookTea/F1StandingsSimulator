@@ -47,7 +47,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
 {
     const roundName: string = races.length === 0 ? 'Start of season' : 'After ' + races[races.length - 1].label;
     const driverStandings: DriverStanding[] = calculateStandingsAfterRace(
-        input, races, i => DriverStanding.createEmptyStandings(i),
+        input, races, i => DriverStanding.createEmptyStandings(i, races),
     );
     const teamStandings: TeamStanding[] = calculateStandingsAfterRace(
         input, races, i => TeamStanding.createEmptyStandings(i),

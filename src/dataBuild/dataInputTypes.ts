@@ -1,6 +1,7 @@
 type Driver = string
 type Team = string
 type PointSchemaId = string
+type RaceCode = string
 
 export interface DataInput {
     teams: TeamMap
@@ -11,10 +12,10 @@ export interface DataInput {
 }
 
 export interface AbstractRace {
-    code: String
+    code: RaceCode
     type: PointSchemaId
     typeBeforeRace?: PointSchemaId
-    label: String
+    label: string
 }
 
 export interface RemainingRace extends AbstractRace {}
@@ -66,8 +67,12 @@ export interface DriverMap {
 export interface DriverEntry {
     uuid: string
     temporary?: boolean
-    team: Team
+    team: Team|TeamMembershipPlanner
     number: number
+}
+
+export interface TeamMembershipPlanner {
+    [index: RaceCode]: Team
 }
 
 export interface TeamMap {

@@ -1,4 +1,4 @@
-import { AbstractRace, DataInput, DriverEntry, Race, TeamEntry } from './dataInputTypes';
+import { AbstractRace, DataInput, DriverEntry, Race, TeamEntry, TeamMembershipPlanner } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import { Driver, Team } from '@/data/sim/f1/simDataTypes';
 import drivers from '../data/racing_drivers.json';
@@ -7,11 +7,14 @@ import DriverSimulationResult from './DriverSimulationResult';
 import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
 
 export default class DriverStanding extends AbstractStanding<Driver> {
-    constructor(driverAbbr: string, input: DataInput)
+    constructor(driverAbbr: string, input: DataInput, races: Race[])
     {
         const entry: DriverEntry = input.drivers[driverAbbr];
-        const teamName: string = entry.team;
-        const teamEntry: TeamEntry = input.teams[entry.team];
+        if (typeof entry.team === 'string') {
+
+        }
+        const teamName: string = DriverStanding.getTeamName(entry, races, input)
+        const teamEntry: TeamEntry = input.teams[teamName];
         const team: Team = {
             entry: teamName,
             ...teamEntry,
@@ -28,6 +31,25 @@ export default class DriverStanding extends AbstractStanding<Driver> {
         super(driver);
     }
 
+    private static getTeamName(entry: DriverEntry, races: Race[], input: DataInput): string
+    {
+        if (typeof entry.team === 'string') {
+            return entry.team;
+        }
+        const teamPlanner: TeamMembershipPlanner = <TeamMembershipPlanner>entry.team;
+        let lastTeamName = '';
+        for (const race of races) {
+            if (teamPlanner.hasOwnProperty(race.code)) {
+                lastTeamName = teamPlanner[race.code];
+            }
+        }
+        if (lastTeamName !== '') {
+            return lastTeamName;
+        }
+
+        return teamPlanner[input.races[0].code];
+    }
+
     addRaceResult(input: DataInput, race: Race): void
     {
         const index: number = race.positions.indexOf(this.owner.abbreviation);
@@ -41,13 +63,13 @@ export default class DriverStanding extends AbstractStanding<Driver> {
         this.racePositions.registerPosition(position, pointSchema);
     }
 
-    static createEmptyStandings(input: DataInput): DriverStanding[]
+    static createEmptyStandings(input: DataInput, races: Race[]): DriverStanding[]
     {
         const drivers: string[] = Object.keys(input.drivers)
         const standings: DriverStanding[] = [];
         for (const driver of drivers) {
             standings.push(
-                new DriverStanding(driver, input),
+                new DriverStanding(driver, input, races),
             );
         }
 
