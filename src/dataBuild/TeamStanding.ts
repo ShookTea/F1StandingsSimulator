@@ -4,16 +4,14 @@ import PointSchema from './PointSchema';
 import AbstractStanding from './AbstractStanding';
 import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
 import TeamSimulationResult from './TeamSimulationResult';
+import DriverStanding from './DriverStanding';
 
 export default class TeamStanding extends AbstractStanding<Team> {
-    readonly driversAbbr: string[];
-
-    private constructor(team: Team, drivers: string[]) {
+    private constructor(team: Team) {
         super(team);
-        this.driversAbbr = drivers;
     }
 
-    static createEmptyStandings(input: DataInput): TeamStanding[]
+    static createEmptyStandings(input: DataInput, races: Race[]): TeamStanding[]
     {
         const entries = Object.keys(input.teams);
         const standings: TeamStanding[] = [];
@@ -24,10 +22,7 @@ export default class TeamStanding extends AbstractStanding<Team> {
                 ...teamEntry,
             };
 
-            const driverAbbr = Object.keys(input.drivers)
-                .filter(abbr => input.drivers[abbr].team === entry);
-
-            standings.push(new TeamStanding(team, driverAbbr));
+            standings.push(new TeamStanding(team));
         }
 
         return standings;
@@ -58,7 +53,8 @@ export default class TeamStanding extends AbstractStanding<Team> {
 
     private getDriversAbbreviationsForRace(input: DataInput, race: Race): string[]
     {
-        let abbreviations = [...this.driversAbbr];
+        let abbreviations = Object.keys(input.drivers)
+            .filter(abbr => DriverStanding.getTeamNameForRace(input.drivers[abbr], race, input) === this.owner.entry);
 
         if (race.teamSwitch !== undefined) {
             for (const switchedDriver in race.teamSwitch) {

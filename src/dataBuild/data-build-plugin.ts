@@ -50,7 +50,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
         input, races, i => DriverStanding.createEmptyStandings(i, races),
     );
     const teamStandings: TeamStanding[] = calculateStandingsAfterRace(
-        input, races, i => TeamStanding.createEmptyStandings(i),
+        input, races, i => TeamStanding.createEmptyStandings(i, races),
     );
 
     return {
