@@ -1,0 +1,324 @@
+{
+  "teams": {
+    "Alfa Romeo Racing": {
+      "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
+      "chassis": "C39",
+      "chassisConstructor": "Alfa Romeo Racing",
+      "powerUnit": "Ferrari 064",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#C92D4B"
+    },
+    "Scuderia Ferrari Mission Winnow": {
+      "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+      "chassis": "SF1000",
+      "chassisConstructor": "Ferrari",
+      "powerUnit": "Ferrari 064",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#F91536"
+    },
+    "Haas F1 Team": {
+      "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+      "chassis": "VF-20",
+      "chassisConstructor": "Haas",
+      "powerUnit": "Ferrari 064",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#B6BABD"
+    },
+    "McLaren F1 Team": {
+      "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+      "chassis": "MCL35",
+      "chassisConstructor": "McLaren",
+      "powerUnit": "Renault E-Tech 19",
+      "powerUnitConstructor": "Renault",
+      "color": "#F58020"
+    },
+    "Mercedes AMG Petronas Motorsport": {
+      "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+      "chassis": "F1 W11",
+      "chassisConstructor": "Mercedes",
+      "powerUnit": "Mercedes M10 EQ Power+",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#6CD3BF"
+    },
+    "SportPesa Racing Point F1 Team": {
+      "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+      "chassis": "RP20",
+      "chassisConstructor": "Racing Point",
+      "powerUnit": "BWT Mercedes",
+      "powerUnitConstructor": "BWT Mercedes",
+      "color": "#358C75"
+    },
+    "Aston Martin Red Bull Racing": {
+      "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+      "chassis": "RB16",
+      "chassisConstructor": "Red Bull Racing",
+      "powerUnit": "Honda RA619H",
+      "powerUnitConstructor": "Honda",
+      "color": "#3671C6"
+    },
+    "Renault F1 Team": {
+      "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+      "chassis": "R.S.20",
+      "chassisConstructor": "Renault",
+      "powerUnit": "Renault E-Tech 19",
+      "powerUnitConstructor": "Renault",
+      "color": "#FCF236"
+    },
+    "Red Bull Toro Rosso Honda": {
+      "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+      "chassis": "AT01",
+      "chassisConstructor": "Scuderia Toro Rosso",
+      "powerUnit": "Honda RA619H",
+      "powerUnitConstructor": "Honda",
+      "color": "#A39064"
+    },
+    "ROKiT Williams Racing": {
+      "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+      "chassis": "FW43",
+      "chassisConstructor": "Williams",
+      "powerUnit": "Mercedes M10 EQ Power+",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#37BEDD"
+    }
+  },
+  "drivers": {
+    "RAI": {
+      "uuid": "3bc7a1e7-a088-4993-9579-edcd5ada769a",
+      "number": 7,
+      "team": "Alfa Romeo Racing"
+    },
+    "GIO": {
+      "uuid": "71d45ec8-9e0f-46c4-a399-d0905bfae8e4",
+      "number": 99,
+      "team": "Alfa Romeo Racing"
+    },
+    "VET": {
+      "uuid": "245444c2-533b-4ab2-8d7c-518c09f4b479",
+      "number": 5,
+      "team": "Scuderia Ferrari Mission Winnow"
+    },
+    "LEC": {
+      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
+      "number": 16,
+      "team": "Scuderia Ferrari Mission Winnow"
+    },
+    "GRO": {
+      "uuid": "6b04dfbe-f6c6-4ebd-9a63-557e3bb587bb",
+      "number": 8,
+      "team": "Haas F1 Team"
+    },
+    "MAG": {
+      "uuid": "1b2846f5-0613-4725-bb40-cbcf6283fadd",
+      "number": 20,
+      "team": "Haas F1 Team"
+    },
+    "NOR": {
+      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466",
+      "number": 4,
+      "team": "McLaren F1 Team"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c",
+      "number": 55,
+      "team": "McLaren F1 Team"
+    },
+    "HAM": {
+      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299",
+      "number": 44,
+      "team": "Mercedes AMG Petronas Motorsport"
+    },
+    "BOT": {
+      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7",
+      "number": 77,
+      "team": "Mercedes AMG Petronas Motorsport"
+    },
+    "PER": {
+      "uuid": "b6683cdd-6246-402f-8d63-673941252343",
+      "number": 11,
+      "team": "SportPesa Racing Point F1 Team"
+    },
+    "STR": {
+      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b",
+      "number": 18,
+      "team": "SportPesa Racing Point F1 Team"
+    },
+    "ALB": {
+      "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
+      "number": 23,
+      "team": "Aston Martin Red Bull Racing"
+    },
+    "VER": {
+      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
+      "number": 33,
+      "team": "Aston Martin Red Bull Racing"
+    },
+    "RIC": {
+      "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767",
+      "number": 3,
+      "team": "Renault F1 Team"
+    },
+    "HUL": {
+      "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746",
+      "number": 27,
+      "team": "Renault F1 Team"
+    },
+    "GAS": {
+      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+      "number": 10,
+      "team": "Red Bull Toro Rosso Honda"
+    },
+    "KVY": {
+      "uuid": "0807b2fd-9090-45c9-af7c-daec36b2e283",
+      "number": 26,
+      "team": "Red Bull Toro Rosso Honda"
+    },
+
+    "RUS": {
+      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
+      "number": 63,
+      "team": "ROKiT Williams Racing"
+    },
+    "KUB": {
+      "uuid": "c28dac31-eda3-4084-a10a-0ecc5c975678",
+      "number": 88,
+      "team": "ROKiT Williams Racing"
+    }
+  },
+  "pointSchemas": {
+    "race": {
+      "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
+      "fastestLap": { "value": 1, "maxPosition": 10 },
+      "positionsCount": true
+    }
+  },
+  "races": [
+    {
+      "code": "AUS",
+      "type": "race",
+      "label": "Australian Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "BOT", "HAM", "VER", "VET", "LEC", "MAG", "HUL", "RAI", "STR", "KVY", "GAS", "NOR", "PER", "ALB", "GIO", "RUS", "KUB" ]
+    }, {
+      "code": "BHR",
+      "type": "race",
+      "label": "Bahrain Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "HAM", "BOT", "LEC", "VER", "VET", "NOR", "RAI", "GAS", "ALB", "PER", "GIO", "KVY", "MAG", "STR", "RUS", "KUB", "HUL", "RIC", "SAI" ]
+    }, {
+      "code": "CHN",
+      "type": "race",
+      "label": "Chinese Grand Prix",
+      "fastestLap": "GAS",
+      "positions": [ "HAM", "BOT", "VET", "VER", "LEC", "GAS", "RIC", "PER", "RAI", "ALB", "GRO", "STR", "MAG", "SAI", "GIO", "RUS", "KUB", "NOR" ]
+    }, {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "BOT", "HAM", "VET", "VER", "LEC", "PER", "SAI", "NOR", "STR", "RAI", "ALB", "GIO", "MAG", "HUL", "RUS", "KUB" ]
+    }, {
+      "code": "ESP",
+      "type": "race",
+      "label": "Spanish Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "HAM", "BOT", "VER", "VET", "LEC", "GAS", "MAG", "SAI", "KVY", "GRO", "ALB", "RIC", "HUL", "RAI", "PER", "GIO", "RUS", "KUB" ]
+    }, {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix",
+      "fastestLap": "GAS",
+      "positions": [ "HAM", "VET", "BOT", "VER", "GAS", "SAI", "KVY", "ALB", "RIC", "GRO", "NOR", "PER", "HUL", "MAG", "RUS", "STR", "RAI", "KUB", "GIO" ]
+    }, {
+      "code": "CAN",
+      "type": "race",
+      "label": "Canadian Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "HAM", "VET", "LEC", "BOT", "VER", "RIC", "HUL", "GAS", "STR", "KVY", "SAI", "PER", "GIO", "GRO", "RAI", "RUS", "MAG", "KUB" ]
+    }, {
+      "code": "FRA",
+      "type": "race",
+      "label": "French Grand Prix",
+      "fastestLap": "VET",
+      "positions": [ "HAM", "BOT", "LEC", "VER", "VET", "SAI", "RAI", "HUL", "NOR", "GAS", "RIC", "PER", "STR", "KVY", "ALB", "GIO", "MAG", "KUB", "RUS" ]
+    }, {
+      "code": "AUT",
+      "type": "race",
+      "label": "Austrian Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "LEC", "BOT", "VET", "HAM", "NOR", "GAS", "SAI", "RAI", "GIO", "PER", "RIC", "HUL", "STR", "ALB", "GRO", "KVY", "RUS", "MAG", "KUB" ]
+    }, {
+      "code": "GBR",
+      "type": "race",
+      "label": "British Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "HAM", "BOT", "LEC", "GAS", "VER", "SAI", "RIC", "RAI", "KVY", "HUL", "NOR", "ALB", "STR", "RUS", "KUB", "VET", "PER" ]
+    }, {
+      "code": "GER",
+      "type": "race",
+      "label": "German Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "VET", "KVY", "STR", "SAI", "ALB", "GRO", "MAG", "HAM", "KUB", "RUS", "RAI", "GIO", "GAS" ]
+    }, {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "HAM", "VER", "VET", "LEC", "SAI", "GAS", "RAI", "BOT", "NOR", "ALB", "PER", "HUL", "MAG", "RIC", "KVY", "RUS", "STR", "GIO", "KUB" ]
+    }, {
+      "code": "BEL",
+      "type": "race",
+      "label": "Belgian Grand Prix",
+      "fastestLap": "VET",
+      "positions": [ "LEC", "HAM", "BOT", "VET", "ALB", "PER", "KVY", "HUL", "GAS", "STR", "NOR", "MAG", "GRO", "RIC", "RUS", "RAI", "KUB", "GIO" ]
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "LEC", "BOT", "HAM", "RIC", "HUL", "ALB", "PER", "VER", "GIO", "NOR", "GAS", "STR", "VET", "RUS", "RAI", "GRO", "KUB" ]
+    }, {
+      "code": "SIN",
+      "type": "race",
+      "label": "Singapore Grand Prix",
+      "fastestLap": "MAG",
+      "positions": [ "VET", "LEC", "VER", "HAM", "BOT", "ALB", "NOR", "GAS", "HUL", "GIO", "GRO", "SAI", "STR", "RIC", "KVY", "KUB", "MAG" ]
+    }, {
+      "code": "RUS",
+      "type": "race",
+      "label": "Russian Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "HAM", "BOT", "LEC", "VER", "ALB", "SAI", "PER", "NOR", "MAG", "HUL", "STR", "KVY", "RAI", "GAS", "GIO" ]
+    }, {
+      "code": "JPN",
+      "type": "race",
+      "label": "Japanese Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "BOT", "VET", "HAM", "ALB", "SAI", "LEC", "GAS", "PER", "STR", "KVY", "NOR", "RAI", "GRO", "GIO", "MAG", "RUS", "KUB" ]
+    }, {
+      "code": "MEX",
+      "type": "race",
+      "label": "Mexican Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "HAM", "VET", "BOT", "LEC", "ALB", "VER", "PER", "RIC", "GAS", "HUL", "KVY", "STR", "SAI", "GIO", "MAG", "RUS", "GRO", "KUB" ]
+    }, {
+      "code": "USA",
+      "type": "race",
+      "label": "United States Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "BOT", "HAM", "VER", "LEC", "ALB", "RIC", "NOR", "SAI", "HUL", "PER", "RAI", "KVY", "STR", "GIO", "GRO", "GAS", "RUS", "MAG" ]
+    }, {
+      "code": "BRA",
+      "type": "race",
+      "label": "Brazilian Grand Prix",
+      "fastestLap": "BOT",
+      "positions": [ "VER", "GAS", "SAI", "RAI", "GIO", "RIC", "HAM", "NOR", "PER", "KVY", "MAG", "RUS", "GRO", "ALB", "HUL", "KUB", "VET", "LEC", "STR" ]
+    }, {
+      "code": "ABU",
+      "type": "race",
+      "label": " Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "HAM", "VER", "LEC", "BOT", "VET", "ALB", "PER", "NOR", "KVY", "SAI", "RIC", "HUL", "RAI", "MAG", "GRO", "GIO", "RUS", "GAS", "KUB" ]
+    }
+  ],
+  "remainingRaces": []
+}
