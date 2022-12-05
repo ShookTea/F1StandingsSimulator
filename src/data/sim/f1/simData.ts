@@ -1,5 +1,6 @@
 import { Season } from '@/data/sim/f1/simDataTypes';
 import { SportData } from '@/data/sim/data';
+import { Driver } from '@/data/sim/f1/driverDataTypes';
 import FormulaPageView from '@/components/formula/FormulaPageView.vue';
 
 // @ts-ignore
@@ -12,6 +13,8 @@ import data2021 from './2021.data';
 import data2022 from './2022.data';
 // @ts-ignore
 import data2023 from './2023.data';
+// @ts-ignore
+import drivers from './driver.data';
 
 
 export const F1Data: SportData<Season> = {

@@ -1,8 +1,7 @@
 import { F1Data } from '@/data/sim/f1/simData';
 import { Component } from 'vue';
 
-
-export interface SeasonData<T> {
+export interface GroupData<T> {
     data: T
     label: string
     routePart: string
@@ -14,7 +13,7 @@ export interface RouterParameter {
 }
 
 export interface SportData<T> {
-    data: SeasonData<T>[]
+    data: GroupData<T>[]
     label: string
     routePart: string
     routeParameters: RouterParameter[]

@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import allData, { SeasonData } from '@/data/sim/data';
+import allData, { GroupData } from '@/data/sim/data';
 import { Round, Season } from '@/data/sim/f1/simDataTypes';
 import FormulaRoundPager from '@/components/formula/FormulaRoundPager.vue';
 import FormulaRoundTable from '@/components/formula/FormulaRoundTable.vue';
@@ -14,9 +14,9 @@ import FormulaRoundTable from '@/components/formula/FormulaRoundTable.vue';
 export default {
     components: { FormulaRoundTable, FormulaRoundPager },
     computed: {
-        seasonData(): SeasonData<Season> {
+        seasonData(): GroupData<Season> {
             const sportData = allData.find(entry => entry.routePart === this.$route.meta.sport);
-            return <SeasonData<Season>><unknown>sportData.data.find(entry => entry.routePart === this.$route.meta.season);
+            return <GroupData<Season>><unknown>sportData.data.find(entry => entry.routePart === this.$route.meta.season);
         },
         currentPage(): Round {
             const step: number = parseInt(this.$route.params.step) - 1;
