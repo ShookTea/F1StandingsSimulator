@@ -1,4 +1,4 @@
-import { FastestLapPointDetails, PointSchema as PointSchemaInterface } from '@/dataBuild/dataInputTypes';
+import { FastestLapPointDetails, PointSchema as PointSchemaInterface } from './dataInputTypes';
 
 export default class PointSchema {
     readonly points: number[]

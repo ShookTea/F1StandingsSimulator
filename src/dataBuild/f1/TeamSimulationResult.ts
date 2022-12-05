@@ -1,5 +1,5 @@
 import { Team } from '@/data/sim/f1/simDataTypes';
-import { AbstractRace, DataInput } from '@/dataBuild/dataInputTypes';
+import { AbstractRace, DataInput } from './dataInputTypes';
 import AbstractStandingResultStore from './AbstractStandingResultStore';
 import TeamStanding from './TeamStanding';
 

@@ -1,7 +1,7 @@
-import { AbstractRace, DataInput, Race } from '@/dataBuild/dataInputTypes';
+import { AbstractRace, DataInput, Race } from './dataInputTypes';
 import RacePositionMapping from './RacePositionMapping';
 import { StandingOwner } from '@/data/sim/f1/simDataTypes';
-import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 export default abstract class AbstractStanding<T extends StandingOwner> {
     readonly owner: T

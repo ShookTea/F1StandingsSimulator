@@ -1,8 +1,8 @@
 import { Team } from '@/data/sim/f1/simDataTypes';
-import { AbstractRace, DataInput, Race, TeamEntry, TeamPointChange, TeamSwitch } from '@/dataBuild/dataInputTypes';
+import { AbstractRace, DataInput, Race, TeamEntry, TeamPointChange, TeamSwitch } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import AbstractStanding from './AbstractStanding';
-import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 import TeamSimulationResult from './TeamSimulationResult';
 import DriverStanding from './DriverStanding';
 

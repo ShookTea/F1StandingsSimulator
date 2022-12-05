@@ -1,6 +1,6 @@
 import { Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
-import RacePositionMapping from '@/dataBuild/RacePositionMapping';
-import { SorterBuilder } from '@/dataBuild/AbstractStandingSorter';
+import RacePositionMapping from './RacePositionMapping';
+import { SorterBuilder } from './AbstractStandingSorter';
 import AbstractStanding from './AbstractStanding';
 import { AbstractRace, DataInput } from './dataInputTypes';
 

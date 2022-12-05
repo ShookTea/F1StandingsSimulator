@@ -1,4 +1,4 @@
-import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 export interface SorterBuilder<T extends AbstractStandingResultStore<any>> {
     buildSorter(): AbstractStandingSorter<T>,

@@ -1,10 +1,10 @@
 import { AbstractRace, DataInput, DriverEntry, Race, TeamEntry, TeamMembershipPlanner } from './dataInputTypes';
 import PointSchema from './PointSchema';
 import { Driver, Team } from '@/data/sim/f1/simDataTypes';
-import drivers from '../data/racing_drivers.json';
+import drivers from '../../data/racing_drivers.json';
 import AbstractStanding from './AbstractStanding';
 import DriverSimulationResult from './DriverSimulationResult';
-import AbstractStandingResultStore from '@/dataBuild/AbstractStandingResultStore';
+import AbstractStandingResultStore from './AbstractStandingResultStore';
 
 export default class DriverStanding extends AbstractStanding<Driver> {
     constructor(driverAbbr: string, input: DataInput, races: Race[])

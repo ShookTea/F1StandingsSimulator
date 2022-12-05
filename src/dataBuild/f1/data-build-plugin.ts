@@ -10,7 +10,7 @@ import AbstractStandingResultStore from './AbstractStandingResultStore';
 import AbstractStanding from './AbstractStanding';
 import TeamStanding from './TeamStanding';
 
-const fileRegex: RegExp = /([0-9]{4})\.data$/
+const fileRegex: RegExp = /sim\/f1\/([0-9]{4})\.data$/
 
 export default {
     name: 'data-build',
