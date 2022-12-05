@@ -1,4 +1,5 @@
 import { F1Data } from '@/data/sim/f1/simData';
+import { FormulaDriverData } from '@/data/sim/formulaDrivers/simData';
 import { Component } from 'vue';
 
 export interface GroupData<T> {
@@ -20,6 +21,9 @@ export interface SportData<T> {
     component: Component
 }
 
-const allData: SportData<any>[] = [ F1Data ];
+const allData: SportData<any>[] = [
+    F1Data,
+    FormulaDriverData,
+];
 
 export default allData;

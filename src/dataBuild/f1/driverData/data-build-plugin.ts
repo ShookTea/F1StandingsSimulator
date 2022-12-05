@@ -1,4 +1,4 @@
-const fileRegex: RegExp = /sim\/f1\/driver\.data$/;
+const fileRegex: RegExp = /sim\/formulaDrivers\/driver\.data$/;
 
 export default {
     name: 'data-build',
