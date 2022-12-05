@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="header-control-block">
-            <season-selector v-for="(sport, index) in allData"
+            <season-selector v-for="(sport, index) in dataToDisplay"
                              :key="index"
                              :enabled="option === index"
                              :sport-data="sport"
@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import SeasonSelector from '@/components/header/SeasonSelector.vue';
-import allData from '@/data/sim/data';
+import allData, { SportData } from '@/data/sim/data';
 import OutsideLinkButton from '@/components/header/OutsideLinkButton.vue';
 
 export default {
@@ -28,6 +28,11 @@ export default {
         return {
             allData,
             option: 0,
+        }
+    },
+    computed: {
+        dataToDisplay(): SportData<any>[] {
+            return this.allData.filter(d => d.showInMenu);
         }
     },
     methods: {

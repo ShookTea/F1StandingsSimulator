@@ -19,6 +19,7 @@ export interface SportData<T> {
     routePart: string
     routeParameters: RouterParameter[]
     component: Component
+    showInMenu: boolean
 }
 
 const allData: SportData<any>[] = [

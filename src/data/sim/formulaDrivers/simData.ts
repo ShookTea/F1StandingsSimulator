@@ -14,17 +14,5 @@ export const FormulaDriverData: SportData<Driver> = {
     label: 'Formula drivers',
     component: FormulaDriverPageView,
     routeParameters: [],
+    showInMenu: false,
 };
-// console.log('fdsd');
-// export const FormulaDriverData: SportData<Driver> = {
-//     // data: [{
-//     //     data: drivers,
-//     //     label: 'Some data label',
-//     //     routePart: 'foobarRoutePart',
-//     // }],
-//     data: [],
-//     routePart: 'formulaDriver',
-//     label: 'Formula drivers',
-//     component: FormulaDriverPageView,
-//     routeParameters: [],
-// }

@@ -42,4 +42,5 @@ export const F1Data: SportData<Season> = {
         defaultValue: 1
     }],
     component: FormulaPageView,
+    showInMenu: true,
 }
