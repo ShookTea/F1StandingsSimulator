@@ -27,8 +27,8 @@ export default {
         simDataDirectories
           .flatMap(dir => listSourceFilesFromDirectory(dir))
           .forEach(elem => {
-            const data: DataInput = JSON.parse(fs.readFileSync(elem.path, 'utf-8'));
-            console.log({data});
+            const season: DataInput = JSON.parse(fs.readFileSync(elem.path, 'utf-8'));
+            drivers.forEach(driver => driver.registerSeason(season));
           });
 
         const dataResult: DataResult[] = drivers.map(driver => driver.toDataResult());

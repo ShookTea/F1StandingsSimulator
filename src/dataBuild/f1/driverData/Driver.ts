@@ -1,5 +1,6 @@
 import drivers from '../../../data/racing_drivers.json';
 import { Driver as DataResult, DriverDetails } from '@/data/sim/formulaDrivers/driverDataTypes';
+import { DataInput } from '@/dataBuild/f1/dataInputTypes';
 
 export default class Driver {
   private readonly driverDetails: DriverDetails
@@ -22,6 +23,11 @@ export default class Driver {
     return {
       driverDetails: this.driverDetails,
     };
+  }
+
+  registerSeason(season: DataInput): void
+  {
+    if (!season.drivers.hasOwnProperty(this.driverDetails.uuid)) return;
   }
 
   static loadFromJson(): Driver[]
