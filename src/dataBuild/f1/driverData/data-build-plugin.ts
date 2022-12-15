@@ -1,12 +1,13 @@
 // @ts-ignore
 import fs from 'node:fs';
-import drivers from '../../../data/racing_drivers.json';
+import Driver from './Driver';
 
 const fileRegex: RegExp = /sim\/formulaDrivers\/driver\.data$/;
 
 type SimDataDirectory = { sport: string, path: string };
 type SimDataSource = { sport: string, season: string, path: string };
 
+// keep order of "least prestigious first", i.e. F2 before F1
 const simDataDirectories: SimDataDirectory[] = [
     { sport: 'Formula 1', path:'src/data/sim/f1' },
 ];
@@ -26,6 +27,8 @@ export default {
         const files: SimDataSource[] = simDataDirectories
           .flatMap(dir => listSourceFilesFromDirectory(dir))
         ;
+        const drivers = Driver.loadFromJson();
+        console.log({drivers});
         return 'export default ' + JSON.stringify({foo: 'bar'});
     }
 };
