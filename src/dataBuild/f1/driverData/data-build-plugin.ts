@@ -2,13 +2,14 @@
 import fs from 'node:fs';
 import Driver from './Driver';
 import { Driver as DataResult } from '@/data/sim/formulaDrivers/driverDataTypes';
+import { DataInput } from '@/dataBuild/f1/dataInputTypes';
 
 const fileRegex: RegExp = /sim\/formulaDrivers\/driver\.data$/;
 
 type SimDataDirectory = { sport: string, path: string };
 type SimDataSource = { sport: string, season: string, path: string };
 
-// keep order of "least prestigious first", i.e. F2 before F1
+// keep order of "most prestigious first", i.e. F1 before F2
 const simDataDirectories: SimDataDirectory[] = [
     { sport: 'Formula 1', path:'src/data/sim/f1' },
 ];
@@ -21,14 +22,15 @@ export default {
         if (!fileRegex.test(id)) {
             return;
         }
-        // const data: DataInput = JSON.parse(src);
-        // const converted: Season = convert(data)
-
-        // fs.readFileSync('../../../data/sim/f1/2019.data');
-        const files: SimDataSource[] = simDataDirectories
-          .flatMap(dir => listSourceFilesFromDirectory(dir))
-        ;
         const drivers = Driver.loadFromJson();
+
+        simDataDirectories
+          .flatMap(dir => listSourceFilesFromDirectory(dir))
+          .forEach(elem => {
+            const data: DataInput = JSON.parse(fs.readFileSync(elem.path, 'utf-8'));
+            console.log({data});
+          });
+
         const dataResult: DataResult[] = drivers.map(driver => driver.toDataResult());
         return 'export default ' + JSON.stringify(dataResult);
     }
