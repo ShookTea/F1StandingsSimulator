@@ -1,6 +1,7 @@
 // @ts-ignore
 import fs from 'node:fs';
 import Driver from './Driver';
+import { Driver as DataResult } from '@/data/sim/formulaDrivers/driverDataTypes';
 
 const fileRegex: RegExp = /sim\/formulaDrivers\/driver\.data$/;
 
@@ -28,8 +29,8 @@ export default {
           .flatMap(dir => listSourceFilesFromDirectory(dir))
         ;
         const drivers = Driver.loadFromJson();
-        console.log({drivers});
-        return 'export default ' + JSON.stringify({foo: 'bar'});
+        const dataResult: DataResult[] = drivers.map(driver => driver.toDataResult());
+        return 'export default ' + JSON.stringify(dataResult);
     }
 };
 

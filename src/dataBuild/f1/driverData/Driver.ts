@@ -1,19 +1,31 @@
 import drivers from '../../../data/racing_drivers.json';
+import { Driver as DataResult, DriverDetails } from '@/data/sim/formulaDrivers/driverDataTypes';
 
 export default class Driver {
-  readonly uuid: string
-  readonly givenName: string
-  readonly familyName: string
-  readonly familyNameFirst: boolean
+  private readonly driverDetails: DriverDetails
 
   constructor(uuid: string, givenName: string, familyName: string, familyNameFirst: boolean) {
-    this.uuid = uuid;
-    this.givenName = givenName;
-    this.familyName = familyName;
-    this.familyNameFirst = familyNameFirst;
+    const fullName = `${familyNameFirst ? familyName : givenName} ${familyNameFirst ? givenName : familyName}`;
+    const routePart = `${fullName}-${uuid.split('-')[0]}`
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s/, '-');
+
+    this.driverDetails = {
+      uuid, givenName, familyName, familyNameFirst, fullName, routePart,
+    };
   }
 
-  static loadFromJson(): Driver[] {
+  toDataResult(): DataResult
+  {
+    return {
+      driverDetails: this.driverDetails,
+    };
+  }
+
+  static loadFromJson(): Driver[]
+  {
     const result: Driver[] = [];
 
     for (const driverUuid in drivers) {
