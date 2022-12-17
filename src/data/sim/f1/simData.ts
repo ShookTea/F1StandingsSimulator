@@ -3,6 +3,8 @@ import { SportData } from '@/data/sim/data';
 import FormulaPageView from '@/components/formula/FormulaPageView.vue';
 
 // @ts-ignore
+import data2018 from './2018.data';
+// @ts-ignore
 import data2019 from './2019.data';
 // @ts-ignore
 import data2020 from './2020.data';
@@ -34,6 +36,10 @@ export const F1Data: SportData<Season> = {
         data: data2019,
         label: 'Season 2019',
         routePart: '2019',
+    }, {
+        data: data2018,
+        label: 'Season 2018',
+        routePart: '2018'
     }],
     routePart: 'f1',
     label: 'Formula 1',

@@ -128,5 +128,21 @@
     "af0027d6-56e3-46d4-9f31-924940fa3a1c": {
         "givenName": "Jack",
         "familyName": "Aitken"
+    },
+    "93ea0728-d68c-49ed-b758-12d69854ee7b": {
+        "givenName": "Stoffel",
+        "familyName": "Vandoorne"
+    },
+    "5d70e4da-209f-46a7-88de-f72ab10cd5ed": {
+        "givenName": "Marcus",
+        "familyName": "Ericsson"
+    },
+    "e93da3ea-1cd7-4a3b-89a6-a08abb10df17": {
+        "givenName": "Brendon",
+        "familyName": "Hartley"
+    },
+    "80144f7a-8e6d-45ca-88f6-823d83c39eff": {
+        "givenName": "Sergey",
+        "familyName": "Sirotkin"
     }
 }

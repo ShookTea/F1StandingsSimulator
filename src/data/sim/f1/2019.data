@@ -320,7 +320,7 @@
     }, {
       "code": "ABU",
       "type": "race",
-      "label": " Grand Prix",
+      "label": "Abu Dhabi Grand Prix",
       "fastestLap": "HAM",
       "positions": [ "HAM", "VER", "LEC", "BOT", "VET", "ALB", "PER", "NOR", "KVY", "SAI", "RIC", "HUL", "RAI", "MAG", "GRO", "GIO", "RUS", "GAS", "KUB" ]
     }
