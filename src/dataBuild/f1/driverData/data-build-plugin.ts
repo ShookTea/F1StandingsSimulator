@@ -28,7 +28,7 @@ export default {
           .flatMap(dir => listSourceFilesFromDirectory(dir))
           .forEach(elem => {
             const season: DataInput = JSON.parse(fs.readFileSync(elem.path, 'utf-8'));
-            drivers.forEach(driver => driver.registerSeason(season));
+            drivers.forEach(driver => driver.registerSeason(season, elem.sport, elem.season));
           });
 
         const dataResult: DataResult[] = drivers.map(driver => driver.toDataResult());
