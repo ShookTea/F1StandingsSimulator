@@ -68,7 +68,7 @@ export interface DriverEntry {
     uuid: string
     temporary?: boolean
     team: Team|TeamMembershipPlanner
-    number: number
+    number: number|null
 }
 
 export interface TeamMembershipPlanner {
