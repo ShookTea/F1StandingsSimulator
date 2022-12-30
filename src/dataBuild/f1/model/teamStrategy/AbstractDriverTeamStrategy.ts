@@ -1,6 +1,6 @@
-import Team from './Team';
-import AbstractRace from './AbstractRace';
-import Driver from './Driver';
+import Team from '../Team';
+import AbstractRace from '../AbstractRace';
+import Driver from '../Driver';
 import Season from '@/dataBuild/f1/model/Season';
 
 export default abstract class AbstractDriverTeamStrategy {

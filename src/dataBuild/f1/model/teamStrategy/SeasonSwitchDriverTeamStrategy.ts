@@ -1,9 +1,9 @@
 import AbstractDriverTeamStrategy from './AbstractDriverTeamStrategy';
-import Team from './Team';
-import AbstractRace from './AbstractRace';
+import Team from '../Team';
+import AbstractRace from '../AbstractRace';
 import { TeamMembershipPlanner } from '@/dataBuild/f1/dataInputTypes';
-import Season from './Season';
-import Driver from './Driver';
+import Season from '../Season';
+import Driver from '../Driver';
 
 export class SeasonSwitchDriverTeamStrategy extends AbstractDriverTeamStrategy {
   private readonly teamPlanner: TeamMembershipPlanner;

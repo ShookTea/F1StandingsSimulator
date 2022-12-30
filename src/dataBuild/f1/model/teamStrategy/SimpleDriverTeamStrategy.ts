@@ -1,7 +1,7 @@
 import AbstractDriverTeamStrategy from './AbstractDriverTeamStrategy';
-import Team from './Team';
-import AbstractRace from './AbstractRace';
-import Driver from './Driver';
+import Team from '../Team';
+import AbstractRace from '../AbstractRace';
+import Driver from '../Driver';
 
 export class SimpleDriverTeamStrategy extends AbstractDriverTeamStrategy {
   private readonly team: string;
