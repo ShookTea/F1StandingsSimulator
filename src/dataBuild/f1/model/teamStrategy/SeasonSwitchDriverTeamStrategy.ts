@@ -5,7 +5,7 @@ import { TeamMembershipPlanner } from '@/dataBuild/f1/dataInputTypes';
 import Season from '../Season';
 import Driver from '../Driver';
 
-export class SeasonSwitchDriverTeamStrategy extends AbstractDriverTeamStrategy {
+export default class SeasonSwitchDriverTeamStrategy extends AbstractDriverTeamStrategy {
   private readonly teamPlanner: TeamMembershipPlanner;
   constructor(driver: Driver, teamPlanner: TeamMembershipPlanner) {
     super(driver);

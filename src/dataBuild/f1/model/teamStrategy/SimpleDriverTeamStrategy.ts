@@ -3,7 +3,7 @@ import Team from '../Team';
 import AbstractRace from '../AbstractRace';
 import Driver from '../Driver';
 
-export class SimpleDriverTeamStrategy extends AbstractDriverTeamStrategy {
+export default class SimpleDriverTeamStrategy extends AbstractDriverTeamStrategy {
   private readonly team: string;
 
   constructor(driver: Driver, team: string) {

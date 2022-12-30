@@ -4,7 +4,7 @@ import { TeamMembershipPlanner } from '@/dataBuild/f1/dataInputTypes';
 import mockData from '../MockInputData';
 import Team from '@/dataBuild/f1/model/Team';
 import Driver from '@/dataBuild/f1/model/Driver';
-import { SeasonSwitchDriverTeamStrategy } from '@/dataBuild/f1/model/teamStrategy/SeasonSwitchDriverTeamStrategy';
+import SeasonSwitchDriverTeamStrategy from '@/dataBuild/f1/model/teamStrategy/SeasonSwitchDriverTeamStrategy';
 
 describe('SeasonSwitchDriverTeamStrategy', () => {
   const season = new Season(mockData);

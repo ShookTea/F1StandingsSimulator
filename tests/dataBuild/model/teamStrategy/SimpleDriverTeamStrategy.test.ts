@@ -3,7 +3,7 @@ import Season from '@/dataBuild/f1/model/Season';
 import mockData from '../MockInputData';
 import Team from '@/dataBuild/f1/model/Team';
 import Driver from '@/dataBuild/f1/model/Driver';
-import { SimpleDriverTeamStrategy } from '@/dataBuild/f1/model/teamStrategy/SimpleDriverTeamStrategy';
+import SimpleDriverTeamStrategy from '@/dataBuild/f1/model/teamStrategy/SimpleDriverTeamStrategy';
 
 describe('SimpleDriverTeamStrategy', () => {
   const season = new Season(mockData);
