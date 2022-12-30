@@ -6,7 +6,7 @@ import Season from '@/dataBuild/f1/model/Season';
 export default abstract class AbstractDriverTeamStrategy {
   private readonly driver: Driver;
 
-  constructor(driver: Driver) {
+  protected constructor(driver: Driver) {
     this.driver = driver;
   }
 
