@@ -4,14 +4,14 @@ import AbstractRace from './AbstractRace';
 import Driver from './Driver';
 
 export class SimpleDriverTeamStrategy extends AbstractDriverTeamStrategy {
-  private readonly team: Team;
+  private readonly team: string;
 
-  constructor(driver: Driver, team: Team) {
+  constructor(driver: Driver, team: string) {
     super(driver);
     this.team = team;
   }
 
   protected getTeamForRaceImpl(race: AbstractRace): Team {
-    return this.team;
+    return race.getSeason().getTeamByEntrantName(this.team);
   }
 }

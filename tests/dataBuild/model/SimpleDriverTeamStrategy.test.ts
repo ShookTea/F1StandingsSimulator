@@ -11,7 +11,7 @@ describe('SimpleDriverTeamStrategy', () => {
   const team1: Team = season.getTeamByEntrantName('TeamName1');
   const team3: Team = season.getTeamByEntrantName('TeamName3');
 
-  const simpleStrategy: SimpleDriverTeamStrategy = new SimpleDriverTeamStrategy(driver, team3);
+  const simpleStrategy: SimpleDriverTeamStrategy = new SimpleDriverTeamStrategy(driver, 'TeamName3');
 
   test('Returns valid team on beginning of season', () => {
     expect(simpleStrategy.getTeamForRace(season.races[0])).toBe(team3);
