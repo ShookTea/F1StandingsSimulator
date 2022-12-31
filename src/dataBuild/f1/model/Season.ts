@@ -31,6 +31,12 @@ export default class Season {
     throw new Error(`Could not find team by entrant name ${name}`);
   }
 
+  getDriverByAbbreviation(abbr: string): Driver
+  {
+    for (const driver of this.drivers) if (driver.driverAbbr === abbr) return driver;
+    throw new Error(`Could not find driver by abbreviation ${abbr}`);
+  }
+
   getRaceByCode(raceCode: string): AbstractRace
   {
     for (const race of this.races) if (race.code === raceCode) return race;
