@@ -1,4 +1,4 @@
-import drivers from '../../../data/racing_drivers.json';
+import drivers from '../../data/racing_drivers.json';
 import { Driver as DataResult, DriverDetails } from '@/data/sim/formulaDrivers/driverDataTypes';
 import { DataInput } from '@/dataBuild/f1/dataInputTypes';
 import SeasonEntry from './SeasonEntry';

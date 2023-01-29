@@ -1,9 +1,7 @@
 import { GroupData, SportData } from '@/data/sim/data';
 import { Driver } from '@/data/sim/formulaDrivers/driverDataTypes';
 import FormulaDriverPageView from '@/components/formulaDriver/FormulaDriverPageView.vue';
-// @ts-ignore
-import _drivers from './driver.data';
-const drivers: Driver[] = _drivers;
+import drivers from './DriverData'
 
 const data: GroupData<Driver>[] = drivers.map(
   driver => ({
