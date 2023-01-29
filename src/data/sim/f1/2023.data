@@ -1,8 +1,8 @@
 {
   "teams": {
-    "Alfa Romeo F1 Team Orlen": {
+    "Alfa Romeo F1 Team Stake": {
       "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
-      "chassis": "TBA",
+      "chassis": "C43",
       "chassisConstructor": "Alfa Romeo",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Ferrari",
@@ -10,15 +10,15 @@
     },
     "Scuderia AlphaTauri": {
       "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
-      "chassis": "TBA",
+      "chassis": "AT04",
       "chassisConstructor": "AlphaTauri",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Honda RBPT",
       "color": "#5E8FAA"
     },
-    "Alpine F1 Team": {
+    "BWT Alpine F1 Team": {
       "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-      "chassis": "TBA",
+      "chassis": "A523",
       "chassisConstructor": "Alpine",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Renault",
@@ -42,7 +42,7 @@
     },
     "MoneyGram Haas F1 Team": {
       "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
-      "chassis": "TBA",
+      "chassis": "VF-23",
       "chassisConstructor": "Haas",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Ferrari",
@@ -50,7 +50,7 @@
     },
     "McLaren F1 Team": {
       "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
-      "chassis": "TBA",
+      "chassis": "MCL37",
       "chassisConstructor": "McLaren",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Mercedes",
@@ -58,7 +58,7 @@
     },
     "Mercedes-AMG Petronas F1 Team": {
       "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
-      "chassis": "TBA",
+      "chassis": "F1 W14",
       "chassisConstructor": "Mercedes",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Mercedes",
@@ -66,7 +66,7 @@
     },
     "Oracle Red Bull Racing": {
       "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
-      "chassis": "TBA",
+      "chassis": "RB19",
       "chassisConstructor": "Red Bull Racing",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Honda RBPT",
@@ -74,7 +74,7 @@
     },
     "Williams Racing": {
       "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
-      "chassis": "TBA",
+      "chassis": "FW45",
       "chassisConstructor": "Williams",
       "powerUnit": "TBA",
       "powerUnitConstructor": "Mercedes",
@@ -85,12 +85,12 @@
     "ZHO": {
       "uuid": "6ceac234-f995-4328-b1bb-289f5f4ad142",
       "number": 24,
-      "team": "Alfa Romeo F1 Team Orlen"
+      "team": "Alfa Romeo F1 Team Stake"
     },
     "BOT": {
       "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7",
       "number": 77,
-      "team": "Alfa Romeo F1 Team Orlen"
+      "team": "Alfa Romeo F1 Team Stake"
     },
     "TSU": {
       "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
@@ -105,12 +105,12 @@
     "GAS": {
       "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
       "number": 10,
-      "team": "Alpine F1 Team"
+      "team": "BWT Alpine F1 Team"
     },
     "OCO": {
       "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9",
       "number": 31,
-      "team": "Alpine F1 Team"
+      "team": "BWT Alpine F1 Team"
     },
     "ALO": {
       "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
@@ -283,8 +283,12 @@
       "label": "Japanese Grand Prix"
     }, {
       "code": "QAT",
+      "type": "sprint",
+      "label": "Qatar Grand Prix (sprint)"
+    }, {
+      "code": "QAT",
       "type": "race",
-      "label": "Qatar Grand Prix"
+      "label": "Qatar Grand Prix (race)"
     }, {
       "code": "USA",
       "type": "sprint",
@@ -313,10 +317,6 @@
       "code": "ABU",
       "type": "race",
       "label": "Abu Dhabi Grand Prix"
-    }, {
-      "code": "???",
-      "type": "sprint",
-      "label": "Sprint event (location not announced)"
     }
   ]
 }
