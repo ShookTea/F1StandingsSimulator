@@ -262,13 +262,13 @@
       "fastestLap": "VER",
       "positions": [ "VER", "BOT", "NOR", "HAM", "SAI", "PER", "RIC", "LEC", "GAS", "ALO", "RUS", "TSU", "STR", "GIO", "RAI", "LAT", "VET", "MSC", "MAZ" ]
     }, {
-      "code": "GBR",
+      "code": "GBR_S",
       "type": "sprint",
       "label": "British Grand Prix (sprint)",
       "fastestLap": "HAM",
       "positions": [ "VER", "HAM", "BOT", "LEC", "NOR", "RIC", "ALO", "VET", "RUS", "OCO", "SAI", "GAS", "RAI", "STR", "GIO", "TSU", "LAT", "MSC", "MAZ", "PER" ]
     }, {
-      "code": "GBR",
+      "code": "GBR_R",
       "type": "race",
       "label": "British Grand Prix (race)",
       "fastestLap": "PER",
@@ -293,13 +293,13 @@
       "fastestLap": "HAM",
       "positions": [ "VER", "HAM", "BOT", "GAS", "LEC", "ALO", "SAI", "PER", "OCO", "NOR", "RIC", "STR", "VET", "GIO", "KUB", "LAT", "RUS", "MSC", "TSU", "MAZ" ]
     }, {
-      "code": "ITA",
+      "code": "ITA_S",
       "type": "sprint",
       "label": "Italian Grand Prix (sprint)",
       "fastestLap": "VER",
       "positions": [ "BOT", "VER", "RIC", "NOR", "HAM", "LEC", "SAI", "GIO", "PER", "STR", "ALO", "VET", "OCO", "LAT", "RUS", "TSU", "MAZ", "KUB", "MSC" ]
     }, {
-      "code": "ITA",
+      "code": "ITA_R",
       "type": "race",
       "label": "Italian Grand Prix (race)",
       "fastestLap": "RIC",
@@ -329,13 +329,13 @@
       "fastestLap": "BOT",
       "positions": [ "VER", "HAM", "PER", "GAS", "LEC", "SAI", "VET", "RAI", "ALO", "NOR", "GIO", "RIC", "OCO", "STR", "BOT", "RUS", "LAT", "MAZ" ]
     }, {
-      "code": "SAP",
+      "code": "SAP_S",
       "type": "sprint",
       "label": "São Paulo Grand Prix (sprint)",
       "fastestLap": "VER",
       "positions": [ "BOT", "VER", "SAI", "PER", "HAM", "NOR", "LEC", "GAS", "OCO", "VET", "RIC", "ALO", "GIO", "STR", "TSU", "LAT", "RUS", "RAI", "MSC", "MAZ" ]
     }, {
-      "code": "SAP",
+      "code": "SAP_R",
       "type": "race",
       "label": "São Paulo Grand Prix (race)",
       "fastestLap": "PER",

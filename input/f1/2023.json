@@ -214,11 +214,11 @@
       "type": "race",
       "label": "Chinese Grand Prix"
     }, {
-      "code": "AZE",
+      "code": "AZE_S",
       "type": "sprint",
       "label": "Azerbaijan Grand Prix (sprint)"
     }, {
-      "code": "AZE",
+      "code": "AZE_R",
       "type": "race",
       "label": "Azerbaijan Grand Prix (race)"
     }, {
@@ -242,11 +242,11 @@
       "type": "race",
       "label": "Canadian Grand Prix"
     }, {
-      "code": "AUT",
+      "code": "AUT_S",
       "type": "sprint",
       "label": "Austrian Grand Prix (sprint)"
     }, {
-      "code": "AUT",
+      "code": "AUT_R",
       "type": "race",
       "label": "Austrian Grand Prix (race)"
     }, {
@@ -258,11 +258,11 @@
       "type": "race",
       "label": "Hungarian Grand Prix"
     }, {
-      "code": "BEL",
+      "code": "BEL_S",
       "type": "sprint",
       "label": "Belgian Grand Prix (sprint)"
     }, {
-      "code": "BEL",
+      "code": "BEL_R",
       "type": "race",
       "label": "Belgian Grand Prix (race)"
     }, {
@@ -282,19 +282,19 @@
       "type": "race",
       "label": "Japanese Grand Prix"
     }, {
-      "code": "QAT",
+      "code": "QAT_S",
       "type": "sprint",
       "label": "Qatar Grand Prix (sprint)"
     }, {
-      "code": "QAT",
+      "code": "QAT_R",
       "type": "race",
       "label": "Qatar Grand Prix (race)"
     }, {
-      "code": "USA",
+      "code": "USA_S",
       "type": "sprint",
       "label": "United States Grand Prix (sprint)"
     }, {
-      "code": "USA",
+      "code": "USA_R",
       "type": "race",
       "label": "United States Grand Prix (race)"
     }, {
@@ -302,11 +302,11 @@
       "type": "race",
       "label": "Mexico City Grand Prix"
     }, {
-      "code": "SAP",
+      "code": "SAP_S",
       "type": "sprint",
       "label": "São Paulo Grand Prix (sprint)"
     }, {
-      "code": "SAP",
+      "code": "SAP_R",
       "type": "race",
       "label": "São Paulo Grand Prix (race)"
     }, {

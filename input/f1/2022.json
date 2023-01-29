@@ -227,13 +227,13 @@
             "fastestLap": "LEC",
             "positions": [ "LEC", "PER", "RUS", "HAM", "NOR", "RIC", "OCO", "BOT", "GAS", "ALB", "ZHO", "STR", "MSC", "MAG", "TSU", "LAT", "ALO" ]
         }, {
-            "code": "EMI",
+            "code": "EMI_S",
             "type": "sprint",
             "label": "Emilia Romagna Grand Prix (sprint)",
             "fastestLap": "PER",
             "positions": [ "VER", "LEC", "PER", "SAI", "NOR", "RIC", "BOT", "MAG", "ALO", "MSC", "RUS", "TSU", "VET", "HAM", "STR", "OCO", "GAS", "ALB", "LAT" ]
         }, {
-            "code": "EMI",
+            "code": "EMI_R",
             "type": "race",
             "label": "Emilia Romagna Grand Prix (race)",
             "fastestLap": "VER",
@@ -275,13 +275,13 @@
             "fastestLap": "HAM",
             "positions": [ "SAI", "PER", "HAM", "LEC", "ALO", "NOR", "VER", "MSC", "VET", "MAG", "STR", "LAT", "RIC", "TSU" ]
         }, {
-            "code": "AUT",
+            "code": "AUT_S",
             "type": "sprint",
             "label": "Austrian Grand Prix (sprint)",
             "fastestLap": "LEC",
             "positions": [ "VER", "LEC", "SAI", "RUS", "PER", "OCO", "MAG", "HAM", "MSC", "BOT", "NOR", "RIC", "STR", "ZHO", "GAS", "ALB", "TSU", "LAT", "VET" ]
         }, {
-            "code": "AUT",
+            "code": "AUT_R",
             "type": "race",
             "label": "Austrian Grand Prix (race)",
             "fastestLap": "VER",
@@ -341,13 +341,13 @@
             "fastestLap": "RUS",
             "positions": [ "VER", "HAM", "PER", "RUS", "SAI", "LEC", "RIC", "OCO", "NOR", "BOT", "GAS", "ALB", "ZHO", "VET", "STR", "MSC", "MAG", "LAT", "ALO" ]
         }, {
-            "code": "SAP",
+            "code": "SAP_S",
             "type": "sprint",
             "label": "São Paulo Grand Prix (sprint)",
             "fastestLap": "RUS",
             "positions": [ "RUS", "SAI", "HAM", "VER", "PER", "LEC", "NOR", "MAG", "VET", "GAS", "RIC", "MSC", "ZHO", "BOT", "TSU", "STR", "OCO", "ALO", "LAT" ]
         }, {
-            "code": "SAP",
+            "code": "SAP_R",
             "type": "race",
             "label": "São Paulo Grand Prix (race)",
             "fastestLap": "RUS",
