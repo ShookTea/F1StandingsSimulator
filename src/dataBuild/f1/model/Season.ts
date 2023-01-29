@@ -19,10 +19,10 @@ export default class Season {
       this.pointSchemas.set(pointSchemaName, new PointSchema(dataInput.pointSchemas[pointSchemaName]));
     }
 
+    this.drivers = Driver.buildAllFromInput(dataInput);
+    this.teams = Team.buildAllFromInput(dataInput);
     this.races = dataInput.races.map((race, index) => new Race(index, race, this))
     this.remainingRaces = dataInput.remainingRaces.map((race, index) => new RemainingRace(index + this.races.length, race, this));
-    this.teams = Team.buildAllFromInput(dataInput);
-    this.drivers = Driver.buildAllFromInput(dataInput);
   }
 
   getTeamByEntrantName(name: string): Team
