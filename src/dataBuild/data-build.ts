@@ -9,6 +9,7 @@ for (const year of F1_SEASONS) rebuildF1File(year);
 
 function rebuildF1File(season: number): void
 {
+  console.log(`Building for F1 season ${season}`);
   const input = F1_INPUT_PATH.replace('%season%', season.toString());
   const output = F1_OUTPUT_PATH.replace('%season%', season.toString());
 
