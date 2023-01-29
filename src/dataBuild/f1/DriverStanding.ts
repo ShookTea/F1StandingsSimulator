@@ -1,5 +1,5 @@
 import { AbstractRace, DataInput, DriverEntry, Race, TeamEntry, TeamMembershipPlanner } from './dataInputTypes';
-import PointSchema from './model/PointSchema';
+import PointSchema from './PointSchema';
 import { Driver, Team } from '@/data/sim/f1/simDataTypes';
 import drivers from '../../data/racing_drivers.json';
 import AbstractStanding from './AbstractStanding';
