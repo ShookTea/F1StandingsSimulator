@@ -2,18 +2,12 @@ import { Season } from '@/data/sim/f1/simDataTypes';
 import { SportData } from '@/data/sim/data';
 import FormulaPageView from '@/components/formula/FormulaPageView.vue';
 
-// @ts-ignore
-import data2018 from './2018.data';
-// @ts-ignore
-import data2019 from './2019.data';
-// @ts-ignore
-import data2020 from './2020.data';
-// @ts-ignore
-import data2021 from './2021.data';
-// @ts-ignore
-import data2022 from './2022.data';
-// @ts-ignore
-import data2023 from './2023.data';
+import data2018 from './2018.json';
+import data2019 from './2019.json';
+import data2020 from './2020.json';
+import data2021 from './2021.json';
+import data2022 from './2022.json';
+import data2023 from './2023.json';
 
 export const F1Data: SportData<Season> = {
     data: [{

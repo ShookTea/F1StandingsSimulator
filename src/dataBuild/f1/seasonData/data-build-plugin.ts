@@ -25,7 +25,7 @@ export default {
     }
 };
 
-function convert(input) {
+export function convert(input) {
     const { races, remainingRaces } = input;
 
     const result = [];

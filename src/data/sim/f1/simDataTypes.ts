@@ -28,7 +28,7 @@ export interface RacePositionMap {
 export interface Driver extends StandingOwner {
     abbreviation: string
     uuid: string
-    temporary: boolean
+    temporary?: boolean
     team: Team
     number: number
     details: DriverDetail
