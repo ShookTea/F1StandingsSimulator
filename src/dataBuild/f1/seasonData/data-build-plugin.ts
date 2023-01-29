@@ -2,28 +2,13 @@ import DriverStanding from '../DriverStanding';
 import { AbstractRace, DataInput, Race } from '../dataInputTypes';
 import { calculateMaxRemainingPoints as calculateMaxRemainingDriverPoints } from '../DriverSimulationResult';
 import DriverStandingSorter from '../DriverStandingSorter';
-import { Round, Season, Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
+import { Round, Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 import { calculateMaxRemainingPoints as calculateMaxRemainingTeamPoints } from '../TeamSimulationResult';
 import { SorterBuilder } from '../AbstractStandingSorter';
 import TeamStandingSorter from '../TeamStandingSorter';
 import AbstractStandingResultStore from '../AbstractStandingResultStore';
 import AbstractStanding from '../AbstractStanding';
 import TeamStanding from '../TeamStanding';
-
-const fileRegex: RegExp = /sim\/f1\/([0-9]{4})\.data$/
-
-export default {
-    name: 'data-build',
-    transform(src: string, id: string): string {
-        if (!fileRegex.test(id)) {
-            return;
-        }
-        const data: DataInput = JSON.parse(src);
-        const converted: Season = convert(data)
-
-        return 'export default ' + JSON.stringify(converted);
-    }
-};
 
 export function convert(input) {
     const { races, remainingRaces } = input;
