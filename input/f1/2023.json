@@ -4,7 +4,7 @@
       "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
       "chassis": "C43",
       "chassisConstructor": "Alfa Romeo",
-      "powerUnit": "TBA",
+      "powerUnit": "Ferrari 066/10",
       "powerUnitConstructor": "Ferrari",
       "color": "#C92D4B"
     },
@@ -12,7 +12,7 @@
       "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
       "chassis": "AT04",
       "chassisConstructor": "AlphaTauri",
-      "powerUnit": "TBA",
+      "powerUnit": "Honda Red Bull RBPTH001",
       "powerUnitConstructor": "Honda RBPT",
       "color": "#5E8FAA"
     },
@@ -20,7 +20,7 @@
       "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
       "chassis": "A523",
       "chassisConstructor": "Alpine",
-      "powerUnit": "TBA",
+      "powerUnit": "Renault E-Tech RE23",
       "powerUnitConstructor": "Renault",
       "color": "#2293D1"
     },
@@ -28,15 +28,15 @@
       "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
       "chassis": "AMR23",
       "chassisConstructor": "Aston Martin Aramco",
-      "powerUnit": "TBA",
+      "powerUnit": "Mercedes-AMG F1 M14",
       "powerUnitConstructor": "Mercedes",
       "color": "#358C75"
     },
     "Scuderia Ferrari": {
       "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
-      "chassis": "TBA",
+      "chassis": "SF-23",
       "chassisConstructor": "Ferrari",
-      "powerUnit": "TBA",
+      "powerUnit": "Ferrari 066/10",
       "powerUnitConstructor": "Ferrari",
       "color": "#F91536"
     },
@@ -44,7 +44,7 @@
       "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
       "chassis": "VF-23",
       "chassisConstructor": "Haas",
-      "powerUnit": "TBA",
+      "powerUnit": "Ferrari 066/10",
       "powerUnitConstructor": "Ferrari",
       "color": "#B6BABD"
     },
@@ -52,7 +52,7 @@
       "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
       "chassis": "MCL37",
       "chassisConstructor": "McLaren",
-      "powerUnit": "TBA",
+      "powerUnit": "Mercedes-AMG F1 M14",
       "powerUnitConstructor": "Mercedes",
       "color": "#F58020"
     },
@@ -60,7 +60,7 @@
       "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
       "chassis": "F1 W14",
       "chassisConstructor": "Mercedes",
-      "powerUnit": "TBA",
+      "powerUnit": "Mercedes-AMG F1 M14",
       "powerUnitConstructor": "Mercedes",
       "color": "#6CD3BF"
     },
@@ -68,7 +68,7 @@
       "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
       "chassis": "RB19",
       "chassisConstructor": "Red Bull Racing",
-      "powerUnit": "TBA",
+      "powerUnit": "Honda Red Bull RBPTH001",
       "powerUnitConstructor": "Honda RBPT",
       "color": "#3671C6"
     },
@@ -76,7 +76,7 @@
       "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
       "chassis": "FW45",
       "chassisConstructor": "Williams",
-      "powerUnit": "TBA",
+      "powerUnit": "Mercedes-AMG F1 M14",
       "powerUnitConstructor": "Mercedes",
       "color": "#37BEDD"
     }
@@ -195,13 +195,17 @@
       "positionsCount": false
     }
   },
-  "races": [],
-  "remainingRaces": [
+  "races": [
     {
       "code": "BHR",
       "type": "race",
-      "label": "Bahrain Grand Prix"
-    }, {
+      "label": "Bahrain Grand Prix",
+      "fastestLap": "ZHO",
+      "positions": [ "VER", "PER", "ALO", "SAI", "HAM", "STR", "RUS", "BOT", "GAS", "ALB", "TSU", "SAR", "MAG", "DEV", "HUL", "ZHO", "NOR" ]
+    }
+  ],
+  "remainingRaces": [
+    {
       "code": "SAU",
       "type": "race",
       "label": "Saudi Arabian Grand Prix"
@@ -310,7 +314,7 @@
       "type": "race",
       "label": "São Paulo Grand Prix (race)"
     }, {
-      "code": "???",
+      "code": "LVG",
       "type": "race",
       "label": "Las Vegas Grand Prix"
     }, {
