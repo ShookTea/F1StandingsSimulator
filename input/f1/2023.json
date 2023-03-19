@@ -202,14 +202,16 @@
       "label": "Bahrain Grand Prix",
       "fastestLap": "ZHO",
       "positions": [ "VER", "PER", "ALO", "SAI", "HAM", "STR", "RUS", "BOT", "GAS", "ALB", "TSU", "SAR", "MAG", "DEV", "HUL", "ZHO", "NOR" ]
+    }, {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "PER", "VER", "ALO", "RUS", "HAM", "SAI", "LEC", "OCO", "GAS", "MAG", "TSU", "HUL", "ZHO", "DEV", "PIA", "SAR", "NOR", "BOT" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SAU",
-      "type": "race",
-      "label": "Saudi Arabian Grand Prix"
-    }, {
       "code": "AUS",
       "type": "race",
       "label": "Australian Grand Prix"
