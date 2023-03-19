@@ -207,7 +207,7 @@
       "type": "race",
       "label": "Saudi Arabian Grand Prix",
       "fastestLap": "VER",
-      "positions": [ "PER", "VER", "ALO", "RUS", "HAM", "SAI", "LEC", "OCO", "GAS", "MAG", "TSU", "HUL", "ZHO", "DEV", "PIA", "SAR", "NOR", "BOT" ]
+      "positions": [ "PER", "VER", "RUS", "ALO", "HAM", "SAI", "LEC", "OCO", "GAS", "MAG", "TSU", "HUL", "ZHO", "DEV", "PIA", "SAR", "NOR", "BOT" ]
     }
   ],
   "remainingRaces": [
