@@ -208,14 +208,16 @@
       "label": "Saudi Arabian Grand Prix",
       "fastestLap": "VER",
       "positions": [ "PER", "VER", "ALO", "RUS", "HAM", "SAI", "LEC", "OCO", "GAS", "MAG", "TSU", "HUL", "ZHO", "DEV", "PIA", "SAR", "NOR", "BOT" ]
+    }, {
+      "code": "AUS",
+      "type": "race",
+      "label": "Australian Grand Prix",
+      "fastestLap": "PER",
+      "positions": [ "VER", "HAM", "ALO", "STR", "PER", "NOR", "HUL", "PIA", "ZHO", "TSU", "BOT", "SAI", "GAS", "OCO", "DEV", "SAR", "MAG" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AUS",
-      "type": "race",
-      "label": "Australian Grand Prix"
-    }, {
       "code": "CHN",
       "type": "race",
       "label": "Chinese Grand Prix"
