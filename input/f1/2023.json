@@ -214,22 +214,22 @@
       "label": "Australian Grand Prix",
       "fastestLap": "PER",
       "positions": [ "VER", "HAM", "ALO", "STR", "PER", "NOR", "HUL", "PIA", "ZHO", "TSU", "BOT", "SAI", "GAS", "OCO", "DEV", "SAR", "MAG" ]
+    }, {
+      "code": "AZE_S",
+      "type": "sprint",
+      "label": "Azerbaijan Grand Prix (sprint)",
+      "fastestLap": "PER",
+      "positions": [ "PER", "LEC", "VER", "RUS", "SAI", "ALO", "HAM", "STR", "ALB", "PIA", "MAG", "ZHO", "GAS", "DEV", "HUL", "BOT", "NOR", "OCO" ]
+    }, {
+      "code": "AZE_R",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix (race)",
+      "fastestLap": "RUS",
+      "positions": [ "PER", "VER", "LEC", "ALO", "SAI", "HAM", "STR", "RUS", "NOR", "TSU", "PIA", "ALB", "MAG", "GAS", "OCO", "SAR", "HUL", "BOT" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "CHN",
-      "type": "race",
-      "label": "Chinese Grand Prix"
-    }, {
-      "code": "AZE_S",
-      "type": "sprint",
-      "label": "Azerbaijan Grand Prix (sprint)"
-    }, {
-      "code": "AZE_R",
-      "type": "race",
-      "label": "Azerbaijan Grand Prix (race)"
-    }, {
       "code": "MIA",
       "type": "race",
       "label": "Miami Grand Prix"
