@@ -226,14 +226,16 @@
       "label": "Azerbaijan Grand Prix (race)",
       "fastestLap": "RUS",
       "positions": [ "PER", "VER", "LEC", "ALO", "SAI", "HAM", "STR", "RUS", "NOR", "TSU", "PIA", "ALB", "MAG", "GAS", "OCO", "SAR", "HUL", "BOT" ]
+    }, {
+      "code": "MIA",
+      "type": "race",
+      "label": "Miami Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "PER", "ALO", "RUS", "SAI", "HAM", "LEC", "GAS", "OCO", "MAG", "TSU", "STR", "BOT", "ALB", "HUL", "ZHO", "NOR", "DEV", "PIA", "SAR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MIA",
-      "type": "race",
-      "label": "Miami Grand Prix"
-    }, {
       "code": "EMI",
       "type": "race",
       "label": "Emilia Romagna Grand Prix"
