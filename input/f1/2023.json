@@ -236,10 +236,6 @@
   ],
   "remainingRaces": [
     {
-      "code": "EMI",
-      "type": "race",
-      "label": "Emilia Romagna Grand Prix"
-    }, {
       "code": "MON",
       "type": "race",
       "label": "Monaco Grand Prix"
