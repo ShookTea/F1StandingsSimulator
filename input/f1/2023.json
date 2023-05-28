@@ -232,14 +232,16 @@
       "label": "Miami Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "PER", "ALO", "RUS", "SAI", "HAM", "LEC", "GAS", "OCO", "MAG", "TSU", "STR", "BOT", "ALB", "HUL", "ZHO", "NOR", "DEV", "PIA", "SAR" ]
+    }, {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "ALO", "OCO", "HAM", "RUS", "LEC", "GAS", "SAI", "NOR", "PIA", "BOT", "DEV", "ZHO", "ALB", "TSU", "PER", "HUL", "SAR", "MAG" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MON",
-      "type": "race",
-      "label": "Monaco Grand Prix"
-    }, {
       "code": "SPA",
       "type": "race",
       "label": "Spanish Grand Prix"
