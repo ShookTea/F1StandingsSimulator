@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=\"./\"",
-    "build:data": "node --loader ts-node/esm ./src/dataBuild/data-build.ts",
+    "build:data": "ts-node ./src/dataBuild/data-build.ts",
     "preview": "vite preview",
     "test": "npm run test:ts",
     "test:ts": "vue-tsc --noEmit"
