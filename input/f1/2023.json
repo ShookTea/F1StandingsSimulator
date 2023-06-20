@@ -244,14 +244,16 @@
       "label": "Spanish Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "HAM", "RUS", "PER", "SAI", "STR", "ALO", "OCO", "ZHO", "GAS", "LEC", "TSU", "PIA", "DEV", "HUL", "ALB", "NOR", "MAG", "BOT", "SAR" ]
+    }, {
+      "code": "CAN",
+      "type": "race",
+      "label": "Canadian Grand Prix",
+      "fastestLap": "PER",
+      "positions": [ "VER", "ALO", "HAM", "LEC", "SAI", "PER", "ALB", "OCO", "STR", "BOT", "PIA", "GAS", "NOR", "TSU", "HUL", "ZHO", "MAG", "DEV" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "CAN",
-      "type": "race",
-      "label": "Canadian Grand Prix"
-    }, {
       "code": "AUT_S",
       "type": "sprint",
       "label": "Austrian Grand Prix (sprint)"
