@@ -250,18 +250,22 @@
       "label": "Canadian Grand Prix",
       "fastestLap": "PER",
       "positions": [ "VER", "ALO", "HAM", "LEC", "SAI", "PER", "ALB", "OCO", "STR", "BOT", "PIA", "GAS", "NOR", "TSU", "HUL", "ZHO", "MAG", "DEV" ]
+    }, {
+      "code": "AUT_S",
+      "type": "sprint",
+      "label": "Austrian Grand Prix (sprint)",
+      "fastestLap": "HUL",
+      "positions": [ "VER", "PER", "SAI", "STR", "ALO", "HUL", "OCO", "RUS", "NOR", "HAM", "PIA", "LEC", "ALB", "MAG", "GAS", "TSU", "DEV", "SAR", "ZHO", "BOT" ]
+    }, {
+      "code": "AUT_R",
+      "type": "race",
+      "label": "Austrian Grand Prix (race)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "LEC", "PER", "NOR", "ALO", "SAI", "RUS", "HAM", "STR", "GAS", "ALB", "ZHO", "SAR", "OCO", "BOT", "PIA", "DEV", "MAG", "TSU" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AUT_S",
-      "type": "sprint",
-      "label": "Austrian Grand Prix (sprint)"
-    }, {
-      "code": "AUT_R",
-      "type": "race",
-      "label": "Austrian Grand Prix (race)"
-    }, {
       "code": "GBR",
       "type": "race",
       "label": "British Grand Prix"
