@@ -181,6 +181,12 @@
       "uuid": "7bb2c22c-56b2-4be2-85bb-697cb7c7b5da",
       "number": 2,
       "team": "Williams Racing"
+    },
+    "RIC": {
+      "uuid": "219f59ac-c0c8-4886-92ef-9bf806a94767",
+      "number": 3,
+      "team": "Scuderia AlphaTauri",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -268,14 +274,16 @@
       "label": "British Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "NOR", "HAM", "PIA", "RUS", "PER", "ALO", "ALB", "LEC", "SAI", "SAR", "BOT", "HUL", "STR", "ZHO", "TSU", "DEV", "GAS" ]
+    }, {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "NOR", "PER", "HAM", "PIA", "RUS", "LEC", "SAI", "ALO", "STR", "ALB", "BOT", "RIC", "HUL", "TSU", "ZHO", "MAG", "SAR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "HUN",
-      "type": "race",
-      "label": "Hungarian Grand Prix"
-    }, {
       "code": "BEL_S",
       "type": "sprint",
       "label": "Belgian Grand Prix (sprint)"
