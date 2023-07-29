@@ -280,14 +280,16 @@
       "label": "Hungarian Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "NOR", "PER", "HAM", "PIA", "RUS", "LEC", "SAI", "ALO", "STR", "ALB", "BOT", "RIC", "HUL", "TSU", "ZHO", "MAG", "SAR" ]
+    }, {
+      "code": "BEL_S",
+      "type": "sprint",
+      "label": "Belgian Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "PIA", "GAS", "SAI", "LEC", "NOR", "HAM", "RUS", "OCO", "RIC", "STR", "ALB", "BOT", "MAG", "ZHO", "SAR", "HUL", "TSU" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "BEL_S",
-      "type": "sprint",
-      "label": "Belgian Grand Prix (sprint)"
-    }, {
       "code": "BEL_R",
       "type": "race",
       "label": "Belgian Grand Prix (race)"
