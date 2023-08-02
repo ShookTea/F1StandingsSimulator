@@ -14,12 +14,12 @@ const emit = defineEmits(['step', 'max'])
 
 if (props.left) {
   window.addEventListener('keydown', (e: KeyboardEvent) => {
-    if (e.key === 'ArrowLeft') emit('step');
+    if (props.enabled && e.key === 'ArrowLeft') emit('step');
   })
 }
 if (props.right) {
   window.addEventListener('keydown', (e: KeyboardEvent) => {
-    if (e.key === 'ArrowRight') emit('step');
+    if (props.enabled && e.key === 'ArrowRight') emit('step');
   })
 }
 </script>
