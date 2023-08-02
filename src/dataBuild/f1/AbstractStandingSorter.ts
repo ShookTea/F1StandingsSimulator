@@ -18,6 +18,10 @@ export default abstract class AbstractStandingSorter<T extends AbstractStandingR
         this.worstResultTestSubject = worstResultTestSubject;
     }
 
+    resetSorter(elements: T[]): void
+    {
+    }
+
     compare(a: T, b: T): number
     {
         const aPoints: number = this.getPoints(a);

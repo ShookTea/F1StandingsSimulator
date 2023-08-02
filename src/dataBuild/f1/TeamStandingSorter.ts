@@ -1,19 +1,21 @@
 import TeamSimulationResult from './TeamSimulationResult';
 import AbstractStandingSorter, { SorterBuilder } from './AbstractStandingSorter';
+import WorstCaseStandingSorter from './WorstCaseStandingSorter';
 
 export default class TeamStandingSorter extends AbstractStandingSorter<TeamSimulationResult> {
 
     static getBuilder(): SorterBuilder<TeamSimulationResult>
     {
+        const defaultSorter = new TeamStandingSorter(null, null);
         return {
             buildSorter(): AbstractStandingSorter<TeamSimulationResult> {
-                return new TeamStandingSorter(null, null);
+                return defaultSorter;
             },
             buildBestResultSorter(t: TeamSimulationResult): AbstractStandingSorter<TeamSimulationResult> {
                 return new TeamStandingSorter(t, null);
             },
             buildWorstResultSorter(t: TeamSimulationResult): AbstractStandingSorter<TeamSimulationResult> {
-                return new TeamStandingSorter(null, t);
+                return new WorstCaseStandingSorter(t, defaultSorter);
             },
         }
     }

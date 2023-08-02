@@ -44,4 +44,11 @@ export default class RacePositionMapping {
     {
         return this.entriesCount > 0;
     }
+
+    clone(): RacePositionMapping
+    {
+        const clone: RacePositionMapping = Object.assign(Object.create(Object.getPrototypeOf(this)), this);
+        clone.racePositions = JSON.parse(JSON.stringify(this.racePositions));
+        return clone;
+    }
 }

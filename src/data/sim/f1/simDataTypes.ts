@@ -19,7 +19,9 @@ export interface Standing<T extends StandingOwner> {
     note: string
 }
 
-export interface StandingOwner {}
+export interface StandingOwner {
+    uuid: string
+}
 
 export interface RacePositionMap {
     [index: number]: number
@@ -27,7 +29,6 @@ export interface RacePositionMap {
 
 export interface Driver extends StandingOwner {
     abbreviation: string
-    uuid: string
     temporary?: boolean
     team: Team
     number: number
@@ -42,7 +43,6 @@ export interface DriverDetail {
 
 export interface Team extends StandingOwner {
     entry: string
-    uuid: string
     chassis: string
     chassisConstructor: string
     powerUnit: string

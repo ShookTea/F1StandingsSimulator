@@ -1,18 +1,20 @@
 import DriverSimulationResult from './DriverSimulationResult';
 import AbstractStandingSorter, { SorterBuilder } from './AbstractStandingSorter';
+import WorstCaseStandingSorter from './WorstCaseStandingSorter';
 
 export default class DriverStandingSorter extends AbstractStandingSorter<DriverSimulationResult> {
     static getBuilder(): SorterBuilder<DriverSimulationResult>
     {
+        const defaultSorter = new DriverStandingSorter(null, null);
         return {
             buildSorter(): AbstractStandingSorter<DriverSimulationResult> {
-                return new DriverStandingSorter(null, null);
+                return defaultSorter;
             },
             buildBestResultSorter(t: DriverSimulationResult): AbstractStandingSorter<DriverSimulationResult> {
                 return new DriverStandingSorter(t, null);
             },
             buildWorstResultSorter(t: DriverSimulationResult): AbstractStandingSorter<DriverSimulationResult> {
-                return new DriverStandingSorter(null, t);
+                return new WorstCaseStandingSorter(t, defaultSorter);
             }
         };
     }

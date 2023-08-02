@@ -14,6 +14,7 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
     racePositions: RacePositionMapping;
     maxPoints: number;
     remainingCountingRaces: number;
+    remainingAllPoints: number;
     notes: string[] = [];
 
     protected constructor(
@@ -26,6 +27,10 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
         this.remainingCountingRaces = remainingRaces
             .filter(r => input.pointSchemas[r.type].positionsCount)
             .length;
+        this.remainingAllPoints = remainingRaces
+          .map(r => input.pointSchemas[r.type])
+          .map(ps => ps.fastestLap.value + ps.points.reduce((a, b) => a + b), 0)
+          .reduce((a, b) => a + b, 0)
         this.points = standing.points;
         this.maxPoints = this.points + maxRemainingPoints;
         this.racePositions = standing.racePositions;
@@ -53,11 +58,26 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
         const bestCaseSorter = sorterBuilder.buildBestResultSorter(this);
         const worstCaseSorter = sorterBuilder.buildWorstResultSorter(this);
 
+        bestCaseSorter.resetSorter(allResults);
+        worstCaseSorter.resetSorter(allResults);
+
         this.maxPosition = [...allResults]
             .sort((a, b) => bestCaseSorter.compare(a, b))
             .indexOf(this) + 1;
         this.minPosition = [...allResults]
             .sort((a, b) => worstCaseSorter.compare(a, b))
             .indexOf(this) + 1;
+    }
+
+    isTemporaryAndNotRacedYet(): boolean
+    {
+        return false;
+    }
+
+    clone(): this
+    {
+        const clone: this = Object.assign(Object.create(Object.getPrototypeOf(this)), this);
+        clone.racePositions = clone.racePositions.clone();
+        return clone;
     }
 }

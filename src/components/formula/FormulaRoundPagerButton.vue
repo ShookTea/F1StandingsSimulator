@@ -3,9 +3,25 @@ interface Props {
     enabled: boolean
     stepLabel: string
     maxLabel: string
+    left?: boolean
+    right?: boolean
 }
-defineProps<Props>();
-defineEmits(['step', 'max'])
+const props = withDefaults(defineProps<Props>(), {
+  left: false,
+  right: false
+});
+const emit = defineEmits(['step', 'max'])
+
+if (props.left) {
+  window.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'ArrowLeft') emit('step');
+  })
+}
+if (props.right) {
+  window.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'ArrowRight') emit('step');
+  })
+}
 </script>
 
 <template>

@@ -56,6 +56,7 @@ function calculateResultsForStandings<S extends StandingOwner>(
     const dataResult = standingResult.map(s => s.toStandingResult(remainingRaces, input));
     const comparator = sorterBuilder.buildSorter();
 
+    comparator.resetSorter(dataResult);
     dataResult
         .sort((a, b) => comparator.compare(a, b))
         .forEach((standing, index) => standing.position = index + 1);

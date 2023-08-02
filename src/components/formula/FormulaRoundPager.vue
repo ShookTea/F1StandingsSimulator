@@ -14,11 +14,11 @@ defineProps<Props>();
 <template>
     <div id="simulation-pager">
         <div id="simulation-pager-switcher">
-            <formula-round-pager-button :enabled="page > 1"
+            <formula-round-pager-button :enabled="page > 1" left
                                         @step="goTo(page - 1)" @max="goTo(1)"
                                         step-label="&lt;" max-label="«"/>
             <formula-round-pager-step-view :page="page" :max-pages="maxPages"/>
-            <formula-round-pager-button :enabled="page < maxPages"
+            <formula-round-pager-button :enabled="page < maxPages" right
                                         @step=" goTo(page + 1)" @max="goTo(maxPages)"
                                         step-label="&gt;" max-label="»"/>
         </div>
@@ -37,7 +37,7 @@ export default {
         async goTo(newPage: number) {
             const pathTemplate: string = this.$route.matched[0].path;
             const solvedPath: string = pathTemplate.replace(`:${this.routeKey}`, `${newPage}`);
-            this.$router.push(solvedPath);
+            this.$router.replace(solvedPath);
         }
     }
 }
