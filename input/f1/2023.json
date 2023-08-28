@@ -187,6 +187,12 @@
       "number": 3,
       "team": "Scuderia AlphaTauri",
       "temporary": true
+    },
+    "LAW": {
+      "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
+      "number": 40,
+      "team": "Scuderia AlphaTauri",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -292,14 +298,16 @@
       "label": "Belgian Grand Prix (race)",
       "fastestLap": "HAM",
       "positions": [ "VER", "PER", "LEC", "HAM", "ALO", "RUS", "NOR", "OCO", "STR", "TSU", "GAS", "BOT", "ZHO", "ALB", "MAG", "RIC", "SAR", "HUL" ]
+    }, {
+      "code": "NED",
+      "type": "race",
+      "label": "Dutch Grand Prix",
+      "fastestLap": "ALO",
+      "positions": [ "VER", "ALO", "GAS", "PER", "SAI", "HAM", "NOR", "ALB", "PIA", "OCO", "STR", "HUL", "LAW", "BOT", "TSU", "MAG", "RUS" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "NED",
-      "type": "race",
-      "label": "Dutch Grand Prix"
-    }, {
       "code": "ITA",
       "type": "race",
       "label": "Italian Grand Prix"
