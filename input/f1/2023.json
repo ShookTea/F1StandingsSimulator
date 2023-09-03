@@ -304,14 +304,16 @@
       "label": "Dutch Grand Prix",
       "fastestLap": "ALO",
       "positions": [ "VER", "ALO", "GAS", "PER", "SAI", "HAM", "NOR", "ALB", "PIA", "OCO", "STR", "HUL", "LAW", "BOT", "TSU", "MAG", "RUS" ]
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix",
+      "fastestLap": "PIA",
+      "positions": [ "VER", "PER", "SAI", "LEC", "RUS", "HAM", "ALB", "NOR", "ALO", "BOT", "LAW", "PIA", "SAR", "ZHO", "GAS", "STR", "HUL", "MAG" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "ITA",
-      "type": "race",
-      "label": "Italian Grand Prix"
-    }, {
       "code": "SIN",
       "type": "race",
       "label": "Singapore Grand Prix"
