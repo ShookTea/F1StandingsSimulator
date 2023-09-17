@@ -310,14 +310,16 @@
       "label": "Italian Grand Prix",
       "fastestLap": "PIA",
       "positions": [ "VER", "PER", "SAI", "LEC", "RUS", "HAM", "ALB", "NOR", "ALO", "BOT", "LAW", "PIA", "SAR", "ZHO", "GAS", "STR", "HUL", "MAG" ]
+    }, {
+      "code": "SIN",
+      "type": "race",
+      "label": "Singapore Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "SAI", "NOR", "HAM", "LEC", "VER", "GAS", "PIA", "PER", "LAW", "MAG", "ALB", "ZHO", "HUL", "SAR", "ALO", "RUS" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SIN",
-      "type": "race",
-      "label": "Singapore Grand Prix"
-    }, {
       "code": "JPN",
       "type": "race",
       "label": "Japanese Grand Prix"
