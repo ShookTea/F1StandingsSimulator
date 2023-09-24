@@ -34,7 +34,7 @@ export default class WorstCaseStandingSorter<T extends AbstractStandingResultSto
         continue;
       }
 
-      const pointsDiff = this.testSubject.points - currentElem.points;
+      const pointsDiff = Math.min(this.testSubject.points - currentElem.points, this.testSubject.maxRemainingPoints);
       if (pointsDiff > pointsToDistribute) {
         break;
       }

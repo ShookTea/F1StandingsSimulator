@@ -10512,7 +10512,7 @@
                 "maxPoints": 386,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 5,
+                "minPosition": 4,
                 "racePositions": {
                     "1": 7,
                     "2": 1,
@@ -11276,7 +11276,7 @@
                 "maxPoints": 655,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 3,
+                "minPosition": 2,
                 "racePositions": {
                     "1": 9,
                     "2": 4,
@@ -11571,7 +11571,7 @@
                 "maxPoints": 386,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 4,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 8,
                     "2": 1,
@@ -12640,7 +12640,7 @@
                 "maxPoints": 386,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 4,
+                "minPosition": 2,
                 "racePositions": {
                     "1": 9,
                     "2": 1,
@@ -12673,7 +12673,7 @@
                 "maxPoints": 301,
                 "position": 2,
                 "maxPosition": 1,
-                "minPosition": 6,
+                "minPosition": 4,
                 "racePositions": {
                     "1": 2,
                     "2": 5,
@@ -13416,7 +13416,7 @@
                 "maxPoints": 655,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 2,
+                "minPosition": 1,
                 "racePositions": {
                     "1": 11,
                     "2": 6,
@@ -13720,7 +13720,7 @@
                 "maxPoints": 385,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 3,
+                "minPosition": 1,
                 "racePositions": {
                     "1": 10,
                     "2": 1,
@@ -13753,7 +13753,7 @@
                 "maxPoints": 275,
                 "position": 2,
                 "maxPosition": 2,
-                "minPosition": 5,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 2,
                     "2": 5,
@@ -14504,7 +14504,7 @@
                 "maxPoints": 636,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 2,
+                "minPosition": 1,
                 "racePositions": {
                     "1": 12,
                     "2": 6,
@@ -14562,7 +14562,7 @@
                 "maxPoints": 286,
                 "position": 3,
                 "maxPosition": 2,
-                "minPosition": 8,
+                "minPosition": 7,
                 "racePositions": {
                     "2": 1,
                     "3": 1,
@@ -14591,7 +14591,7 @@
                 "maxPoints": 281,
                 "position": 4,
                 "maxPosition": 2,
-                "minPosition": 8,
+                "minPosition": 7,
                 "racePositions": {
                     "2": 1,
                     "3": 1,
@@ -14813,7 +14813,7 @@
                 "maxPoints": 384,
                 "position": 1,
                 "maxPosition": 1,
-                "minPosition": 2,
+                "minPosition": 1,
                 "racePositions": {
                     "1": 11,
                     "2": 1,
@@ -14846,7 +14846,7 @@
                 "maxPoints": 253,
                 "position": 2,
                 "maxPosition": 2,
-                "minPosition": 4,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 2,
                     "2": 5,
@@ -14881,7 +14881,7 @@
                 "maxPoints": 241,
                 "position": 3,
                 "maxPosition": 2,
-                "minPosition": 5,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 1,
                     "2": 6,
@@ -14913,7 +14913,7 @@
                 "maxPoints": 154,
                 "position": 4,
                 "maxPosition": 4,
-                "minPosition": 12,
+                "minPosition": 11,
                 "racePositions": {
                     "3": 2,
                     "4": 3,
@@ -14951,7 +14951,7 @@
                 "maxPoints": 152,
                 "position": 5,
                 "maxPosition": 4,
-                "minPosition": 12,
+                "minPosition": 11,
                 "racePositions": {
                     "2": 1,
                     "4": 2,
@@ -14986,7 +14986,7 @@
                 "maxPoints": 150,
                 "position": 6,
                 "maxPosition": 4,
-                "minPosition": 12,
+                "minPosition": 11,
                 "racePositions": {
                     "2": 1,
                     "3": 1,
@@ -15024,7 +15024,7 @@
                 "maxPoints": 138,
                 "position": 7,
                 "maxPosition": 4,
-                "minPosition": 14,
+                "minPosition": 13,
                 "racePositions": {
                     "3": 1,
                     "4": 2,
@@ -15062,7 +15062,7 @@
                 "maxPoints": 137,
                 "position": 8,
                 "maxPosition": 4,
-                "minPosition": 14,
+                "minPosition": 13,
                 "racePositions": {
                     "2": 1,
                     "5": 4,
@@ -15096,7 +15096,7 @@
                 "maxPoints": 137,
                 "position": 9,
                 "maxPosition": 4,
-                "minPosition": 14,
+                "minPosition": 13,
                 "racePositions": {
                     "3": 2,
                     "4": 1,
@@ -15134,7 +15134,7 @@
                 "maxPoints": 123,
                 "position": 10,
                 "maxPosition": 4,
-                "minPosition": 15,
+                "minPosition": 14,
                 "racePositions": {
                     "1": 1,
                     "5": 1,
@@ -15171,7 +15171,7 @@
                 "maxPoints": 111,
                 "position": 11,
                 "maxPosition": 4,
-                "minPosition": 16,
+                "minPosition": 15,
                 "racePositions": {
                     "3": 1,
                     "4": 2,
@@ -15630,7 +15630,7 @@
                 "maxPoints": 362,
                 "position": 2,
                 "maxPosition": 2,
-                "minPosition": 3,
+                "minPosition": 2,
                 "racePositions": {
                     "1": 1,
                     "2": 6,
@@ -15721,7 +15721,7 @@
                 "maxPoints": 232,
                 "position": 5,
                 "maxPosition": 3,
-                "minPosition": 8,
+                "minPosition": 7,
                 "racePositions": {
                     "3": 2,
                     "4": 3,
@@ -15751,7 +15751,7 @@
                 "maxPoints": 219,
                 "position": 6,
                 "maxPosition": 3,
-                "minPosition": 8,
+                "minPosition": 7,
                 "racePositions": {
                     "2": 1,
                     "3": 2,
@@ -15782,7 +15782,7 @@
                 "maxPoints": 185,
                 "position": 7,
                 "maxPosition": 3,
-                "minPosition": 9,
+                "minPosition": 7,
                 "racePositions": {
                     "1": 1,
                     "4": 1,
@@ -15946,7 +15946,7 @@
                 "maxPoints": 231,
                 "position": 2,
                 "maxPosition": 2,
-                "minPosition": 4,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 2,
                     "2": 5,
@@ -15981,7 +15981,7 @@
                 "maxPoints": 215,
                 "position": 3,
                 "maxPosition": 2,
-                "minPosition": 4,
+                "minPosition": 3,
                 "racePositions": {
                     "1": 1,
                     "2": 6,
@@ -16013,7 +16013,7 @@
                 "maxPoints": 151,
                 "position": 4,
                 "maxPosition": 4,
-                "minPosition": 7,
+                "minPosition": 6,
                 "racePositions": {
                     "1": 1,
                     "2": 1,
@@ -16125,7 +16125,7 @@
                 "maxPoints": 123,
                 "position": 7,
                 "maxPosition": 5,
-                "minPosition": 12,
+                "minPosition": 11,
                 "racePositions": {
                     "2": 1,
                     "4": 1,
@@ -16160,7 +16160,7 @@
                 "maxPoints": 119,
                 "position": 8,
                 "maxPosition": 5,
-                "minPosition": 12,
+                "minPosition": 11,
                 "racePositions": {
                     "3": 2,
                     "4": 1,
@@ -16236,7 +16236,7 @@
                 "maxPoints": 100,
                 "position": 10,
                 "maxPosition": 6,
-                "minPosition": 14,
+                "minPosition": 12,
                 "racePositions": {
                     "3": 2,
                     "4": 2,
@@ -16270,7 +16270,7 @@
                 "maxPoints": 97,
                 "position": 11,
                 "maxPosition": 7,
-                "minPosition": 14,
+                "minPosition": 12,
                 "racePositions": {
                     "1": 1,
                     "5": 1,
@@ -16307,7 +16307,7 @@
                 "maxPoints": 86,
                 "position": 12,
                 "maxPosition": 10,
-                "minPosition": 14,
+                "minPosition": 13,
                 "racePositions": {
                     "2": 1,
                     "5": 1,
@@ -16344,7 +16344,7 @@
                 "maxPoints": 59,
                 "position": 13,
                 "maxPosition": 13,
-                "minPosition": 17,
+                "minPosition": 15,
                 "racePositions": {
                     "3": 1,
                     "6": 1,
@@ -16379,7 +16379,7 @@
                 "maxPoints": 58,
                 "position": 14,
                 "maxPosition": 13,
-                "minPosition": 17,
+                "minPosition": 15,
                 "racePositions": {
                     "4": 1,
                     "7": 2,
@@ -16740,7 +16740,7 @@
                 "maxPoints": 326,
                 "position": 2,
                 "maxPosition": 2,
-                "minPosition": 3,
+                "minPosition": 2,
                 "racePositions": {
                     "1": 1,
                     "2": 6,
@@ -16771,7 +16771,7 @@
                 "maxPoints": 238,
                 "position": 3,
                 "maxPosition": 3,
-                "minPosition": 6,
+                "minPosition": 5,
                 "racePositions": {
                     "1": 1,
                     "2": 1,
@@ -16802,7 +16802,7 @@
                 "maxPoints": 228,
                 "position": 4,
                 "maxPosition": 3,
-                "minPosition": 6,
+                "minPosition": 5,
                 "racePositions": {
                     "2": 1,
                     "3": 1,
@@ -16894,7 +16894,7 @@
                 "maxPoints": 147,
                 "position": 7,
                 "maxPosition": 6,
-                "minPosition": 8,
+                "minPosition": 7,
                 "racePositions": {
                     "1": 1,
                     "4": 1,

@@ -13,6 +13,7 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
     points: number;
     racePositions: RacePositionMapping;
     maxPoints: number;
+    maxRemainingPoints: number;
     remainingCountingRaces: number;
     remainingAllPoints: number;
     notes: string[] = [];
@@ -32,6 +33,7 @@ export default abstract class AbstractStandingResultStore<T extends StandingOwne
           .map(ps => ps.fastestLap.value + ps.points.reduce((a, b) => a + b), 0)
           .reduce((a, b) => a + b, 0)
         this.points = standing.points;
+        this.maxRemainingPoints = maxRemainingPoints;
         this.maxPoints = this.points + maxRemainingPoints;
         this.racePositions = standing.racePositions;
         this.notes = standing.notes;
