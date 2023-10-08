@@ -322,14 +322,16 @@
       "label": "Japanese Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "NOR", "PIA", "LEC", "HAM", "SAI", "RUS", "ALO", "OCO", "GAS", "LAW", "TSU", "ZHO", "HUL", "MAG" ]
+    }, {
+      "code": "QAT_S",
+      "type": "sprint",
+      "label": "Qatar Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "PIA", "VER", "NOR", "RUS", "HAM", "SAI", "ALB", "ALO", "GAS", "BOT", "TSU", "LEC", "MAG", "ZHO", "STR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "QAT_S",
-      "type": "sprint",
-      "label": "Qatar Grand Prix (sprint)"
-    }, {
       "code": "QAT_R",
       "type": "race",
       "label": "Qatar Grand Prix (race)"
