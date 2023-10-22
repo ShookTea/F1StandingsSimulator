@@ -334,14 +334,16 @@
       "label": "Qatar Grand Prix (race)",
       "fastestLap": "VER",
       "positions": [ "VER", "PIA", "NOR", "RUS", "LEC", "ALO", "OCO", "BOT", "ZHO", "PER", "STR", "GAS", "ALB", "MAG", "TSU", "HUL", "LAW" ]
+    }, {
+      "code": "USA_S",
+      "type": "sprint",
+      "label": "United States Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "HAM", "LEC", "NOR", "PER", "SAI", "GAS", "RUS", "ALB", "PIA", "OCO", "RIC", "ALO", "TSU", "HUL", "BOT", "ZHO", "MAG", "SAR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "USA_S",
-      "type": "sprint",
-      "label": "United States Grand Prix (sprint)"
-    }, {
       "code": "USA_R",
       "type": "race",
       "label": "United States Grand Prix (race)"
