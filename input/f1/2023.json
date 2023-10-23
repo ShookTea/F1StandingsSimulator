@@ -340,14 +340,16 @@
       "label": "United States Grand Prix (sprint)",
       "fastestLap": "VER",
       "positions": [ "VER", "HAM", "LEC", "NOR", "PER", "SAI", "GAS", "RUS", "ALB", "PIA", "OCO", "RIC", "ALO", "TSU", "HUL", "BOT", "ZHO", "MAG", "SAR" ]
+    }, {
+      "code": "USA_R",
+      "type": "race",
+      "label": "United States Grand Prix (race)",
+      "fastestLap": "TSU",
+      "positions": [ "VER", "NOR", "SAI", "PER", "RUS", "GAS", "STR", "TSU", "ALB", "SAR", "HUL", "BOT", "ZHO", "MAG", "RIC" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "USA_R",
-      "type": "race",
-      "label": "United States Grand Prix (race)"
-    }, {
       "code": "MXC",
       "type": "race",
       "label": "Mexico City Grand Prix"
