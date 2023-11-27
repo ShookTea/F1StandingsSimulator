@@ -370,13 +370,13 @@
       "label": "Las Vegas Grand Prix",
       "fastestLap": "PIA",
       "positions": [ "VER", "LEC", "PER", "OCO", "STR", "SAI", "HAM", "RUS", "ALO", "PIA", "GAS", "ALB", "MAG", "RIC", "ZHO", "SAR", "BOT", "TSU", "HUL" ]
-    }
-  ],
-  "remainingRaces": [
-    {
+    }, {
       "code": "ABU",
       "type": "race",
-      "label": "Abu Dhabi Grand Prix"
+      "label": "Abu Dhabi Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "LEC", "RUS", "PER", "NOR", "PIA", "ALO", "TSU", "HAM", "STR", "RIC", "OCO", "GAS", "ALB", "HUL", "SAR", "ZHO", "SAI", "BOT", "MAG" ]
     }
-  ]
+  ],
+  "remainingRaces": []
 }
