@@ -195,13 +195,17 @@
       "positionsCount": false
     }
   },
-  "races": [],
-  "remainingRaces": [
+  "races": [
     {
       "code": "BHR",
       "type": "race",
-      "label": "Bahrain Grand Prix"
-    }, {
+      "label": "Bahrain Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "PER", "SAI", "LEC", "RUS", "NOR", "HAM", "PIA", "ALO", "STR", "ZHO", "MAG", "RIC", "TSU", "ALB", "HUL", "OCO", "GAS", "BOT", "SAR" ]
+    }
+  ],
+  "remainingRaces": [
+    {
       "code": "SAU",
       "type": "race",
       "label": "Saudi Arabian Grand Prix"
