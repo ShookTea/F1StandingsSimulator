@@ -181,6 +181,12 @@
       "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
       "number": 23,
       "team": "Williams Racing"
+    },
+    "BEA": {
+      "uuid": "3e7ffe41-e39f-41dc-94b6-6a098988481a",
+      "number": 38,
+      "team": "Scuderia Ferrari",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -202,14 +208,16 @@
       "label": "Bahrain Grand Prix",
       "fastestLap": "VER",
       "positions": [ "VER", "PER", "SAI", "LEC", "RUS", "NOR", "HAM", "PIA", "ALO", "STR", "ZHO", "MAG", "RIC", "TSU", "ALB", "HUL", "OCO", "GAS", "BOT", "SAR" ]
+    }, {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "VER", "PER", "LEC", "PIA", "ALO", "RUS", "BEA", "NOR", "HAM", "HUL", "ALB", "MAG", "OCO", "SAR", "TSU", "RIC", "BOT", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SAU",
-      "type": "race",
-      "label": "Saudi Arabian Grand Prix"
-    }, {
       "code": "AUS",
       "type": "race",
       "label": "Australian Grand Prix"
