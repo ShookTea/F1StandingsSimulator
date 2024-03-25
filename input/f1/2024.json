@@ -214,14 +214,16 @@
       "label": "Saudi Arabian Grand Prix",
       "fastestLap": "LEC",
       "positions": [ "VER", "PER", "LEC", "PIA", "ALO", "RUS", "BEA", "NOR", "HAM", "HUL", "ALB", "MAG", "OCO", "SAR", "TSU", "RIC", "BOT", "ZHO" ]
+    }, {
+      "code": "AUS",
+      "type": "race",
+      "label": "Australian Grand Prix",
+      "fastestLap": "LEC",
+      "positions": [ "SAI", "LEC", "NOR", "PIA", "PER", "STR", "TSU", "ALO", "HUL", "MAG", "ALB", "RIC", "GAS", "BOT", "ZHO", "OCO", "RUS" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AUS",
-      "type": "race",
-      "label": "Australian Grand Prix"
-    }, {
       "code": "JPN",
       "type": "race",
       "label": "Japanese Grand Prix"
