@@ -220,18 +220,22 @@
       "label": "Australian Grand Prix",
       "fastestLap": "LEC",
       "positions": [ "SAI", "LEC", "NOR", "PIA", "PER", "STR", "TSU", "ALO", "HUL", "MAG", "ALB", "RIC", "GAS", "BOT", "ZHO", "OCO", "RUS" ]
+    }, {
+      "code": "JPN",
+      "type": "race",
+      "label": "Japanese Grand Prix",
+      "fastestLap": "VER",
+      "positions": [ "VER", "PER", "SAI", "LEC", "NOR", "ALO", "RUS", "PIA", "HAM", "TSU", "HUL", "STR", "MAG", "BOT", "OCO", "GAS", "SAR" ]
+    }, {
+      "code": "CHN_S",
+      "type": "sprint",
+      "label": "Chinese Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "HAM", "PER", "LEC", "SAI", "NOR", "PIA", "RUS", "ZHO", "MAG", "RIC", "BOT", "OCO", "STR", "GAS", "TSU", "ALB", "SAR", "HUL", "ALO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "JPN",
-      "type": "race",
-      "label": "Japanese Grand Prix"
-    }, {
-      "code": "CHN_S",
-      "type": "sprint",
-      "label": "Chinese Grand Prix (sprint)"
-    }, {
       "code": "CHN_R",
       "type": "race",
       "label": "Chinese Grand Prix (race)"
