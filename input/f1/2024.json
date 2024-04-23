@@ -232,14 +232,16 @@
       "label": "Chinese Grand Prix (sprint)",
       "fastestLap": "VER",
       "positions": [ "VER", "HAM", "PER", "LEC", "SAI", "NOR", "PIA", "RUS", "ZHO", "MAG", "RIC", "BOT", "OCO", "STR", "GAS", "TSU", "ALB", "SAR", "HUL", "ALO" ]
+    }, {
+      "code": "CHN_R",
+      "type": "race",
+      "label": "Chinese Grand Prix (race)",
+      "fastestLap": "ALO",
+      "positions": [ "VER", "NOR", "PER", "LEC", "SAI", "RUS", "ALO", "PIA", "HAM", "HUL", "OCO", "ALB", "GAS", "ZHO", "STR", "MAG", "SAR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "CHN_R",
-      "type": "race",
-      "label": "Chinese Grand Prix (race)"
-    }, {
       "code": "MIA_S",
       "type": "sprint",
       "label": "Miami Grand Prix (sprint)"
