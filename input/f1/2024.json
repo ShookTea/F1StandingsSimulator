@@ -238,18 +238,22 @@
       "label": "Chinese Grand Prix (race)",
       "fastestLap": "ALO",
       "positions": [ "VER", "NOR", "PER", "LEC", "SAI", "RUS", "ALO", "PIA", "HAM", "HUL", "OCO", "ALB", "GAS", "ZHO", "STR", "MAG", "SAR" ]
+    }, {
+      "code": "MIA_S",
+      "type": "sprint",
+      "label": "Miami Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "LEC", "PER", "RIC", "SAI", "PIA", "HUL", "TSU", "GAS", "SAR", "ZHO", "RUS", "ALB", "BOT", "OCO", "HAM", "ALO", "MAG" ]
+    }, {
+      "code": "MIA_R",
+      "type": "race",
+      "label": "Miami Grand Prix (race)",
+      "fastestLap": "PIA",
+      "positions": [ "NOR", "VER", "LEC", "PER", "SAI", "HAM", "TSU", "RUS", "ALO", "OCO", "HUL", "GAS", "PIA", "ZHO", "RIC", "BOT", "STR", "ALB", "MAG" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MIA_S",
-      "type": "sprint",
-      "label": "Miami Grand Prix (sprint)"
-    }, {
-      "code": "MIA_R",
-      "type": "race",
-      "label": "Miami Grand Prix (race)"
-    }, {
       "code": "EMI",
       "type": "race",
       "label": "Emilia Romagna Grand Prix"
