@@ -250,14 +250,16 @@
       "label": "Miami Grand Prix (race)",
       "fastestLap": "PIA",
       "positions": [ "NOR", "VER", "LEC", "PER", "SAI", "HAM", "TSU", "RUS", "ALO", "OCO", "HUL", "GAS", "PIA", "ZHO", "RIC", "BOT", "STR", "ALB", "MAG" ]
+    }, {
+      "code": "EMI",
+      "type": "race",
+      "label": "Emilia Romagna Grand Prix",
+      "fastestLap": "RUS",
+      "positions": [ "VER", "NOR", "LEC", "PIA", "SAI", "HAM", "RUS", "PER", "STR", "TSU", "HUL", "MAG", "RIC", "OCO", "ZHO", "GAS", "SAR", "BOT", "ALO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "EMI",
-      "type": "race",
-      "label": "Emilia Romagna Grand Prix"
-    }, {
       "code": "MON",
       "type": "race",
       "label": "Monaco Grand Prix"
