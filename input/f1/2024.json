@@ -256,14 +256,16 @@
       "label": "Emilia Romagna Grand Prix",
       "fastestLap": "RUS",
       "positions": [ "VER", "NOR", "LEC", "PIA", "SAI", "HAM", "RUS", "PER", "STR", "TSU", "HUL", "MAG", "RIC", "OCO", "ZHO", "GAS", "SAR", "BOT", "ALO" ]
+    }, {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "LEC", "PIA", "SAI", "NOR", "RUS", "VER", "HAM", "TSU", "ALB", "GAS", "ALO", "RIC", "BOT", "STR", "SAR", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MON",
-      "type": "race",
-      "label": "Monaco Grand Prix"
-    }, {
       "code": "CAN",
       "type": "race",
       "label": "Canadian Grand Prix"
