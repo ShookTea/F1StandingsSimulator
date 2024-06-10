@@ -262,14 +262,16 @@
       "label": "Monaco Grand Prix",
       "fastestLap": "HAM",
       "positions": [ "LEC", "PIA", "SAI", "NOR", "RUS", "VER", "HAM", "TSU", "ALB", "GAS", "ALO", "RIC", "BOT", "STR", "SAR", "ZHO" ]
+    }, {
+      "code": "CAN",
+      "type": "race",
+      "label": "Canadian Grand Prix",
+      "fastestLap": "HAM",
+      "positions": [ "VER", "NOR", "RUS", "HAM", "PIA", "ALO", "STR", "RIC", "GAS", "OCO", "HUL", "MAG", "BOT", "TSU", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "CAN",
-      "type": "race",
-      "label": "Canadian Grand Prix"
-    }, {
       "code": "ESP",
       "type": "race",
       "label": "Spanish Grand Prix"
