@@ -268,14 +268,16 @@
       "label": "Canadian Grand Prix",
       "fastestLap": "HAM",
       "positions": [ "VER", "NOR", "RUS", "HAM", "PIA", "ALO", "STR", "RIC", "GAS", "OCO", "HUL", "MAG", "BOT", "TSU", "ZHO" ]
+    }, {
+      "code": "ESP",
+      "type": "race",
+      "label": "Spanish Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "VER", "NOR", "HAM", "RUS", "LEC", "SAI", "PIA", "PER", "GAS", "OCO", "HUL", "ALO", "ZHO", "STR", "RIC", "BOT", "MAG", "ALB", "TSU", "SAR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "ESP",
-      "type": "race",
-      "label": "Spanish Grand Prix"
-    }, {
       "code": "AUT_S",
       "type": "sprint",
       "label": "Austrian Grand Prix (sprint)"
