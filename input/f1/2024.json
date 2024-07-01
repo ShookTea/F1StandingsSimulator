@@ -274,18 +274,22 @@
       "label": "Spanish Grand Prix",
       "fastestLap": "NOR",
       "positions": [ "VER", "NOR", "HAM", "RUS", "LEC", "SAI", "PIA", "PER", "GAS", "OCO", "HUL", "ALO", "ZHO", "STR", "RIC", "BOT", "MAG", "ALB", "TSU", "SAR" ]
+    }, {
+      "code": "AUT_S",
+      "type": "sprint",
+      "label": "Austrian Grand Prix (sprint)",
+      "fastestLap": "NOR",
+      "positions": [ "VER", "PIA", "NOR", "RUS", "SAI", "HAM", "LEC", "PER", "MAG", "STR", "OCO", "GAS", "TSU", "RIC", "ALO", "SAR", "ALB", "BOT", "HUL", "ZHO" ]
+    }, {
+      "code": "AUT_R",
+      "type": "race",
+      "label": "Austrian Grand Prix (race)",
+      "fastestLap": "ALO",
+      "positions": [ "RUS", "PIA", "SAI", "HAM", "VER", "HUL", "PER", "MAG", "RIC", "GAS", "LEC", "OCO", "STR", "TSU", "ALB", "BOT", "ZHO", "ALO", "SAR", "NOR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AUT_S",
-      "type": "sprint",
-      "label": "Austrian Grand Prix (sprint)"
-    }, {
-      "code": "AUT_R",
-      "type": "race",
-      "label": "Austrian Grand Prix (race)"
-    }, {
       "code": "GBR",
       "type": "race",
       "label": "British Grand Prix"
