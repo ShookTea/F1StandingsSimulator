@@ -286,14 +286,16 @@
       "label": "Austrian Grand Prix (race)",
       "fastestLap": "ALO",
       "positions": [ "RUS", "PIA", "SAI", "HAM", "VER", "HUL", "PER", "MAG", "RIC", "GAS", "LEC", "OCO", "STR", "TSU", "ALB", "BOT", "ZHO", "ALO", "SAR", "NOR" ]
+    }, {
+      "code": "GBR",
+      "type": "race",
+      "label": "British Grand Prix",
+      "fastestLap": "SAI",
+      "positions": [ "HAM", "VER", "NOR", "PIA", "SAI", "HUL", "STR", "ALO", "ALB", "TSU", "SAR", "MAG", "RIC", "LEC", "BOT", "OCO", "PER", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "GBR",
-      "type": "race",
-      "label": "British Grand Prix"
-    }, {
       "code": "HUN",
       "type": "race",
       "label": "Hungarian Grand Prix"
