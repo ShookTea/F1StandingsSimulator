@@ -304,14 +304,16 @@
       "label": "Belgian Grand Prix",
       "fastestLap": "PER",
       "positions": [ "HAM", "PIA", "LEC", "VER", "NOR", "SAI", "PER", "ALO", "OCO", "RIC", "STR", "ALB", "GAS", "MAG", "BOT", "TSU", "SAR", "HUL" ]
+    }, {
+      "code": "NED",
+      "type": "race",
+      "label": "Dutch Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "NOR", "VER", "LEC", "PIA", "SAI", "PER", "RUS", "HAM", "GAS", "ALO", "HUL", "RIC", "STR", "ALB", "OCO", "SAR", "TSU", "MAG", "BOT", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "NED",
-      "type": "race",
-      "label": "Dutch Grand Prix"
-    }, {
       "code": "ITA",
       "type": "race",
       "label": "Italian Grand Prix"
