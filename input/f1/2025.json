@@ -87,6 +87,11 @@
       "number": 10,
       "team": "BWT Alpine F1 Team"
     },
+    "DOO": {
+      "uuid": "0137527c-0f96-4af9-8976-19f27295fd96",
+      "number": null,
+      "team": "BWT Alpine F1 Team"
+    },
     "ALO": {
       "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
       "number": 14,
@@ -100,12 +105,22 @@
     "LEC": {
       "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
       "number": 16,
-      "team": "Scuderia Ferrari"
+      "team": "Scuderia Ferrari HP"
     },
     "HAM": {
       "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299",
       "number": 44,
-      "team": "Scuderia Ferrari"
+      "team": "Scuderia Ferrari HP"
+    },
+    "OCO": {
+      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9",
+      "number": 31,
+      "team": "MoneyGram Haas F1 Team"
+    },
+    "BEA": {
+      "uuid": "3e7ffe41-e39f-41dc-94b6-6a098988481a",
+      "number": 87,
+      "team": "MoneyGram Haas F1 Team"
     },
     "HUL": {
       "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746",
@@ -145,6 +160,11 @@
     "ALB": {
       "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
       "number": 23,
+      "team": "Williams Racing"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c",
+      "number": 55,
       "team": "Williams Racing"
     }
   },
