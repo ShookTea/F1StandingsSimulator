@@ -8,6 +8,7 @@ interface Props {
     index: number
     standingsCount: number
     standing: Standing<Team>
+    pointDiff: number
 }
 
 defineProps<Props>();
@@ -25,7 +26,10 @@ const { windowWidth } = useWindowWidth();
                 <div v-if="standing.note !== ''" class="icon-container" :title="standing.note"><v-icon class="icon" name="bi-info-circle-fill"/></div>
             </div>
         </th>
-        <th class="pre-cell">{{ standing.points }}</th>
+        <th class="pre-cell">
+          {{ standing.points }}
+          <span class="point-diff" v-if="pointDiff !== 0">+{{ pointDiff }}</span>
+        </th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
         </template>
@@ -64,6 +68,7 @@ th {
     border-collapse: collapse;
     text-align: center;
     width: 3.5em;
+    position: relative;
 }
 .team-name {
     display: flex;
@@ -83,5 +88,15 @@ th {
 }
 .icon-container {
     margin-left: 1em;
+}
+
+.point-diff {
+  position: absolute;
+  top: 1.7em;
+  left: 0;
+  width: 100%;
+  font-weight: lighter;
+  font-size: x-small;
+  color: darkgreen;
 }
 </style>
