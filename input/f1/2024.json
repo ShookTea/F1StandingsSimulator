@@ -187,6 +187,12 @@
       "number": 38,
       "team": "Scuderia Ferrari",
       "temporary": true
+    },
+    "COL": {
+      "uuid": "5a46fe0e-7e7d-414b-8f28-aadeab10ac77",
+      "number": 43,
+      "team": "Williams Racing",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -310,14 +316,16 @@
       "label": "Dutch Grand Prix",
       "fastestLap": "NOR",
       "positions": [ "NOR", "VER", "LEC", "PIA", "SAI", "PER", "RUS", "HAM", "GAS", "ALO", "HUL", "RIC", "STR", "ALB", "OCO", "SAR", "TSU", "MAG", "BOT", "ZHO" ]
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "LEC", "PIA", "NOR", "SAI", "HAM", "VER", "RUS", "PER", "ALB", "MAG", "ALO", "COL", "RIC", "OCO", "GAS", "BOT", "HUL", "ZHO", "STR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "ITA",
-      "type": "race",
-      "label": "Italian Grand Prix"
-    }, {
       "code": "AZE",
       "type": "race",
       "label": "Azerbaijan Grand Prix"

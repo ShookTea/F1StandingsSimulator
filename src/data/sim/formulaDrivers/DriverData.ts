@@ -380,6 +380,26 @@ const result: DataResult[] = [
             "fullName": "Oliver Bearman",
             "routePart": "oliver-bearman-3e7ffe41"
         }
+    },
+    {
+        "driverDetails": {
+            "uuid": "0137527c-0f96-4af9-8976-19f27295fd96",
+            "givenName": "Jack",
+            "familyName": "Doohan",
+            "familyNameFirst": false,
+            "fullName": "Jack Doohan",
+            "routePart": "jack-doohan-0137527c"
+        }
+    },
+    {
+        "driverDetails": {
+            "uuid": "5a46fe0e-7e7d-414b-8f28-aadeab10ac77",
+            "givenName": "Franco",
+            "familyName": "Colapinto",
+            "familyNameFirst": false,
+            "fullName": "Franco Colapinto",
+            "routePart": "franco-colapinto-5a46fe0e"
+        }
     }
 ];
 export default result;
