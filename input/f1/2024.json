@@ -322,14 +322,22 @@
       "label": "Italian Grand Prix",
       "fastestLap": "NOR",
       "positions": [ "LEC", "PIA", "NOR", "SAI", "HAM", "VER", "RUS", "PER", "ALB", "MAG", "ALO", "COL", "RIC", "OCO", "GAS", "BOT", "HUL", "ZHO", "STR" ]
+    }, {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "PIA", "LEC", "RUS", "NOR", "VER", "ALO", "ALB", "COL", "HAM", "BEA", "HUL", "GAS", "RIC", "ZHO", "OCO", "BOT", "PER", "SAI", "STR" ],
+      "teamSwitch": {
+        "BEA": {
+          "team": "MoneyGram Haas F1 Team",
+          "description": "Kevin Magnussen was given a one-race ban at the previous round and was replaced by reserve driver Oliver Bearman."
+        }
+      }
     }
   ],
   "remainingRaces": [
     {
-      "code": "AZE",
-      "type": "race",
-      "label": "Azerbaijan Grand Prix"
-    }, {
       "code": "SIN",
       "type": "race",
       "label": "Singapore Grand Prix"
