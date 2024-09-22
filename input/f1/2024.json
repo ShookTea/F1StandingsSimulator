@@ -334,14 +334,16 @@
           "description": "Kevin Magnussen was given a one-race ban at the previous round and was replaced by reserve driver Oliver Bearman."
         }
       }
+    }, {
+      "code": "SIN",
+      "type": "race",
+      "label": "Singapore Grand Prix",
+      "fastestLap": "RIC",
+      "positions": [ "NOR", "VER", "PIA", "RUS", "LEC", "HAM", "SAI", "ALO", "HUL", "PER", "COL", "TSU", "OCO", "STR", "ZHO", "BOT", "GAS", "RIC", "MAG" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SIN",
-      "type": "race",
-      "label": "Singapore Grand Prix"
-    }, {
       "code": "USA_S",
       "type": "sprint",
       "label": "United States Grand Prix (sprint)"
