@@ -193,6 +193,12 @@
       "number": 43,
       "team": "Williams Racing",
       "temporary": true
+    },
+    "LAW": {
+      "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
+      "number":30,
+      "team":"Visa Cash App RB F1 Team",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -340,14 +346,16 @@
       "label": "Singapore Grand Prix",
       "fastestLap": "RIC",
       "positions": [ "NOR", "VER", "PIA", "RUS", "LEC", "HAM", "SAI", "ALO", "HUL", "PER", "COL", "TSU", "OCO", "STR", "ZHO", "BOT", "GAS", "RIC", "MAG" ]
+    }, {
+      "code": "USA_S",
+      "type": "sprint",
+      "label": "United States Grand Prix (sprint)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "SAI", "NOR", "LEC", "RUS", "HAM", "MAG", "HUL", "PER", "PIA", "TSU", "COL", "STR", "GAS", "OCO", "LAW", "ALB", "ALO", "ZHO", "BOT" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "USA_S",
-      "type": "sprint",
-      "label": "United States Grand Prix (sprint)"
-    }, {
       "code": "USA_R",
       "type": "race",
       "label": "United States Grand Prix (race)"
