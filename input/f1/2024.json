@@ -196,7 +196,7 @@
     },
     "LAW": {
       "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
-      "number":30,
+      "number": 30,
       "team":"Visa Cash App RB F1 Team",
       "temporary": true
     }
@@ -352,14 +352,16 @@
       "label": "United States Grand Prix (sprint)",
       "fastestLap": "VER",
       "positions": [ "VER", "SAI", "NOR", "LEC", "RUS", "HAM", "MAG", "HUL", "PER", "PIA", "TSU", "COL", "STR", "GAS", "OCO", "LAW", "ALB", "ALO", "ZHO", "BOT" ]
+    }, {
+      "code": "USA_R",
+      "type": "race",
+      "label": "United States Grand Prix (race)",
+      "fastestLap": "OCO",
+      "positions": [ "LEC", "SAI", "VER", "NOR", "PIA", "RUS", "PER", "HUL", "LAW", "COL", "MAG", "GAS", "ALO", "TSU", "STR", "ALB", "BOT", "OCO", "ZHO" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "USA_R",
-      "type": "race",
-      "label": "United States Grand Prix (race)"
-    }, {
       "code": "MXC",
       "type": "race",
       "label": "Mexico City Grand Prix"
