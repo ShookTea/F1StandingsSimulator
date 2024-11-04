@@ -185,7 +185,7 @@
     "BEA": {
       "uuid": "3e7ffe41-e39f-41dc-94b6-6a098988481a",
       "number": 38,
-      "team": "Scuderia Ferrari",
+      "team": "MoneyGram Haas F1 Team",
       "temporary": true
     },
     "COL": {
@@ -225,7 +225,13 @@
       "type": "race",
       "label": "Saudi Arabian Grand Prix",
       "fastestLap": "LEC",
-      "positions": [ "VER", "PER", "LEC", "PIA", "ALO", "RUS", "BEA", "NOR", "HAM", "HUL", "ALB", "MAG", "OCO", "SAR", "TSU", "RIC", "BOT", "ZHO" ]
+      "positions": [ "VER", "PER", "LEC", "PIA", "ALO", "RUS", "BEA", "NOR", "HAM", "HUL", "ALB", "MAG", "OCO", "SAR", "TSU", "RIC", "BOT", "ZHO" ],
+      "teamSwitch": {
+        "BEA": {
+          "team": "Scuderia Ferrari",
+          "description": "Carlos Sainz Jr. was diagnosed with appendicitis and withdrew from the event, being replaced by reserve driver Oliver Bearman."
+        }
+      }
     }, {
       "code": "AUS",
       "type": "race",
@@ -333,13 +339,7 @@
       "type": "race",
       "label": "Azerbaijan Grand Prix",
       "fastestLap": "NOR",
-      "positions": [ "PIA", "LEC", "RUS", "NOR", "VER", "ALO", "ALB", "COL", "HAM", "BEA", "HUL", "GAS", "RIC", "ZHO", "OCO", "BOT", "PER", "SAI", "STR" ],
-      "teamSwitch": {
-        "BEA": {
-          "team": "MoneyGram Haas F1 Team",
-          "description": "Kevin Magnussen was given a one-race ban at the previous round and was replaced by reserve driver Oliver Bearman."
-        }
-      }
+      "positions": [ "PIA", "LEC", "RUS", "NOR", "VER", "ALO", "ALB", "COL", "HAM", "BEA", "HUL", "GAS", "RIC", "ZHO", "OCO", "BOT", "PER", "SAI", "STR" ]
     }, {
       "code": "SIN",
       "type": "race",
@@ -364,18 +364,21 @@
       "label": "Mexico City Grand Prix",
       "fastestLap": "LEC",
       "positions": [ "SAI", "NOR", "LEC", "HAM", "RUS", "VER", "MAG", "PIA", "HUL", "GAS", "STR", "COL", "OCO", "BOT", "ZHO", "LAW", "PER" ]
-    }
-  ],
-  "remainingRaces": [
-    {
+    }, {
       "code": "SAP_S",
       "type": "sprint",
-      "label": "São Paulo Grand Prix (sprint)"
+      "label": "São Paulo Grand Prix (sprint)",
+      "fastestLap": "PER",
+      "positions": [ "NOR", "PIA", "LEC", "VER", "SAI", "RUS", "GAS", "PER", "LAW", "ALB", "HAM", "COL", "OCO", "BEA", "TSU", "BOT", "ZHO", "ALO", "STR" ]
     }, {
       "code": "SAP_R",
       "type": "race",
-      "label": "São Paulo Grand Prix (race)"
-    }, {
+      "label": "São Paulo Grand Prix (race)",
+      "fastestLap": "VER",
+      "positions": [ "VER", "OCO", "GAS", "RUS", "LEC", "NOR", "TSU", "PIA", "LAW", "HAM", "PER", "BEA", "BOT", "ALO", "ZHO" ]
+    }
+  ],
+  "remainingRaces": [{
       "code": "LVG",
       "type": "race",
       "label": "Las Vegas Grand Prix"
