@@ -376,13 +376,15 @@
       "label": "São Paulo Grand Prix (race)",
       "fastestLap": "VER",
       "positions": [ "VER", "OCO", "GAS", "RUS", "LEC", "NOR", "TSU", "PIA", "LAW", "HAM", "PER", "BEA", "BOT", "ALO", "ZHO" ]
+    }, {
+      "code": "LVG",
+      "type": "race",
+      "label": "Las Vegas Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "RUS", "HAM", "SAI", "LEC", "VER", "NOR", "PIA", "HUL", "TSU", "PER", "ALO", "MAG", "ZHO", "COL", "STR", "LAW", "OCO", "BOT" ]
     }
   ],
   "remainingRaces": [{
-      "code": "LVG",
-      "type": "race",
-      "label": "Las Vegas Grand Prix"
-    }, {
       "code": "QAT_S",
       "type": "sprint",
       "label": "Qatar Grand Prix (sprint)"
