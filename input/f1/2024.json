@@ -382,13 +382,15 @@
       "label": "Las Vegas Grand Prix",
       "fastestLap": "NOR",
       "positions": [ "RUS", "HAM", "SAI", "LEC", "VER", "NOR", "PIA", "HUL", "TSU", "PER", "ALO", "MAG", "ZHO", "COL", "STR", "LAW", "OCO", "BOT" ]
+    }, {
+      "code": "QAT_S",
+      "type": "sprint",
+      "label": "Qatar Grand Prix (sprint)",
+      "fastestLap": "LEC",
+      "positions": [ "PIA", "NOR", "RUS", "SAI", "LEC", "HAM", "HUL", "VER", "GAS", "MAG", "ALO", "BOT", "STR", "OCO", "ALB", "LAW", "TSU", "COL", "ZHO", "PER" ]
     }
   ],
   "remainingRaces": [{
-      "code": "QAT_S",
-      "type": "sprint",
-      "label": "Qatar Grand Prix (sprint)"
-    }, {
       "code": "QAT_R",
       "type": "race",
       "label": "Qatar Grand Prix (race)"
