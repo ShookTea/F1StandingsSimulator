@@ -388,13 +388,15 @@
       "label": "Qatar Grand Prix (sprint)",
       "fastestLap": "LEC",
       "positions": [ "PIA", "NOR", "RUS", "SAI", "LEC", "HAM", "HUL", "VER", "GAS", "MAG", "ALO", "BOT", "STR", "OCO", "ALB", "LAW", "TSU", "COL", "ZHO", "PER" ]
+    }, {
+      "code": "QAT_R",
+      "type": "race",
+      "label": "Qatar Grand Prix (race)",
+      "fastestLap": "NOR",
+      "positions": [ "VER", "LEC", "PIA", "RUS", "GAS", "SAI", "ALO", "ZHO", "MAG", "NOR", "BOT", "HAM", "TSU", "LAW", "ALB" ]
     }
   ],
   "remainingRaces": [{
-      "code": "QAT_R",
-      "type": "race",
-      "label": "Qatar Grand Prix (race)"
-    }, {
       "code": "ABU",
       "type": "race",
       "label": "Abu Dhabi Grand Prix"
