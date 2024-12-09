@@ -197,7 +197,13 @@
     "LAW": {
       "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
       "number": 30,
-      "team":"Visa Cash App RB F1 Team",
+      "team": "Visa Cash App RB F1 Team",
+      "temporary": true
+    },
+    "DOO": {
+      "uuid": "0137527c-0f96-4af9-8976-19f27295fd96",
+      "number": 61,
+      "team": "BWT Alpine F1 Team",
       "temporary": true
     }
   },
@@ -394,12 +400,13 @@
       "label": "Qatar Grand Prix (race)",
       "fastestLap": "NOR",
       "positions": [ "VER", "LEC", "PIA", "RUS", "GAS", "SAI", "ALO", "ZHO", "MAG", "NOR", "BOT", "HAM", "TSU", "LAW", "ALB" ]
-    }
-  ],
-  "remainingRaces": [{
+    }, {
       "code": "ABU",
       "type": "race",
-      "label": "Abu Dhabi Grand Prix"
+      "label": "Abu Dhabi Grand Prix",
+      "fastestLap": "MAG",
+      "positions": [ "NOR", "SAI", "LEC", "HAM", "RUS", "VER", "GAS", "HUL", "ALO", "PIA", "ALB", "TSU", "ZHO", "STR", "DOO", "MAG", "LAW" ]
     }
-  ]
+  ],
+  "remainingRaces": []
 }
