@@ -56,10 +56,10 @@
       "powerUnitConstructor": "Mercedes",
       "color": "#27F4D2"
     },
-    "Visa Cash App RB F1 Team": {
+    "Visa Cash App Racing Bulls F1 Team": {
       "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
       "chassis": "???",
-      "chassisConstructor": "RB",
+      "chassisConstructor": "Racing Bulls",
       "powerUnit": "???",
       "powerUnitConstructor": "Honda RBPT",
       "color": "#6692FF"
@@ -89,7 +89,7 @@
     },
     "DOO": {
       "uuid": "0137527c-0f96-4af9-8976-19f27295fd96",
-      "number": null,
+      "number": 7,
       "team": "BWT Alpine F1 Team"
     },
     "ALO": {
@@ -127,6 +127,11 @@
       "number": 27,
       "team": "Stake F1 Team Kick Sauber"
     },
+    "BOR": {
+      "uuid": "9d2459fb-5889-4cd7-abc6-12004a58a238",
+      "number": null,
+      "team": "Stake F1 Team Kick Sauber"
+    },
     "NOR": {
       "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466",
       "number": 4,
@@ -137,6 +142,11 @@
       "number": 81,
       "team": "McLaren Formula 1 Team"
     },
+    "ANT": {
+      "uuid": "4b849785-8eb1-41af-b87f-8da998d06c2b",
+      "number": 12,
+      "team": "Mercedes-AMG Petronas F1 Team"
+    },
     "RUS": {
       "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
       "number": 63,
@@ -145,11 +155,11 @@
     "TSU": {
       "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
       "number": 22,
-      "team": "Visa Cash App RB F1 Team"
+      "team": "Visa Cash App Racing Bulls F1 Team"
     },
     "VER": {
       "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
-      "number": 33,
+      "number": 1,
       "team": "Oracle Red Bull Racing"
     },
     "PER": {
@@ -171,7 +181,7 @@
   "pointSchemas": {
     "race": {
       "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
-      "fastestLap": { "value": 1, "maxPosition": 10 },
+      "fastestLap": { "value": 0, "maxPosition": -1 },
       "positionsCount": true
     },
     "sprint": {
@@ -187,9 +197,13 @@
       "type": "race",
       "label": "Australian Grand Prix"
     }, {
-      "code": "CHN",
+      "code": "CHN_S",
+      "type": "sprint",
+      "label": "Chinese Grand Prix (sprint)"
+    },  {
+      "code": "CHN_R",
       "type": "race",
-      "label": "Chinese Grand Prix"
+      "label": "Chinese Grand Prix (race)"
     }, {
       "code": "JPN",
       "type": "race",
@@ -203,9 +217,13 @@
       "type": "race",
       "label": "Saudi Arabian Grand Prix"
     }, {
-      "code": "MIA",
+      "code": "MIA_S",
+      "type": "sprint",
+      "label": "Miami Grand Prix (sprint)"
+    },{
+      "code": "MIA_R",
       "type": "race",
-      "label": "Miami Grand Prix"
+      "label": "Miami Grand Prix (race)"
     }, {
       "code": "EMI",
       "type": "race",
@@ -231,9 +249,13 @@
       "type": "race",
       "label": "British Grand Prix"
     }, {
-      "code": "BEL",
+      "code": "BEL_S",
+      "type": "sprint",
+      "label": "Belgian Grand Prix (sprint)"
+    }, {
+      "code": "BEL_R",
       "type": "race",
-      "label": "Belgian Grand Prix"
+      "label": "Belgian Grand Prix (race)"
     }, {
       "code": "HUN",
       "type": "race",
@@ -255,53 +277,41 @@
       "type": "race",
       "label": "Singapore Grand Prix"
     }, {
-      "code": "USA",
+      "code": "USA_S",
+      "type": "sprint",
+      "label": "United States Grand Prix (sprint)"
+    }, {
+      "code": "USA_R",
       "type": "race",
-      "label": "United States Grand Prix"
+      "label": "United States Grand Prix (race)"
     }, {
       "code": "MXC",
       "type": "race",
       "label": "Mexico City Grand Prix"
     }, {
-      "code": "SAP",
+      "code": "SAP_S",
+      "type": "sprint",
+      "label": "São Paulo Grand Prix (sprint)"
+    }, {
+      "code": "SAP_R",
       "type": "race",
-      "label": "São Paulo Grand Prix"
+      "label": "São Paulo Grand Prix (race)"
     }, {
       "code": "LVG",
       "type": "race",
-      "label": "Las Vega Grand Prix"
+      "label": "Las Vegas Grand Prix"
     }, {
-      "code": "QAT",
+      "code": "QAT_S",
+      "type": "sprint",
+      "label": "Qatar Grand Prix (sprint)"
+    }, {
+      "code": "QAT_R",
       "type": "race",
-      "label": "Qatar Grand Prix"
+      "label": "Qatar Grand Prix (race)"
     }, {
       "code": "ABU",
       "type": "race",
       "label": "Abu Dhabi Grand Prix"
-    }, {
-      "code": "001_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
-    }, {
-      "code": "002_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
-    }, {
-      "code": "003_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
-    }, {
-      "code": "004_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
-    }, {
-      "code": "005_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
-    }, {
-      "code": "006_S",
-      "type": "sprint",
-      "label": "??? Grand Prix (sprint)"
     }
   ]
 }
