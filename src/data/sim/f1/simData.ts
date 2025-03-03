@@ -9,9 +9,14 @@ import data2021 from './2021.json';
 import data2022 from './2022.json';
 import data2023 from './2023.json';
 import data2024 from './2024.json';
+import data2025 from './2025.json';
 
 export const F1Data: SportData<Season> = {
     data: [{
+        data: data2025,
+        label: 'Season 2025',
+        routePart: '2025',
+    }, {
         data: data2024,
         label: 'Season 2024',
         routePart: '2024',
