@@ -400,6 +400,36 @@ const result: DataResult[] = [
             "fullName": "Franco Colapinto",
             "routePart": "franco-colapinto-5a46fe0e"
         }
+    },
+    {
+        "driverDetails": {
+            "uuid": "9d2459fb-5889-4cd7-abc6-12004a58a238",
+            "givenName": "Gabriel",
+            "familyName": "Bortoleto",
+            "familyNameFirst": false,
+            "fullName": "Gabriel Bortoleto",
+            "routePart": "gabriel-bortoleto-9d2459fb"
+        }
+    },
+    {
+        "driverDetails": {
+            "uuid": "4b849785-8eb1-41af-b87f-8da998d06c2b",
+            "givenName": "Andrea Kimi",
+            "familyName": "Antonelli",
+            "familyNameFirst": false,
+            "fullName": "Andrea Kimi Antonelli",
+            "routePart": "andrea-kimi antonelli-4b849785"
+        }
+    },
+    {
+        "driverDetails": {
+            "uuid": "95701466-d225-4921-aea6-c6615546d37e",
+            "givenName": "Isack",
+            "familyName": "Hadjar",
+            "familyNameFirst": false,
+            "fullName": "Isack Hadjar",
+            "routePart": "isack-hadjar-95701466"
+        }
     }
 ];
 export default result;
