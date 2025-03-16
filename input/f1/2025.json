@@ -195,13 +195,17 @@
       "positionsCount": false
     }
   },
-  "races": [],
-  "remainingRaces": [
+  "races": [
     {
       "code": "AUS",
       "type": "race",
-      "label": "Australian Grand Prix"
-    }, {
+      "label": "Australian Grand Prix",
+      "fastestLap": "NOR",
+      "positions": [ "NOR", "VER", "RUS", "ALB", "ANT", "STR", "HUL", "LEC", "PIA", "HAM", "GAS", "TSU", "OCO", "BEA" ]
+    }
+  ],
+  "remainingRaces": [
+    {
       "code": "CHN_S",
       "type": "sprint",
       "label": "Chinese Grand Prix (sprint)"
