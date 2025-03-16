@@ -201,7 +201,7 @@
       "type": "race",
       "label": "Australian Grand Prix",
       "fastestLap": "NOR",
-      "positions": [ "NOR", "VER", "RUS", "ALB", "ANT", "STR", "HUL", "LEC", "PIA", "HAM", "GAS", "TSU", "OCO", "BEA" ]
+      "positions": [ "NOR", "VER", "RUS", "ANT" ,"ALB", "STR", "HUL", "LEC", "PIA", "HAM", "GAS", "TSU", "OCO", "BEA" ]
     }
   ],
   "remainingRaces": [

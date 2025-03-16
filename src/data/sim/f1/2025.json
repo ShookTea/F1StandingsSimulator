@@ -821,35 +821,6 @@
             },
             {
                 "owner": {
-                    "abbreviation": "ALB",
-                    "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
-                    "number": 23,
-                    "team": {
-                        "entry": "Atlassian Williams Racing",
-                        "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
-                        "chassis": "FW47",
-                        "chassisConstructor": "Williams",
-                        "powerUnit": "Mercedes-AMG F1 M16",
-                        "powerUnitConstructor": "Mercedes",
-                        "color": "#64C4FF"
-                    },
-                    "details": {
-                        "givenName": "Alexander",
-                        "familyName": "Albon"
-                    }
-                },
-                "points": 12,
-                "maxPoints": 618,
-                "position": 4,
-                "maxPosition": 1,
-                "minPosition": 20,
-                "racePositions": {
-                    "4": 1
-                },
-                "note": ""
-            },
-            {
-                "owner": {
                     "abbreviation": "ANT",
                     "uuid": "4b849785-8eb1-41af-b87f-8da998d06c2b",
                     "number": 12,
@@ -865,6 +836,35 @@
                     "details": {
                         "givenName": "Andrea Kimi",
                         "familyName": "Antonelli"
+                    }
+                },
+                "points": 12,
+                "maxPoints": 618,
+                "position": 4,
+                "maxPosition": 1,
+                "minPosition": 20,
+                "racePositions": {
+                    "4": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "ALB",
+                    "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
+                    "number": 23,
+                    "team": {
+                        "entry": "Atlassian Williams Racing",
+                        "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+                        "chassis": "FW47",
+                        "chassisConstructor": "Williams",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#64C4FF"
+                    },
+                    "details": {
+                        "givenName": "Alexander",
+                        "familyName": "Albon"
                     }
                 },
                 "points": 10,
@@ -1334,14 +1334,14 @@
                     "powerUnitConstructor": "Mercedes",
                     "color": "#27F4D2"
                 },
-                "points": 25,
-                "maxPoints": 1076,
+                "points": 27,
+                "maxPoints": 1078,
                 "position": 2,
                 "maxPosition": 1,
                 "minPosition": 10,
                 "racePositions": {
                     "3": 1,
-                    "5": 1
+                    "4": 1
                 },
                 "note": ""
             },
@@ -1375,13 +1375,13 @@
                     "powerUnitConstructor": "Mercedes",
                     "color": "#64C4FF"
                 },
-                "points": 12,
-                "maxPoints": 1063,
+                "points": 10,
+                "maxPoints": 1061,
                 "position": 4,
                 "maxPosition": 1,
                 "minPosition": 10,
                 "racePositions": {
-                    "4": 1
+                    "5": 1
                 },
                 "note": ""
             },
