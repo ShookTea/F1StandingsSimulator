@@ -210,7 +210,7 @@
       "code": "CHN_R",
       "type": "race",
       "label": "Chinese Grand Prix (race)",
-      "positions": [ "PIA", "NOR", "RUS", "VER", "LEC", "HAM", "OCO", "ANT", "ALB", "BEA", "GAS", "STR", "SAI", "HAD", "LAW", "DOO", "BOR", "HUL", "TSU" ]
+      "positions": [ "PIA", "NOR", "RUS", "VER", "OCO", "ANT", "ALB", "BEA", "STR", "SAI", "HAD", "LAW", "DOO", "BOR", "HUL", "TSU" ]
     }
   ],
   "remainingRaces": [
