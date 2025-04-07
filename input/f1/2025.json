@@ -150,7 +150,10 @@
     "TSU": {
       "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
       "number": 22,
-      "team": "Visa Cash App Racing Bulls F1 Team"
+      "team": {
+        "AUS": "Visa Cash App Racing Bulls F1 Team",
+        "JPN": "Oracle Red Bull Racing"
+      }
     },
     "VER": {
       "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
@@ -160,7 +163,10 @@
     "LAW": {
       "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
       "number": 30,
-      "team": "Oracle Red Bull Racing"
+      "team": {
+        "AUS": "Oracle Red Bull Racing",
+        "JPN": "Visa Cash App Racing Bulls F1 Team"
+      }
     },
     "BOR": {
       "uuid": "9d2459fb-5889-4cd7-abc6-12004a58a238",
@@ -211,14 +217,15 @@
       "type": "race",
       "label": "Chinese Grand Prix (race)",
       "positions": [ "PIA", "NOR", "RUS", "VER", "OCO", "ANT", "ALB", "BEA", "STR", "SAI", "HAD", "LAW", "DOO", "BOR", "HUL", "TSU" ]
+    }, {
+      "code": "JPN",
+      "type": "race",
+      "label": "Japanese Grand Prix",
+      "positions": [ "VER", "NOR", "PIA", "LEC", "RUS", "ANT", "HAM", "HAD", "ALB", "BEA", "ALO", "TSU", "GAS", "SAI", "DOO", "HUL", "LAW", "OCO", "BOR", "STR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "JPN",
-      "type": "race",
-      "label": "Japanese Grand Prix"
-    }, {
       "code": "BHR",
       "type": "race",
       "label": "Bahrain Grand Prix"
