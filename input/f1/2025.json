@@ -227,14 +227,15 @@
       "type": "race",
       "label": "Bahrain Grand Prix",
       "positions": [ "PIA", "RUS", "NOR", "LEC", "HAM", "VER", "GAS", "OCO", "TSU", "BEA", "ANT", "ALB", "HAD", "DOO", "ALO", "LAW", "STR", "BOR" ]
+    }, {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix",
+      "positions": [ "PIA", "VER", "LEC", "NOR", "RUS", "ANT", "HAM", "SAI", "ALB", "HAD", "ALO", "LAW", "BEA", "OCO", "HUL", "STR", "DOO", "BOR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SAU",
-      "type": "race",
-      "label": "Saudi Arabian Grand Prix"
-    }, {
       "code": "MIA_S",
       "type": "sprint",
       "label": "Miami Grand Prix (sprint)"
