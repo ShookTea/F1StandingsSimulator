@@ -232,18 +232,20 @@
       "type": "race",
       "label": "Saudi Arabian Grand Prix",
       "positions": [ "PIA", "VER", "LEC", "NOR", "RUS", "ANT", "HAM", "SAI", "ALB", "HAD", "ALO", "LAW", "BEA", "OCO", "HUL", "STR", "DOO", "BOR" ]
+    }, {
+      "code": "MIA_S",
+      "type": "sprint",
+      "label": "Miami Grand Prix (sprint)",
+      "positions": [ "NOR", "PIA", "HAM", "RUS", "STR", "TSU", "ANT", "GAS", "HUL", "HAD", "ALB", "OCO", "LAW", "BEA", "BOR", "DOO", "VER" ]
+    }, {
+      "code": "MIA_R",
+      "type": "race",
+      "label": "Miami Grand Prix (race)",
+      "positions": [ "PIA", "NOR", "RUS", "VER", "ALB", "ANT", "LEC", "HAM", "SAI", "TSU", "HAD", "OCO", "GAS", "HUL", "ALO", "STR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MIA_S",
-      "type": "sprint",
-      "label": "Miami Grand Prix (sprint)"
-    },{
-      "code": "MIA_R",
-      "type": "race",
-      "label": "Miami Grand Prix (race)"
-    }, {
       "code": "EMI",
       "type": "race",
       "label": "Emilia Romagna Grand Prix"
