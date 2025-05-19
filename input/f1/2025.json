@@ -92,6 +92,12 @@
       "number": 10,
       "team": "BWT Alpine F1 Team"
     },
+    "COL": {
+      "uuid": "5a46fe0e-7e7d-414b-8f28-aadeab10ac77",
+      "number": 43,
+      "team": "BWT Alpine F1 Team",
+      "temporary": true
+    },
     "ALO": {
       "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
       "number": 14,
@@ -242,14 +248,15 @@
       "type": "race",
       "label": "Miami Grand Prix (race)",
       "positions": [ "PIA", "NOR", "RUS", "VER", "ALB", "ANT", "LEC", "HAM", "SAI", "TSU", "HAD", "OCO", "GAS", "HUL", "ALO", "STR" ]
+    }, {
+      "code": "EMI",
+      "type": "race",
+      "label": "Emilia Romagna Grand Prix",
+      "positions": [ "VER", "NOR", "PIA", "HAM", "ALB", "LEC", "RUS", "SAI", "HAD", "TSU", "ALO", "HUL", "GAS", "LAW", "STR", "COL", "BEA", "BOR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "EMI",
-      "type": "race",
-      "label": "Emilia Romagna Grand Prix"
-    }, {
       "code": "MON",
       "type": "race",
       "label": "Monaco Grand Prix"
