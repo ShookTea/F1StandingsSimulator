@@ -258,14 +258,15 @@
       "type": "race",
       "label": "Monaco Grand Prix",
       "positions": [ "NOR", "LEC", "PIA", "VER", "HAM", "HAD", "OCO", "LAW", "ALB", "SAI", "RUS", "BEA", "COL", "BOR", "STR", "HUL", "TSU", "ANT" ]
+    }, {
+      "code": "ESP",
+      "type": "race",
+      "label": "Spanish Grand Prix",
+      "positions": [ "PIA", "NOR", "LEC", "RUS", "HUL", "HAM", "HAD", "GAS", "ALO", "VER", "LAW", "BOR", "TSU", "SAI", "COL", "OCO", "BEA" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "ESP",
-      "type": "race",
-      "label": "Spanish Grand Prix"
-    }, {
       "code": "CAN",
       "type": "race",
       "label": "Canadian Grand Prix"
