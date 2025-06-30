@@ -268,14 +268,15 @@
       "type": "race",
       "label": "Canadian Grand Prix",
       "positions": [ "RUS", "VER", "ANT", "PIA", "LEC", "HAM", "ALO", "HUL", "OCO", "SAI", "BEA", "TSU", "COL", "BOR", "GAS", "HAD", "STR", "NOR" ]
+    }, {
+      "code": "AUT",
+      "type": "sprint",
+      "label": "Austrian Grand Prix",
+      "positions": [ "NOR", "PIA", "LEC", "HAM", "RUS", "LAW", "ALO", "BOR", "HUL", "OCO", "BEA", "HAD", "GAS", "STR", "COL", "TSU" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AUT",
-      "type": "sprint",
-      "label": "Austrian Grand Prix"
-    }, {
       "code": "GBR",
       "type": "race",
       "label": "British Grand Prix"
