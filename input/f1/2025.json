@@ -273,14 +273,15 @@
       "type": "sprint",
       "label": "Austrian Grand Prix",
       "positions": [ "NOR", "PIA", "LEC", "HAM", "RUS", "LAW", "ALO", "BOR", "HUL", "OCO", "BEA", "HAD", "GAS", "STR", "COL", "TSU" ]
+    }, {
+      "code": "GBR",
+      "type": "race",
+      "label": "British Grand Prix",
+      "positions": [ "NOR", "PIA", "HUL", "HAM", "VER", "GAS", "STR", "ALB", "ALO", "RUS", "BEA", "SAI", "OCO", "LEC", "TSU" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "GBR",
-      "type": "race",
-      "label": "British Grand Prix"
-    }, {
       "code": "BEL_S",
       "type": "sprint",
       "label": "Belgian Grand Prix (sprint)"
