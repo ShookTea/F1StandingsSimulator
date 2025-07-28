@@ -278,18 +278,20 @@
       "type": "race",
       "label": "British Grand Prix",
       "positions": [ "NOR", "PIA", "HUL", "HAM", "VER", "GAS", "STR", "ALB", "ALO", "RUS", "BEA", "SAI", "OCO", "LEC", "TSU" ]
+    }, {
+      "code": "BEL_S",
+      "type": "sprint",
+      "label": "Belgian Grand Prix (sprint)",
+      "positions": [ "VER", "PIA", "NOR", "LEC", "OCO", "SAI", "BEA", "HAD", "BOR", "LAW", "TSU", "RUS", "STR", "ALO", "HAM", "ALB", "ANT", "HUL", "COL" ]
+    }, {
+      "code": "BEL_R",
+      "type": "race",
+      "label": "Belgian Grand Prix (race)",
+      "positions": [ "PIA", "NOR", "LEC", "VER", "RUS", "ALB", "HAM", "LAW", "BOR", "GAS", "BEA", "HUL", "TSU", "STR", "OCO", "ANT", "ALO", "SAI", "COL", "HAD" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "BEL_S",
-      "type": "sprint",
-      "label": "Belgian Grand Prix (sprint)"
-    }, {
-      "code": "BEL_R",
-      "type": "race",
-      "label": "Belgian Grand Prix (race)"
-    }, {
       "code": "HUN",
       "type": "race",
       "label": "Hungarian Grand Prix"
