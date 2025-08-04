@@ -288,14 +288,15 @@
       "type": "race",
       "label": "Belgian Grand Prix (race)",
       "positions": [ "PIA", "NOR", "LEC", "VER", "RUS", "ALB", "HAM", "LAW", "BOR", "GAS", "BEA", "HUL", "TSU", "STR", "OCO", "ANT", "ALO", "SAI", "COL", "HAD" ]
+    }, {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix",
+      "positions": [ "NOR", "PIA", "RUS", "LEC", "ALO", "BOR", "STR", "LAW", "VER", "ANT", "HAD", "HAM", "HUL", "SAI", "ALB", "OCO", "TSU", "COL", "GAS" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "HUN",
-      "type": "race",
-      "label": "Hungarian Grand Prix"
-    }, {
       "code": "NED",
       "type": "race",
       "label": "Dutch Grand Prix"
