@@ -293,14 +293,15 @@
       "type": "race",
       "label": "Hungarian Grand Prix",
       "positions": [ "NOR", "PIA", "RUS", "LEC", "ALO", "BOR", "STR", "LAW", "VER", "ANT", "HAD", "HAM", "HUL", "SAI", "ALB", "OCO", "TSU", "COL", "GAS" ]
+    }, {
+      "code": "NED",
+      "type": "race",
+      "label": "Dutch Grand Prix",
+      "positions": [ "PIA", "VER", "HAD", "RUS", "ALB", "BEA", "STR", "ALO", "TSU", "OCO", "COL", "LAW", "SAI", "HUL", "BOR", "ANT", "GAS", "NOR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "NED",
-      "type": "race",
-      "label": "Dutch Grand Prix"
-    }, {
       "code": "ITA",
       "type": "race",
       "label": "Italian Grand Prix"
