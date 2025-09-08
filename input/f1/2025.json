@@ -298,14 +298,15 @@
       "type": "race",
       "label": "Dutch Grand Prix",
       "positions": [ "PIA", "VER", "HAD", "RUS", "ALB", "BEA", "STR", "ALO", "TSU", "OCO", "COL", "LAW", "SAI", "HUL", "BOR", "ANT", "GAS", "NOR" ]
+    }, {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix",
+      "positions": [ "VER", "NOR", "PIA", "LEC", "RUS", "HAM", "ALB", "BOR", "ANT", "HAD", "SAI", "BEA", "TSU", "LAW", "OCO", "GAS", "COL", "STR" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "ITA",
-      "type": "race",
-      "label": "Italian Grand Prix"
-    }, {
       "code": "AZE",
       "type": "race",
       "label": "Azerbaijan Grand Prix"
