@@ -303,14 +303,15 @@
       "type": "race",
       "label": "Italian Grand Prix",
       "positions": [ "VER", "NOR", "PIA", "LEC", "RUS", "HAM", "ALB", "BOR", "ANT", "HAD", "SAI", "BEA", "TSU", "LAW", "OCO", "GAS", "COL", "STR" ]
+    }, {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix",
+      "positions": [ "VER", "RUS", "SAI", "ANT", "LAW", "TSU", "NOR", "HAM", "LEC", "HAD", "BOR", "BEA", "ALB", "OCO", "ALO", "HUL", "STR", "GAS", "COL" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "AZE",
-      "type": "race",
-      "label": "Azerbaijan Grand Prix"
-    }, {
       "code": "SIN",
       "type": "race",
       "label": "Singapore Grand Prix"
