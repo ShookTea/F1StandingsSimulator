@@ -313,14 +313,15 @@
       "type": "race",
       "label": "Singapore Grand Prix",
       "positions": [ "RUS", "VER", "NOR", "PIA", "ANT", "LEC", "HAM", "ALO", "BEA", "SAI", "HAD", "TSU", "STR", "ALB", "LAW", "COL", "BOR", "OCO", "GAS", "HUL" ]
+    }, {
+      "code": "USA_S",
+      "type": "sprint",
+      "label": "United States Grand Prix (sprint)",
+      "positions": [ "VER", "RUS", "SAI", "HAM", "LEC", "ALB", "TSU", "ANT", "LAW", "GAS", "BOR", "HAD", "HUL", "COL", "BEA" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "USA_S",
-      "type": "sprint",
-      "label": "United States Grand Prix (sprint)"
-    }, {
       "code": "USA_R",
       "type": "race",
       "label": "United States Grand Prix (race)"
