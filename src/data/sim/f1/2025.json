@@ -22142,5 +22142,1107 @@
         ],
         "maxRemainingDriverPoints": 166,
         "maxRemainingTeamPoints": 288
+    },
+    {
+        "roundName": "After United States Grand Prix (race)",
+        "driverStandings": [
+            {
+                "owner": {
+                    "abbreviation": "PIA",
+                    "uuid": "85d6383f-2a59-4e66-85d6-80f573ade1fa",
+                    "number": 81,
+                    "team": {
+                        "entry": "McLaren Formula 1 Team",
+                        "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+                        "chassis": "MCL39",
+                        "chassisConstructor": "McLaren",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF8000"
+                    },
+                    "details": {
+                        "givenName": "Oscar",
+                        "familyName": "Piastri"
+                    }
+                },
+                "points": 346,
+                "maxPoints": 487,
+                "position": 1,
+                "maxPosition": 1,
+                "minPosition": 4,
+                "racePositions": {
+                    "1": 7,
+                    "2": 3,
+                    "3": 4,
+                    "4": 2,
+                    "5": 1,
+                    "9": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "NOR",
+                    "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466",
+                    "number": 4,
+                    "team": {
+                        "entry": "McLaren Formula 1 Team",
+                        "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+                        "chassis": "MCL39",
+                        "chassisConstructor": "McLaren",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF8000"
+                    },
+                    "details": {
+                        "givenName": "Lando",
+                        "familyName": "Norris"
+                    }
+                },
+                "points": 332,
+                "maxPoints": 473,
+                "position": 2,
+                "maxPosition": 1,
+                "minPosition": 5,
+                "racePositions": {
+                    "1": 5,
+                    "2": 8,
+                    "3": 2,
+                    "4": 1,
+                    "7": 1,
+                    "18": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "VER",
+                    "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
+                    "number": 1,
+                    "team": {
+                        "entry": "Oracle Red Bull Racing",
+                        "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+                        "chassis": "RB21",
+                        "chassisConstructor": "Red Bull Racing",
+                        "powerUnit": "Honda RBPTH002",
+                        "powerUnitConstructor": "Honda RBPT",
+                        "color": "#3671C6"
+                    },
+                    "details": {
+                        "givenName": "Max",
+                        "familyName": "Verstappen"
+                    }
+                },
+                "points": 306,
+                "maxPoints": 447,
+                "position": 3,
+                "maxPosition": 1,
+                "minPosition": 5,
+                "racePositions": {
+                    "1": 5,
+                    "2": 5,
+                    "4": 4,
+                    "5": 1,
+                    "6": 1,
+                    "9": 1,
+                    "10": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "RUS",
+                    "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
+                    "number": 63,
+                    "team": {
+                        "entry": "Mercedes-AMG Petronas F1 Team",
+                        "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+                        "chassis": "F1 W16",
+                        "chassisConstructor": "Mercedes",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#27F4D2"
+                    },
+                    "details": {
+                        "givenName": "George",
+                        "familyName": "Russell"
+                    }
+                },
+                "points": 252,
+                "maxPoints": 393,
+                "position": 4,
+                "maxPosition": 1,
+                "minPosition": 6,
+                "racePositions": {
+                    "1": 2,
+                    "2": 2,
+                    "3": 4,
+                    "4": 2,
+                    "5": 5,
+                    "6": 1,
+                    "7": 1,
+                    "10": 1,
+                    "11": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "LEC",
+                    "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
+                    "number": 16,
+                    "team": {
+                        "entry": "Scuderia Ferrari HP",
+                        "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+                        "chassis": "SF-25",
+                        "chassisConstructor": "Ferrari",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#E8002D"
+                    },
+                    "details": {
+                        "givenName": "Charles",
+                        "familyName": "Leclerc"
+                    }
+                },
+                "points": 192,
+                "maxPoints": 333,
+                "position": 5,
+                "maxPosition": 2,
+                "minPosition": 8,
+                "racePositions": {
+                    "2": 1,
+                    "3": 5,
+                    "4": 4,
+                    "5": 1,
+                    "6": 2,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "14": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "HAM",
+                    "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299",
+                    "number": 44,
+                    "team": {
+                        "entry": "Scuderia Ferrari HP",
+                        "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+                        "chassis": "SF-25",
+                        "chassisConstructor": "Ferrari",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#E8002D"
+                    },
+                    "details": {
+                        "givenName": "Lewis",
+                        "familyName": "Hamilton"
+                    }
+                },
+                "points": 144,
+                "maxPoints": 285,
+                "position": 6,
+                "maxPosition": 4,
+                "minPosition": 12,
+                "racePositions": {
+                    "4": 4,
+                    "5": 2,
+                    "6": 3,
+                    "7": 4,
+                    "8": 2,
+                    "10": 1,
+                    "12": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "ANT",
+                    "uuid": "4b849785-8eb1-41af-b87f-8da998d06c2b",
+                    "number": 12,
+                    "team": {
+                        "entry": "Mercedes-AMG Petronas F1 Team",
+                        "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+                        "chassis": "F1 W16",
+                        "chassisConstructor": "Mercedes",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#27F4D2"
+                    },
+                    "details": {
+                        "givenName": "Andrea Kimi",
+                        "familyName": "Antonelli"
+                    }
+                },
+                "points": 89,
+                "maxPoints": 230,
+                "position": 7,
+                "maxPosition": 5,
+                "minPosition": 17,
+                "racePositions": {
+                    "3": 1,
+                    "4": 2,
+                    "5": 1,
+                    "6": 4,
+                    "9": 1,
+                    "10": 1,
+                    "11": 1,
+                    "13": 1,
+                    "16": 2,
+                    "18": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "ALB",
+                    "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
+                    "number": 23,
+                    "team": {
+                        "entry": "Atlassian Williams Racing",
+                        "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+                        "chassis": "FW47",
+                        "chassisConstructor": "Williams",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#64C4FF"
+                    },
+                    "details": {
+                        "givenName": "Alexander",
+                        "familyName": "Albon"
+                    }
+                },
+                "points": 73,
+                "maxPoints": 214,
+                "position": 8,
+                "maxPosition": 5,
+                "minPosition": 20,
+                "racePositions": {
+                    "5": 4,
+                    "6": 1,
+                    "7": 2,
+                    "8": 1,
+                    "9": 3,
+                    "12": 1,
+                    "13": 1,
+                    "14": 2,
+                    "15": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "HUL",
+                    "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746",
+                    "number": 27,
+                    "team": {
+                        "entry": "Stake F1 Team Kick Sauber",
+                        "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
+                        "chassis": "C45",
+                        "chassisConstructor": "Kick Sauber",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#52E252"
+                    },
+                    "details": {
+                        "givenName": "Nico",
+                        "familyName": "Hülkenberg"
+                    }
+                },
+                "points": 41,
+                "maxPoints": 182,
+                "position": 9,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "3": 1,
+                    "5": 1,
+                    "7": 1,
+                    "8": 2,
+                    "9": 1,
+                    "12": 2,
+                    "13": 1,
+                    "14": 2,
+                    "15": 2,
+                    "16": 3,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "HAD",
+                    "uuid": "95701466-d225-4921-aea6-c6615546d37e",
+                    "number": 6,
+                    "team": {
+                        "entry": "Visa Cash App Racing Bulls F1 Team",
+                        "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+                        "chassis": "VCARB 02",
+                        "chassisConstructor": "Racing Bulls",
+                        "powerUnit": "Honda RBPTH002",
+                        "powerUnitConstructor": "Honda RBPT",
+                        "color": "#6692FF"
+                    },
+                    "details": {
+                        "givenName": "Isack",
+                        "familyName": "Hadjar"
+                    }
+                },
+                "points": 39,
+                "maxPoints": 180,
+                "position": 10,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "3": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "10": 3,
+                    "11": 4,
+                    "12": 1,
+                    "13": 1,
+                    "16": 2,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "SAI",
+                    "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c",
+                    "number": 55,
+                    "team": {
+                        "entry": "Atlassian Williams Racing",
+                        "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+                        "chassis": "FW47",
+                        "chassisConstructor": "Williams",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#64C4FF"
+                    },
+                    "details": {
+                        "givenName": "Carlos",
+                        "familyName": "Sainz"
+                    }
+                },
+                "points": 38,
+                "maxPoints": 179,
+                "position": 11,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "3": 1,
+                    "8": 2,
+                    "9": 1,
+                    "10": 4,
+                    "11": 1,
+                    "12": 1,
+                    "13": 1,
+                    "14": 3,
+                    "18": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "ALO",
+                    "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
+                    "number": 14,
+                    "team": {
+                        "entry": "Aston Martin Aramco F1 Team",
+                        "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+                        "chassis": "AMR25",
+                        "chassisConstructor": "Aston Martin Aramco",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#358C75"
+                    },
+                    "details": {
+                        "givenName": "Fernando",
+                        "familyName": "Alonso"
+                    }
+                },
+                "points": 35,
+                "maxPoints": 176,
+                "position": 12,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "5": 1,
+                    "7": 2,
+                    "8": 2,
+                    "9": 2,
+                    "10": 1,
+                    "11": 3,
+                    "15": 3,
+                    "17": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "STR",
+                    "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b",
+                    "number": 18,
+                    "team": {
+                        "entry": "Aston Martin Aramco F1 Team",
+                        "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+                        "chassis": "AMR25",
+                        "chassisConstructor": "Aston Martin Aramco",
+                        "powerUnit": "Mercedes-AMG F1 M16",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#358C75"
+                    },
+                    "details": {
+                        "givenName": "Lance",
+                        "familyName": "Stroll"
+                    }
+                },
+                "points": 32,
+                "maxPoints": 173,
+                "position": 13,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "6": 1,
+                    "7": 3,
+                    "9": 1,
+                    "12": 1,
+                    "13": 1,
+                    "14": 2,
+                    "15": 2,
+                    "16": 2,
+                    "17": 3,
+                    "18": 1,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "LAW",
+                    "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
+                    "number": 30,
+                    "team": {
+                        "entry": "Visa Cash App Racing Bulls F1 Team",
+                        "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+                        "chassis": "VCARB 02",
+                        "chassisConstructor": "Racing Bulls",
+                        "powerUnit": "Honda RBPTH002",
+                        "powerUnitConstructor": "Honda RBPT",
+                        "color": "#6692FF"
+                    },
+                    "details": {
+                        "givenName": "Liam",
+                        "familyName": "Lawson"
+                    }
+                },
+                "points": 30,
+                "maxPoints": 171,
+                "position": 14,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "5": 1,
+                    "6": 1,
+                    "8": 3,
+                    "11": 2,
+                    "12": 3,
+                    "14": 2,
+                    "15": 1,
+                    "16": 1,
+                    "17": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "OCO",
+                    "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9",
+                    "number": 31,
+                    "team": {
+                        "entry": "MoneyGram Haas F1 Team",
+                        "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+                        "chassis": "VF-25",
+                        "chassisConstructor": "Haas",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#B6BABD"
+                    },
+                    "details": {
+                        "givenName": "Esteban",
+                        "familyName": "Ocon"
+                    }
+                },
+                "points": 28,
+                "maxPoints": 169,
+                "position": 15,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "5": 1,
+                    "7": 1,
+                    "8": 1,
+                    "9": 1,
+                    "10": 2,
+                    "12": 1,
+                    "13": 2,
+                    "14": 2,
+                    "15": 3,
+                    "16": 2,
+                    "18": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "TSU",
+                    "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
+                    "number": 22,
+                    "team": {
+                        "entry": "Oracle Red Bull Racing",
+                        "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+                        "chassis": "RB21",
+                        "chassisConstructor": "Red Bull Racing",
+                        "powerUnit": "Honda RBPTH002",
+                        "powerUnitConstructor": "Honda RBPT",
+                        "color": "#3671C6"
+                    },
+                    "details": {
+                        "givenName": "Yūki",
+                        "familyName": "Tsunoda",
+                        "familyNameFirst": true
+                    }
+                },
+                "points": 28,
+                "maxPoints": 169,
+                "position": 16,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "6": 1,
+                    "7": 1,
+                    "9": 2,
+                    "10": 2,
+                    "12": 4,
+                    "13": 3,
+                    "15": 1,
+                    "16": 2,
+                    "17": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "GAS",
+                    "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                    "number": 10,
+                    "team": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A525",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Renault E-Tech RE25",
+                        "powerUnitConstructor": "Renault",
+                        "color": "#FF87BC"
+                    },
+                    "details": {
+                        "givenName": "Pierre",
+                        "familyName": "Gasly"
+                    }
+                },
+                "points": 20,
+                "maxPoints": 161,
+                "position": 17,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "10": 1,
+                    "11": 1,
+                    "13": 4,
+                    "15": 1,
+                    "16": 1,
+                    "17": 1,
+                    "18": 1,
+                    "19": 3
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "BEA",
+                    "uuid": "3e7ffe41-e39f-41dc-94b6-6a098988481a",
+                    "number": 87,
+                    "team": {
+                        "entry": "MoneyGram Haas F1 Team",
+                        "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+                        "chassis": "VF-25",
+                        "chassisConstructor": "Haas",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#B6BABD"
+                    },
+                    "details": {
+                        "givenName": "Oliver",
+                        "familyName": "Bearman"
+                    }
+                },
+                "points": 20,
+                "maxPoints": 161,
+                "position": 18,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "6": 1,
+                    "8": 1,
+                    "9": 2,
+                    "10": 2,
+                    "11": 4,
+                    "12": 3,
+                    "13": 1,
+                    "14": 1,
+                    "17": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "BOR",
+                    "uuid": "9d2459fb-5889-4cd7-abc6-12004a58a238",
+                    "number": 5,
+                    "team": {
+                        "entry": "Stake F1 Team Kick Sauber",
+                        "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
+                        "chassis": "C45",
+                        "chassisConstructor": "Kick Sauber",
+                        "powerUnit": "Ferrari 066/12",
+                        "powerUnitConstructor": "Ferrari",
+                        "color": "#52E252"
+                    },
+                    "details": {
+                        "givenName": "Gabriel",
+                        "familyName": "Bortoleto"
+                    }
+                },
+                "points": 18,
+                "maxPoints": 159,
+                "position": 19,
+                "maxPosition": 6,
+                "minPosition": 21,
+                "racePositions": {
+                    "6": 1,
+                    "8": 2,
+                    "9": 1,
+                    "11": 1,
+                    "12": 1,
+                    "14": 3,
+                    "15": 1,
+                    "17": 1,
+                    "18": 4,
+                    "19": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "COL",
+                    "uuid": "5a46fe0e-7e7d-414b-8f28-aadeab10ac77",
+                    "temporary": true,
+                    "number": 43,
+                    "team": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A525",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Renault E-Tech RE25",
+                        "powerUnitConstructor": "Renault",
+                        "color": "#FF87BC"
+                    },
+                    "details": {
+                        "givenName": "Franco",
+                        "familyName": "Colapinto"
+                    }
+                },
+                "points": 0,
+                "maxPoints": 141,
+                "position": 20,
+                "maxPosition": 7,
+                "minPosition": 21,
+                "racePositions": {
+                    "11": 1,
+                    "13": 2,
+                    "15": 2,
+                    "16": 2,
+                    "17": 2,
+                    "18": 1,
+                    "19": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "abbreviation": "DOO",
+                    "uuid": "0137527c-0f96-4af9-8976-19f27295fd96",
+                    "number": 7,
+                    "team": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A525",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Renault E-Tech RE25",
+                        "powerUnitConstructor": "Renault",
+                        "color": "#FF87BC"
+                    },
+                    "details": {
+                        "givenName": "Jack",
+                        "familyName": "Doohan"
+                    }
+                },
+                "points": 0,
+                "maxPoints": 141,
+                "position": 21,
+                "maxPosition": 7,
+                "minPosition": 21,
+                "racePositions": {
+                    "13": 1,
+                    "14": 1,
+                    "15": 1,
+                    "17": 1
+                },
+                "note": ""
+            }
+        ],
+        "teamStandings": [
+            {
+                "owner": {
+                    "entry": "McLaren Formula 1 Team",
+                    "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+                    "chassis": "MCL39",
+                    "chassisConstructor": "McLaren",
+                    "powerUnit": "Mercedes-AMG F1 M16",
+                    "powerUnitConstructor": "Mercedes",
+                    "color": "#FF8000"
+                },
+                "points": 678,
+                "maxPoints": 923,
+                "position": 1,
+                "maxPosition": 1,
+                "minPosition": 1,
+                "racePositions": {
+                    "1": 12,
+                    "2": 11,
+                    "3": 6,
+                    "4": 3,
+                    "5": 1,
+                    "7": 1,
+                    "9": 1,
+                    "18": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Mercedes-AMG Petronas F1 Team",
+                    "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+                    "chassis": "F1 W16",
+                    "chassisConstructor": "Mercedes",
+                    "powerUnit": "Mercedes-AMG F1 M16",
+                    "powerUnitConstructor": "Mercedes",
+                    "color": "#27F4D2"
+                },
+                "points": 341,
+                "maxPoints": 586,
+                "position": 2,
+                "maxPosition": 2,
+                "minPosition": 5,
+                "racePositions": {
+                    "1": 2,
+                    "2": 2,
+                    "3": 5,
+                    "4": 4,
+                    "5": 6,
+                    "6": 5,
+                    "7": 1,
+                    "9": 1,
+                    "10": 2,
+                    "11": 2,
+                    "13": 1,
+                    "16": 2,
+                    "18": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Scuderia Ferrari HP",
+                    "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+                    "chassis": "SF-25",
+                    "chassisConstructor": "Ferrari",
+                    "powerUnit": "Ferrari 066/12",
+                    "powerUnitConstructor": "Ferrari",
+                    "color": "#E8002D"
+                },
+                "points": 336,
+                "maxPoints": 581,
+                "position": 3,
+                "maxPosition": 2,
+                "minPosition": 5,
+                "racePositions": {
+                    "2": 1,
+                    "3": 5,
+                    "4": 8,
+                    "5": 3,
+                    "6": 5,
+                    "7": 5,
+                    "8": 3,
+                    "9": 1,
+                    "10": 1,
+                    "12": 1,
+                    "14": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Oracle Red Bull Racing",
+                    "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+                    "chassis": "RB21",
+                    "chassisConstructor": "Red Bull Racing",
+                    "powerUnit": "Honda RBPTH002",
+                    "powerUnitConstructor": "Honda RBPT",
+                    "color": "#3671C6"
+                },
+                "points": 331,
+                "maxPoints": 576,
+                "position": 4,
+                "maxPosition": 2,
+                "minPosition": 5,
+                "racePositions": {
+                    "1": 5,
+                    "2": 5,
+                    "4": 4,
+                    "5": 1,
+                    "6": 2,
+                    "7": 1,
+                    "9": 3,
+                    "10": 3,
+                    "12": 4,
+                    "13": 3,
+                    "15": 1,
+                    "16": 1,
+                    "17": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Atlassian Williams Racing",
+                    "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+                    "chassis": "FW47",
+                    "chassisConstructor": "Williams",
+                    "powerUnit": "Mercedes-AMG F1 M16",
+                    "powerUnitConstructor": "Mercedes",
+                    "color": "#64C4FF"
+                },
+                "points": 111,
+                "maxPoints": 356,
+                "position": 5,
+                "maxPosition": 2,
+                "minPosition": 10,
+                "racePositions": {
+                    "3": 1,
+                    "5": 4,
+                    "6": 1,
+                    "7": 2,
+                    "8": 3,
+                    "9": 4,
+                    "10": 4,
+                    "11": 1,
+                    "12": 2,
+                    "13": 2,
+                    "14": 5,
+                    "15": 1,
+                    "18": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Visa Cash App Racing Bulls F1 Team",
+                    "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+                    "chassis": "VCARB 02",
+                    "chassisConstructor": "Racing Bulls",
+                    "powerUnit": "Honda RBPTH002",
+                    "powerUnitConstructor": "Honda RBPT",
+                    "color": "#6692FF"
+                },
+                "points": 72,
+                "maxPoints": 317,
+                "position": 6,
+                "maxPosition": 5,
+                "minPosition": 10,
+                "racePositions": {
+                    "3": 1,
+                    "5": 1,
+                    "6": 2,
+                    "7": 1,
+                    "8": 4,
+                    "9": 1,
+                    "10": 3,
+                    "11": 6,
+                    "12": 4,
+                    "13": 1,
+                    "14": 2,
+                    "15": 1,
+                    "16": 4,
+                    "17": 1,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Aston Martin Aramco F1 Team",
+                    "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+                    "chassis": "AMR25",
+                    "chassisConstructor": "Aston Martin Aramco",
+                    "powerUnit": "Mercedes-AMG F1 M16",
+                    "powerUnitConstructor": "Mercedes",
+                    "color": "#358C75"
+                },
+                "points": 67,
+                "maxPoints": 312,
+                "position": 7,
+                "maxPosition": 5,
+                "minPosition": 10,
+                "racePositions": {
+                    "5": 1,
+                    "6": 1,
+                    "7": 5,
+                    "8": 2,
+                    "9": 3,
+                    "10": 1,
+                    "11": 3,
+                    "12": 1,
+                    "13": 1,
+                    "14": 2,
+                    "15": 5,
+                    "16": 2,
+                    "17": 4,
+                    "18": 1,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "Stake F1 Team Kick Sauber",
+                    "uuid": "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b",
+                    "chassis": "C45",
+                    "chassisConstructor": "Kick Sauber",
+                    "powerUnit": "Ferrari 066/12",
+                    "powerUnitConstructor": "Ferrari",
+                    "color": "#52E252"
+                },
+                "points": 59,
+                "maxPoints": 304,
+                "position": 8,
+                "maxPosition": 5,
+                "minPosition": 10,
+                "racePositions": {
+                    "3": 1,
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 4,
+                    "9": 2,
+                    "11": 1,
+                    "12": 3,
+                    "13": 1,
+                    "14": 5,
+                    "15": 3,
+                    "16": 3,
+                    "17": 1,
+                    "18": 4,
+                    "19": 1,
+                    "20": 1
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "MoneyGram Haas F1 Team",
+                    "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+                    "chassis": "VF-25",
+                    "chassisConstructor": "Haas",
+                    "powerUnit": "Ferrari 066/12",
+                    "powerUnitConstructor": "Ferrari",
+                    "color": "#B6BABD"
+                },
+                "points": 48,
+                "maxPoints": 293,
+                "position": 9,
+                "maxPosition": 5,
+                "minPosition": 10,
+                "racePositions": {
+                    "5": 1,
+                    "6": 1,
+                    "7": 1,
+                    "8": 2,
+                    "9": 3,
+                    "10": 4,
+                    "11": 4,
+                    "12": 4,
+                    "13": 3,
+                    "14": 3,
+                    "15": 3,
+                    "16": 2,
+                    "17": 2,
+                    "18": 2
+                },
+                "note": ""
+            },
+            {
+                "owner": {
+                    "entry": "BWT Alpine F1 Team",
+                    "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                    "chassis": "A525",
+                    "chassisConstructor": "Alpine",
+                    "powerUnit": "Renault E-Tech RE25",
+                    "powerUnitConstructor": "Renault",
+                    "color": "#FF87BC"
+                },
+                "points": 20,
+                "maxPoints": 265,
+                "position": 10,
+                "maxPosition": 5,
+                "minPosition": 10,
+                "racePositions": {
+                    "6": 1,
+                    "7": 1,
+                    "8": 1,
+                    "10": 1,
+                    "11": 2,
+                    "13": 7,
+                    "14": 1,
+                    "15": 4,
+                    "16": 3,
+                    "17": 4,
+                    "18": 2,
+                    "19": 5
+                },
+                "note": ""
+            }
+        ],
+        "maxRemainingDriverPoints": 141,
+        "maxRemainingTeamPoints": 245
     }
 ]
