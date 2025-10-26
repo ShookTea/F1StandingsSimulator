@@ -323,14 +323,15 @@
       "type": "race",
       "label": "United States Grand Prix (race)",
       "positions": [ "VER", "NOR", "LEC", "HAM", "PIA", "RUS", "TSU", "HUL", "BEA", "ALO", "LAW", "STR", "ANT", "ALB", "OCO", "HAD", "COL", "BOR", "GAS" ]
+    }, {
+      "code": "MXC",
+      "type": "race",
+      "label": "Mexico City Grand Prix",
+      "positions": [ "NOR", "LEC", "VER", "BEA", "PIA", "ANT", "RUS", "HAM", "OCO", "BOR", "TSU", "ALB", "HAD", "STR", "GAS", "COL" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "MXC",
-      "type": "race",
-      "label": "Mexico City Grand Prix"
-    }, {
       "code": "SAP_S",
       "type": "sprint",
       "label": "São Paulo Grand Prix (sprint)"
