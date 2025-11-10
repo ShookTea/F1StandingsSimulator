@@ -328,18 +328,20 @@
       "type": "race",
       "label": "Mexico City Grand Prix",
       "positions": [ "NOR", "LEC", "VER", "BEA", "PIA", "ANT", "RUS", "HAM", "OCO", "BOR", "TSU", "ALB", "HAD", "STR", "GAS", "COL" ]
+    }, {
+      "code": "SAP_S",
+      "type": "sprint",
+      "label": "São Paulo Grand Prix (sprint)",
+      "positions": [ "NOR", "ANT", "RUS", "VER", "LEC", "ALO", "HAM", "GAS", "STR", "HAD", "OCO", "BEA", "TSU", "SAI", "HUL", "LAW", "ALB", "BOR" ]
+    }, {
+      "code": "SAP_R",
+      "type": "race",
+      "label": "São Paulo Grand Prix (race)",
+      "positions": [ "NOR", "ANT", "VER", "RUS", "PIA", "BEA", "LAW", "HAD", "HUL", "GAS", "ALB", "OCO", "SAI", "ALO", "COL", "STR", "TSU" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "SAP_S",
-      "type": "sprint",
-      "label": "São Paulo Grand Prix (sprint)"
-    }, {
-      "code": "SAP_R",
-      "type": "race",
-      "label": "São Paulo Grand Prix (race)"
-    }, {
       "code": "LVG",
       "type": "race",
       "label": "Las Vegas Grand Prix"
