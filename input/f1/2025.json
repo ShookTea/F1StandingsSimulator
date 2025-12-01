@@ -343,18 +343,20 @@
       "type": "race",
       "label": "Las Vegas Grand Prix",
       "positions": [ "VER", "RUS", "ANT", "LEC", "SAI", "HAD", "HUL", "HAM", "OCO", "BEA", "ALO", "TSU", "GAS", "LAW", "COL" ]
+    }, {
+      "code": "QAT_S",
+      "type": "sprint",
+      "label": "Qatar Grand Prix (sprint)",
+      "positions": [ "PIA", "RUS", "NOR", "VER", "TSU", "ANT", "ALO", "SAI", "HAD", "ALB", "BOR", "BEA", "LEC", "LAW", "OCO", "HUL", "HAM", "GAS", "STR", "COL" ]
+    }, {
+      "code": "QAT_R",
+      "type": "race",
+      "label": "Qatar Grand Prix (race)",
+      "positions": [ "VER", "PIA", "SAI", "NOR", "ANT", "RUS", "ALO", "LEC", "LAW", "TSU", "ALB", "HAM", "BOR", "COL", "OCO", "GAS", "STR", "HAD" ]
     }
   ],
   "remainingRaces": [
     {
-      "code": "QAT_S",
-      "type": "sprint",
-      "label": "Qatar Grand Prix (sprint)"
-    }, {
-      "code": "QAT_R",
-      "type": "race",
-      "label": "Qatar Grand Prix (race)"
-    }, {
       "code": "ABU",
       "type": "race",
       "label": "Abu Dhabi Grand Prix"
