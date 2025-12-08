@@ -353,13 +353,12 @@
       "type": "race",
       "label": "Qatar Grand Prix (race)",
       "positions": [ "VER", "PIA", "SAI", "NOR", "ANT", "RUS", "ALO", "LEC", "LAW", "TSU", "ALB", "HAM", "BOR", "COL", "OCO", "GAS", "STR", "HAD" ]
-    }
-  ],
-  "remainingRaces": [
-    {
+    }, {
       "code": "ABU",
       "type": "race",
-      "label": "Abu Dhabi Grand Prix"
+      "label": "Abu Dhabi Grand Prix",
+      "positions": [ "VER", "PIA", "NOR", "LEC", "RUS", "ALO", "OCO", "HAM", "HUL", "STR", "BOR", "BEA", "SAI", "TSU", "ANT", "ALB", "HAD", "LAW", "GAS", "COL" ]
     }
-  ]
+  ],
+  "remainingRaces": []
 }
