@@ -1,13 +1,41 @@
 {
-  "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b": {},
-  "9d2d9c07-744f-4c65-856a-ceb3105bfe3a": {},
-  "d7cc49b8-65ea-4953-9d01-b931564d6a38": {},
-  "773cad8a-154c-4ac5-8cbf-5c25f581e339": {},
-  "cf59d55e-c5a2-4ed0-bf06-c4898109ab67": {},
-  "4a0c3e8f-536f-4a41-afc4-bf94da36accb": {},
-  "b13c751d-945e-4771-abf0-b2fbf685599d": {},
-  "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7": {},
-  "46fa01b7-a709-4585-b187-b213b339dd15": {},
-  "c92f19b5-547c-4b86-b09f-45f46d0b085d": {},
-  "31548f00-0135-46d9-af17-4890d15b9d1b": {}
+  "d8d508a2-4e9d-4641-a6bf-2e135f5f0a3b": {
+    "_comment": "Sauber"
+  },
+  "9d2d9c07-744f-4c65-856a-ceb3105bfe3a": {
+    "_comment": "RB Junior team"
+  },
+  "d7cc49b8-65ea-4953-9d01-b931564d6a38": {
+    "_comment": "Alpine"
+  },
+  "773cad8a-154c-4ac5-8cbf-5c25f581e339": {
+    "_comment": "Aston Martin"
+  },
+  "cf59d55e-c5a2-4ed0-bf06-c4898109ab67": {
+    "_comment": "Ferrari"
+  },
+  "4a0c3e8f-536f-4a41-afc4-bf94da36accb": {
+    "_comment": "Haas"
+  },
+  "b13c751d-945e-4771-abf0-b2fbf685599d": {
+    "_comment": "McLaren"
+  },
+  "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7": {
+    "_comment": "Mercedes"
+  },
+  "46fa01b7-a709-4585-b187-b213b339dd15": {
+    "_comment": "Red Bull"
+  },
+  "c92f19b5-547c-4b86-b09f-45f46d0b085d": {
+    "_comment": "Williams"
+  },
+  "31548f00-0135-46d9-af17-4890d15b9d1b": {
+    "_comment": "Force India"
+  },
+  "0349f655-3a9f-408a-9c27-cb70ec879135": {
+    "_comment": "Audi"
+  },
+  "1954081c-5122-42e5-9bda-ba67d64ec8cc": {
+    "_comment": "Cadillac"
+  }
 }

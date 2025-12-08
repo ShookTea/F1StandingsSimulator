@@ -1,0 +1,369 @@
+{
+  "teams": {
+    "BWT Alpine F1 Team": {
+      "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+      "chassis": "A526",
+      "chassisConstructor": "Alpine",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#FF87BC"
+    },
+    "Aston Martin Aramco Honda": {
+      "uuid": "773cad8a-154c-4ac5-8cbf-5c25f581e339",
+      "chassis": "AMR26",
+      "chassisConstructor": "Aston Martin Aramco",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Honda",
+      "color": "#358C75"
+    },
+    "Revolut Audi F1 Team": {
+      "uuid": "0349f655-3a9f-408a-9c27-cb70ec879135",
+      "chassis": "R26",
+      "chassisConstructor": "Audi",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Audi",
+      "color": "#B51C14"
+    },
+    "Cadillac Formula 1 Team": {
+      "uuid": "1954081c-5122-42e5-9bda-ba67d64ec8cc",
+      "chassis": "???",
+      "chassisConstructor": "Cadillac",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#E4E1CA"
+    },
+    "Scuderia Ferrari HP": {
+      "uuid": "cf59d55e-c5a2-4ed0-bf06-c4898109ab67",
+      "chassis": "???",
+      "chassisConstructor": "Ferrari",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#E8002D"
+    },
+    "TGR Haas F1 Team": {
+      "uuid": "4a0c3e8f-536f-4a41-afc4-bf94da36accb",
+      "chassis": "VF-26",
+      "chassisConstructor": "Haas",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Ferrari",
+      "color": "#B6BABD"
+    },
+    "McLaren Mastercard Formula 1 Team": {
+      "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+      "chassis": "MCL40A",
+      "chassisConstructor": "McLaren",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#FF8000"
+    },
+    "Mercedes-AMG Petronas F1 Team": {
+      "uuid": "b4a5fc35-1d2a-44ae-bdc4-cfc5ddd397f7",
+      "chassis": "???",
+      "chassisConstructor": "Mercedes",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#27F4D2"
+    },
+    "Visa Cash App Racing Bulls F1 Team": {
+      "uuid": "9d2d9c07-744f-4c65-856a-ceb3105bfe3a",
+      "chassis": "???",
+      "chassisConstructor": "Racing Bulls",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Red Bull Ford",
+      "color": "#6692FF"
+    },
+    "Oracle Red Bull Racing": {
+      "uuid": "46fa01b7-a709-4585-b187-b213b339dd15",
+      "chassis": "RB22",
+      "chassisConstructor": "Red Bull Racing",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Red Bull Ford",
+      "color": "#3671C6"
+    },
+    "Atlassian Williams F1 Team": {
+      "uuid": "c92f19b5-547c-4b86-b09f-45f46d0b085d",
+      "chassis": "FW48",
+      "chassisConstructor": "Williams",
+      "powerUnit": "???",
+      "powerUnitConstructor": "Mercedes",
+      "color": "#64C4FF"
+    }
+  },
+  "drivers": {
+    "GAS": {
+      "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+      "number": 10,
+      "team": "BWT Alpine F1 Team"
+    },
+    "COL": {
+      "uuid": "5a46fe0e-7e7d-414b-8f28-aadeab10ac77",
+      "number": 43,
+      "team": "BWT Alpine F1 Team"
+    },
+    "ALO": {
+      "uuid": "cd4c1d0d-1f49-4429-871e-1c4a81e2cf74",
+      "number": 14,
+      "team": "Aston Martin Aramco Honda"
+    },
+    "STR": {
+      "uuid": "a0e93a44-0b90-4f18-a37b-edec16f1d21b",
+      "number": 18,
+      "team": "Aston Martin Aramco Honda"
+    },
+    "BOR": {
+      "uuid": "9d2459fb-5889-4cd7-abc6-12004a58a238",
+      "number": 5,
+      "team": "Revolut Audi F1 Team"
+    },
+    "HUL": {
+      "uuid": "fce0b388-3a0d-4d46-af1d-0a744b73f746",
+      "number": 27,
+      "team": "Revolut Audi F1 Team"
+    },
+    "PER": {
+      "uuid": "b6683cdd-6246-402f-8d63-673941252343",
+      "number": 11,
+      "team": "Cadillac Formula 1 Team"
+    },
+    "BOT": {
+      "uuid": "d0813ed5-e64b-4d13-af20-fdaac3c6dbc7",
+      "number": 77,
+      "team": "Cadillac Formula 1 Team"
+    },
+    "LEC": {
+      "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
+      "number": 16,
+      "team": "Scuderia Ferrari HP"
+    },
+    "HAM": {
+      "uuid": "ea131eb5-ec03-4279-83fc-956ad94bd299",
+      "number": 44,
+      "team": "Scuderia Ferrari HP"
+    },
+    "OCO": {
+      "uuid": "d25ead1a-75a9-4626-9ca3-b83cdccdc1d9",
+      "number": 31,
+      "team": "TGR Haas F1 Team"
+    },
+    "BEA": {
+      "uuid": "3e7ffe41-e39f-41dc-94b6-6a098988481a",
+      "number": 87,
+      "team": "TGR Haas F1 Team"
+    },
+    "NOR": {
+      "uuid": "6a9126c7-6e35-4cec-8fe5-d5e01fe3a466",
+      "number": 4,
+      "team": "McLaren Mastercard Formula 1 Team"
+    },
+    "PIA": {
+      "uuid": "85d6383f-2a59-4e66-85d6-80f573ade1fa",
+      "number": 81,
+      "team": "McLaren Mastercard Formula 1 Team"
+    },
+    "ANT": {
+      "uuid": "4b849785-8eb1-41af-b87f-8da998d06c2b",
+      "number": 12,
+      "team": "Mercedes-AMG Petronas F1 Team"
+    },
+    "RUS": {
+      "uuid": "0e1212d1-6b6c-4f47-8608-3012407b9868",
+      "number": 63,
+      "team": "Mercedes-AMG Petronas F1 Team"
+    },
+    "LAW": {
+      "uuid": "4cd34747-1721-4553-84d4-59f53aaad736",
+      "number": 30,
+      "team": "Visa Cash App Racing Bulls F1 Team"
+    },
+    "LIN": {
+      "uuid": "10076831-41af-471d-b7a5-376125ecee10",
+      "number": null,
+      "team": "Visa Cash App Racing Bulls F1 Team"
+    },
+    "HAD": {
+      "uuid": "95701466-d225-4921-aea6-c6615546d37e",
+      "number": 6,
+      "team": "Oracle Red Bull Racing"
+    },
+    "VER": {
+      "uuid": "c41f3434-ef94-4d31-9eed-4fdc3f6cb876",
+      "number": 33,
+      "team": "Oracle Red Bull Racing"
+    },
+    "ALB": {
+      "uuid": "94f92728-556c-405c-b18a-eed2f9138c78",
+      "number": 23,
+      "team": "Atlassian Williams F1 Team"
+    },
+    "SAI": {
+      "uuid": "865a73e7-b8dc-4e10-916a-9764770a135c",
+      "number": 55,
+      "team": "Atlassian Williams F1 Team"
+    }
+  },
+  "pointSchemas": {
+    "race": {
+      "points": [ 25, 18, 15, 12, 10, 8, 6, 4, 2, 1 ],
+      "fastestLap": { "value": 0, "maxPosition": -1 },
+      "positionsCount": true
+    },
+    "sprint": {
+      "points": [ 8, 7, 6, 5, 4, 3, 2, 1 ],
+      "fastestLap": { "value":  0, "maxPosition": -1 },
+      "positionsCount": false
+    }
+  },
+  "races": [],
+  "remainingRaces": [
+    {
+      "code": "AUS",
+      "type": "race",
+      "label": "Australian Grand Prix"
+    },
+    {
+      "code": "CHN_S",
+      "type": "sprint",
+      "label": "Chinese Grand Prix (sprint)"
+    },
+    {
+      "code": "CHN_R",
+      "type": "race",
+      "label": "Chinese Grand Prix (race)"
+    },
+    {
+      "code": "JPN",
+      "type": "race",
+      "label": "Japanese Grand Prix"
+    },
+    {
+      "code": "BHR",
+      "type": "race",
+      "label": "Bahrain Grand Prix"
+    },
+    {
+      "code": "SAU",
+      "type": "race",
+      "label": "Saudi Arabian Grand Prix"
+    },
+    {
+      "code": "MIA_S",
+      "type": "sprint",
+      "label": "Miami Grand Prix (sprint)"
+    },
+    {
+      "code": "MIA_R",
+      "type": "race",
+      "label": "Miami Grand Prix (race)"
+    },
+    {
+      "code": "CAN_S",
+      "type": "sprint",
+      "label": "Canadian Grand Prix (sprint)"
+    },
+    {
+      "code": "CAN_R",
+      "type": "race",
+      "label": "Canadian Grand Prix (race)"
+    },
+    {
+      "code": "MON",
+      "type": "race",
+      "label": "Monaco Grand Prix"
+    },
+    {
+      "code": "CAT",
+      "type": "race",
+      "label": "Barcelona-Catalunya Grand Prix"
+    },
+    {
+      "code": "AUT",
+      "type": "race",
+      "label": "Austrian Grand Prix"
+    },
+    {
+      "code": "GBR_S",
+      "type": "sprint",
+      "label": "British Grand Prix (sprint)"
+    },
+    {
+      "code": "GBR_R",
+      "type": "race",
+      "label": "British Grand Prix (race)"
+    },
+    {
+      "code": "BEL",
+      "type": "race",
+      "label": "Belgian Grand Prix"
+    },
+    {
+      "code": "HUN",
+      "type": "race",
+      "label": "Hungarian Grand Prix"      
+    },
+    {
+      "code": "NED_S",
+      "type": "sprint",
+      "label": "Dutch Grand Prix (sprint)"
+    },
+    {
+      "code": "NED_R",
+      "type": "race",
+      "label": "Dutch Grand Prix (race)"
+    },
+    {
+      "code": "ITA",
+      "type": "race",
+      "label": "Italian Grand Prix"
+    },
+    {
+      "code": "ESP",
+      "type": "race",
+      "label": "Spanish Grand Prix"
+    },
+    {
+      "code": "AZE",
+      "type": "race",
+      "label": "Azerbaijan Grand Prix"
+    },
+    {
+      "code": "SIN_S",
+      "type": "sprint",
+      "label": "Singapore Grand Prix (sprint)"
+    },
+    {
+      "code": "SIN_R",
+      "type": "race",
+      "label": "Singapore Grand Prix (race)"
+    },
+    {
+      "code": "USA",
+      "type": "race",
+      "label": "United States Grand Prix"
+    },
+    {
+      "code": "MXC",
+      "type": "race",
+      "label": "Mexico City Grand Prix"
+    },
+    {
+      "code": "SAP",
+      "type": "race",
+      "label": "São Paulo Grand Prix"
+    },
+    {
+      "code": "LVG",
+      "type": "race",
+      "label": "Las Vegas Grand Prix"
+    },
+    {
+      "code": "QAT",
+      "type": "race",
+      "label": "Qatar Grand Prix"
+    },
+    {
+      "code": "ABU",
+      "type": "race",
+      "label": "Abu Dhabi Grand Prix"
+    }
+  ]
+}
