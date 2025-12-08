@@ -5,7 +5,7 @@ import { Driver as DataResult } from '@/data/sim/formulaDrivers/driverDataTypes'
 
 const F1_INPUT_PATH: string = 'input/f1/%season%.json';
 const F1_OUTPUT_PATH: string = 'src/data/sim/f1/%season%.json';
-const F1_SEASONS: number[] = [ 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 ];
+const F1_SEASONS: number[] = [ 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 ];
 
 for (const year of F1_SEASONS) rebuildF1File(year);
 rebuildDriversFile();

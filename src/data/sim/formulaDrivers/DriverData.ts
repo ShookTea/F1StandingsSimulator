@@ -430,6 +430,16 @@ const result: DataResult[] = [
             "fullName": "Isack Hadjar",
             "routePart": "isack-hadjar-95701466"
         }
+    },
+    {
+        "driverDetails": {
+            "uuid": "10076831-41af-471d-b7a5-376125ecee10",
+            "givenName": "Arvid",
+            "familyName": "Lindblad",
+            "familyNameFirst": false,
+            "fullName": "Arvid Lindblad",
+            "routePart": "arvid-lindblad-10076831"
+        }
     }
 ];
 export default result;
