@@ -41,7 +41,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     
     const calculatedDriverStandings = calculateResultsForStandings(driverStandings, remainingRaces, input, DriverStandingSorter.getBuilder());
     
-    generateHeadToHeads(input, calculatedDriverStandings);
+    generateHeadToHeads(input, calculatedDriverStandings, remainingRaces, driverStandings);
 
     return {
         roundName,
