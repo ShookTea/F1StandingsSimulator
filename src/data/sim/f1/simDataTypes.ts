@@ -53,6 +53,7 @@ export interface Team extends StandingOwner {
 
 export interface HeadToHead {
     leadPosition: number;
+    drivers: string[]; // abbreviations
     optionsByDriver: {
         [driverAbbr: string]: HeadToHeadOptionForDriver[]
     }

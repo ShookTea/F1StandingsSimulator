@@ -124,6 +124,7 @@ function convertToOutputData(
   return {
     leadPosition: situation.position,
     optionsByDriver: transformedResult,
+    drivers: situation.standings.map((s) => s.owner.abbreviation),
   }
 
 }

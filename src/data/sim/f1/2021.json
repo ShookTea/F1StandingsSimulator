@@ -20308,7 +20308,11 @@
         "driverHeadToHeads": [
             {
                 "leadPosition": 1,
-                "optionsByDriver": {}
+                "optionsByDriver": {},
+                "drivers": [
+                    "VER",
+                    "HAM"
+                ]
             }
         ]
     },
@@ -21388,7 +21392,11 @@
         "driverHeadToHeads": [
             {
                 "leadPosition": 1,
-                "optionsByDriver": {}
+                "optionsByDriver": {},
+                "drivers": [
+                    "VER",
+                    "HAM"
+                ]
             }
         ]
     },
@@ -22472,7 +22480,11 @@
         "driverHeadToHeads": [
             {
                 "leadPosition": 1,
-                "optionsByDriver": {}
+                "optionsByDriver": {},
+                "drivers": [
+                    "VER",
+                    "HAM"
+                ]
             }
         ]
     },
@@ -23681,7 +23693,11 @@
                             }
                         }
                     ]
-                }
+                },
+                "drivers": [
+                    "VER",
+                    "HAM"
+                ]
             }
         ]
     },
@@ -25076,7 +25092,11 @@
                             }
                         }
                     ]
-                }
+                },
+                "drivers": [
+                    "VER",
+                    "HAM"
+                ]
             },
             {
                 "leadPosition": 5,
@@ -25591,7 +25611,12 @@
                             }
                         }
                     ]
-                }
+                },
+                "drivers": [
+                    "LEC",
+                    "NOR",
+                    "SAI"
+                ]
             }
         ]
     },
