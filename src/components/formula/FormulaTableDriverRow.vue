@@ -3,6 +3,7 @@ import { useWindowWidth } from '@/composable/windowWidth';
 import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
 import FormulaLargeTableCell from '@/components/formula/FormulaLargeTableCell.vue';
 import FormulaSmallTableCell from '@/components/formula/FormulaSmallTableCell.vue';
+import { computed } from 'vue';
 
 interface Props {
     index: number
@@ -11,8 +12,16 @@ interface Props {
     pointDiff: number
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
 const { windowWidth } = useWindowWidth();
+
+const fullName = computed<string>(() => {
+    const { givenName, familyName, familyNameFirst = false } = props.standing.owner.details;
+    if (familyNameFirst) {
+        return `${familyName} ${givenName}`;
+    }
+    return `${givenName} ${familyName}`;
+});
 </script>
 
 <template>
@@ -20,7 +29,7 @@ const { windowWidth } = useWindowWidth();
         <th class="pre-cell">{{ standing.owner.number }}</th>
         <th class="pre-cell">
             <div class="driver-abbr">
-                <div class="team-color" :style="backgroundColor"></div>
+                <div class="team-color" :style="{ backgroundColor: standing.owner.team.color }"></div>
                 <div>
                     <abbr :title="fullName">{{ standing.owner.abbreviation }}</abbr>
                 </div>
@@ -41,27 +50,6 @@ const { windowWidth } = useWindowWidth();
         </template>
     </tr>
 </template>
-
-<script lang="ts">
-
-export default {
-    computed: {
-        backgroundColor() {
-            return {
-                backgroundColor: this.standing.owner.team.color
-            };
-        },
-        fullName(): string {
-            const { givenName, familyName, familyNameFirst = false } = this.standing.owner.details;
-
-            if (familyNameFirst) {
-                return `${familyName} ${givenName}`;
-            }
-            return `${givenName} ${familyName}`;
-        }
-    }
-}
-</script>
 
 <style>
 th {
