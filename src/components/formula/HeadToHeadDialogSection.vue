@@ -18,6 +18,24 @@ type CellInfo = {
   colspan: number;
 }
 
+const labelToColor = (label: string) => {
+  switch (label) {
+    case 'Anywhere':
+      return 'lightgreen';
+    case 'P1':
+    case 'P1 or worse':
+      return 'gold';
+    case 'P2':
+    case 'P2 or worse':
+      return 'silver';
+    case 'P3':
+    case 'P3 or worse':
+      return 'lightsalmon';
+    default:
+      return 'white';
+  }
+}
+
 const cellData = computed<CellInfo[][]>(() => {
   let result: CellInfo[][] = [];
 
@@ -92,7 +110,7 @@ const cellData = computed<CellInfo[][]>(() => {
       </thead>
       <tbody>
         <tr v-for="(row, i) in cellData" :key="i">
-          <td v-for="(cell, j) in row" :key="j">{{ cell.label }}</td>
+          <td v-for="(cell, j) in row" :key="j" :style="{ backgroundColor: labelToColor(cell.label)}">{{ cell.label }}</td>
         </tr>
       </tbody>
     </table>
