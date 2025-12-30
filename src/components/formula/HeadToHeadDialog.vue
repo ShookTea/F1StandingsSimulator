@@ -46,7 +46,11 @@ const ordinal = computed<string>(() => {
       </div>
       <h3>Battle for {{ ordinal }} place</h3>
     </div>
-    <div class="dialog-content"></div>
+    <h4 v-if="headToHead.drivers.length === 2">Between {{ headToHead.drivers[0] }} and {{  headToHead.drivers[1] }}</h4>
+    <h4 v-if="headToHead.drivers.length === 3">Between {{ headToHead.drivers[0] }}, {{  headToHead.drivers[1] }} and {{  headToHead.drivers[2] }}</h4>
+    <div class="dialog-content">
+      {{ headToHead }}
+    </div>
   </dialog>
 </template>
 
@@ -70,7 +74,12 @@ const ordinal = computed<string>(() => {
     font-size: 1.5em;
   }
 
+  h3, h4 {
+    margin: 0;
+  }
+
   .dialog-content {
+    padding-top: 1em;
     flex-grow: 1;
     overflow-y: auto;
   }
