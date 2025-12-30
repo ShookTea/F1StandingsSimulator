@@ -132,6 +132,9 @@ const cellData = computed<CellInfo[][]>(() => {
         </tr>
       </tbody>
     </table>
+    <p class="other-positions-label" v-if="driverOptions.length > 0 && driverOptions.length < season.driversPerRace">
+      Other race positions won't guarantee a win.
+    </p>
   </div>
 
 </template>
@@ -148,6 +151,11 @@ const cellData = computed<CellInfo[][]>(() => {
   .battle-section table, .battle-section tr, .battle-section td, .battle-section th {
     border-collapse: collapse;
     border: 1px solid black;
+    text-align: center;
+  }
+
+  .other-positions-label {
+    font-size: 0.8em;
     text-align: center;
   }
 </style>
