@@ -8,7 +8,11 @@ interface Props {
     link: string
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const openLink = () => {
+    window.location.href = props.link;
+}
 </script>
 
 <template>
@@ -18,16 +22,16 @@ defineProps<Props>();
     </div>
 </template>
 
-<script lang="ts">
-export default {
-    methods: {
-        openLink(): void {
-            window.location.href = this.link;
-        }
+<style scoped>
+    .button {
+        border-radius: 2em;
+        border: 1px solid black;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .3em;
+        cursor: pointer;
+        height: 3em;
     }
-};
-</script>
-
-<style>
-
 </style>

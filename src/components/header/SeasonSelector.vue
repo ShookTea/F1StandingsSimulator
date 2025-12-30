@@ -75,6 +75,7 @@ export default {
     background-color: #0000f0;
     cursor: pointer;
     padding: .2em 1em;
+    color: white;
 }
 
 .season-switch {
@@ -86,5 +87,6 @@ export default {
 
 .season-switch label {
     margin-right: .1em;
+    color: white;
 }
 </style>
