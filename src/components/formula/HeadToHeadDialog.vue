@@ -91,10 +91,12 @@ const ordinal = computed<string>(() => {
 
   .dialog-content {
     padding-top: 1em;
+    padding-right: 1em;
     flex-grow: 1;
     overflow-y: auto;
     display: flex;
     flex-direction: row;
+    gap: 1em;
   }
 
   .dialog-content > * {
