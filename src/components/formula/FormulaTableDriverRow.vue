@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { useWindowWidth } from '@/composable/windowWidth';
-import { Driver, Standing } from '@/data/sim/f1/simDataTypes';
+import { Driver, HeadToHead, Standing } from '@/data/sim/f1/simDataTypes';
 import FormulaLargeTableCell from '@/components/formula/FormulaLargeTableCell.vue';
 import FormulaSmallTableCell from '@/components/formula/FormulaSmallTableCell.vue';
 import { computed } from 'vue';
@@ -10,6 +10,7 @@ interface Props {
     standingsCount: number
     standing: Standing<Driver>
     pointDiff: number
+    headToHeads: HeadToHead[]
 }
 
 const props = defineProps<Props>();
@@ -22,10 +23,29 @@ const fullName = computed<string>(() => {
     }
     return `${givenName} ${familyName}`;
 });
+
+const headToHead = computed<HeadToHead | null>(() => {
+    for (const entry of props.headToHeads) {
+        const minPosition = entry.leadPosition;
+        const totalDriversInSituation = Math.max(
+            ...Object.values(entry.optionsByDriver)
+                .flatMap((e) => e)
+                .flatMap((e) => Object.keys(e.rivals).length)
+            );
+        
+        const maxPosition = entry.leadPosition + totalDriversInSituation;
+        const currentPosition = props.index + 1;
+
+        if (currentPosition >= minPosition && currentPosition <= maxPosition) {
+            return entry;
+        }
+    }
+    return null;
+});
 </script>
 
 <template>
-    <tr>
+    <tr :class="[headToHead ? 'head-to-head' : null]">
         <th class="pre-cell">{{ standing.owner.number }}</th>
         <th class="pre-cell">
             <div class="driver-abbr">
@@ -37,8 +57,8 @@ const fullName = computed<string>(() => {
             </div>
         </th>
         <th class="pre-cell">
-          {{ standing.points }}
-          <span class="point-diff" v-if="pointDiff !== 0">+{{ pointDiff }}</span>
+            {{ standing.points }}
+            <span class="point-diff" v-if="pointDiff !== 0">+{{ pointDiff }}</span>
         </th>
         <template v-if="windowWidth > 1000">
             <formula-large-table-cell v-for="index in standingsCount" :key="index" :position="index" :standing="standing"/>
@@ -52,6 +72,9 @@ const fullName = computed<string>(() => {
 </template>
 
 <style>
+tr.head-to-head {
+    background-color: cyan;
+}
 th {
     border: 1px solid #606060;
     border-collapse: collapse;

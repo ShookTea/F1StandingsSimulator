@@ -21,6 +21,7 @@ defineProps<Props>()
                     :standings-count="driverStandings.length"
                     :standing="entry"
                     :point-diff="index + 1 < driverStandings.length ? entry.points - driverStandings[index+1].points : 0"
+                    :head-to-heads="round.driverHeadToHeads"
                 />
             </tbody>
         </table>
