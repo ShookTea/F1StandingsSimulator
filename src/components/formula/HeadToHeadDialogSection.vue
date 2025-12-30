@@ -35,9 +35,18 @@ const cellData = computed<CellInfo[][]>(() => {
     })
 
     for (const rival of rivals.value) {
+      const value = option.rivals[rival];
+      let label = `P${value} or worse`;
+
+      if (value === 1 || (value === 2 && option.position === 1)) {
+        label = 'Anywhere';
+      } else if (value === 2 || (value === 3 && option.position === 2)) {
+        label = 'No race win';
+      }
+
       row.push({
-        value: option.rivals[rival],
-        label: `P${option.rivals[rival]} or worse`,
+        value,
+        label,
         colspan: 1,
       });
     }
