@@ -120,13 +120,14 @@ const headToHeadCellState = computed<HeadToHeadCellState>(() => {
 
 <style>
 tr.head-to-head {
-    background-color: cyan;
+    --head-to-head-color: #ccffff;
+    background-color: var(--head-to-head-color);
 }
 tr.head-to-head.head-to-head-first {
-    background: linear-gradient(to bottom, transparent, cyan, cyan);
+    background: linear-gradient(to bottom, transparent, var(--head-to-head-color), var(--head-to-head-color));
 }
 tr.head-to-head.head-to-head-last {
-    background: linear-gradient(to top, transparent, cyan, cyan);
+    background: linear-gradient(to top, transparent, var(--head-to-head-color), var(--head-to-head-color));
 }
 th {
     border: 1px solid #606060;
@@ -144,7 +145,7 @@ th.head-to-head-action {
     cursor: pointer;
 }
 th.head-to-head-action.rowspan-2 {
-    background: linear-gradient(to bottom, transparent, cyan, cyan, transparent);
+    background: linear-gradient(to bottom, transparent, var(--head-to-head-color), var(--head-to-head-color), transparent);
 }
 .driver-abbr {
     display: flex;
