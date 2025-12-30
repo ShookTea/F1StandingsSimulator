@@ -15,7 +15,6 @@ const seasonData = computed<GroupData<Season>>(() => {
 
 const currentPage = computed<Round>(() => {
     const step: number = parseInt(route.params.step as string) - 1;
-    console.log({ step });
     return seasonData.value.data[step];
 });
 </script>
