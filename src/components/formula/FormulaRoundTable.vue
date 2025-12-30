@@ -15,7 +15,6 @@ const displayedHeadToHead = ref<HeadToHead|null>(null);
 
 const showHeadToHead = (h2h: HeadToHead) => {
     displayedHeadToHead.value = h2h;
-    console.log({ h2h });
 }
 </script>
 <template>

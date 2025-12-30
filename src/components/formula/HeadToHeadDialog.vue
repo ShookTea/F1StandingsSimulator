@@ -2,6 +2,7 @@ import { HeadToHead } from '../../data/sim/f1/simDataTypes';
 <script lang="ts" setup>
 import { HeadToHead } from '@/data/sim/f1/simDataTypes';
 import { ref, onMounted, computed } from 'vue';
+import HeadToHeadDialogSection from './HeadToHeadDialogSection.vue';
 
 const props = defineProps<{
   headToHead: HeadToHead;
@@ -49,7 +50,17 @@ const ordinal = computed<string>(() => {
     <h4 v-if="headToHead.drivers.length === 2">Between {{ headToHead.drivers[0] }} and {{  headToHead.drivers[1] }}</h4>
     <h4 v-if="headToHead.drivers.length === 3">Between {{ headToHead.drivers[0] }}, {{  headToHead.drivers[1] }} and {{  headToHead.drivers[2] }}</h4>
     <div class="dialog-content">
-      {{ headToHead }}
+      <div v-if="Object.keys(headToHead.optionsByDriver).length === 0">
+        The next race will not determine any positions.
+      </div>
+      <HeadToHeadDialogSection
+        v-else
+        v-for="driverAbbr in headToHead.drivers"
+        :key="driverAbbr"
+        :driver-abbr="driverAbbr"
+        :head-to-head="headToHead"
+        :ordinal="ordinal"
+      />
     </div>
   </dialog>
 </template>
@@ -82,5 +93,11 @@ const ordinal = computed<string>(() => {
     padding-top: 1em;
     flex-grow: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dialog-content > * {
+    flex-basis: 100%;
   }
 </style>
