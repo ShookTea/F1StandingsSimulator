@@ -15,7 +15,7 @@ const rivals = computed<string[]>(() => props.headToHead.drivers.filter((d) => d
 type CellInfo = {
   value: number;
   label: string;
-  colspan: number;
+  rowspan: number;
 }
 
 const labelToColor = (label: string) => {
@@ -50,7 +50,7 @@ const cellData = computed<CellInfo[][]>(() => {
     row.push({
       value: option.position,
       label: `P${option.position}`,
-      colspan: 1,
+      rowspan: 1,
     })
 
     for (const rival of rivals.value) {
@@ -64,7 +64,7 @@ const cellData = computed<CellInfo[][]>(() => {
       row.push({
         value,
         label,
-        colspan: 1,
+        rowspan: 1,
       });
     }
 
@@ -82,6 +82,17 @@ const cellData = computed<CellInfo[][]>(() => {
     }
     result = result.slice(0, result.length - truncateCount + 1);
     result[result.length - 1][0].label += '+';
+  }
+
+  // Starting from the end of array, ignoring first column: if next row at the same column has the same value,
+  // remove it and add its rowspan
+  for (let currRow = result.length - 2; currRow >= 0; currRow--) {
+    for (let column = 1; column < result[currRow].length; column++) {
+      if (result[currRow][column].label === result[currRow + 1][column].label) {
+        result[currRow][column].rowspan = result[currRow + 1][column].rowspan + 1;
+        result[currRow + 1][column] = null;
+      }
+    }
   }
 
   return result;
@@ -110,7 +121,14 @@ const cellData = computed<CellInfo[][]>(() => {
       </thead>
       <tbody>
         <tr v-for="(row, i) in cellData" :key="i">
-          <td v-for="(cell, j) in row" :key="j" :style="{ backgroundColor: labelToColor(cell.label)}">{{ cell.label }}</td>
+          <td
+            v-for="(cell, j) in row.filter((r) => r !== null)"
+            :key="j"
+            :style="{ backgroundColor: labelToColor(cell.label)}"
+            :rowspan="cell.rowspan"
+          >
+            {{ cell.label }}
+          </td>
         </tr>
       </tbody>
     </table>
