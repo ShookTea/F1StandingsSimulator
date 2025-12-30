@@ -784,7 +784,8 @@
             }
         ],
         "maxRemainingDriverPoints": 620,
-        "maxRemainingTeamPoints": 1058
+        "maxRemainingTeamPoints": 1058,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Bahrain Grand Prix",
@@ -1632,7 +1633,8 @@
             }
         ],
         "maxRemainingDriverPoints": 594,
-        "maxRemainingTeamPoints": 1014
+        "maxRemainingTeamPoints": 1014,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Saudi Arabian Grand Prix",
@@ -2505,7 +2507,8 @@
             }
         ],
         "maxRemainingDriverPoints": 568,
-        "maxRemainingTeamPoints": 970
+        "maxRemainingTeamPoints": 970,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Australian Grand Prix",
@@ -3406,7 +3409,8 @@
             }
         ],
         "maxRemainingDriverPoints": 542,
-        "maxRemainingTeamPoints": 926
+        "maxRemainingTeamPoints": 926,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Azerbaijan Grand Prix (sprint)",
@@ -4307,7 +4311,8 @@
             }
         ],
         "maxRemainingDriverPoints": 534,
-        "maxRemainingTeamPoints": 911
+        "maxRemainingTeamPoints": 911,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Azerbaijan Grand Prix (race)",
@@ -5228,7 +5233,8 @@
             }
         ],
         "maxRemainingDriverPoints": 508,
-        "maxRemainingTeamPoints": 867
+        "maxRemainingTeamPoints": 867,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Miami Grand Prix",
@@ -6162,7 +6168,8 @@
             }
         ],
         "maxRemainingDriverPoints": 482,
-        "maxRemainingTeamPoints": 823
+        "maxRemainingTeamPoints": 823,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Monaco Grand Prix",
@@ -7118,7 +7125,8 @@
             }
         ],
         "maxRemainingDriverPoints": 456,
-        "maxRemainingTeamPoints": 779
+        "maxRemainingTeamPoints": 779,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Spanish Grand Prix",
@@ -8091,7 +8099,8 @@
             }
         ],
         "maxRemainingDriverPoints": 430,
-        "maxRemainingTeamPoints": 735
+        "maxRemainingTeamPoints": 735,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Canadian Grand Prix",
@@ -9078,7 +9087,8 @@
             }
         ],
         "maxRemainingDriverPoints": 404,
-        "maxRemainingTeamPoints": 691
+        "maxRemainingTeamPoints": 691,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (sprint)",
@@ -10065,7 +10075,8 @@
             }
         ],
         "maxRemainingDriverPoints": 396,
-        "maxRemainingTeamPoints": 676
+        "maxRemainingTeamPoints": 676,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (race)",
@@ -11075,7 +11086,8 @@
             }
         ],
         "maxRemainingDriverPoints": 370,
-        "maxRemainingTeamPoints": 632
+        "maxRemainingTeamPoints": 632,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After British Grand Prix",
@@ -12104,7 +12116,8 @@
             }
         ],
         "maxRemainingDriverPoints": 344,
-        "maxRemainingTeamPoints": 588
+        "maxRemainingTeamPoints": 588,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Hungarian Grand Prix",
@@ -13144,7 +13157,8 @@
             }
         ],
         "maxRemainingDriverPoints": 318,
-        "maxRemainingTeamPoints": 544
+        "maxRemainingTeamPoints": 544,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Belgian Grand Prix (sprint)",
@@ -14184,7 +14198,8 @@
             }
         ],
         "maxRemainingDriverPoints": 310,
-        "maxRemainingTeamPoints": 529
+        "maxRemainingTeamPoints": 529,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Belgian Grand Prix (race)",
@@ -15233,7 +15248,8 @@
             }
         ],
         "maxRemainingDriverPoints": 284,
-        "maxRemainingTeamPoints": 485
+        "maxRemainingTeamPoints": 485,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Dutch Grand Prix",
@@ -16295,7 +16311,8 @@
             }
         ],
         "maxRemainingDriverPoints": 258,
-        "maxRemainingTeamPoints": 441
+        "maxRemainingTeamPoints": 441,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Italian Grand Prix",
@@ -17366,7 +17383,8 @@
             }
         ],
         "maxRemainingDriverPoints": 232,
-        "maxRemainingTeamPoints": 397
+        "maxRemainingTeamPoints": 397,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Singapore Grand Prix",
@@ -18452,7 +18470,8 @@
             }
         ],
         "maxRemainingDriverPoints": 206,
-        "maxRemainingTeamPoints": 353
+        "maxRemainingTeamPoints": 353,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Japanese Grand Prix",
@@ -19542,7 +19561,8 @@
             }
         ],
         "maxRemainingDriverPoints": 180,
-        "maxRemainingTeamPoints": 309
+        "maxRemainingTeamPoints": 309,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Qatar Grand Prix (sprint)",
@@ -20632,7 +20652,8 @@
             }
         ],
         "maxRemainingDriverPoints": 172,
-        "maxRemainingTeamPoints": 294
+        "maxRemainingTeamPoints": 294,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Qatar Grand Prix (race)",
@@ -21733,7 +21754,8 @@
             }
         ],
         "maxRemainingDriverPoints": 146,
-        "maxRemainingTeamPoints": 250
+        "maxRemainingTeamPoints": 250,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After United States Grand Prix (sprint)",
@@ -22834,7 +22856,8 @@
             }
         ],
         "maxRemainingDriverPoints": 138,
-        "maxRemainingTeamPoints": 235
+        "maxRemainingTeamPoints": 235,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After United States Grand Prix (race)",
@@ -23943,7 +23966,8 @@
             }
         ],
         "maxRemainingDriverPoints": 112,
-        "maxRemainingTeamPoints": 191
+        "maxRemainingTeamPoints": 191,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Mexico City Grand Prix",
@@ -25057,7 +25081,8 @@
             }
         ],
         "maxRemainingDriverPoints": 86,
-        "maxRemainingTeamPoints": 147
+        "maxRemainingTeamPoints": 147,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (sprint)",
@@ -26171,7 +26196,8 @@
             }
         ],
         "maxRemainingDriverPoints": 78,
-        "maxRemainingTeamPoints": 132
+        "maxRemainingTeamPoints": 132,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (race)",
@@ -27289,7 +27315,8 @@
             }
         ],
         "maxRemainingDriverPoints": 52,
-        "maxRemainingTeamPoints": 88
+        "maxRemainingTeamPoints": 88,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Las Vegas Grand Prix",
@@ -28415,7 +28442,8 @@
             }
         ],
         "maxRemainingDriverPoints": 26,
-        "maxRemainingTeamPoints": 44
+        "maxRemainingTeamPoints": 44,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Abu Dhabi Grand Prix",

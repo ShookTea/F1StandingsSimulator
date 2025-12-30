@@ -840,7 +840,8 @@
             }
         ],
         "maxRemainingDriverPoints": 672,
-        "maxRemainingTeamPoints": 1146
+        "maxRemainingTeamPoints": 1146,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Bahrain Grand Prix",
@@ -1753,7 +1754,8 @@
             }
         ],
         "maxRemainingDriverPoints": 646,
-        "maxRemainingTeamPoints": 1102
+        "maxRemainingTeamPoints": 1102,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Saudi Arabian Grand Prix",
@@ -2695,7 +2697,8 @@
             }
         ],
         "maxRemainingDriverPoints": 620,
-        "maxRemainingTeamPoints": 1058
+        "maxRemainingTeamPoints": 1058,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Australian Grand Prix",
@@ -3665,7 +3668,8 @@
             }
         ],
         "maxRemainingDriverPoints": 594,
-        "maxRemainingTeamPoints": 1014
+        "maxRemainingTeamPoints": 1014,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Japanese Grand Prix",
@@ -4652,7 +4656,8 @@
             }
         ],
         "maxRemainingDriverPoints": 568,
-        "maxRemainingTeamPoints": 970
+        "maxRemainingTeamPoints": 970,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Chinese Grand Prix (sprint)",
@@ -5639,7 +5644,8 @@
             }
         ],
         "maxRemainingDriverPoints": 560,
-        "maxRemainingTeamPoints": 955
+        "maxRemainingTeamPoints": 955,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Chinese Grand Prix (race)",
@@ -6642,7 +6648,8 @@
             }
         ],
         "maxRemainingDriverPoints": 534,
-        "maxRemainingTeamPoints": 911
+        "maxRemainingTeamPoints": 911,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Miami Grand Prix (sprint)",
@@ -7645,7 +7652,8 @@
             }
         ],
         "maxRemainingDriverPoints": 526,
-        "maxRemainingTeamPoints": 896
+        "maxRemainingTeamPoints": 896,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Miami Grand Prix (race)",
@@ -8671,7 +8679,8 @@
             }
         ],
         "maxRemainingDriverPoints": 500,
-        "maxRemainingTeamPoints": 852
+        "maxRemainingTeamPoints": 852,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Emilia Romagna Grand Prix",
@@ -9705,7 +9714,8 @@
             }
         ],
         "maxRemainingDriverPoints": 474,
-        "maxRemainingTeamPoints": 808
+        "maxRemainingTeamPoints": 808,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Monaco Grand Prix",
@@ -10757,7 +10767,8 @@
             }
         ],
         "maxRemainingDriverPoints": 448,
-        "maxRemainingTeamPoints": 764
+        "maxRemainingTeamPoints": 764,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Canadian Grand Prix",
@@ -11818,7 +11829,8 @@
             }
         ],
         "maxRemainingDriverPoints": 422,
-        "maxRemainingTeamPoints": 720
+        "maxRemainingTeamPoints": 720,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Spanish Grand Prix",
@@ -12892,7 +12904,8 @@
             }
         ],
         "maxRemainingDriverPoints": 396,
-        "maxRemainingTeamPoints": 676
+        "maxRemainingTeamPoints": 676,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (sprint)",
@@ -13966,7 +13979,8 @@
             }
         ],
         "maxRemainingDriverPoints": 388,
-        "maxRemainingTeamPoints": 661
+        "maxRemainingTeamPoints": 661,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (race)",
@@ -15063,7 +15077,8 @@
             }
         ],
         "maxRemainingDriverPoints": 362,
-        "maxRemainingTeamPoints": 617
+        "maxRemainingTeamPoints": 617,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After British Grand Prix",
@@ -16167,7 +16182,8 @@
             }
         ],
         "maxRemainingDriverPoints": 336,
-        "maxRemainingTeamPoints": 573
+        "maxRemainingTeamPoints": 573,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Hungarian Grand Prix",
@@ -17279,7 +17295,8 @@
             }
         ],
         "maxRemainingDriverPoints": 310,
-        "maxRemainingTeamPoints": 529
+        "maxRemainingTeamPoints": 529,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Belgian Grand Prix",
@@ -18400,7 +18417,8 @@
             }
         ],
         "maxRemainingDriverPoints": 284,
-        "maxRemainingTeamPoints": 485
+        "maxRemainingTeamPoints": 485,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Dutch Grand Prix",
@@ -19531,7 +19549,8 @@
             }
         ],
         "maxRemainingDriverPoints": 258,
-        "maxRemainingTeamPoints": 441
+        "maxRemainingTeamPoints": 441,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Italian Grand Prix",
@@ -20669,7 +20688,8 @@
             }
         ],
         "maxRemainingDriverPoints": 232,
-        "maxRemainingTeamPoints": 397
+        "maxRemainingTeamPoints": 397,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Azerbaijan Grand Prix",
@@ -21814,7 +21834,8 @@
             }
         ],
         "maxRemainingDriverPoints": 206,
-        "maxRemainingTeamPoints": 353
+        "maxRemainingTeamPoints": 353,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Singapore Grand Prix",
@@ -22968,7 +22989,8 @@
             }
         ],
         "maxRemainingDriverPoints": 180,
-        "maxRemainingTeamPoints": 309
+        "maxRemainingTeamPoints": 309,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After United States Grand Prix (sprint)",
@@ -24122,7 +24144,8 @@
             }
         ],
         "maxRemainingDriverPoints": 172,
-        "maxRemainingTeamPoints": 294
+        "maxRemainingTeamPoints": 294,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After United States Grand Prix (race)",
@@ -25286,7 +25309,8 @@
             }
         ],
         "maxRemainingDriverPoints": 146,
-        "maxRemainingTeamPoints": 250
+        "maxRemainingTeamPoints": 250,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Mexico City Grand Prix",
@@ -26453,7 +26477,8 @@
             }
         ],
         "maxRemainingDriverPoints": 120,
-        "maxRemainingTeamPoints": 206
+        "maxRemainingTeamPoints": 206,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (sprint)",
@@ -27620,7 +27645,8 @@
             }
         ],
         "maxRemainingDriverPoints": 112,
-        "maxRemainingTeamPoints": 191
+        "maxRemainingTeamPoints": 191,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (race)",
@@ -28797,7 +28823,8 @@
             }
         ],
         "maxRemainingDriverPoints": 86,
-        "maxRemainingTeamPoints": 147
+        "maxRemainingTeamPoints": 147,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Las Vegas Grand Prix",
@@ -29977,7 +30004,8 @@
             }
         ],
         "maxRemainingDriverPoints": 60,
-        "maxRemainingTeamPoints": 103
+        "maxRemainingTeamPoints": 103,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Qatar Grand Prix (sprint)",
@@ -31157,7 +31185,8 @@
             }
         ],
         "maxRemainingDriverPoints": 52,
-        "maxRemainingTeamPoints": 88
+        "maxRemainingTeamPoints": 88,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Qatar Grand Prix (race)",
@@ -32349,7 +32378,1044 @@
             }
         ],
         "maxRemainingDriverPoints": 26,
-        "maxRemainingTeamPoints": 44
+        "maxRemainingTeamPoints": 44,
+        "driverHeadToHeads": [
+            {
+                "leadPosition": 2,
+                "optionsByDriver": {
+                    "NOR": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 2
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 1
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 2
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 2
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 2
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 3
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 4
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 4
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 5
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 1,
+                            "rivals": {
+                                "LEC": 6
+                            }
+                        }
+                    ],
+                    "LEC": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "NOR": 3
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "NOR": 6
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "NOR": 7
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "NOR": 9
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "NOR": 10
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 2,
+                            "rivals": {
+                                "NOR": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "leadPosition": 4,
+                "optionsByDriver": {
+                    "PIA": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 1
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 1
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 1
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 1
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 1
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 1,
+                            "rivals": {
+                                "SAI": 2
+                            }
+                        }
+                    ],
+                    "SAI": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "PIA": 7
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 2,
+                            "rivals": {
+                                "PIA": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "leadPosition": 6,
+                "optionsByDriver": {
+                    "RUS": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 1
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 1,
+                            "rivals": {
+                                "HAM": 2
+                            }
+                        }
+                    ],
+                    "HAM": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "RUS": 10
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 23,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        },
+                        {
+                            "position": 24,
+                            "championship": 2,
+                            "rivals": {
+                                "RUS": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     },
     {
         "roundName": "After Abu Dhabi Grand Prix",

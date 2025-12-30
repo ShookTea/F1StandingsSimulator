@@ -784,7 +784,8 @@
             }
         ],
         "maxRemainingDriverPoints": 596,
-        "maxRemainingTeamPoints": 1013
+        "maxRemainingTeamPoints": 1013,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Bahrain Grand Prix",
@@ -1638,7 +1639,8 @@
             }
         ],
         "maxRemainingDriverPoints": 570,
-        "maxRemainingTeamPoints": 969
+        "maxRemainingTeamPoints": 969,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Saudi Arabian Grand Prix",
@@ -2518,7 +2520,8 @@
             }
         ],
         "maxRemainingDriverPoints": 544,
-        "maxRemainingTeamPoints": 925
+        "maxRemainingTeamPoints": 925,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Australian Grand Prix",
@@ -3420,7 +3423,8 @@
             }
         ],
         "maxRemainingDriverPoints": 518,
-        "maxRemainingTeamPoints": 881
+        "maxRemainingTeamPoints": 881,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Emilia Romagna Grand Prix (sprint)",
@@ -4322,7 +4326,8 @@
             }
         ],
         "maxRemainingDriverPoints": 510,
-        "maxRemainingTeamPoints": 866
+        "maxRemainingTeamPoints": 866,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Emilia Romagna Grand Prix (race)",
@@ -5251,7 +5256,8 @@
             }
         ],
         "maxRemainingDriverPoints": 484,
-        "maxRemainingTeamPoints": 822
+        "maxRemainingTeamPoints": 822,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Miami Grand Prix",
@@ -6199,7 +6205,8 @@
             }
         ],
         "maxRemainingDriverPoints": 458,
-        "maxRemainingTeamPoints": 778
+        "maxRemainingTeamPoints": 778,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Spanish Grand Prix",
@@ -7166,7 +7173,8 @@
             }
         ],
         "maxRemainingDriverPoints": 432,
-        "maxRemainingTeamPoints": 734
+        "maxRemainingTeamPoints": 734,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Monaco Grand Prix",
@@ -8156,7 +8164,8 @@
             }
         ],
         "maxRemainingDriverPoints": 406,
-        "maxRemainingTeamPoints": 690
+        "maxRemainingTeamPoints": 690,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Azerbaijan Grand Prix",
@@ -9161,7 +9170,8 @@
             }
         ],
         "maxRemainingDriverPoints": 380,
-        "maxRemainingTeamPoints": 646
+        "maxRemainingTeamPoints": 646,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Canadian Grand Prix",
@@ -10174,7 +10184,8 @@
             }
         ],
         "maxRemainingDriverPoints": 354,
-        "maxRemainingTeamPoints": 602
+        "maxRemainingTeamPoints": 602,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After British Grand Prix",
@@ -11201,7 +11212,8 @@
             }
         ],
         "maxRemainingDriverPoints": 328,
-        "maxRemainingTeamPoints": 558
+        "maxRemainingTeamPoints": 558,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (sprint)",
@@ -12228,7 +12240,8 @@
             }
         ],
         "maxRemainingDriverPoints": 320,
-        "maxRemainingTeamPoints": 543
+        "maxRemainingTeamPoints": 543,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Austrian Grand Prix (race)",
@@ -13267,7 +13280,8 @@
             }
         ],
         "maxRemainingDriverPoints": 294,
-        "maxRemainingTeamPoints": 499
+        "maxRemainingTeamPoints": 499,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After French Grand Prix",
@@ -14311,7 +14325,8 @@
             }
         ],
         "maxRemainingDriverPoints": 268,
-        "maxRemainingTeamPoints": 455
+        "maxRemainingTeamPoints": 455,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Hungarian Grand Prix",
@@ -15369,7 +15384,8 @@
             }
         ],
         "maxRemainingDriverPoints": 242,
-        "maxRemainingTeamPoints": 411
+        "maxRemainingTeamPoints": 411,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Belgian Grand Prix",
@@ -16428,7 +16444,8 @@
             }
         ],
         "maxRemainingDriverPoints": 216,
-        "maxRemainingTeamPoints": 367
+        "maxRemainingTeamPoints": 367,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Dutch Grand Prix",
@@ -17495,7 +17512,8 @@
             }
         ],
         "maxRemainingDriverPoints": 190,
-        "maxRemainingTeamPoints": 323
+        "maxRemainingTeamPoints": 323,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Italian Grand Prix",
@@ -18570,7 +18588,8 @@
             }
         ],
         "maxRemainingDriverPoints": 164,
-        "maxRemainingTeamPoints": 279
+        "maxRemainingTeamPoints": 279,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Singapore Grand Prix",
@@ -19655,7 +19674,8 @@
             }
         ],
         "maxRemainingDriverPoints": 138,
-        "maxRemainingTeamPoints": 235
+        "maxRemainingTeamPoints": 235,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Japanese Grand Prix",
@@ -20751,7 +20771,8 @@
             }
         ],
         "maxRemainingDriverPoints": 112,
-        "maxRemainingTeamPoints": 191
+        "maxRemainingTeamPoints": 191,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After United States Grand Prix",
@@ -21852,7 +21873,8 @@
             }
         ],
         "maxRemainingDriverPoints": 86,
-        "maxRemainingTeamPoints": 147
+        "maxRemainingTeamPoints": 147,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After Mexico City Grand Prix",
@@ -22959,7 +22981,8 @@
             }
         ],
         "maxRemainingDriverPoints": 60,
-        "maxRemainingTeamPoints": 103
+        "maxRemainingTeamPoints": 103,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (sprint)",
@@ -24066,7 +24089,8 @@
             }
         ],
         "maxRemainingDriverPoints": 52,
-        "maxRemainingTeamPoints": 88
+        "maxRemainingTeamPoints": 88,
+        "driverHeadToHeads": []
     },
     {
         "roundName": "After São Paulo Grand Prix (race)",
@@ -25178,7 +25202,326 @@
             }
         ],
         "maxRemainingDriverPoints": 26,
-        "maxRemainingTeamPoints": 44
+        "maxRemainingTeamPoints": 44,
+        "driverHeadToHeads": [
+            {
+                "leadPosition": 8,
+                "optionsByDriver": {
+                    "OCO": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 2
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 3
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 2
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 3
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 4
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 4
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 5
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 6
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 7
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 7
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 1,
+                            "rivals": {
+                                "ALO": 8
+                            }
+                        }
+                    ],
+                    "ALO": [
+                        {
+                            "position": 1,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 2
+                            }
+                        },
+                        {
+                            "position": 2,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 4
+                            }
+                        },
+                        {
+                            "position": 3,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 5
+                            }
+                        },
+                        {
+                            "position": 4,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 7
+                            }
+                        },
+                        {
+                            "position": 5,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 8
+                            }
+                        },
+                        {
+                            "position": 6,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 9
+                            }
+                        },
+                        {
+                            "position": 7,
+                            "championship": 1,
+                            "rivals": {
+                                "OCO": 11
+                            }
+                        },
+                        {
+                            "position": 8,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 9,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 10,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 11,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 12,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 13,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 14,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 15,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 16,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 17,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 18,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 19,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 20,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 21,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        },
+                        {
+                            "position": 22,
+                            "championship": 2,
+                            "rivals": {
+                                "OCO": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     },
     {
         "roundName": "After Abu Dhabi Grand Prix",
