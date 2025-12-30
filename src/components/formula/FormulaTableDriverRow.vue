@@ -50,6 +50,31 @@ const headToHeadLast = computed<boolean>(() => {
     const { maxPosition } = getHeadToHeadIndex(headToHead.value);
     return maxPosition === props.index + 1;
 })
+
+type HeadToHeadCellState = 'no-cell' | 'empty-cell' | 'icon' | 'icon-rowspan';
+// If 0, don't show cell
+const headToHeadCellState = computed<HeadToHeadCellState>(() => {
+    if (props.headToHeads.length === 0) {
+        // No head-to-head situations present - don't show
+        return 'no-cell';
+    }
+    if (!headToHead.value) {
+        // There is a head-to-head situation, but we're not involved - add empty cell
+        return 'empty-cell';
+    }
+
+    if (headToHead.value.drivers.length === 2) {
+        // in case of 2-way situation, show icon with rowspan on first row and don't add cell on second row
+        return headToHeadFirst.value ? 'icon-rowspan' : 'no-cell';
+    }
+
+    // in case of 3-way situation, show empty cell for first and last row and cell with icon on middle row
+    if (!headToHeadFirst.value && !headToHeadLast.value) {
+        return 'icon';
+    }
+
+    return 'empty-cell';
+});
 </script>
 
 <template>
@@ -59,7 +84,15 @@ const headToHeadLast = computed<boolean>(() => {
         headToHeadLast ? 'head-to-head-last' : null,
         ]"
     >
-        <th v-if="headToHeads.length > 0" class="head-to-head-action"></th>
+        <th
+            v-if="headToHeadCellState !== 'no-cell'"
+            :rowspan="headToHeadCellState === 'icon-rowspan' ? 2 : 1"
+            class="head-to-head-action"
+            :class="headToHeadCellState === 'icon-rowspan' ? 'rowspan-2' : null"
+            title="Click to show detailed detailed simulation"
+        >
+            <v-icon v-if="headToHeadCellState === 'icon' || headToHeadCellState === 'icon-rowspan'" name="ri-sword-line" color="red" />
+        </th>
         <th class="pre-cell">{{ standing.owner.number }}</th>
         <th class="pre-cell">
             <div class="driver-abbr">
@@ -108,6 +141,10 @@ th.head-to-head-action {
     border-left-style: none;
     border: none !important;
     border-style: none !important;
+    cursor: pointer;
+}
+th.head-to-head-action.rowspan-2 {
+    background: linear-gradient(to bottom, transparent, cyan, cyan, transparent);
 }
 .driver-abbr {
     display: flex;

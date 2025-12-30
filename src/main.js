@@ -2,9 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from '@/routing';
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { BiGithub, BiHeartFill, BiInfoCircleFill } from "oh-vue-icons/icons";
+import { BiGithub, BiHeartFill, BiInfoCircleFill, RiSwordLine } from "oh-vue-icons/icons";
 
-addIcons(BiGithub, BiHeartFill, BiInfoCircleFill);
+addIcons(BiGithub, BiHeartFill, BiInfoCircleFill, RiSwordLine);
 
 const app = createApp(App);
 app.component("v-icon", OhVueIcon);
