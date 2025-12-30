@@ -13,7 +13,12 @@ defineProps<Props>()
     <div class="simulation-table">
         <table>
             <caption>Driver standings (Maximum of {{ round.maxRemainingDriverPoints }} more points to collect)</caption>
-            <formula-table-header :standings="driverStandings" name-label="Driver" show-number-column/>
+            <formula-table-header 
+                :standings="driverStandings"
+                name-label="Driver"
+                :show-head-to-head-column="round.driverHeadToHeads.length > 0"
+                show-number-column
+            />
             <tbody>
                 <formula-table-driver-row
                     v-for="(entry, index) in driverStandings"
@@ -64,10 +69,15 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 3em;
+    margin-bottom: 3em;
 }
 table, td, th {
     border: 1px solid #606060;
     border-collapse: collapse;
     text-align: center;
+}
+table {
+    border-left-style: none;
+    border-bottom-style: none;
 }
 </style>

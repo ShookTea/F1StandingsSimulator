@@ -59,6 +59,7 @@ const headToHeadLast = computed<boolean>(() => {
         headToHeadLast ? 'head-to-head-last' : null,
         ]"
     >
+        <th v-if="headToHeads.length > 0" class="head-to-head-action"></th>
         <th class="pre-cell">{{ standing.owner.number }}</th>
         <th class="pre-cell">
             <div class="driver-abbr">
@@ -100,6 +101,13 @@ th {
     text-align: center;
     width: 3.5em;
     position: relative;
+}
+th.head-to-head-action {
+    border-bottom-style: none;
+    border-top-style: none;
+    border-left-style: none;
+    border: none !important;
+    border-style: none !important;
 }
 .driver-abbr {
     display: flex;

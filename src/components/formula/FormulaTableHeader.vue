@@ -3,9 +3,10 @@ import { Standing } from '@/data/sim/f1/simDataTypes';
 import { useWindowWidth } from '@/composable/windowWidth';
 
 interface Props {
-    standings: Standing<any>[]
-    showNumberColumn?: boolean
-    nameLabel: string
+    standings: Standing<any>[];
+    showNumberColumn?: boolean;
+    showHeadToHeadColumn?: boolean;
+    nameLabel: string;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -16,6 +17,7 @@ const { windowWidth } = useWindowWidth();
 <template>
     <thead>
         <tr>
+            <th v-if="showHeadToHeadColumn" rowspan="2" class="no-border"></th>
             <th v-if="showNumberColumn" rowspan="2">No</th>
             <th rowspan="2">{{ nameLabel }}</th>
             <th rowspan="2">Points</th>
@@ -41,5 +43,10 @@ th {
 th.position-header {
     border-left: none;
     border-right: none;
+}
+th.no-border {
+    border-left-style: hidden;
+    border-top-style: hidden;
+    border-bottom-style: hidden;
 }
 </style>
