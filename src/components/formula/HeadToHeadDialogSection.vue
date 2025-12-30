@@ -19,8 +19,9 @@ type CellInfo = {
 }
 
 const cellData = computed<CellInfo[][]>(() => {
-  const result: CellInfo[][] = [];
+  let result: CellInfo[][] = [];
 
+  // Build basic data
   for (const option of driverOptions.value) {
     if (option.position > props.season.driversPerRace) {
       continue;
@@ -40,7 +41,7 @@ const cellData = computed<CellInfo[][]>(() => {
 
       if (value === 1 || (value === 2 && option.position === 1)) {
         label = 'Anywhere';
-      } else if (value === 2 || (value === 3 && option.position === 2)) {
+      } else if ((value === 2 && option.position === 3) || (value === 3 && option.position === 2)) {
         label = 'No race win';
       }
 
@@ -52,6 +53,19 @@ const cellData = computed<CellInfo[][]>(() => {
     }
 
     result.push(row);
+  }
+
+  // If table reaches the season.driversPerRace, truncate identical positions at the end of table
+  if (result.length === props.season.driversPerRace) {
+    const lastElement = result[result.length - 1];
+    const rival1 = lastElement[1].value;
+    const rival2 = lastElement[2]?.value;
+    let truncateCount = 0;
+    for (let i = result.length - 1; i >= 0 && result[i][1].value === rival1 && result[i][2]?.value === rival2; i--) {
+      truncateCount++;
+    }
+    result = result.slice(0, result.length - truncateCount + 1);
+    result[result.length - 1][0].label += '+';
   }
 
   return result;
