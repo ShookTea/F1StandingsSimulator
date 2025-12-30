@@ -1,15 +1,52 @@
 <script lang="ts" setup>
-import { HeadToHead, HeadToHeadOptionForDriver } from '@/data/sim/f1/simDataTypes';
+import { HeadToHead, HeadToHeadOptionForDriver, Season } from '@/data/sim/f1/simDataTypes';
 import { computed } from 'vue';
 
 const props = defineProps<{
+  season: Season;
   headToHead: HeadToHead;
   driverAbbr: string;
   ordinal: string;
 }>();
 
 const driverOptions = computed<HeadToHeadOptionForDriver[]>(() => props.headToHead.optionsByDriver[props.driverAbbr]);
-const rivals = computed<string[]>(() => props.headToHead.drivers.filter((d) => d !== props.driverAbbr))
+const rivals = computed<string[]>(() => props.headToHead.drivers.filter((d) => d !== props.driverAbbr));
+
+type CellInfo = {
+  value: number;
+  label: string;
+  colspan: number;
+}
+
+const cellData = computed<CellInfo[][]>(() => {
+  const result: CellInfo[][] = [];
+
+  for (const option of driverOptions.value) {
+    if (option.position > props.season.driversPerRace) {
+      continue;
+    }
+
+    const row: CellInfo[] = [];
+
+    row.push({
+      value: option.position,
+      label: `P${option.position}`,
+      colspan: 1,
+    })
+
+    for (const rival of rivals.value) {
+      row.push({
+        value: option.rivals[rival],
+        label: `P${option.rivals[rival]} or worse`,
+        colspan: 1,
+      });
+    }
+
+    result.push(row);
+  }
+
+  return result;
+});
 </script>
 
 <template>
@@ -33,9 +70,8 @@ const rivals = computed<string[]>(() => props.headToHead.drivers.filter((d) => d
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(option, index) in driverOptions" :key="index">
-          <td>P{{ option.position }}</td>
-          <td v-for="abbr in rivals" :key="abbr">P{{ option.rivals[abbr] }} or worse</td>
+        <tr v-for="(row, i) in cellData" :key="i">
+          <td v-for="(cell, j) in row" :key="j">{{ cell.label }}</td>
         </tr>
       </tbody>
     </table>

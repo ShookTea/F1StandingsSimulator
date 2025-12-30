@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HeadToHead, Round } from '@/data/sim/f1/simDataTypes';
+import { HeadToHead, Round, Season } from '@/data/sim/f1/simDataTypes';
 import FormulaTableHeader from '@/components/formula/FormulaTableHeader.vue';
 import FormulaTableDriverRow from '@/components/formula/FormulaTableDriverRow.vue';
 import FormulaTableTeamRow from '@/components/formula/FormulaTableTeamRow.vue';
@@ -7,7 +7,8 @@ import HeadToHeadDialog from './HeadToHeadDialog.vue';
 import { ref } from 'vue';
 
 interface Props {
-    round: Round
+    round: Round;
+    season: Season;
 }
 defineProps<Props>();
 
@@ -42,6 +43,7 @@ const showHeadToHead = (h2h: HeadToHead) => {
         <head-to-head-dialog
             v-if="displayedHeadToHead"
             :head-to-head="displayedHeadToHead"
+            :season="season"
             @close="displayedHeadToHead = null"
         />
         <table>

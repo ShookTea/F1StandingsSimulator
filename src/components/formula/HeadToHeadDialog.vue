@@ -1,10 +1,11 @@
 import { HeadToHead } from '../../data/sim/f1/simDataTypes';
 <script lang="ts" setup>
-import { HeadToHead } from '@/data/sim/f1/simDataTypes';
+import { HeadToHead, Season } from '@/data/sim/f1/simDataTypes';
 import { ref, onMounted, computed } from 'vue';
 import HeadToHeadDialogSection from './HeadToHeadDialogSection.vue';
 
 const props = defineProps<{
+  season: Season;
   headToHead: HeadToHead;
 }>();
 const emit = defineEmits(['close']);
@@ -59,6 +60,7 @@ const ordinal = computed<string>(() => {
         :key="driverAbbr"
         :driver-abbr="driverAbbr"
         :head-to-head="headToHead"
+        :season="season"
         :ordinal="ordinal"
       />
     </div>

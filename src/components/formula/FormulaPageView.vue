@@ -22,7 +22,7 @@ const currentPage = computed<Round>(() => {
 <template>
     <div class="simulation-view">
         <formula-round-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.rounds.length"/>
-        <formula-round-table :round="currentPage"/>
+        <formula-round-table :round="currentPage" :season="seasonData.data"/>
     </div>
 </template>
 
