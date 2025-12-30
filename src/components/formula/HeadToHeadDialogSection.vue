@@ -41,8 +41,6 @@ const cellData = computed<CellInfo[][]>(() => {
 
       if (value === 1 || (value === 2 && option.position === 1)) {
         label = 'Anywhere';
-      } else if ((value === 2 && option.position === 3) || (value === 3 && option.position === 2)) {
-        label = 'No race win';
       }
 
       row.push({
