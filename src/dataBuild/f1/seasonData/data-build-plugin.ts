@@ -2,7 +2,7 @@ import DriverStanding from '../DriverStanding';
 import { AbstractRace, DataInput, Race } from '../dataInputTypes';
 import { calculateMaxRemainingPoints as calculateMaxRemainingDriverPoints } from '../DriverSimulationResult';
 import DriverStandingSorter from '../DriverStandingSorter';
-import { Round, Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
+import { Round, Season, Standing, StandingOwner } from '@/data/sim/f1/simDataTypes';
 import { calculateMaxRemainingPoints as calculateMaxRemainingTeamPoints } from '../TeamSimulationResult';
 import { SorterBuilder } from '../AbstractStandingSorter';
 import TeamStandingSorter from '../TeamStandingSorter';
@@ -11,10 +11,10 @@ import AbstractStanding from '../AbstractStanding';
 import TeamStanding from '../TeamStanding';
 import { generateHeadToHeads } from './head-to-head';
 
-export function convert(input) {
+export function convert(input): Season {
     const { races, remainingRaces } = input;
 
-    const result = [];
+    const result: Round[] = [];
 
     for (let i = 0; i <= races.length; i++) {
         const racesPart = races.slice(0, i);
@@ -26,7 +26,10 @@ export function convert(input) {
         ));
     }
 
-    return result;
+    return {
+        rounds: result,
+        driversPerRace: result[0].driverStandings[0].minPosition
+    };
 }
 
 function calculateResults(input: DataInput, races: Race[], remainingRaces: AbstractRace[]): Round

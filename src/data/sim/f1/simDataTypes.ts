@@ -1,4 +1,7 @@
-export type Season = Round[]
+export type Season = {
+    rounds: Round[];
+    driversPerRace: number;
+}
 
 export interface Round {
     roundName: string

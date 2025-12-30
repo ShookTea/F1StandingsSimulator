@@ -15,13 +15,13 @@ const seasonData = computed<GroupData<Season>>(() => {
 
 const currentPage = computed<Round>(() => {
     const step: number = parseInt(route.params.step as string) - 1;
-    return seasonData.value.data[step];
+    return seasonData.value.data.rounds[step];
 });
 </script>
 
 <template>
     <div class="simulation-view">
-        <formula-round-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.length"/>
+        <formula-round-pager :label="currentPage.roundName" route-key="step" :max-pages="seasonData.data.rounds.length"/>
         <formula-round-table :round="currentPage"/>
     </div>
 </template>
