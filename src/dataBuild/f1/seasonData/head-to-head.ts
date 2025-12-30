@@ -12,6 +12,13 @@ type HeadToHeadSituation = {
   position: number;
 }
 
+type ResultByPermutation = {
+  positionPermutation: number[];
+  standings: {
+    [driverAbbr: string]: number | 'goes-to-next'
+  }
+}
+
 export function generateHeadToHeads(
   input: DataInput,
   calculatedStandings: Standing<Driver>[],
@@ -71,6 +78,9 @@ function simulateHeadToHeadRace(
   const baseStandingsToTest: DriverStanding[] = 
     situation.standings.map((standing) => baseStandings.find((s) => s.owner.abbreviation === standing.owner.abbreviation));
 
+  const testingRace = situation.position === 1 && situation.standings.length === 3 && nextRace.code === 'ABU';
+  // NOR - VER - PIA
+
   for (const permutation of positionPermutations) {
     const testPositions: string[] = new Array(baseStandings.length).fill('???');
     for (let i = 0; i < permutation.length; i++) {
@@ -89,17 +99,22 @@ function simulateHeadToHeadRace(
     standingsForExperiment.forEach((standing) => standing.addRaceResult(input, fakeRace));
     
     const result = calculateResultsForStandings(standingsForExperiment, remainingRaces.slice(1), input, DriverStandingSorter.getBuilder());
-    if (situation.position === 1 && situation.standings.length === 3 && nextRace.code === 'ABU'
-      && permutation[0] + 1 === 6 // NOR
-      && permutation[1] + 1 === 2 // VER
-      && permutation[2] + 1 === 1 // PIA
-    ) {
-      console.log(`Situation: ${situation.standings.map(s => s.owner.abbreviation).join(' ')}`)
-      console.log(`Permutation: ${permutation.map(v => v + 1).join(' ')}`);
-      for (const testedStanding of situation.standings) {
-        const driverResult = result.find(r => r.owner.abbreviation === testedStanding.owner.abbreviation);
-        console.log(`${driverResult.owner.abbreviation}: ${driverResult.points} won, position between ${driverResult.minPosition} - ${driverResult.maxPosition}`);
+    const resultByPermutation: ResultByPermutation = {
+      positionPermutation: permutation,
+      standings: {},
+    };
+    for (const testedStanding of situation.standings) {
+      const driverAbbr = testedStanding.owner.abbreviation;
+      const driverResult = result.find(r => r.owner.abbreviation === driverAbbr);
+      if (driverResult.maxPosition !== driverResult.minPosition) {
+        resultByPermutation.standings[driverAbbr] = 'goes-to-next';
+      } else {
+        resultByPermutation.standings[driverAbbr] = driverResult.maxPosition;
       }
+    }
+
+    if (testingRace) {
+      console.log(resultByPermutation);
     }
   }
 }
