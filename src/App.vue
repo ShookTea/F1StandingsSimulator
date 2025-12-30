@@ -20,4 +20,8 @@ html, body, main {
     margin: 0;
     color: black;
 }
+
+body:has(dialog[open]) {
+  overflow: hidden
+}
 </style>
