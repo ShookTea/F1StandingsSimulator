@@ -29579,6 +29579,7 @@
             }
         ],
         "maxRemainingDriverPoints": 0,
-        "maxRemainingTeamPoints": 0
+        "maxRemainingTeamPoints": 0,
+        "driverHeadToHeads": []
     }
 ]

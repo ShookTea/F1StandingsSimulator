@@ -26,7 +26,7 @@ export function generateHeadToHeads(
   baseStandings: DriverStanding[],
 ): HeadToHead[] {
   if (remainingRaces.length === 0) {
-    return;
+    return [];
   }
   
   const headToHeadSituations = [
