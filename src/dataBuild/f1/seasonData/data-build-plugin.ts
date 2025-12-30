@@ -41,7 +41,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
     
     const calculatedDriverStandings = calculateResultsForStandings(driverStandings, remainingRaces, input, DriverStandingSorter.getBuilder());
     
-    generateHeadToHeads(input, calculatedDriverStandings, remainingRaces, driverStandings);
+    const driverHeadToHeads = generateHeadToHeads(input, calculatedDriverStandings, remainingRaces, driverStandings);
 
     return {
         roundName,
@@ -49,6 +49,7 @@ function calculateResults(input: DataInput, races: Race[], remainingRaces: Abstr
         teamStandings: calculateResultsForStandings(teamStandings, remainingRaces, input, TeamStandingSorter.getBuilder()),
         maxRemainingDriverPoints: calculateMaxRemainingDriverPoints(remainingRaces, input),
         maxRemainingTeamPoints: calculateMaxRemainingTeamPoints(remainingRaces, input),
+        driverHeadToHeads,
     }
 }
 

@@ -6,6 +6,7 @@ export interface Round {
     maxRemainingTeamPoints: number
     driverStandings: Standing<Driver>[]
     teamStandings: Standing<Team>[]
+    driverHeadToHeads: HeadToHead[]
 }
 
 export interface Standing<T extends StandingOwner> {
@@ -48,4 +49,19 @@ export interface Team extends StandingOwner {
     powerUnit: string
     powerUnitConstructor: string
     color: string
+}
+
+export interface HeadToHead {
+    leadPosition: number;
+    optionsByDriver: {
+        [driverAbbr: string]: HeadToHeadOptionForDriver[]
+    }
+}
+
+export interface HeadToHeadOptionForDriver {
+    position: number; // 1-indexed position in a race
+    championship: number; // 1-indexed guaranteed position in a championship, given position of driver and rivals
+    rivals: {
+        [driverAbbr: string]: number; // 1-indexed position of each rival
+    }
 }
