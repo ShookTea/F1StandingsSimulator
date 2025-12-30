@@ -121,6 +121,10 @@ function convertToOutputData(
   resultsByPermutation: ResultByPermutation[],
 ): HeadToHead {
   const transformedResult = transformF1Standings(resultsByPermutation);
+  // Remove entries for lower positions
+  for (const key in transformedResult) {
+    transformedResult[key] = transformedResult[key].filter((option) => option.championship === 1);
+  }
   return {
     leadPosition: situation.position,
     optionsByDriver: transformedResult,
