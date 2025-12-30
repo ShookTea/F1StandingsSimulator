@@ -1,13 +1,22 @@
 <script setup lang="ts">
-import { Round } from '@/data/sim/f1/simDataTypes';
+import { HeadToHead, Round } from '@/data/sim/f1/simDataTypes';
 import FormulaTableHeader from '@/components/formula/FormulaTableHeader.vue';
 import FormulaTableDriverRow from '@/components/formula/FormulaTableDriverRow.vue';
 import FormulaTableTeamRow from '@/components/formula/FormulaTableTeamRow.vue';
+import HeadToHeadDialog from './HeadToHeadDialog.vue';
+import { ref } from 'vue';
 
 interface Props {
     round: Round
 }
-defineProps<Props>()
+defineProps<Props>();
+
+const displayedHeadToHead = ref<HeadToHead|null>(null);
+
+const showHeadToHead = (h2h: HeadToHead) => {
+    displayedHeadToHead.value = h2h;
+    console.log({ h2h });
+}
 </script>
 <template>
     <div class="simulation-table">
@@ -27,9 +36,15 @@ defineProps<Props>()
                     :standing="entry"
                     :point-diff="index + 1 < driverStandings.length ? entry.points - driverStandings[index+1].points : 0"
                     :head-to-heads="round.driverHeadToHeads"
+                    @show-head-to-head="showHeadToHead"
                 />
             </tbody>
         </table>
+        <head-to-head-dialog
+            v-if="displayedHeadToHead"
+            :head-to-head="displayedHeadToHead"
+            @close="displayedHeadToHead = null"
+        />
         <table>
             <caption>Team standings (Maximum of {{ round.maxRemainingTeamPoints }} more points to collect)</caption>
             <formula-table-header :standings="teamStandings" name-label="Team"/>

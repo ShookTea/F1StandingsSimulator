@@ -14,6 +14,9 @@ interface Props {
 }
 
 const props = defineProps<Props>();
+defineEmits<{
+    (e: 'showHeadToHead', entry: HeadToHead): void
+}>();
 const { windowWidth } = useWindowWidth();
 
 const fullName = computed<string>(() => {
@@ -90,6 +93,7 @@ const headToHeadCellState = computed<HeadToHeadCellState>(() => {
             class="head-to-head-action"
             :class="headToHeadCellState === 'icon-rowspan' ? 'rowspan-2' : null"
             title="Click to show detailed detailed simulation"
+            @click="$emit('showHeadToHead', headToHead)"
         >
             <v-icon v-if="headToHeadCellState === 'icon' || headToHeadCellState === 'icon-rowspan'" name="ri-sword-line" color="red" />
         </th>
