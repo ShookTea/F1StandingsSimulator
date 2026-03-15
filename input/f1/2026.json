@@ -219,19 +219,21 @@
       "type": "race",
       "label": "Australian Grand Prix",
       "positions": [ "RUS", "ANT", "LEC", "HAM", "NOR", "VER", "BEA", "LIN", "BOR", "GAS", "OCO", "ALB", "LAW", "COL", "SAI", "PER" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "CHN_S",
       "type": "sprint",
-      "label": "Chinese Grand Prix (sprint)"
+      "label": "Chinese Grand Prix (sprint)",
+      "positions": [ "RUS", "LEC", "HAM", "NOR", "ANT", "PIA", "LAW", "BEA", "VER", "OCO", "GAS", "SAI", "BOR", "COL", "HAD", "ALB", "ALO", "STR", "PER" ]
     },
     {
       "code": "CHN_R",
       "type": "race",
-      "label": "Chinese Grand Prix (race)"
-    },
+      "label": "Chinese Grand Prix (race)",
+      "positions": [ "ANT", "RUS", "HAM", "LEC", "BEA", "GAS", "LAW", "HAD", "SAI", "COL", "HUL", "LIN", "BOT", "OCO", "PER" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "JPN",
       "type": "race",
