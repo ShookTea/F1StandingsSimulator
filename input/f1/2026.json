@@ -240,16 +240,6 @@
       "label": "Japanese Grand Prix"
     },
     {
-      "code": "BHR",
-      "type": "race",
-      "label": "Bahrain Grand Prix"
-    },
-    {
-      "code": "SAU",
-      "type": "race",
-      "label": "Saudi Arabian Grand Prix"
-    },
-    {
       "code": "MIA_S",
       "type": "sprint",
       "label": "Miami Grand Prix (sprint)"
