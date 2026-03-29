@@ -231,14 +231,15 @@
       "type": "race",
       "label": "Chinese Grand Prix (race)",
       "positions": [ "ANT", "RUS", "HAM", "LEC", "BEA", "GAS", "LAW", "HAD", "SAI", "COL", "HUL", "LIN", "BOT", "OCO", "PER" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "JPN",
       "type": "race",
-      "label": "Japanese Grand Prix"
-    },
+      "label": "Japanese Grand Prix",
+      "positions": [ "ANT", "PIA", "LEC", "RUS", "NOR", "HAM", "GAS", "VER", "LAW", "OCO", "HUL", "HAD", "BOR", "LIN", "SAI", "COL", "PER", "ALO", "BOT", "ALB" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "MIA_S",
       "type": "sprint",
