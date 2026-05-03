@@ -237,14 +237,15 @@
       "type": "race",
       "label": "Japanese Grand Prix",
       "positions": [ "ANT", "PIA", "LEC", "RUS", "NOR", "HAM", "GAS", "VER", "LAW", "OCO", "HUL", "HAD", "BOR", "LIN", "SAI", "COL", "PER", "ALO", "BOT", "ALB" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "MIA_S",
       "type": "sprint",
-      "label": "Miami Grand Prix (sprint)"
-    },
+      "label": "Miami Grand Prix (sprint)",
+      "positions": [ "NOR", "PIA", "LEC", "RUS", "VER", "ANT", "HAM", "GAS", "HAD", "COL", "OCO", "BEA", "SAI", "LAW", "ALO", "PER", "STR", "ALB", "BOT" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "MIA_R",
       "type": "race",
