@@ -243,14 +243,15 @@
       "type": "sprint",
       "label": "Miami Grand Prix (sprint)",
       "positions": [ "NOR", "PIA", "LEC", "RUS", "VER", "ANT", "HAM", "GAS", "HAD", "COL", "OCO", "BEA", "SAI", "LAW", "ALO", "PER", "STR", "ALB", "BOT" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "MIA_R",
       "type": "race",
-      "label": "Miami Grand Prix (race)"
-    },
+      "label": "Miami Grand Prix (race)",
+      "positions": [ "ANT", "NOR", "PIA", "RUS", "VER", "HAM", "COL", "LEC", "SAI", "ALB", "BEA", "BOR", "OCO", "LIN", "ALO", "PER", "STR", "BOT" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "CAN_S",
       "type": "sprint",
