@@ -249,19 +249,21 @@
       "type": "race",
       "label": "Miami Grand Prix (race)",
       "positions": [ "ANT", "NOR", "PIA", "RUS", "VER", "HAM", "COL", "LEC", "SAI", "ALB", "BEA", "BOR", "OCO", "LIN", "ALO", "PER", "STR", "BOT" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "CAN_S",
       "type": "sprint",
-      "label": "Canadian Grand Prix (sprint)"
+      "label": "Canadian Grand Prix (sprint)",
+      "positions": [ "RUS", "NOR", "ANT", "PIA", "LEC", "HAM", "VER", "LIN", "COL", "SAI", "LAW", "BOR", "OCO", "PER", "HUL", "STR", "BOT", "BEA", "ALB", "GAS", "HAD" ]
     },
     {
       "code": "CAN_R",
       "type": "race",
-      "label": "Canadian Grand Prix (race)"
-    },
+      "label": "Canadian Grand Prix (race)",
+      "positions": [ "ANT", "HAM", "VER", "LEC", "HAD", "COL", "LAW", "GAS", "SAI", "BEA", "PIA", "HUL", "BOR", "OCO", "STR", "BOT" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "MON",
       "type": "race",
