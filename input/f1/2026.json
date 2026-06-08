@@ -261,14 +261,15 @@
       "type": "race",
       "label": "Canadian Grand Prix (race)",
       "positions": [ "ANT", "HAM", "VER", "LEC", "HAD", "COL", "LAW", "GAS", "SAI", "BEA", "PIA", "HUL", "BOR", "OCO", "STR", "BOT" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "MON",
       "type": "race",
-      "label": "Monaco Grand Prix"
-    },
+      "label": "Monaco Grand Prix",
+      "positions": [ "ANT", "HAM", "HAD", "PIA", "LAW", "LIN", "GAS", "ALB", "OCO", "ALO", "BOR", "RUS", "HUL", "COL", "PER", "SAI" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "CAT",
       "type": "race",
