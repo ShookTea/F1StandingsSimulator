@@ -266,7 +266,7 @@
       "code": "MON",
       "type": "race",
       "label": "Monaco Grand Prix",
-      "positions": [ "ANT", "HAM", "HAD", "PIA", "LAW", "LIN", "GAS", "ALB", "OCO", "ALO", "BOR", "RUS", "HUL", "COL", "PER", "SAI" ]
+      "positions": [ "ANT", "HAM", "GAS", "HAD", "PIA", "LAW", "LIN", "ALB", "OCO", "ALO", "BOR", "RUS", "HUL", "COL", "PER", "SAI" ]
     }
   ],
   "remainingRaces": [
