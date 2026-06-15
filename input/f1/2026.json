@@ -267,14 +267,15 @@
       "type": "race",
       "label": "Monaco Grand Prix",
       "positions": [ "ANT", "HAM", "GAS", "HAD", "PIA", "LAW", "LIN", "ALB", "OCO", "ALO", "BOR", "RUS", "HUL", "COL", "PER", "SAI" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "CAT",
       "type": "race",
-      "label": "Barcelona-Catalunya Grand Prix"
-    },
+      "label": "Barcelona-Catalunya Grand Prix",
+      "positions": [ "HAM", "RUS", "NOR", "VER", "PIA", "HAD", "GAS", "LAW", "LIN", "COL", "BOR", "SAI", "OCO", "PER", "LEC", "ANT", "BEA" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "AUT",
       "type": "race",
