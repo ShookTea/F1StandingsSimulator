@@ -273,14 +273,15 @@
       "type": "race",
       "label": "Barcelona-Catalunya Grand Prix",
       "positions": [ "HAM", "RUS", "NOR", "VER", "PIA", "HAD", "GAS", "LAW", "LIN", "COL", "BOR", "SAI", "OCO", "PER", "LEC", "ANT", "BEA" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "AUT",
       "type": "race",
-      "label": "Austrian Grand Prix"
-    },
+      "label": "Austrian Grand Prix",
+      "positions": [ "RUS", "VER", "ANT", "PIA", "HAM", "HAD", "NOR", "LEC", "LAW", "LIN", "BOR", "HUL", "GAS", "BEA", "COL", "OCO", "ALB", "ALO" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "GBR_S",
       "type": "sprint",
