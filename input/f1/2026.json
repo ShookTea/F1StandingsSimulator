@@ -279,19 +279,21 @@
       "type": "race",
       "label": "Austrian Grand Prix",
       "positions": [ "RUS", "VER", "ANT", "PIA", "HAM", "HAD", "NOR", "LEC", "LAW", "LIN", "BOR", "HUL", "GAS", "BEA", "COL", "OCO", "ALB", "ALO" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "GBR_S",
       "type": "sprint",
-      "label": "British Grand Prix (sprint)"
+      "label": "British Grand Prix (sprint)",
+      "positions": [ "ANT", "HAM", "NOR", "RUS", "LEC", "VER", "PIA", "LAW", "HAD", "LIN", "GAS", "COL", "BOR", "BEA", "HUL", "OCO", "SAI", "ALB", "BOT", "ALO", "STR", "PER" ]
     },
     {
       "code": "GBR_R",
       "type": "race",
-      "label": "British Grand Prix (race)"
-    },
+      "label": "British Grand Prix (race)",
+      "positions": [ "LEC", "RUS", "HAM", "NOR", "HAD", "LAW", "LIN", "BOR", "COL", "GAS", "PIA", "BEA", "OCO", "PER", "ANT", "BOT", "SAI", "ALO", "STR", "VER" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "BEL",
       "type": "race",
