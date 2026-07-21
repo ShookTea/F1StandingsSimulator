@@ -291,14 +291,15 @@
       "type": "race",
       "label": "British Grand Prix (race)",
       "positions": [ "LEC", "RUS", "HAM", "NOR", "HAD", "LAW", "LIN", "BOR", "COL", "GAS", "PIA", "BEA", "OCO", "PER", "ANT", "BOT", "SAI", "ALO", "STR", "VER" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "BEL",
       "type": "race",
-      "label": "Belgian Grand Prix"
-    },
+      "label": "Belgian Grand Prix",
+      "positions": [ "ANT", "LEC", "VER", "HAM", "PIA", "HAD", "NOR", "BOR", "LIN", "COL", "GAS", "LAW", "HUL", "BEA", "ALB", "SAI", "OCO", "BOT", "ALO" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "HUN",
       "type": "race",
