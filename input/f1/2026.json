@@ -297,14 +297,15 @@
       "type": "race",
       "label": "Belgian Grand Prix",
       "positions": [ "ANT", "LEC", "VER", "HAM", "PIA", "HAD", "NOR", "BOR", "LIN", "COL", "GAS", "LAW", "HUL", "BEA", "ALB", "SAI", "OCO", "BOT", "ALO" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "HUN",
       "type": "race",
-      "label": "Hungarian Grand Prix"      
-    },
+      "label": "Hungarian Grand Prix",
+      "positions": [ "NOR", "VER", "ANT", "LEC", "HAM", "HAD", "RUS", "LAW", "HUL", "LIN", "BOR", "GAS", "STR", "ALO", "COL", "OCO", "ALB", "SAI", "BEA" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "NED_S",
       "type": "sprint",
@@ -329,6 +330,11 @@
       "code": "AZE",
       "type": "race",
       "label": "Azerbaijan Grand Prix"
+    },
+    {
+      "code": "BHR",
+      "type": "race",
+      "label": "Bahrain Grand Prix"
     },
     {
       "code": "SIN_S",
