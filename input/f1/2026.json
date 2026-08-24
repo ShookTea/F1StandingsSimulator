@@ -199,6 +199,12 @@
       "uuid": "95701466-d225-4921-aea6-c6615546d37e",
       "number": 6,
       "team": "Oracle Red Bull Racing"
+    },
+    "TSU": {
+      "uuid": "8de49864-f75f-4cd6-abb4-0771d2c72a1f",
+      "number": 22,
+      "team": "Visa Cash App Racing Bulls F1 Team",
+      "temporary": true
     }
   },
   "pointSchemas": {
@@ -303,19 +309,33 @@
       "type": "race",
       "label": "Hungarian Grand Prix",
       "positions": [ "NOR", "VER", "ANT", "LEC", "HAM", "HAD", "RUS", "LAW", "HUL", "LIN", "BOR", "GAS", "STR", "ALO", "COL", "OCO", "ALB", "SAI", "BEA" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "NED_S",
       "type": "sprint",
-      "label": "Dutch Grand Prix (sprint)"
+      "label": "Dutch Grand Prix (sprint)",
+      "positions": [ "RUS", "LEC", "NOR", "ANT", "PIA", "VER", "HAM", "GAS", "BOR", "LIN", "LAW", "COL", "TSU", "OCO", "BEA", "ALB", "STR", "ALO", "BOT", "SAI", "PER" ],
+      "teamSwitch": {
+        "LAW": {
+          "team": "Oracle Red Bull Racing",
+          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawsan, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
+        }
+      }
     },
     {
       "code": "NED_R",
       "type": "race",
-      "label": "Dutch Grand Prix (race)"
-    },
+      "label": "Dutch Grand Prix (race)",
+      "positions": [ "NOR", "ANT", "RUS", "HAM", "LEC", "PIA", "LAW", "HUL", "ALO", "GAS", "TSU", "LIN", "BOR", "COL", "PER", "SAI", "ALB" ],
+      "teamSwitch": {
+        "LAW": {
+          "team": "Oracle Red Bull Racing",
+          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawsan, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
+        }
+      }
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "ITA",
       "type": "race",
