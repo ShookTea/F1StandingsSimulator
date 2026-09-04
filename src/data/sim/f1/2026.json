@@ -8498,15 +8498,15 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 58,
-                    "maxPoints": 507,
+                    "points": 60,
+                    "maxPoints": 509,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "5": 1,
+                        "4": 1,
                         "11": 1
                     },
                     "note": ""
@@ -8575,39 +8575,6 @@
                 },
                 {
                     "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 35,
-                    "maxPoints": 484,
-                    "position": 8,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 1,
-                        "8": 1,
-                        "10": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
                         "abbreviation": "HAD",
                         "uuid": "95701466-d225-4921-aea6-c6615546d37e",
                         "number": 6,
@@ -8625,13 +8592,13 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 26,
-                    "maxPoints": 475,
-                    "position": 9,
+                    "points": 29,
+                    "maxPoints": 478,
+                    "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 1,
                         "8": 1,
                         "12": 1
@@ -8657,16 +8624,48 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 24,
-                    "maxPoints": 473,
+                    "points": 26,
+                    "maxPoints": 475,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "5": 1,
+                        "7": 2,
+                        "9": 1,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 26,
+                    "maxPoints": 475,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "6": 1,
                         "7": 2,
-                        "9": 1,
-                        "13": 1
+                        "8": 1,
+                        "10": 1
                     },
                     "note": ""
                 },
@@ -8754,13 +8753,13 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 11,
-                    "maxPoints": 460,
+                    "points": 13,
+                    "maxPoints": 462,
                     "position": 13,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 1,
+                        "6": 1,
                         "8": 1,
                         "12": 1,
                         "14": 2
@@ -9138,15 +9137,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 116,
-                    "maxPoints": 892,
+                    "points": 118,
+                    "maxPoints": 894,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 1,
-                        "5": 3,
+                        "4": 1,
+                        "5": 2,
                         "11": 1
                     },
                     "note": ""
@@ -9161,14 +9161,13 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 69,
-                    "maxPoints": 845,
+                    "points": 72,
+                    "maxPoints": 848,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
-                        "4": 1,
+                        "3": 2,
                         "5": 2,
                         "6": 1,
                         "8": 2,
@@ -9186,15 +9185,14 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF87BC"
                     },
-                    "points": 50,
-                    "maxPoints": 826,
+                    "points": 41,
+                    "maxPoints": 817,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
                         "6": 2,
-                        "7": 2,
+                        "7": 3,
                         "8": 1,
                         "10": 2,
                         "14": 2,
@@ -9212,14 +9210,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 35,
-                    "maxPoints": 811,
+                    "points": 39,
+                    "maxPoints": 815,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 1,
-                        "7": 3,
+                        "7": 2,
                         "8": 1,
                         "9": 1,
                         "12": 1,
@@ -9537,15 +9536,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 68,
-                    "maxPoints": 492,
+                    "points": 70,
+                    "maxPoints": 494,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "5": 2,
+                        "4": 1,
+                        "5": 1,
                         "11": 1
                     },
                     "note": ""
@@ -9585,39 +9585,6 @@
                 },
                 {
                     "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 41,
-                    "maxPoints": 465,
-                    "position": 8,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
                         "abbreviation": "HAD",
                         "uuid": "95701466-d225-4921-aea6-c6615546d37e",
                         "number": 6,
@@ -9635,17 +9602,49 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 34,
-                    "maxPoints": 458,
-                    "position": 9,
+                    "points": 37,
+                    "maxPoints": 461,
+                    "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 1,
                         "6": 1,
                         "8": 1,
                         "12": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 32,
+                    "maxPoints": 456,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "6": 1,
+                        "7": 3,
+                        "8": 1,
+                        "10": 1
                     },
                     "note": ""
                 },
@@ -9668,13 +9667,13 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 28,
-                    "maxPoints": 452,
+                    "points": 30,
+                    "maxPoints": 454,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "6": 1,
+                        "5": 1,
                         "7": 2,
                         "8": 1,
                         "9": 1,
@@ -9767,13 +9766,13 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 13,
-                    "maxPoints": 437,
+                    "points": 15,
+                    "maxPoints": 439,
                     "position": 13,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 1,
+                        "6": 1,
                         "8": 1,
                         "9": 1,
                         "12": 1,
@@ -10157,15 +10156,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 141,
-                    "maxPoints": 874,
+                    "points": 143,
+                    "maxPoints": 876,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 2,
-                        "5": 4,
+                        "4": 1,
+                        "5": 3,
                         "11": 1
                     },
                     "note": ""
@@ -10180,14 +10180,14 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 89,
-                    "maxPoints": 822,
+                    "points": 92,
+                    "maxPoints": 825,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
-                        "4": 2,
+                        "3": 2,
+                        "4": 1,
                         "5": 2,
                         "6": 2,
                         "8": 2,
@@ -10205,15 +10205,14 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF87BC"
                     },
-                    "points": 57,
-                    "maxPoints": 790,
+                    "points": 48,
+                    "maxPoints": 781,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
                         "6": 2,
-                        "7": 3,
+                        "7": 4,
                         "8": 1,
                         "10": 3,
                         "14": 2,
@@ -10231,14 +10230,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 41,
-                    "maxPoints": 774,
+                    "points": 45,
+                    "maxPoints": 778,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 1,
-                        "7": 3,
+                        "7": 2,
                         "8": 2,
                         "9": 2,
                         "12": 1,
@@ -10497,16 +10497,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 80,
-                    "maxPoints": 479,
+                    "points": 82,
+                    "maxPoints": 481,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 2,
+                        "4": 2,
+                        "5": 1,
                         "11": 1
                     },
                     "note": ""
@@ -10628,51 +10628,17 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 42,
-                    "maxPoints": 441,
+                    "points": 45,
+                    "maxPoints": 444,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 1,
                         "6": 2,
                         "8": 1,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 41,
-                    "maxPoints": 440,
-                    "position": 9,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 1,
-                        "13": 1
                     },
                     "note": ""
                 },
@@ -10695,16 +10661,49 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 30,
-                    "maxPoints": 429,
+                    "points": 32,
+                    "maxPoints": 431,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "5": 1,
+                        "7": 2,
+                        "8": 1,
+                        "9": 2,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 32,
+                    "maxPoints": 431,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "6": 1,
-                        "7": 2,
+                        "7": 3,
                         "8": 1,
-                        "9": 2,
+                        "10": 1,
                         "13": 1
                     },
                     "note": ""
@@ -10796,13 +10795,13 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 14,
-                    "maxPoints": 413,
+                    "points": 16,
+                    "maxPoints": 415,
                     "position": 13,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 1,
+                        "6": 1,
                         "8": 1,
                         "9": 1,
                         "10": 1,
@@ -11191,16 +11190,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 159,
-                    "maxPoints": 849,
+                    "points": 161,
+                    "maxPoints": 851,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 2,
-                        "4": 1,
-                        "5": 4,
+                        "4": 2,
+                        "5": 3,
                         "7": 1,
                         "11": 1
                     },
@@ -11216,47 +11215,19 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 115,
-                    "maxPoints": 805,
+                    "points": 118,
+                    "maxPoints": 808,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 1,
-                        "3": 1,
-                        "4": 2,
+                        "3": 2,
+                        "4": 1,
                         "5": 2,
                         "6": 3,
                         "8": 2,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "entry": "BWT Alpine F1 Team",
-                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                        "chassis": "A526",
-                        "chassisConstructor": "Alpine",
-                        "powerUnit": "Mercedes-AMG F1 M17",
-                        "powerUnitConstructor": "Mercedes",
-                        "color": "#FF87BC"
-                    },
-                    "points": 57,
-                    "maxPoints": 747,
-                    "position": 5,
-                    "maxPosition": 1,
-                    "minPosition": 11,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 2,
-                        "7": 3,
-                        "8": 1,
-                        "10": 3,
-                        "13": 1,
-                        "14": 2,
-                        "15": 1,
-                        "16": 1
                     },
                     "note": ""
                 },
@@ -11270,20 +11241,48 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 44,
-                    "maxPoints": 734,
-                    "position": 6,
+                    "points": 48,
+                    "maxPoints": 738,
+                    "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 1,
-                        "7": 3,
+                        "7": 2,
                         "8": 2,
                         "9": 3,
                         "10": 1,
                         "12": 1,
                         "13": 1,
                         "14": 2
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A526",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Mercedes-AMG F1 M17",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF87BC"
+                    },
+                    "points": 48,
+                    "maxPoints": 738,
+                    "position": 6,
+                    "maxPosition": 1,
+                    "minPosition": 11,
+                    "racePositions": {
+                        "6": 2,
+                        "7": 4,
+                        "8": 1,
+                        "10": 3,
+                        "13": 1,
+                        "14": 2,
+                        "15": 1,
+                        "16": 1
                     },
                     "note": ""
                 },
@@ -11554,6 +11553,39 @@
                 },
                 {
                     "owner": {
+                        "abbreviation": "PIA",
+                        "uuid": "85d6383f-2a59-4e66-85d6-80f573ade1fa",
+                        "number": 81,
+                        "team": {
+                            "entry": "McLaren Mastercard F1 Team",
+                            "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
+                            "chassis": "MCL40A",
+                            "chassisConstructor": "McLaren",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF8000"
+                        },
+                        "details": {
+                            "givenName": "Oscar",
+                            "familyName": "Piastri"
+                        }
+                    },
+                    "points": 84,
+                    "maxPoints": 475,
+                    "position": 5,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "2": 1,
+                        "3": 1,
+                        "4": 2,
+                        "5": 1,
+                        "11": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
                         "abbreviation": "LEC",
                         "uuid": "8f4909bf-8859-44af-9b8d-f254cc5fa1b9",
                         "number": 16,
@@ -11573,7 +11605,7 @@
                     },
                     "points": 83,
                     "maxPoints": 474,
-                    "position": 5,
+                    "position": 6,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
@@ -11581,39 +11613,6 @@
                         "4": 2,
                         "8": 2,
                         "15": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "PIA",
-                        "uuid": "85d6383f-2a59-4e66-85d6-80f573ade1fa",
-                        "number": 81,
-                        "team": {
-                            "entry": "McLaren Mastercard F1 Team",
-                            "uuid": "b13c751d-945e-4771-abf0-b2fbf685599d",
-                            "chassis": "MCL40A",
-                            "chassisConstructor": "McLaren",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF8000"
-                        },
-                        "details": {
-                            "givenName": "Oscar",
-                            "familyName": "Piastri"
-                        }
-                    },
-                    "points": 82,
-                    "maxPoints": 473,
-                    "position": 6,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "2": 1,
-                        "3": 1,
-                        "4": 1,
-                        "5": 2,
-                        "11": 1
                     },
                     "note": ""
                 },
@@ -11670,51 +11669,17 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 42,
-                    "maxPoints": 433,
+                    "points": 45,
+                    "maxPoints": 436,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 1,
                         "6": 2,
                         "8": 1,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 41,
-                    "maxPoints": 432,
-                    "position": 9,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 1,
-                        "13": 1
                     },
                     "note": ""
                 },
@@ -11737,16 +11702,49 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 31,
-                    "maxPoints": 422,
+                    "points": 33,
+                    "maxPoints": 424,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "5": 1,
+                        "7": 2,
+                        "8": 1,
+                        "9": 2,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 32,
+                    "maxPoints": 423,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "6": 1,
-                        "7": 2,
+                        "7": 3,
                         "8": 1,
-                        "9": 2,
+                        "10": 1,
                         "13": 1
                     },
                     "note": ""
@@ -11838,13 +11836,13 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 14,
-                    "maxPoints": 405,
+                    "points": 16,
+                    "maxPoints": 407,
                     "position": 13,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 1,
+                        "6": 1,
                         "8": 1,
                         "9": 1,
                         "10": 1,
@@ -12233,16 +12231,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 167,
-                    "maxPoints": 842,
+                    "points": 169,
+                    "maxPoints": 844,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 2,
-                        "4": 1,
-                        "5": 4,
+                        "4": 2,
+                        "5": 3,
                         "7": 1,
                         "11": 1
                     },
@@ -12258,47 +12256,19 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 118,
-                    "maxPoints": 793,
+                    "points": 121,
+                    "maxPoints": 796,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 1,
-                        "3": 1,
-                        "4": 2,
+                        "3": 2,
+                        "4": 1,
                         "5": 2,
                         "6": 3,
                         "8": 2,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "entry": "BWT Alpine F1 Team",
-                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                        "chassis": "A526",
-                        "chassisConstructor": "Alpine",
-                        "powerUnit": "Mercedes-AMG F1 M17",
-                        "powerUnitConstructor": "Mercedes",
-                        "color": "#FF87BC"
-                    },
-                    "points": 57,
-                    "maxPoints": 732,
-                    "position": 5,
-                    "maxPosition": 1,
-                    "minPosition": 11,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 2,
-                        "7": 3,
-                        "8": 1,
-                        "10": 3,
-                        "13": 1,
-                        "14": 2,
-                        "15": 1,
-                        "16": 1
                     },
                     "note": ""
                 },
@@ -12312,20 +12282,48 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 45,
-                    "maxPoints": 720,
-                    "position": 6,
+                    "points": 49,
+                    "maxPoints": 724,
+                    "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 1,
-                        "7": 3,
+                        "7": 2,
                         "8": 2,
                         "9": 3,
                         "10": 1,
                         "12": 1,
                         "13": 1,
                         "14": 2
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A526",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Mercedes-AMG F1 M17",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF87BC"
+                    },
+                    "points": 48,
+                    "maxPoints": 723,
+                    "position": 6,
+                    "maxPosition": 1,
+                    "minPosition": 11,
+                    "racePositions": {
+                        "6": 2,
+                        "7": 4,
+                        "8": 1,
+                        "10": 3,
+                        "13": 1,
+                        "14": 2,
+                        "15": 1,
+                        "16": 1
                     },
                     "note": ""
                 },
@@ -12648,16 +12646,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 82,
-                    "maxPoints": 448,
+                    "points": 84,
+                    "maxPoints": 450,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 2,
+                        "4": 2,
+                        "5": 1,
                         "11": 2
                     },
                     "note": ""
@@ -12716,51 +12714,17 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 52,
-                    "maxPoints": 418,
+                    "points": 55,
+                    "maxPoints": 421,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 2,
                         "6": 2,
                         "8": 1,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 42,
-                    "maxPoints": 408,
-                    "position": 9,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 2,
-                        "13": 1
                     },
                     "note": ""
                 },
@@ -12783,16 +12747,50 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 39,
-                    "maxPoints": 405,
+                    "points": 41,
+                    "maxPoints": 407,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "5": 1,
+                        "6": 1,
+                        "7": 2,
+                        "8": 1,
+                        "9": 2,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 33,
+                    "maxPoints": 399,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "6": 2,
-                        "7": 2,
+                        "6": 1,
+                        "7": 3,
                         "8": 1,
-                        "9": 2,
+                        "10": 2,
                         "13": 1
                     },
                     "note": ""
@@ -12816,13 +12814,14 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 20,
-                    "maxPoints": 386,
+                    "points": 22,
+                    "maxPoints": 388,
                     "position": 11,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 2,
+                        "6": 1,
+                        "7": 1,
                         "8": 1,
                         "9": 1,
                         "10": 1,
@@ -13285,16 +13284,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 179,
-                    "maxPoints": 811,
+                    "points": 181,
+                    "maxPoints": 813,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 2,
-                        "4": 2,
-                        "5": 4,
+                        "4": 3,
+                        "5": 3,
                         "7": 1,
                         "11": 2
                     },
@@ -13310,49 +13309,20 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 128,
-                    "maxPoints": 760,
+                    "points": 131,
+                    "maxPoints": 763,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 1,
-                        "3": 1,
-                        "4": 2,
+                        "3": 2,
+                        "4": 1,
                         "5": 3,
                         "6": 3,
                         "8": 2,
                         "12": 1,
                         "20": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "entry": "BWT Alpine F1 Team",
-                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                        "chassis": "A526",
-                        "chassisConstructor": "Alpine",
-                        "powerUnit": "Mercedes-AMG F1 M17",
-                        "powerUnitConstructor": "Mercedes",
-                        "color": "#FF87BC"
-                    },
-                    "points": 60,
-                    "maxPoints": 692,
-                    "position": 5,
-                    "maxPosition": 1,
-                    "minPosition": 11,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 2,
-                        "7": 3,
-                        "8": 1,
-                        "9": 1,
-                        "10": 4,
-                        "13": 1,
-                        "14": 2,
-                        "15": 1,
-                        "16": 1
                     },
                     "note": ""
                 },
@@ -13366,20 +13336,49 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 59,
-                    "maxPoints": 691,
-                    "position": 6,
+                    "points": 63,
+                    "maxPoints": 695,
+                    "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 2,
-                        "7": 4,
+                        "7": 3,
                         "8": 2,
                         "9": 3,
                         "10": 1,
                         "12": 1,
                         "13": 1,
                         "14": 2
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A526",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Mercedes-AMG F1 M17",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF87BC"
+                    },
+                    "points": 51,
+                    "maxPoints": 683,
+                    "position": 6,
+                    "maxPosition": 1,
+                    "minPosition": 11,
+                    "racePositions": {
+                        "6": 2,
+                        "7": 4,
+                        "8": 1,
+                        "9": 1,
+                        "10": 4,
+                        "13": 1,
+                        "14": 2,
+                        "15": 1,
+                        "16": 1
                     },
                     "note": ""
                 },
@@ -13706,16 +13705,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 92,
-                    "maxPoints": 433,
+                    "points": 94,
+                    "maxPoints": 435,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 3,
+                        "4": 2,
+                        "5": 2,
                         "11": 2
                     },
                     "note": ""
@@ -13774,52 +13773,17 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 60,
-                    "maxPoints": 401,
+                    "points": 63,
+                    "maxPoints": 404,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 2,
                         "6": 3,
                         "8": 1,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 42,
-                    "maxPoints": 383,
-                    "position": 9,
-                    "maxPosition": 1,
-                    "minPosition": 22,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 2,
-                        "11": 1,
-                        "13": 1
                     },
                     "note": ""
                 },
@@ -13842,17 +13806,52 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 39,
-                    "maxPoints": 380,
-                    "position": 10,
+                    "points": 41,
+                    "maxPoints": 382,
+                    "position": 9,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "6": 2,
+                        "5": 1,
+                        "6": 1,
                         "7": 2,
                         "8": 1,
                         "9": 2,
                         "12": 1,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 33,
+                    "maxPoints": 374,
+                    "position": 10,
+                    "maxPosition": 1,
+                    "minPosition": 22,
+                    "racePositions": {
+                        "6": 1,
+                        "7": 3,
+                        "8": 1,
+                        "10": 2,
+                        "11": 1,
                         "13": 1
                     },
                     "note": ""
@@ -13876,13 +13875,14 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 22,
-                    "maxPoints": 363,
+                    "points": 24,
+                    "maxPoints": 365,
                     "position": 11,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 2,
+                        "6": 1,
+                        "7": 1,
                         "8": 1,
                         "9": 2,
                         "10": 1,
@@ -14348,16 +14348,16 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 195,
-                    "maxPoints": 784,
+                    "points": 197,
+                    "maxPoints": 786,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
                         "3": 2,
-                        "4": 2,
-                        "5": 5,
+                        "4": 3,
+                        "5": 4,
                         "7": 2,
                         "11": 2
                     },
@@ -14373,50 +14373,20 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 151,
-                    "maxPoints": 740,
+                    "points": 154,
+                    "maxPoints": 743,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 1,
-                        "3": 2,
-                        "4": 2,
+                        "3": 3,
+                        "4": 1,
                         "5": 3,
                         "6": 4,
                         "8": 2,
                         "12": 1,
                         "20": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "entry": "BWT Alpine F1 Team",
-                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                        "chassis": "A526",
-                        "chassisConstructor": "Alpine",
-                        "powerUnit": "Mercedes-AMG F1 M17",
-                        "powerUnitConstructor": "Mercedes",
-                        "color": "#FF87BC"
-                    },
-                    "points": 61,
-                    "maxPoints": 650,
-                    "position": 5,
-                    "maxPosition": 1,
-                    "minPosition": 11,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 2,
-                        "7": 3,
-                        "8": 1,
-                        "9": 1,
-                        "10": 5,
-                        "11": 1,
-                        "13": 1,
-                        "14": 2,
-                        "15": 1,
-                        "16": 1
                     },
                     "note": ""
                 },
@@ -14430,20 +14400,50 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 61,
-                    "maxPoints": 650,
-                    "position": 6,
+                    "points": 65,
+                    "maxPoints": 654,
+                    "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 2,
-                        "7": 4,
+                        "7": 3,
                         "8": 2,
                         "9": 4,
                         "10": 1,
                         "12": 2,
                         "13": 1,
                         "14": 2
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "entry": "BWT Alpine F1 Team",
+                        "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                        "chassis": "A526",
+                        "chassisConstructor": "Alpine",
+                        "powerUnit": "Mercedes-AMG F1 M17",
+                        "powerUnitConstructor": "Mercedes",
+                        "color": "#FF87BC"
+                    },
+                    "points": 52,
+                    "maxPoints": 641,
+                    "position": 6,
+                    "maxPosition": 1,
+                    "minPosition": 11,
+                    "racePositions": {
+                        "6": 2,
+                        "7": 4,
+                        "8": 1,
+                        "9": 1,
+                        "10": 5,
+                        "11": 1,
+                        "13": 1,
+                        "14": 2,
+                        "15": 1,
+                        "16": 1
                     },
                     "note": ""
                 },
@@ -14807,16 +14807,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 92,
-                    "maxPoints": 408,
+                    "points": 94,
+                    "maxPoints": 410,
                     "position": 7,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 3,
+                        "4": 2,
+                        "5": 2,
                         "11": 2
                     },
                     "note": ""
@@ -14840,13 +14840,13 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 68,
-                    "maxPoints": 384,
+                    "points": 71,
+                    "maxPoints": 387,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 2,
                         "6": 4,
                         "8": 1,
@@ -14873,13 +14873,14 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 43,
-                    "maxPoints": 359,
+                    "points": 45,
+                    "maxPoints": 361,
                     "position": 9,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "6": 2,
+                        "5": 1,
+                        "6": 1,
                         "7": 2,
                         "8": 2,
                         "9": 2,
@@ -14907,15 +14908,14 @@
                             "familyName": "Gasly"
                         }
                     },
-                    "points": 42,
-                    "maxPoints": 358,
+                    "points": 33,
+                    "maxPoints": 349,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "3": 1,
                         "6": 1,
-                        "7": 2,
+                        "7": 3,
                         "8": 1,
                         "10": 2,
                         "11": 1,
@@ -14943,13 +14943,14 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 23,
-                    "maxPoints": 339,
+                    "points": 25,
+                    "maxPoints": 341,
                     "position": 11,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
-                        "7": 2,
+                        "6": 1,
+                        "7": 1,
                         "8": 1,
                         "9": 2,
                         "10": 2,
@@ -15421,8 +15422,8 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 220,
-                    "maxPoints": 766,
+                    "points": 222,
+                    "maxPoints": 768,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 10,
@@ -15430,8 +15431,8 @@
                         "1": 1,
                         "2": 2,
                         "3": 2,
-                        "4": 2,
-                        "5": 5,
+                        "4": 3,
+                        "5": 4,
                         "7": 2,
                         "11": 2
                     },
@@ -15447,15 +15448,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 177,
-                    "maxPoints": 723,
+                    "points": 180,
+                    "maxPoints": 726,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
-                        "3": 2,
-                        "4": 2,
+                        "3": 3,
+                        "4": 1,
                         "5": 3,
                         "6": 5,
                         "8": 2,
@@ -15474,14 +15475,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 66,
-                    "maxPoints": 612,
+                    "points": 70,
+                    "maxPoints": 616,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 2,
-                        "7": 4,
+                        "7": 3,
                         "8": 3,
                         "9": 4,
                         "10": 2,
@@ -15501,15 +15503,14 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF87BC"
                     },
-                    "points": 61,
-                    "maxPoints": 607,
+                    "points": 52,
+                    "maxPoints": 598,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
                         "6": 2,
-                        "7": 3,
+                        "7": 4,
                         "8": 1,
                         "9": 1,
                         "10": 5,
@@ -15886,16 +15887,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 96,
-                    "maxPoints": 404,
+                    "points": 98,
+                    "maxPoints": 406,
                     "position": 7,
                     "maxPosition": 1,
                     "minPosition": 22,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 3,
+                        "4": 2,
+                        "5": 2,
                         "11": 2
                     },
                     "note": ""
@@ -15919,53 +15920,17 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 68,
-                    "maxPoints": 376,
+                    "points": 71,
+                    "maxPoints": 379,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 2,
                         "6": 4,
                         "8": 1,
                         "12": 1
-                    },
-                    "note": ""
-                },
-                {
-                    "owner": {
-                        "abbreviation": "GAS",
-                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
-                        "number": 10,
-                        "team": {
-                            "entry": "BWT Alpine F1 Team",
-                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
-                            "chassis": "A526",
-                            "chassisConstructor": "Alpine",
-                            "powerUnit": "Mercedes-AMG F1 M17",
-                            "powerUnitConstructor": "Mercedes",
-                            "color": "#FF87BC"
-                        },
-                        "details": {
-                            "givenName": "Pierre",
-                            "familyName": "Gasly"
-                        }
-                    },
-                    "points": 43,
-                    "maxPoints": 351,
-                    "position": 9,
-                    "maxPosition": 1,
-                    "minPosition": 23,
-                    "racePositions": {
-                        "3": 1,
-                        "6": 1,
-                        "7": 2,
-                        "8": 1,
-                        "10": 2,
-                        "11": 1,
-                        "12": 1,
-                        "13": 1
                     },
                     "note": ""
                 },
@@ -15988,16 +15953,52 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 43,
-                    "maxPoints": 351,
+                    "points": 45,
+                    "maxPoints": 353,
+                    "position": 9,
+                    "maxPosition": 1,
+                    "minPosition": 23,
+                    "racePositions": {
+                        "5": 1,
+                        "6": 1,
+                        "7": 2,
+                        "8": 2,
+                        "9": 2,
+                        "12": 1,
+                        "13": 1
+                    },
+                    "note": ""
+                },
+                {
+                    "owner": {
+                        "abbreviation": "GAS",
+                        "uuid": "f3d27a10-c446-4c44-a0a7-dbf8f937058b",
+                        "number": 10,
+                        "team": {
+                            "entry": "BWT Alpine F1 Team",
+                            "uuid": "d7cc49b8-65ea-4953-9d01-b931564d6a38",
+                            "chassis": "A526",
+                            "chassisConstructor": "Alpine",
+                            "powerUnit": "Mercedes-AMG F1 M17",
+                            "powerUnitConstructor": "Mercedes",
+                            "color": "#FF87BC"
+                        },
+                        "details": {
+                            "givenName": "Pierre",
+                            "familyName": "Gasly"
+                        }
+                    },
+                    "points": 34,
+                    "maxPoints": 342,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "6": 2,
-                        "7": 2,
-                        "8": 2,
-                        "9": 2,
+                        "6": 1,
+                        "7": 3,
+                        "8": 1,
+                        "10": 2,
+                        "11": 1,
                         "12": 1,
                         "13": 1
                     },
@@ -16022,13 +16023,14 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 23,
-                    "maxPoints": 331,
+                    "points": 25,
+                    "maxPoints": 333,
                     "position": 11,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "7": 2,
+                        "6": 1,
+                        "7": 1,
                         "8": 1,
                         "9": 2,
                         "10": 2,
@@ -16500,8 +16502,8 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 230,
-                    "maxPoints": 761,
+                    "points": 232,
+                    "maxPoints": 763,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 9,
@@ -16509,8 +16511,8 @@
                         "1": 1,
                         "2": 2,
                         "3": 2,
-                        "4": 2,
-                        "5": 5,
+                        "4": 3,
+                        "5": 4,
                         "7": 2,
                         "11": 2
                     },
@@ -16526,15 +16528,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 180,
-                    "maxPoints": 711,
+                    "points": 183,
+                    "maxPoints": 714,
                     "position": 4,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
                         "2": 2,
-                        "3": 2,
-                        "4": 2,
+                        "3": 3,
+                        "4": 1,
                         "5": 3,
                         "6": 5,
                         "8": 2,
@@ -16553,14 +16555,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 66,
-                    "maxPoints": 597,
+                    "points": 70,
+                    "maxPoints": 601,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 2,
-                        "7": 4,
+                        "7": 3,
                         "8": 3,
                         "9": 4,
                         "10": 2,
@@ -16580,15 +16583,14 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF87BC"
                     },
-                    "points": 62,
-                    "maxPoints": 593,
+                    "points": 53,
+                    "maxPoints": 584,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
                         "6": 2,
-                        "7": 3,
+                        "7": 4,
                         "8": 1,
                         "9": 1,
                         "10": 5,
@@ -16967,16 +16969,16 @@
                             "familyName": "Piastri"
                         }
                     },
-                    "points": 104,
-                    "maxPoints": 387,
+                    "points": 106,
+                    "maxPoints": 389,
                     "position": 7,
                     "maxPosition": 1,
                     "minPosition": 20,
                     "racePositions": {
                         "2": 1,
                         "3": 1,
-                        "4": 1,
-                        "5": 3,
+                        "4": 2,
+                        "5": 2,
                         "6": 1,
                         "11": 2
                     },
@@ -17001,13 +17003,13 @@
                             "familyName": "Hadjar"
                         }
                     },
-                    "points": 68,
-                    "maxPoints": 351,
+                    "points": 71,
+                    "maxPoints": 354,
                     "position": 8,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "4": 1,
+                        "3": 1,
                         "5": 2,
                         "6": 4,
                         "8": 1,
@@ -17034,13 +17036,14 @@
                             "familyName": "Lawson"
                         }
                     },
-                    "points": 49,
-                    "maxPoints": 332,
+                    "points": 51,
+                    "maxPoints": 334,
                     "position": 9,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "6": 2,
+                        "5": 1,
+                        "6": 1,
                         "7": 3,
                         "8": 2,
                         "9": 2,
@@ -17068,15 +17071,14 @@
                             "familyName": "Gasly"
                         }
                     },
-                    "points": 44,
-                    "maxPoints": 327,
+                    "points": 35,
+                    "maxPoints": 318,
                     "position": 10,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "3": 1,
                         "6": 1,
-                        "7": 2,
+                        "7": 3,
                         "8": 1,
                         "10": 3,
                         "11": 1,
@@ -17104,13 +17106,14 @@
                             "familyName": "Lindblad"
                         }
                     },
-                    "points": 23,
-                    "maxPoints": 306,
+                    "points": 25,
+                    "maxPoints": 308,
                     "position": 11,
                     "maxPosition": 1,
                     "minPosition": 23,
                     "racePositions": {
-                        "7": 2,
+                        "6": 1,
+                        "7": 1,
                         "8": 1,
                         "9": 2,
                         "10": 2,
@@ -17586,8 +17589,8 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF8000"
                     },
-                    "points": 263,
-                    "maxPoints": 751,
+                    "points": 265,
+                    "maxPoints": 753,
                     "position": 3,
                     "maxPosition": 1,
                     "minPosition": 8,
@@ -17595,8 +17598,8 @@
                         "1": 2,
                         "2": 2,
                         "3": 2,
-                        "4": 2,
-                        "5": 5,
+                        "4": 3,
+                        "5": 4,
                         "6": 1,
                         "7": 2,
                         "11": 2
@@ -17613,15 +17616,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#3671C6"
                     },
-                    "points": 186,
-                    "maxPoints": 674,
+                    "points": 189,
+                    "maxPoints": 677,
                     "position": 4,
                     "maxPosition": 1,
-                    "minPosition": 11,
+                    "minPosition": 10,
                     "racePositions": {
                         "2": 2,
-                        "3": 2,
-                        "4": 2,
+                        "3": 3,
+                        "4": 1,
                         "5": 3,
                         "6": 5,
                         "7": 1,
@@ -17641,14 +17644,15 @@
                         "powerUnitConstructor": "Red Bull Ford",
                         "color": "#6692FF"
                     },
-                    "points": 66,
-                    "maxPoints": 554,
+                    "points": 70,
+                    "maxPoints": 558,
                     "position": 5,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
+                        "5": 1,
                         "6": 2,
-                        "7": 4,
+                        "7": 3,
                         "8": 3,
                         "9": 4,
                         "10": 2,
@@ -17669,15 +17673,14 @@
                         "powerUnitConstructor": "Mercedes",
                         "color": "#FF87BC"
                     },
-                    "points": 63,
-                    "maxPoints": 551,
+                    "points": 54,
+                    "maxPoints": 542,
                     "position": 6,
                     "maxPosition": 1,
                     "minPosition": 11,
                     "racePositions": {
-                        "3": 1,
                         "6": 2,
-                        "7": 3,
+                        "7": 4,
                         "8": 1,
                         "9": 1,
                         "10": 6,
