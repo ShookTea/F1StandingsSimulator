@@ -318,7 +318,7 @@
       "teamSwitch": {
         "LAW": {
           "team": "Oracle Red Bull Racing",
-          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawsan, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
+          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawson, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
         }
       }
     },
@@ -330,17 +330,25 @@
       "teamSwitch": {
         "LAW": {
           "team": "Oracle Red Bull Racing",
-          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawsan, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
+          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawson, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls."
         }
       }
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "ITA",
       "type": "race",
-      "label": "Italian Grand Prix"
-    },
+      "label": "Italian Grand Prix",
+      "positions": [ "ANT", "RUS", "VER", "NOR", "PIA", "HAM", "GAS", "LIN", "COL", "TSU", "BOR", "HUL", "SAI", "LAW", "BEA", "OCO", "ALB", "PER", "BOT" ],
+      "teamSwitch": {
+        "LAW": {
+          "team": "Oracle Red Bull Racing",
+          "description": "Isack Hadjar has injured his wrist leading into the weekend. He was replaced by Liam Lawson, while reserve driver Yuki Tsunoda replaced Lawson at Racing Bulls"
+        }
+      }
+    }
+
+  ],
+  "remainingRaces": [
     {
       "code": "ESP",
       "type": "race",
