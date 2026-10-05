@@ -363,14 +363,15 @@
       "type": "race",
       "label": "Azerbaijan Grand Prix",
       "positions": [ "RUS", "VER", "HAD", "LEC", "ANT", "HAM", "LIN", "OCO", "BEA", "SAI", "HUL", "LAW", "PIA", "PER", "BOR", "BOT" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "BHR",
       "type": "race",
-      "label": "Bahrain Grand Prix"
-    },
+      "label": "Bahrain Grand Prix",
+      "positions": [ "VER", "ANT", "HAM", "LEC", "HAD", "PIA", "LAW", "ALO", "NOR", "LIN", "HUL", "STR", "COL", "BEA", "OCO", "GAS", "SAI", "BOR", "PER", "RUS" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "SIN_S",
       "type": "sprint",
