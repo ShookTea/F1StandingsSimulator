@@ -369,14 +369,15 @@
       "type": "race",
       "label": "Bahrain Grand Prix",
       "positions": [ "VER", "ANT", "HAM", "LEC", "HAD", "PIA", "LAW", "ALO", "NOR", "LIN", "HUL", "STR", "COL", "BEA", "OCO", "GAS", "SAI", "BOR", "PER", "RUS" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "SIN_S",
       "type": "sprint",
-      "label": "Singapore Grand Prix (sprint)"
-    },
+      "label": "Singapore Grand Prix (sprint)",
+      "positions": [ "VER", "HAM", "LEC", "ANT", "LAW", "BEA", "HUL", "NOR", "GAS", "OCO", "ALO", "SAI", "LIN", "PIA" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "SIN_R",
       "type": "race",
