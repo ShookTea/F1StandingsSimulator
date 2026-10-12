@@ -375,14 +375,15 @@
       "type": "sprint",
       "label": "Singapore Grand Prix (sprint)",
       "positions": [ "VER", "HAM", "LEC", "ANT", "LAW", "BEA", "HUL", "NOR", "GAS", "OCO", "ALO", "SAI", "LIN", "PIA" ]
-    }
-  ],
-  "remainingRaces": [
+    },
     {
       "code": "SIN_R",
       "type": "race",
-      "label": "Singapore Grand Prix (race)"
-    },
+      "label": "Singapore Grand Prix (race)",
+      "positions": [ "VER", "LEC", "ANT", "NOR", "PIA", "HAM", "LAW", "HUL", "RUS", "HAD", "GAS", "BEA", "OCO", "SAI", "LIN", "ALO", "PER", "ALB", "BOT" ]
+    }
+  ],
+  "remainingRaces": [
     {
       "code": "USA",
       "type": "race",
